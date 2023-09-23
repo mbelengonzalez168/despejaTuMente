@@ -94,6 +94,30 @@ footer {
     border: 0px;
     margin: 25px;
 }
+.texto-cards{
+    background-color: #F5F6F8 ;
+}
+ /*.imagen-cards{
+    background-color: blueviolet;
+    min-width: 220px;
+    min-height: 239px;
+ }*/
+ .img-card{
+    width: 250px;
+    height: 270px;
+ }
+ .contenedor-imagenes-textos-cards{
+    display: flex;
+ }
+  .nombre-y-puntuacion-cards {
+    display: flex;
+    justify-content: space-between;
+ }
+ .puntuacion-y-estrella-cards {
+    display: flex;
+ }
+
+
 
 
 /*FORMULARIO*/
