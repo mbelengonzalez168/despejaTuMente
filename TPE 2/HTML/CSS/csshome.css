@@ -117,7 +117,59 @@ footer {
     display: flex;
  }
 
+/*JUEJO*/
+.donde-estoy-juego {
+    margin: 20px;
+}
+.section-juego{
+   background-color:#E18407; 
+}
+.foto-juego{
+    width: 750px;
+    height: 550px;
+}
+.section-juego{
+    display: flex;
+}
+.como-jugar-juego{
+    display: flex;
+    background-color: #CCCFDD;
+}
+.btn-jugar-juego{
+   
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-jugar-juego :hover {
+    background-color: hsl(133, 100%, 35%); 
+}
+.nombre-Video-y-tiempo{
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor-foro-videos{
+    display: flex;
+}
+.foro{
+    background-color: #AAB1D2;
+    width: 800px;
+    margin: 20px;
+}
+.fotito-foro{
+    width: 25px;
+    height: 25px;
+}    
 
+.agregar-comentarios-foro {
+    display: flex;
+}
+.fotito-mas-comentario-individual-foro{
+    display: flex;
+}
+.fecha-comentario {
+    text-align: right;
+}
 
 
 /*FORMULARIO*/
