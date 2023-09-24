@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+:root{
+    --primario: #FBB04C;
+    --primarioLuces1: #FFC981;
+    --primarioLuces2: #FFE9CC;
+    --primarioSombra1: #F89F28;
+    --primarioSombra2: #E18407;
+    --secundario: #AAB1D2;
+    --secundarioLuces1: #CCCFDD;
+    --secundarioLuces2: #F5F6F8;
+    --secundarioSombra1: #7A8BD8;
+    --secundarioSombra2: #0C30D8;
+    --terciario: #4848B0;
+    --neutroOscuro: #575654;
+    --neutroClaro: #D9D9D9;
+    --LetraLogo: #734E2D;
+    --fondoLogo: #FD8A76;
+
+    /* --letraPrincipal: */
+}
+
+
+.grid {
+    display: grid;
+    grid-template-areas: "header"
+                             "main"
+                             "fat-footer";
+
+}
+
+/* Header */
+header {
+    background-color: var(--primarioLuces2);
+    min-height: 90px;
+    color: var(--neutroOscuro);
+}
+
+.conteiner-header {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.logo {
+    display: flex;
+    color: var(--LetraLogo);
+
+}
+.texto-logo{
+    
+}
+.portada-Tandil {
+    margin-top: 0;
+    height: 450px; 
+    background-image: url(img.css/Portadatandil5.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.lupa{
+    flex-grow: 1;
+    text-align: center;
+}
+
+
+.login-bolsa {
+    display: flex;
+}
+
+main {
+    background-color: #FBB04C;
+    grid-area: main;
+    min-height: 2026px;
+}
+footer {
+    background-color: #E18407;
+    grid-area: fat-footer;
+    min-height: 284px;
+}
+
+
+.categorias {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.inicio-sesion {
+    margin: 50px;
+    padding: 50px;
+    background-color: #E18407;
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    
+
+}
+.fila {
+    text-align: center;
+    
+
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.texto-inicio{
+    text-align: center;
+    padding: 25px;
+    border: 0px;
+    margin: 25px;
+}
+.texto-cards{
+    background-color: #F5F6F8 ;
+}
+ /*.imagen-cards{
+    background-color: blueviolet;
+    min-width: 220px;
+    min-height: 239px;
+ }*/
+ .img-card{
+    width: 250px;
+    height: 270px;
+ }
+ .contenedor-de-imagenes-y-textos-cards{
+    display: flex;
+ }
+  .nombre-y-puntuacion-cards {
+    display: flex;
+    justify-content: space-between;
+ }
+ .puntuacion-y-estrella-cards {
+    display: flex;
+ }
+
+
+
+
+/*FORMULARIO*/
+.body{
+    font-family: Arial, sans-serif;
+    background-color: #E18407;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+.campos-obligatorios {
+    font-size: 8px;
+    color: red;
+}
+button:hover {
+    background-color: #0056b3;
+}
