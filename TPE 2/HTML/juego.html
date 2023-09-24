@@ -6,47 +6,49 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="CSS/csshome.css">
 </head>
-<div class="grid">
-    <header>
-        <div class="conteiner-header">
-            <div class="logo">
-                <img src="IMG/CEREBRO.png"><h2>DESPEJA TU MENTE</h2>
-            </div>
-            <div class="lupa">
-                <p>lupa</p>
-            </div>
-            <div class="login">
-                <div class="usuario">
-                    <p>usuario</p>
-                </div>
-                <div class="bolsa">
-                    <p>bolsas</p>
-                </div>
-            </div>
-        </div>
-
-           
-    </header>
     <body>
         <div class="grid">
             <header>
                 <div class="conteiner-header">
                     <div class="logo">
-                        <img src=""><h2>DESPEJA TU MENTE</h2>
+                        <img src="../HTML/IMG/Logo.png" alt="logo">
+                        <h1>DESPEJA <span>TU MENTE</span> </h1>
                     </div>
-                    <div class="lupa">
-                        <p>lupa</p>
+                    <div class="search-container">
+                            <input class="search" type="text"  placeholder="Buscar...">
+                            <label for="input-with-image" class="input-label">
+                            <img src="IMG/iconos/lupa.png" alt="buscador">   
+                            
                     </div>
-                    <div class="login">
+                    <div class="login-bolsa">
                         <div class="usuario">
-                            <p>usuario</p>
+                            <img id="usuario" src="IMG/iconos/menu.png" alt="menu usuario">
+                            <img src="IMG/iconos/usuario-de-perfil.png" alt="menu usuario">
                         </div>
+
+                        <div id="popup-login" class="">
+                            <div class="cerrar-popup">
+                                <button id="btn-cerrar-popup-login">X</button>
+                            </div>
+                            <div class="encabezado-popup">
+                                <img src="IMG/icono-popup-login.jpg" alt="">
+                                <h2>Mi perfil</h2>
+                            </div>
+                            <div class="contenido-popup">  
+                                <p>Cambiar avatar</p>  
+                                <p>Mis favoritos</p>
+                                <p>Ultimos jugados</p>
+                                <p>Mis datos</p>
+                                <p>Cambiar contrasenia</p>
+                                <p>Cerrar sesion</p>
+                            </div>
+                        </div>
+
                         <div class="bolsa">
-                            <p>bolsa</p>
+                            <img src="IMG/iconos/bolsa-de-la-compra.png" alt="mis compras">
                         </div>
                     </div>
-                </div>
-                  
+                </div>  
             </header>
             <main class="main-juego">
                 <div class="donde-estoy-juego">
@@ -65,7 +67,26 @@
                             <p>Consigue conectar 4 fichas de cada personaje (Lenny o Carl)</p>
                         </div>
                         <div class="compartir-juego">
-                            <img src="IMG/iconos-compartir-juego.png" alt="">
+                            <img src="IMG/corazon-compartir.jpg" alt="">
+                            <img src="IMG/like-compartir.jpg" alt="">
+                            <img src="IMG/NoLike-compartir.jpg" alt="">
+                            <img id="icono-compartir" src="IMG/icono-compartir.jpg" alt="">
+                        </div>
+
+                        <div id="popup-compartir" class="">
+                            <div class="cerrar-popup">
+                                <button id="btn-cerrar-popup-compartir">X</button>
+                            </div>
+                            <div class="contenido-popup">
+                                <h2>Compartir</h2>
+                                <img src="IMG/iconos-popup-compartir.jpg" alt="">
+                                <div class="link-popup">
+                                    <p>https://despejatumente.com/user5/logica/carlsvslenny</p>
+                                </div>
+                                <button class="btn-copiar-link-popup">Copiar Link</button>
+                    
+                            </div>
+                            
                         </div>
                         <div class="boton-jugar-juego">
                             <button type="submit" class="btn-jugar-juego">Jugar</button>
@@ -232,5 +253,6 @@
             </footer>
            
         </div>
-        </body>
-        </html>
+        <script src="JS/script-animaciones.js"></script>
+    </body>
+    </html>
