@@ -392,6 +392,43 @@ footer li{
     cursor: pointer;
     text-align: right 
 }
+/*POPUP-COMPRAS*/
+  
+#popup-compras{
+    display: none;
+    background-color: #FFC981;
+    position: fixed;
+    top: 30%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 250px;
+    height: 255px;
+  }
+  #btn-cerrar-popup-compras{
+    background-color: #FFC981;
+    margin-top: 10px;
+    padding: 5px 10px;
+    color: #575654;
+    border: none;
+    cursor: pointer;
+    text-align: right 
+  }
+  .juego-precio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+.total-compras{
+    display: flex;
+}
+
+
+  .btn-pagar-compras{
+    background-color: #4848B0;
+    cursor: pointer;
+
+  }
 
 /*FORMULARIO*/
 .body{
