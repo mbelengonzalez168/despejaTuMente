@@ -232,12 +232,10 @@ footer li{
     align-items: center;
     justify-content: right;
 }
-
 .puntuacion img {
     width: 15px;
     height: 15px;
 }
-
 .conteiner-boton-card{
     display: flex;
     flex-direction: column;
@@ -253,54 +251,14 @@ footer li{
 
 
 
-.inicio-registracion {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-.inicio-registracion:first-child {
-    margin: 50px;
-    padding: 50px;
-    background-color: #E18407;
-    
-}
-
-#inicio, #registrarse{
-    cursor: pointer;
-}
-
-#form-inicio, #form-registrarse  {
-    display: none;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    width: 300px;
-    transform: translate(-50%, -50%);
-    position: fixed;
-    top: 50%;
-}
-
-  
-
-#form-inicio-sesion h1, #form-registrarse h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.texto-inicio{
-    text-align: center;
-    padding: 25px;
-    border: 0px;
-    margin: 25px;
-}
-
 
 /*JUEJO*/
 .donde-estoy-juego {
     margin: 20px;
+    color: var(--neutroOscuro);
 }
+
+
 .section-juego{
    background-color:#E18407; 
 }
@@ -315,8 +273,7 @@ footer li{
     display: flex;
     background-color: #CCCFDD;
 }
-.btn-jugar-juego{
-   
+.btn-jugar-juego{   
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -331,25 +288,64 @@ footer li{
 .contenedor-foro-videos{
     display: flex;
 }
+
+/*FORO*/
 .foro{
     background-color: #AAB1D2;
     width: 800px;
     margin: 20px;
+    padding: 25px;
 }
-.fotito-foro{
-    width: 25px;
-    height: 25px;
+.comentario-usuario {
+    display: flex;
+}
+.foro img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50px;
 }    
-
-.agregar-comentarios-foro {
-    display: flex;
+.comentario-usuario input{
+    background-color: var(--secundarioLuces2);
+    border-radius: 5px;
+    width: 100%;
+    color: var(--neutroOscuro);
 }
-.fotito-mas-comentario-individual-foro{
+.btn-agregar-comentario{
     display: flex;
+   
+}
+.btn-agregar-comentario button{
+   align-items: flex-end;
+   width: 150px;
+   margin: 15px 0 15px auto;
+   font-size: 12px;
+}
+
+.comentarios-anteriores{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+.cuerpo-comentario-foro{
+    position: relative;
+    background-color: var(--secundarioLuces1);
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
 }
 .fecha-comentario {
-    text-align: right;
+    position: absolute;
+    right: 5px;
+    font-size: 12px;
 }
+.comentador{
+    font-weight: bold;
+}
+.comentario{
+    width: 90%;
+}
+
 /*PASOS-JUEGO*/
   
 
@@ -647,4 +643,48 @@ button {
 }
 button:hover {
     background-color: var(--secundarioSombra2);
+}
+
+
+.inicio-registracion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.inicio-registracion:first-child {
+    margin: 50px;
+    padding: 50px;
+    background-color: #E18407;
+    
+}
+
+#inicio, #registrarse{
+    cursor: pointer;
+}
+
+#form-inicio, #form-registrarse  {
+    display: none;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    top: 50%;
+}
+
+  
+
+#form-inicio-sesion h1, #form-registrarse h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.texto-inicio{
+    text-align: center;
+    padding: 25px;
+    border: 0px;
+    margin: 25px;
 }
