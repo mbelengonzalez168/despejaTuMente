@@ -6,6 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="CSS/csshome.css">
 </head>
+<body>
+    
+
 <div class="grid">
     <header>
         <div class="conteiner-header">
@@ -23,13 +26,87 @@
            
     </header>
     <main>
-        <div class="inicio">
-            <div class="inicio-sesion">
-                <h1>INICIO SESION</h1>
+        <div class="inicio-registracion">
+       
+            <img id="inicio" src="IMG/iniciar sesion.png" alt="">
+                      
+            <div id="form-inicio">
+            
+                <form action="" method="">
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <p class="">Olvidaste la Contraseña?</p>
+                   
+                    
+                    <div class="form-group">
+                        <button type="submit">Iniciar sesion</button>
+                    </div>
+    
+                    <div class="form-group">
+                        <button type="submit">Ingresar con facebook</button>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Ingresar con Google</button>
+                    </div>
+                    
+                </form>
             </div>
-            <div class="inicio-sesion">
-                <h1>REGISTRARSE</h1>
+            
+           
+            <img id="registrarse" src="IMG/Registrarse.png" alt="">
+            
+            <div id="form-registrarse">
+            
+                <form action="" method="">
+                    <div class="form-group">
+                        <label for="nombre">Nombre *</label>
+                        <input type="text" id="" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label for="apellido">Apellido *</label>
+                            <input type="text" id="" name="apellido" required>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="alias">Alias</label>
+                            <input type="text" id="" name="alias">
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="edad">Edad *</label>
+                            <input type="text" id="" name="edad" required>
+                        </div>
+    
+                        <div class="form-group">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <p class="campos-obligatorios">La Contraseña debe tener 8 caracteres (sin espacios)</p>
+                    <div class="form-group">
+                        <label for="confirm-password">Repetir Contraseña:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                    <p class="campos-obligatorios">* Campos obligatorios</p>
+                    <div class="form-group">
+                        <button type="submit">Registrarse</button>
+                    </div>
+                    
+                </form>
             </div>
+           
 
         </div>
     </main>
@@ -71,4 +148,6 @@
      </footer>
    
 </div>
+<script src="JS/script-animaciones.js"></script>
+</body>
 </html>

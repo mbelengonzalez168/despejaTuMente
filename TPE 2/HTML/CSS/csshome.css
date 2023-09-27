@@ -225,29 +225,38 @@ footer li{
 
 
 
-.inicio {
+.inicio-registracion {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
-.inicio-sesion {
+.inicio-registracion:first-child {
     margin: 50px;
     padding: 50px;
     background-color: #E18407;
+    
 }
 
+#inicio, #registrarse{
+    cursor: pointer;
+}
 
-
-.container {
+#form-inicio, #form-registrarse  {
+    display: none;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
     width: 300px;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    top: 50%;
 }
 
-.container h1 {
+  
+
+#form-inicio-sesion h1, #form-registrarse h1 {
     text-align: center;
     margin-bottom: 20px;
 }
@@ -315,9 +324,7 @@ footer li{
 }
 /*PASOS-JUEGO*/
   
-.como-jugar-juego{
-    display: flex;
-  }
+
   
     ul, li {
       padding: 0%;
@@ -328,15 +335,15 @@ footer li{
     ul.carrusel-pasos-juego{
       position: relative; 
     }
-    ul.carrusel-pasos-juego img {
+    .carrusel-pasos-juego img {
       opacity: 0;
       transition: opacity 1s;
       position: absolute;
       left: 0;
     
       top: 0;
-      margin: 25px;
-      padding: 25px;
+      margin: 15px;
+      padding: 15px;
       background-color: #CCCFDD;
     }
     ul.carrusel-pasos-juego:first-child {
@@ -370,10 +377,13 @@ footer li{
     display: none;
     background-color: #E18407 ;
     position: fixed;
-    top: 40%;
-    left: 40%;
+    top: 51%;
+    left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    height: 400px;
+        
 }
 #btn-cerrar-popup-compartir {
     background-color: #E18407 ;
@@ -428,11 +438,11 @@ footer li{
     display: none;
     background-color: #FFC981;
     position: fixed;
-    top: 35%;
-    left: 80%;
+    top: 37.5%;
+    left: 84%;
     transform: translate(-50%, -50%);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    width: 250px;
+    width: 200px;
     height: 340px;
 }
 #btn-cerrar-popup-login{
@@ -450,11 +460,11 @@ footer li{
     display: none;
     background-color: #FFC981;
     position: fixed;
-    top: 30%;
-    left: 70%;
+    top: 31.5%;
+    left: 85.5%;
     transform: translate(-50%, -50%);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    width: 250px;
+    width: 200px;
     height: 255px;
   }
   #btn-cerrar-popup-compras{
@@ -473,12 +483,15 @@ footer li{
   }
 .total-compras{
     display: flex;
+    justify-content: space-between;
 }
 
 
   .btn-pagar-compras{
     background-color: #4848B0;
     cursor: pointer;
+    border-radius: 20%;
+    
 
   }
 
