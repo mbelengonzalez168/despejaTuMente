@@ -7,147 +7,156 @@
     <link rel="stylesheet" type="text/css" href="CSS/csshome.css">
 </head>
 <body>
-    
-
-<div class="grid">
-    <header>
-        <div class="conteiner-header">
-            <div class="logo">
-                <h2>DESPEJA TU MENTE</h2>
-            </div>
-            <div class="texto-inicio">
-               
-                    <h3>Únete y desafía tu mente en nuestro mundo de juegos
-                        ¡Regístrate y empieza a jugar ahora!</h3>
-                
-            </div>
-        </div>
-
-           
-    </header>
-    <main>
-        <div class="inicio-registracion">
-       
-            <img id="inicio" src="IMG/iniciar sesion.png" alt="">
-                      
-            <div id="form-inicio">
-            
-                <form action="" method="">
-                    <div class="form-group">
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-    
-                    <div class="form-group">
-                        <label for="password">Contraseña</label>
-                        <input type="password" id="password" name="password" required>
-                    </div>
-                    <p class="">Olvidaste la Contraseña?</p>
+    <div class="grid">
+        <header>
+            <div class="conteiner-header">
+                <div class="logo">
+                    <h2>DESPEJA TU MENTE</h2>
+                </div>
+                <div class="texto-inicio">
                    
+                        <h3>Únete y desafía tu mente en nuestro mundo de juegos
+                            ¡Regístrate y empieza a jugar ahora!</h3>
                     
-                    <div class="form-group">
-                        <button type="submit">Iniciar sesion</button>
-                    </div>
-    
-                    <div class="form-group">
-                        <button type="submit">Ingresar con facebook</button>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit">Ingresar con Google</button>
-                    </div>
-                    
-                </form>
+                </div>
             </div>
-            
-           
-            <img id="registrarse" src="IMG/Registrarse.png" alt="">
-            
-            <div id="form-registrarse">
-            
-                <form action="" method="">
-                    <div class="form-group">
-                        <label for="nombre">Nombre *</label>
-                        <input type="text" id="" name="nombre" required>
-                    </div>
-                    <div class="form-group">
+    
+               
+        </header>
+        <main>
+            <div class="inicio">
+                <div class="inicio-sesion">
+                   <img id="inicio" src="IMG/iniciar sesion.png" alt="">       
+                </div>
+                <div id="container-form-inicio-sesion" class="oculto">
+                    <div>
+                    <form id="form"action="" method="">
                         <div class="form-group">
-                            <label for="apellido">Apellido *</label>
-                            <input type="text" id="" name="apellido" required>
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
                         </div>
-    
+        
                         <div class="form-group">
-                            <label for="alias">Alias</label>
-                            <input type="text" id="" name="alias">
+                            <label for="password">Contraseña</label>
+                            <input type="password" id="password" name="password" required>
                         </div>
-    
+                        <p class="">Olvidaste la Contraseña?</p>
+                       
+                        
                         <div class="form-group">
-                            <label for="edad">Edad *</label>
-                            <input type="text" id="" name="edad" required>
+                            <button id="btn-iniciar-sesion" type="submit">Iniciar sesion</button>
                         </div>
-    
+                      
                         <div class="form-group">
-                        <label for="email">E-mail *</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-    
-                    <div class="form-group">
-                        <label for="password">Contraseña</label>
-                        <input type="password" id="password" name="password" required>
-                    </div>
-                    <p class="campos-obligatorios">La Contraseña debe tener 8 caracteres (sin espacios)</p>
-                    <div class="form-group">
-                        <label for="confirm-password">Repetir Contraseña:</label>
-                        <input type="password" id="confirm-password" name="confirm-password" required>
-                    </div>
-                    <p class="campos-obligatorios">* Campos obligatorios</p>
-                    <div class="form-group">
-                        <button type="submit">Registrarse</button>
+                            <button type="submit">Ingresar con facebook</button>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Ingresar con Google</button>
+                        </div>
+                        
+                    </form>
                     </div>
                     
-                </form>
-            </div>
-           
-
-        </div>
-    </main>
-    <footer>
-        <div class="columnas">
-         <div class="columna1">
-             <h3>Sobre nosotros</h3>
-             <lu>
-                 <li>Quienes somos</li>
-                 <li>Contacto</li>
-                 <li>Preguntas frecuentes</li>
-                 <li>Mapa del sitio</li>
-             </lu>
-         </div>
-         <div class="columna2">
-             <h3>Ayuda</h3>
-             <lu>
-                 <li>Terminos y condiciones</li>
-                 <li>Politicas de privacidad </li>
-                 <li>Soporte</li>
-              </lu>
+                </div>
+                <div id="mensajeExito">
+                    <a href="home.html#cerrar-mnj-exito">x</a>
+                    <p> Ha ingresado con éxito</p>
+                    
+                </div>
+                <div class="inicio-sesion">
+                    <img id="registrarse"src="IMG/Registrarse.png" alt="">
+                </div>
+                <div id="container-form-registrarse">
+                
+                    <form id="form" action="" method="">
+                        <div class="form-group">
+                            <label for="nombre">Nombre *</label>
+                            <input type="text" id="" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group">
+                                <label for="apellido">Apellido *</label>
+                                <input type="text" id="" name="apellido" required>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="alias">Alias</label>
+                                <input type="text" id="" name="alias">
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="edad">Edad *</label>
+                                <input type="text" id="" name="edad" required>
+                            </div>
+        
+                            <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="password">Contraseña</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <p class="campos-obligatorios">La Contraseña debe tener 8 caracteres (sin espacios)</p>
+                        <div class="form-group">
+                            <label for="confirm-password">Repetir Contraseña:</label>
+                            <input type="password" id="confirm-password" name="confirm-password" required>
+                        </div>
+                        <p class="campos-obligatorios">* Campos obligatorios</p>
+                        <div class="form-group">
+                            <button id="btn-registrarse"type="submit">Registrarse</button>
+                        </div>
+                        
+                    </form>
+                </div>
+                <div id="mensajeExito">
+                    <a href="home.html#cerrar-mnj-exito">x</a>
+                    <p> Se ha registrado con éxito</p>
+                    
+                </div>
              
-         </div>
-         <div class="columna3">
-             <h3>Seguinos</h3>
-             <lu>
-                 <li>Copyright © 2023 Despeja Tu Mente</li>
-                 <li>Todos los derechos reservados</li>
+    
+            </div>
+        </main>
+        <footer>
+            <div class="columnas">
+             <div class="columna1">
+                 <h3>Sobre nosotros</h3>
+                 <lu>
+                     <li>Quienes somos</li>
+                     <li>Contacto</li>
+                     <li>Preguntas frecuentes</li>
+                     <li>Mapa del sitio</li>
+                 </lu>
+             </div>
+             <div class="columna2">
+                 <h3>Ayuda</h3>
+                 <lu>
+                     <li>Terminos y condiciones</li>
+                     <li>Politicas de privacidad </li>
+                     <li>Soporte</li>
+                  </lu>
                  
-             </lu>
+             </div>
+             <div class="columna3">
+                 <h3>Seguinos</h3>
+                 <lu>
+                     <li>Copyright © 2023 Despeja Tu Mente</li>
+                     <li>Todos los derechos reservados</li>
+                     
+                 </lu>
+                 
+             </div>
              
+     
+            </div>
+            <div class="fila">
+             <p>Si tenes problemas con el juego comunicate con la línea 6969 de ayuda al ludopata</p>
          </div>
-         
- 
-        </div>
-        <div class="fila">
-         <p>Si tenes problemas con el juego comunicate con la línea 6969 de ayuda al ludopata</p>
-     </div>
-     </footer>
-   
-</div>
-<script src="JS/script-animaciones.js"></script>
-</body>
-</html>
+         </footer>
+       
+    </div>
+    <script src="JS/js.login.js"></script>
+    </body>
+    </html>
