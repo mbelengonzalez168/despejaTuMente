@@ -43,7 +43,7 @@ header {
     color: var(--neutroOscuro);
 }
 .conteiner-header {
-    max-width: 1180px;
+    max-width: 1080px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -99,8 +99,8 @@ h1 span{
 .login-bolsa {
     display: flex;
     justify-content: space-between;
-    width: 100px;
-    margin-bottom: 16px;
+    width: 120px;
+    margin-bottom: 24px;
     
 }
 .usuario{
@@ -109,12 +109,12 @@ h1 span{
     border-radius: 20px;
     border: 1.5px solid var(--neutroOscuro);
     padding: 3px;
-    width: 40px;  
-    height: 20px;
+    width: 60px;  
+    height: 30px;
     cursor: pointer;
 }
 .bolsa img{
-    height: 28px;
+    height: 36px;
     cursor: pointer;
 }
 
@@ -124,7 +124,7 @@ main {
     min-height: 2026px;
 }
 .conteiner-main{
-    max-width: 1180px;
+    max-width: 1080px;
     margin: 0 auto;
 }
 
@@ -151,9 +151,10 @@ main {
 footer {
     background-color: var(--primarioSombra2);
     height: 220px;
+    color:var(--neutroOscuro);
 }
 .conteiner-footer {
-    max-width: 1180px;
+    max-width: 1080px;
     margin: 30px auto;
     display: flex;
     justify-content: space-between;
@@ -168,8 +169,15 @@ footer li{
     margin: 4px 0;
     cursor: pointer;
 }
+.redes-sociales img{
+    width: 25px;
+    height: 25px;
+    margin-top: -4px;
+    margin-bottom: 8px;
+}
 .mensaje-footer {
     text-align: center;
+    font-weight: bold;
 }
 
 /*seccion juegos*/
@@ -185,17 +193,29 @@ footer li{
     background-color: var(--secundarioLuces2);
     width: 230px;
     border-radius: 7px;
-    margin-right: 10px;
+    margin-right: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.contenedor-img-card{
+    position: relative;
 }
 .img-card{
     width: 230px;
     height: 270px;
+    object-fit: cover;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
 }
+.stiker-gratis{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: -10px;
+    right: -10px;
+}
 .texto-cards{
     margin: 10px;
+    height: 65px;
     color: var(--neutroOscuro);
 }
 .texto-cards h3{
@@ -204,9 +224,17 @@ footer li{
 .nombre-y-puntuacion-cards {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    line-height: 17px;
 }
-.puntuacion-y-estrella-cards {
+.puntuacion {
     display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.puntuacion img {
+    width: 15px;
+    height: 15px;
 }
 .conteiner-boton-card{
     display: flex;
@@ -214,10 +242,9 @@ footer li{
     align-items: center;
 }
 .boton-cards{
-    height: 35px;
-    width: 60%;
+    width: 55%;
     align-items: center;
-    margin: 15px 0;
+    margin: 5px auto 15px auto;
     border-radius: 7px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -225,54 +252,13 @@ footer li{
 
 
 
-.inicio-registracion {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-.inicio-registracion:first-child {
-    margin: 50px;
-    padding: 50px;
-    background-color: #E18407;
-    
-}
-
-#inicio, #registrarse{
-    cursor: pointer;
-}
-
-#form-inicio, #form-registrarse  {
-    display: none;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    width: 300px;
-    transform: translate(-50%, -50%);
-    position: fixed;
-    top: 50%;
-}
-
-  
-
-#form-inicio-sesion h1, #form-registrarse h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.texto-inicio{
-    text-align: center;
-    padding: 25px;
-    border: 0px;
-    margin: 25px;
-}
-
-
 /*JUEJO*/
 .donde-estoy-juego {
     margin: 20px;
+    color: var(--neutroOscuro);
 }
+
+
 .section-juego{
    background-color:#E18407; 
 }
@@ -287,8 +273,7 @@ footer li{
     display: flex;
     background-color: #CCCFDD;
 }
-.btn-jugar-juego{
-   
+.btn-jugar-juego{   
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -303,25 +288,64 @@ footer li{
 .contenedor-foro-videos{
     display: flex;
 }
+
+/*FORO*/
 .foro{
     background-color: #AAB1D2;
     width: 800px;
     margin: 20px;
+    padding: 25px;
 }
-.fotito-foro{
-    width: 25px;
-    height: 25px;
+.comentario-usuario {
+    display: flex;
+}
+.foro img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50px;
 }    
-
-.agregar-comentarios-foro {
-    display: flex;
+.comentario-usuario input{
+    background-color: var(--secundarioLuces2);
+    border-radius: 5px;
+    width: 100%;
+    color: var(--neutroOscuro);
 }
-.fotito-mas-comentario-individual-foro{
+.btn-agregar-comentario{
     display: flex;
+   
+}
+.btn-agregar-comentario button{
+   align-items: flex-end;
+   width: 150px;
+   margin: 15px 0 15px auto;
+   font-size: 12px;
+}
+
+.comentarios-anteriores{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+.cuerpo-comentario-foro{
+    position: relative;
+    background-color: var(--secundarioLuces1);
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
 }
 .fecha-comentario {
-    text-align: right;
+    position: absolute;
+    right: 5px;
+    font-size: 12px;
 }
+.comentador{
+    font-weight: bold;
+}
+.comentario{
+    width: 90%;
+}
+
 /*PASOS-JUEGO*/
   
 
@@ -527,15 +551,91 @@ input[type="password"] {
     border-radius: 3px;
 }
 */
+
+.campos-obligatorios {
+    font-size: 8px;
+    color: red;
+}
+
+.inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.inicio-sesion {
+    margin: 50px;
+    padding: 50px;
+    background-color: #E18407;
+}
+
+
+
+.container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.texto-inicio{
+    text-align: center;
+    padding: 25px;
+    border: 0px;
+    margin: 25px;
+}
+
+
+
+
+
+/*FORMULARIO*/
+.body{
+    font-family: Arial, sans-serif;
+    background-color: #E18407;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+/*
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+*/
 button {
-    background-color: var(--secundarioSombra1);
+    background-color: var(--terciario);
     color: var(--secundarioLuces2);
     border: none;
     border-radius: 3px;
-    padding: 10px 20px;
+    padding: 5px 20px;
     cursor: pointer;
     width: 100%;
-    font-size: 16px;
+    font-size: 20px;
 }
 .campos-obligatorios {
     font-size: 8px;
@@ -543,4 +643,48 @@ button {
 }
 button:hover {
     background-color: var(--secundarioSombra2);
+}
+
+
+.inicio-registracion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.inicio-registracion:first-child {
+    margin: 50px;
+    padding: 50px;
+    background-color: #E18407;
+    
+}
+
+#inicio, #registrarse{
+    cursor: pointer;
+}
+
+#form-inicio, #form-registrarse  {
+    display: none;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    top: 50%;
+}
+
+  
+
+#form-inicio-sesion h1, #form-registrarse h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.texto-inicio{
+    text-align: center;
+    padding: 25px;
+    border: 0px;
+    margin: 25px;
 }
