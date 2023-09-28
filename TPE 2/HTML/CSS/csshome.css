@@ -225,23 +225,34 @@ footer li{
 
 
 
-.inicio {
+.inicio-registracion {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
-.inicio-sesion {
+.inicio-registracion:first-child {
     margin: 50px;
     padding: 50px;
     background-color: #E18407;
+    
 }
 
 #inicio, #registrarse{
     cursor: pointer;
-    
 }
 
+#form-inicio, #form-registrarse  {
+    display: none;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    top: 50%;
+}
 
   
 
@@ -533,35 +544,3 @@ button {
 button:hover {
     background-color: var(--secundarioSombra2);
 }
-/*popup-formulario-inicio-sesion*/
-  
-#container-form-inicio-sesion, #container-form-registrarse{
-    display: none;
-    background-color: #FFC981;
-    
-    top: 40%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    width: 250px;
-    height: 255px;
-
-  }
-  #inicio-sec, #registrarse {
-    cursor: pointer;
-  }
-  #mensajeExito {
-    display: none;
-    background-color: #E18407 ;
-    position: fixed;
-    top: 40%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  }
-
-  #mensajeExito :first-child{
-    text-align: right ;
-    cursor: pointer;
-  }
-
