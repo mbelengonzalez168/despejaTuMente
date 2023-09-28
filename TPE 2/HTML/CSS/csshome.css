@@ -99,7 +99,7 @@ h1 span{
 .login-bolsa {
     display: flex;
     justify-content: space-between;
-    width: 120px;
+    width: 140px;
     margin-bottom: 24px;
     
 }
@@ -109,7 +109,7 @@ h1 span{
     border-radius: 20px;
     border: 1.5px solid var(--neutroOscuro);
     padding: 3px;
-    width: 60px;  
+    width: 70px;  
     height: 30px;
     cursor: pointer;
 }
@@ -172,8 +172,8 @@ footer li{
 .redes-sociales img{
     width: 25px;
     height: 25px;
-    margin-top: -4px;
-    margin-bottom: 8px;
+    margin: 0px 10px 8px 0;
+    
 }
 .mensaje-footer {
     text-align: center;
@@ -183,7 +183,7 @@ footer li{
 /*seccion juegos*/
 .titulo-categorias-cards{
     color: var(--neutroOscuro);
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 10px;
 }
 .contenedor-cards{
