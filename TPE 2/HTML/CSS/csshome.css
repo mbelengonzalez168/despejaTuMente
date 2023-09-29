@@ -249,38 +249,60 @@ footer li{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-
-
-
 /*JUEJO*/
 .donde-estoy-juego {
-    margin: 20px;
+    margin: 20px 0;
     color: var(--neutroOscuro);
 }
-
-
+.nombre-juego{
+    margin-bottom: 10px;
+}
+.descripcion-juego{
+    margin-bottom: 10px;
+}
 .section-juego{
-   background-color:#E18407; 
+   background-color: var(--primarioSombra2); 
+   padding: 30px;
+   color: var(--neutroOscuro);
+   border-radius: 5px;
 }
 .foto-juego{
-    width: 750px;
-    height: 550px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.section-juego{
+.conteiner-compartir-jugar{
+    margin-top: 10px;
     display: flex;
+    justify-content: space-between;
 }
-.como-jugar-juego{
-    display: flex;
-    background-color: #CCCFDD;
-}
-.btn-jugar-juego{   
-    padding: 10px 20px;
+.btn-jugar-juego{
+    width: 160px;
+    font-size: 30px;
     border-radius: 5px;
-    cursor: pointer;
 }
 .btn-jugar-juego :hover {
-    background-color: hsl(133, 100%, 35%); 
+    background-color: var(--terciario); 
 }
+.como-jugar-juego{
+    background-color: var(--secundarioLuces1);
+    margin: 20px 0;
+    border-radius: 5px;
+    padding: 20px;
+    line-height: 25px;
+}
+.ayuda{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.texto-ayuda{
+    width: 50%;
+}
+
+
+
+
 .nombre-Video-y-tiempo{
     display: flex;
     justify-content: space-between;
@@ -291,9 +313,8 @@ footer li{
 
 /*FORO*/
 .foro{
-    background-color: #AAB1D2;
+    background-color: var(--secundario);
     width: 800px;
-    margin: 20px;
     padding: 25px;
 }
 .comentario-usuario {
