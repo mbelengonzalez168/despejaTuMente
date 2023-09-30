@@ -22,13 +22,13 @@
                     </div>
                     <div class="login-bolsa">
                         <div class="usuario">
-                            <img id="usuario" src="IMG/iconos/menu.png" alt="menu usuario">
+                            <img src="IMG/iconos/menu.png" alt="menu usuario">
                             <img src="IMG/iconos/usuario-de-perfil.png" alt="menu usuario">
                         </div>
-
+    
                         <div id="popup-login" class="">
                             <div class="cerrar-popup">
-                                <button id="btn-cerrar-popup-login">X</button>
+                                <button id="btn-cerrar-popup" class="btn-cerrar-login">X</button>
                             </div>
                             <div class="encabezado-popup">
                                 <img src="IMG/icono-popup-login.jpg" alt="">
@@ -43,61 +43,31 @@
                                 <p>Cerrar sesion</p>
                             </div>
                         </div>
-
+                        
                         <div class="bolsa">
-                            <img id="pop-bolsa" src="IMG/iconos/bolsa-de-la-compra.png" alt="mis compras">
+                            <img src="IMG/iconos/bolsa-de-la-compra.png" alt="mis compras">
                         </div>
-
-                        <div id="popup-compras" class="">
-                            <div class="cerrar-popup">
-                                <button id="btn-cerrar-popup-compras">X</button>
-                            </div>
-                            <div class="encabezado-popup">
-                                <img src="IMG/icono-popup-compras.jpg" alt="">
-                                <h2>Mis compras</h2>
-                            </div>
-                            <div>  
-                                <div class="juego-precio">
-                                    <p>El distinto</p>
-                                    <p>$15</p>
-                                </div>
-                                <p>Busqueda</p>  
-                                <p>------------</p>
-                                <div class="total-compras">
-                                    <p>Total</p>
-                                    <p>$15</p>
-                                </div>
-                                <div class="pagar-compras">
-                                    <button class="btn-pagar-compras">PAGAR</button>
-                                </div>                                             
-                            </div>
-                        </div>   
                     </div>
                 </div>  
             </header>
             <main class="main-juego">
-                <div class="donde-estoy-juego">
-                    <h3>Home > Logica > Lenny Vs Carl</h3>
-                </div>
-                <div class="section-juego">
-                    <div class="imagen-juego">
-                        <img class="foto-juego" src="IMG/imagen-juego (2).png" alt="">
+                <div class="conteiner-main">
+                    <div class="donde-estoy-juego">
+                        <h3>Home > Logica > Lenny Vs Carl</h3>
                     </div>
-                    <div class="jugar-juego">
-                        <div class="nombre-juego">
-                            <h2>Lenny Vs. Carl</h2>
+                    <div class="section-juego">
+                        <h2 class="nombre-juego">Lenny Vs. Carl</h2>
+                        <p class="descripcion-juego"> Consigue conectar 4 fichas de cada personaje (Lenny o Carl)</p>
+                        <img class="foto-juego" src="IMG/imagen-juego (2).png" alt="">
+                        <div class="conteiner-compartir-jugar">
+                            <div class="compartir-juego">
+                                <img src="IMG/corazon-compartir.jpg" alt="">
+                                <img src="IMG/like-compartir.jpg" alt="">
+                                <img src="IMG/NoLike-compartir.jpg" alt="">
+                                <img id="icono-compartir" src="IMG/icono-compartir.jpg" alt="">
+                            </div>
+                            <button type="submit" class="btn-jugar-juego">Jugar</button>
                         </div>
-                            
-                        <div class="descripcion-juego">
-                            <p>Consigue conectar 4 fichas de cada personaje (Lenny o Carl)</p>
-                        </div>
-                        <div class="compartir-juego">
-                            <img src="IMG/corazon-compartir.jpg" alt="">
-                            <img src="IMG/like-compartir.jpg" alt="">
-                            <img src="IMG/NoLike-compartir.jpg" alt="">
-                            <img id="icono-compartir" src="IMG/icono-compartir.jpg" alt="">
-                        </div>
-
                         <div id="popup-compartir" class="">
                             <div class="cerrar-popup">
                                 <button id="btn-cerrar-popup-compartir">X</button>
@@ -113,137 +83,137 @@
                             </div>
                             
                         </div>
-                        <div class="boton-jugar-juego">
-                            <button type="submit" class="btn-jugar-juego">Jugar</button>
+                    </div>
+                    <div class="como-jugar-juego">
+                        <div class="instrucciones">
+                            <h2>Instrucciones</h2>
+                            <p>Cada jugador tiene fichas de un personaje (Lenny o Carl), y por turnos, debe introducir una ficha en la columna selecionada, la ficha caerá hasta la primer posición libre. Si una columna está llena ya no se pondrán recibir más fichas. Quien logre unir horizontal o verticalmente 4 fichas de su personaje elegido será el ganador de la partida.</p>
                         </div>
-        
-                    </div>
-                </div>
-                <div class="como-jugar-juego">
-                    <div>
-                        <h2>Instrucciones</h2>
-                        <p>Cada jugador tiene fichas de un personaje (Lenny o Carl), y por turnos, debe introducir una ficha en la columna selecionada, la ficha caerá hasta la primer posición libre. Si una columna está llena ya no se pondrán recibir más fichas. Quien logre unir horizontal o verticalmente 4 fichas de su personaje elegido será el ganador de la partida.</p>
-                        <h2>Ayuda</h2>
-                        <p>PASO 1: Elegir personaje haciendo doble click sobre la ficha. La pc será tu contrincante.</p>
-                        <p>PASO 2: Colocar la ficha en la columna deseada clickeando sobre la columna elegida.</p>
-                        <p>PASO 3: Espera el movimiento de la pc para volver a tu turno y repite el paso dos hasta que haya un ganador.</p>
-                    </div>
-                    <div>
-                        <ul class="carrusel-pasos-juego">
-                            <img id="paso1" src="IMG/Paso1-juego.jpg" alt="">
-                            <img id="paso2" src="IMG/Paso2-juego.jpg" alt="">
-                            <img id="paso3" src="IMG/Paso3-juego.jpg" alt="">
-                            <img id="paso4" src="IMG/Paso4-juego.jpg" alt="">
-                        </ul>
-                        <nav>
-                            <ul class="menu-pasos-juego">
-                                <li> <a href="#paso1">1</a></li>
-                                <li><a href="#paso2">2</a></li>
-                                <li><a href="#paso3">3</a></li>
-                                <li><a href="#paso4">4</a></li>
-                            </ul>
-                        </nav>
+                        <div class="ayuda"> 
+                            <div class="texto-ayuda">
+                                <h2>Ayuda</h2>
+                                <p>PASO 1: Elegir personaje haciendo doble click sobre la ficha. La pc será tu contrincante.</p>
+                                <p>PASO 2: Colocar la ficha en la columna deseada clickeando sobre la columna elegida.</p>
+                                <p>PASO 3: Espera el movimiento de la pc para volver a tu turno y repite el paso dos hasta que haya un ganador.</p>
+                            </div>
+                            <div>
+                            <div>
+                                <ul class="carrusel-pasos-juego">
+                                    <img id="paso1" src="IMG/Paso1-juego.jpg" alt="">
+                                    <img id="paso2" src="IMG/Paso2-juego.jpg" alt="">
+                                    <img id="paso3" src="IMG/Paso3-juego.jpg" alt="">
+                                    <img id="paso4" src="IMG/Paso4-juego.jpg" alt="">
+                                </ul>
+                                <nav>
+                                    <ul class="menu-pasos-juego">
+                                        <li> <a href="#paso1">1</a></li>
+                                        <li><a href="#paso2">2</a></li>
+                                        <li><a href="#paso3">3</a></li>
+                                        <li><a href="#paso4">4</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
                     </div>       
-                </div>
-                <div class="contenedor-foro-videos">
-                    <section class="foro">
-                        <div class="comentario-usuario">
-                            <img src="IMG/foto-usuario-foro.png" alt="">
-                            <input type="text" placeholder="Contanos que te pareció este juego!">
-                        </div> 
-                        <div class="btn-agregar-comentario">
-                            <button type="submit" >Agregar Comentario</button>
-                        </div>
-                        <div class="comentarios">
-                        <div class="comentarios-anteriores">
-                            <img src="IMG/coment1-foro.png" alt="">
-                            <div class="cuerpo-comentario-foro">
-                                <p class="fecha-comentario">02-03-2023</p>
-                                <p class="comentador">Luciano</p>
-                                <p class="comentario">Me encanto este juego!!! Me parece muy original y divetido. Le pude ganar varias veces a la pc.</p>
-                            </div>
-                        </div>
-                        <div class="comentarios-anteriores">
-                            <img src="IMG/coment2-foro.png" alt="">
-                            <div class="cuerpo-comentario-foro">
-                                <p class="fecha-comentario">22-02-2023</p>
-                                <p class="comentador">Maria</p>
-                                <p class="comentario">Mi estrategia favorita en 4 en línea es bloquear al oponente en el centro para limitar sus opciones. ¿Alguien más la usa?</p>
-                            </div>
-                        </div>
-                        <div class="comentarios-anteriores">
-                            <img src="IMG/coment3-foro.png" alt="">
-                            <div class="cuerpo-comentario-foro">
-                                <p class="fecha-comentario">22-02-2023</p>
-                                <p class="comentador">Carlos</p>
-                                <p class="comentario">Sí, esa estrategia es sólida. Yo también intento bloquear el centro siempre que puedo</p>
-                            </div>
-                        </div>
-                        <div class="comentarios-anteriores">
-                            <img src="IMG/coment4-foro.png" alt="">
-                            <div class="cuerpo-comentario-foro">
-                                <p class="fecha-comentario">22-02-2023</p>
-                                <p class="comentador">Laura</p>
-                                <p class="comentario">Alguien ha probado la versión 4 en línea 3D? ¡Es un desafío completamente nuevo!</p>
-                            </div>
-                        </div>
-                        <div class="comentarios-anteriores">
-                            <img src="IMG/coment5-foro.png" alt="">
-                            <div class="cuerpo-comentario-foro">
-                                <p class="fecha-comentario">22-02-2023</p>
-                                <p class="comentador">Patricia</p>
-                                <p class="comentario">Sí, es genial. Me encanta cómo cambia la dinámica del juego. Hay que crear amenazas de victoria mientras bloqueas las del oponente.</p>
-                            </div>
-                        </div>
-                        <div class="comentarios-anteriores">
-                            <img src="IMG/coment6-foro.png" alt="">
-                            <div class="cuerpo-comentario-foro">
-                                <p class="fecha-comentario">22-02-2023</p>
-                                <p class="comentador">Franco</p>
-                                <p class="comentario">Aquí está el enlace a una partida interesante que jugué. ¿Pueden darme consejos sobre cómo podría haber jugado mejor?</p>
-                            </div>
-                        </div>
                     </div>
-                    </section>
-                    <section class="contenedor-videos">
-                        <div>
-                            <img src="IMG/video1-juegos.png" alt="">
-                            <div class="nombre-Video-y-tiempo">
-                                <p>Compite con tus amigos</p>
-                                <p>05:46</p>
+                    <div class="contenedor-foro-videos">
+                        <section class="foro">
+                            <div class="comentario-usuario">
+                                <img src="IMG/foto-usuario-foro.png" alt="">
+                                <input type="text" placeholder="Contanos que te pareció este juego!">
+                            </div> 
+                            <div class="btn-agregar-comentario">
+                                <button type="submit" >Agregar Comentario</button>
                             </div>
-                            <div class="descripcion-video">
-                                <p>4 en linea en pareja</p>
-                            </div>   
-                     
+                            <div class="comentarios">
+                            <div class="comentarios-anteriores">
+                                <img src="IMG/coment1-foro.png" alt="">
+                                <div class="cuerpo-comentario-foro">
+                                    <p class="fecha-comentario">02-03-2023</p>
+                                    <p class="comentador">Luciano</p>
+                                    <p class="comentario">Me encanto este juego!!! Me parece muy original y divetido. Le pude ganar varias veces a la pc.</p>
+                                </div>
+                            </div>
+                            <div class="comentarios-anteriores">
+                                <img src="IMG/coment2-foro.png" alt="">
+                                <div class="cuerpo-comentario-foro">
+                                    <p class="fecha-comentario">22-02-2023</p>
+                                    <p class="comentador">Maria</p>
+                                    <p class="comentario">Mi estrategia favorita en 4 en línea es bloquear al oponente en el centro para limitar sus opciones. ¿Alguien más la usa?</p>
+                                </div>
+                            </div>
+                            <div class="comentarios-anteriores">
+                                <img src="IMG/coment3-foro.png" alt="">
+                                <div class="cuerpo-comentario-foro">
+                                    <p class="fecha-comentario">22-02-2023</p>
+                                    <p class="comentador">Carlos</p>
+                                    <p class="comentario">Sí, esa estrategia es sólida. Yo también intento bloquear el centro siempre que puedo</p>
+                                </div>
+                            </div>
+                            <div class="comentarios-anteriores">
+                                <img src="IMG/coment4-foro.png" alt="">
+                                <div class="cuerpo-comentario-foro">
+                                    <p class="fecha-comentario">22-02-2023</p>
+                                    <p class="comentador">Laura</p>
+                                    <p class="comentario">Alguien ha probado la versión 4 en línea 3D? ¡Es un desafío completamente nuevo!</p>
+                                </div>
+                            </div>
+                            <div class="comentarios-anteriores">
+                                <img src="IMG/coment5-foro.png" alt="">
+                                <div class="cuerpo-comentario-foro">
+                                    <p class="fecha-comentario">22-02-2023</p>
+                                    <p class="comentador">Patricia</p>
+                                    <p class="comentario">Sí, es genial. Me encanta cómo cambia la dinámica del juego. Hay que crear amenazas de victoria mientras bloqueas las del oponente.</p>
+                                </div>
+                            </div>
+                            <div class="comentarios-anteriores">
+                                <img src="IMG/coment6-foro.png" alt="">
+                                <div class="cuerpo-comentario-foro">
+                                    <p class="fecha-comentario">22-02-2023</p>
+                                    <p class="comentador">Franco</p>
+                                    <p class="comentario">Aquí está el enlace a una partida interesante que jugué. ¿Pueden darme consejos sobre cómo podría haber jugado mejor?</p>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <img src="IMG/video2-juegos.png" alt="">
-                            <div class="nombre-Video-y-tiempo">
-                                <p>Las monedas</p>
-                                <p>03:36</p>
+                        </section>
+                        <section class="contenedor-videos">
+                            <div>
+                                <img src="IMG/video1-juegos.png" alt="">
+                                <div class="nombre-Video-y-tiempo">
+                                    <p>Compite con tus amigos</p>
+                                    <p>05:46</p>
+                                </div>
+                                <div class="descripcion-video">
+                                    <p>4 en linea en pareja</p>
+                                </div>   
+                        
                             </div>
-                            <div class="descripcion-video">
-                                <p>4 en linea monetario</p>
-                            </div>   
-                     
-                        </div>
-                        <div>
-                            <img src="IMG/video3-juegos.png" alt="">
-                            <div class="nombre-Video-y-tiempo">
-                                <p>Tu color favorito</p>
-                                <p>8:46</p>
+                            <div>
+                                <img src="IMG/video2-juegos.png" alt="">
+                                <div class="nombre-Video-y-tiempo">
+                                    <p>Las monedas</p>
+                                    <p>03:36</p>
+                                </div>
+                                <div class="descripcion-video">
+                                    <p>4 en linea monetario</p>
+                                </div>   
+                        
                             </div>
-                            <div class="descripcion-video">
-                                <p>4 en linea clasico</p>
-                            </div>                
-                        </div>           
-                       
-                    </section>
-        
+                            <div>
+                                <img src="IMG/video3-juegos.png" alt="">
+                                <div class="nombre-Video-y-tiempo">
+                                    <p>Tu color favorito</p>
+                                    <p>8:46</p>
+                                </div>
+                                <div class="descripcion-video">
+                                    <p>4 en linea clasico</p>
+                                </div>                
+                            </div>           
+                        
+                        </section>       
+                    </div>
                 </div>
-            </main>
-                   
+            </main>       
             <footer>
                <div class="columnas">
                 <div class="columna1">
