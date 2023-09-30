@@ -288,20 +288,53 @@ footer li{
     background-color: var(--secundarioLuces1);
     margin: 20px 0;
     border-radius: 5px;
-    padding: 20px;
+    padding:  30px;
     line-height: 25px;
 }
-.ayuda{
+.ayuda h2{
     margin-top: 20px;
+}
+
+.ayuda{
     display: flex;
     justify-content: space-between;
 }
+.objetivo p{
+    text-align: justify;
+}
 .texto-ayuda{
-    width: 50%;
+    width: 630px;
+    text-align: justify;
+}
+/*PASOS-JUEGO*/ 
+.carrusel-pasos-juego {
+    overflow: hidden;
+    width: 350px;
 }
 
+.imagen-pasos {
+    display: none;
+    width: 100%;
+    transition: opacity 1s;
+    object-fit: cover;
+}
 
-
+.menu-pasos-juego {
+  display: flex;
+  justify-content:center;
+  width: 100%;
+}
+.menu-pasos-juego button {
+  text-decoration: none;
+  padding: 5px;
+  margin: 10px;
+  border: var(--terciario) 1px solid;
+  border-radius: 5px;
+  transition: background-color 2s;
+}
+.menu-pasos-juego a:hover{
+  transition: background-color var(--secundarioSombra2) ;
+}
 
 .nombre-Video-y-tiempo{
     display: flex;
@@ -309,12 +342,13 @@ footer li{
 }
 .contenedor-foro-videos{
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
-
 /*FORO*/
 .foro{
     background-color: var(--secundario);
-    width: 800px;
+    width: 650px;
     padding: 25px;
 }
 .comentario-usuario {
@@ -333,8 +367,7 @@ footer li{
     color: var(--neutroOscuro);
 }
 .btn-agregar-comentario{
-    display: flex;
-   
+    display: flex;  
 }
 .btn-agregar-comentario button{
    align-items: flex-end;
@@ -342,7 +375,6 @@ footer li{
    margin: 15px 0 15px auto;
    font-size: 12px;
 }
-
 .comentarios-anteriores{
     margin: 20px 0;
     display: flex;
@@ -366,56 +398,19 @@ footer li{
 .comentario{
     width: 90%;
 }
+.contenedor-videos img{
+    width: 350PX;
+    height: 200px;
+}
+.videos-youtube{
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.titulo-video{
+    font-weight: bold;
+}
 
-/*PASOS-JUEGO*/
-  
 
-  
-    ul, li {
-      padding: 0%;
-      margin: 0%;
-      list-style: none inside;
-      
-    }
-    ul.carrusel-pasos-juego{
-      position: relative; 
-    }
-    .carrusel-pasos-juego img {
-      opacity: 0;
-      transition: opacity 1s;
-      position: absolute;
-      left: 0;
-    
-      top: 0;
-      margin: 15px;
-      padding: 15px;
-      background-color: #CCCFDD;
-    }
-    ul.carrusel-pasos-juego:first-child {
-      min-width: 250px;
-      min-height:  250px;
-      opacity: 1;
-    }
-    ul.carrusel-pasos-juego img:target {
-      opacity: 1;
-    }
-  nav {
-    position: relative;
-  }
-  .menu-pasos-juego li{
-    display: inline;
-    margin-right: 25px;
-  }
-  .menu-pasos-juego a {
-    text-decoration: none;
-    padding: 5px;
-    border: #4848B0 1px solid;
-    border-radius: 1%;
-    transition: background-color 2s;
-  }
-  .menu-pasos-juego a:hover{
-    transition: background-color #E18407 ;
-  }
 
 /*POPUP-COMPARTIR*/
 #popup-compartir {
@@ -453,10 +448,18 @@ footer li{
 }
 .compartir-juego {
     display: flex;
+    justify-content: space-between;
+    width: 200px;
 }
+.compartir-juego img{
+    width: 35px;
+    height: 35px;
+}
+
 #icono-compartir {
     cursor: pointer;
 }
+
 .overlay {
     display: none;
     position: fixed;

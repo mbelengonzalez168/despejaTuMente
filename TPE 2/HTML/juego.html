@@ -61,10 +61,10 @@
                         <img class="foto-juego" src="IMG/imagen-juego (2).png" alt="">
                         <div class="conteiner-compartir-jugar">
                             <div class="compartir-juego">
-                                <img src="IMG/corazon-compartir.jpg" alt="">
-                                <img src="IMG/like-compartir.jpg" alt="">
-                                <img src="IMG/NoLike-compartir.jpg" alt="">
-                                <img id="icono-compartir" src="IMG/icono-compartir.jpg" alt="">
+                                <img src="IMG/iconos/favorito.png" alt="">
+                                <img src="IMG/iconos/me-gusta (1).png" alt="">
+                                <img src="IMG/iconos/disgusto.png" alt="">
+                                <img id="icono-compartir" src="IMG/iconos/enviar.png" alt="">
                             </div>
                             <button type="submit" class="btn-jugar-juego">Jugar</button>
                         </div>
@@ -85,36 +85,38 @@
                         </div>
                     </div>
                     <div class="como-jugar-juego">
-                        <div class="instrucciones">
-                            <h2>Instrucciones</h2>
+                        <div class="objetivo">
+                            <h2>Objetivo del juego</h2>
                             <p>Cada jugador tiene fichas de un personaje (Lenny o Carl), y por turnos, debe introducir una ficha en la columna selecionada, la ficha caerá hasta la primer posición libre. Si una columna está llena ya no se pondrán recibir más fichas. Quien logre unir horizontal o verticalmente 4 fichas de su personaje elegido será el ganador de la partida.</p>
                         </div>
                         <div class="ayuda"> 
                             <div class="texto-ayuda">
-                                <h2>Ayuda</h2>
-                                <p>PASO 1: Elegir personaje haciendo doble click sobre la ficha. La pc será tu contrincante.</p>
-                                <p>PASO 2: Colocar la ficha en la columna deseada clickeando sobre la columna elegida.</p>
+                                <h2>Instrucciones</h2>
+                                <P>Sigue los siguientes pasos para aprender a jugar a Lenny Vs Karl</P>
+                                <p>PASO 1: Elige tu personaje favorito haciendo click sobre una de las fichas. La pc será tu contrincante.</p>
+                                <p>PASO 2: Coloca la ficha de tu personaje en la columna deseada haciendo click sobre una de ellas.</p>
                                 <p>PASO 3: Espera el movimiento de la pc para volver a tu turno y repite el paso dos hasta que haya un ganador.</p>
+                                <h2>Ajustes</h2>
+                                <p>Agrega o quita el sonido haciendo click en la bocina</p>
+                                <p>Has click en la fecha de bucle para reiniciar el juego</p>
                             </div>
                             <div>
-                            <div>
-                                <ul class="carrusel-pasos-juego">
-                                    <img id="paso1" src="IMG/Paso1-juego.jpg" alt="">
-                                    <img id="paso2" src="IMG/Paso2-juego.jpg" alt="">
-                                    <img id="paso3" src="IMG/Paso3-juego.jpg" alt="">
-                                    <img id="paso4" src="IMG/Paso4-juego.jpg" alt="">
-                                </ul>
-                                <nav>
-                                    <ul class="menu-pasos-juego">
-                                        <li> <a href="#paso1">1</a></li>
-                                        <li><a href="#paso2">2</a></li>
-                                        <li><a href="#paso3">3</a></li>
-                                        <li><a href="#paso4">4</a></li>
+                                <div class="pasos">
+                                    <ul class="carrusel-pasos-juego">
+                                        <img class="imagen-pasos" src="IMG/Paso1-juego.jpg" alt="">
+                                        <img class="imagen-pasos" src="IMG/Paso2-juego.jpg" alt="">
+                                        <img class="imagen-pasos" src="IMG/Paso3-juego.jpg" alt="">
+                                        <img class="imagen-pasos" src="IMG/Paso4-juego.jpg" alt="">
                                     </ul>
-                                </nav>
+                                    <nav class="menu-pasos-juego">
+                                        <button id="paso1">1</button>
+                                        <button id="paso2">2</button>
+                                        <button id="paso2">3</button>
+                                        <button id="paso4">4</button>
+                                    </nav>
+                                </div>
                             </div>
-                        </div>
-                    </div>       
+                        </div>       
                     </div>
                     <div class="contenedor-foro-videos">
                         <section class="foro">
@@ -177,32 +179,30 @@
                         </div>
                         </section>
                         <section class="contenedor-videos">
-                            <div>
+                            <div class="videos-youtube">
                                 <img src="IMG/video1-juegos.png" alt="">
                                 <div class="nombre-Video-y-tiempo">
-                                    <p>Compite con tus amigos</p>
+                                    <p class="titulo-video">Compite con tus amigos</p>
                                     <p>05:46</p>
                                 </div>
                                 <div class="descripcion-video">
                                     <p>4 en linea en pareja</p>
                                 </div>   
-                        
                             </div>
-                            <div>
+                            <div class="videos-youtube">
                                 <img src="IMG/video2-juegos.png" alt="">
                                 <div class="nombre-Video-y-tiempo">
-                                    <p>Las monedas</p>
+                                    <p class="titulo-video">Las monedas</p>
                                     <p>03:36</p>
                                 </div>
                                 <div class="descripcion-video">
                                     <p>4 en linea monetario</p>
                                 </div>   
-                        
                             </div>
-                            <div>
+                            <div class="videos-youtube">
                                 <img src="IMG/video3-juegos.png" alt="">
                                 <div class="nombre-Video-y-tiempo">
-                                    <p>Tu color favorito</p>
+                                    <p class="titulo-video">Tu color favorito</p>
                                     <p>8:46</p>
                                 </div>
                                 <div class="descripcion-video">

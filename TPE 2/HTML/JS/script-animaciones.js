@@ -42,3 +42,23 @@ document.getElementById('icono-compartir').addEventListener('click', function ()
     document.getElementById('form-registrarse').style.display = 'block';
     document.body.classList.remove("popup-open");
   });
+
+  imagenes = document.querySelectorAll(".imagen-pasos");
+  document.getElementById('paso1').addEventListener('click', mostrarImagen(1));
+  document.getElementById('paso2').addEventListener('click', mostrarImagen(2));
+  document.getElementById('paso3').addEventListener('click', mostrarImagen(3));
+  document.getElementById('paso4').addEventListener('click', mostrarImagen(4));
+  
+  function mostrarImagen(index) {
+      for (let i = 0; i < imagenes.length; i++) {
+        imagenes[i].style.display = 'none';
+      }
+      imagenes[index - 1].style.display = 'block';
+  }
+  
+  mostrarImagen(1);
+
+  
+
+
+
