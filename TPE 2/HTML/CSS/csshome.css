@@ -38,12 +38,15 @@
 /* Header */
 header {
     background-color: var(--primarioLuces2);
-    max-height: 90px;
+    height: 40px;
     color: var(--neutroOscuro);
+    max-width: 400px;
+    
+
 }
 .conteiner-header {
-    max-width: 1080px;
-    margin: 0 auto;
+    width: 95%;
+    margin: auto 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,31 +57,31 @@ header {
     cursor: pointer;
 }
 .logo img{
-    width: 200px;
-    height: 200px;
-    margin: -60px 0 0 -60px;
-    padding-top: 0;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
 }
 .logo h1{
-    font-size: 25px;
-    margin-left: -60px ;
-    width: 120px;
-    margin-top: 23.5px;
+    font-size: 12px;
+    margin-left: 0 ;
+    width: 60px;
+    margin-top: 17px;
+    line-height: 8px;
 }
 h1 span{
-    font-size: 20px;
+    font-size: 8px;
 }
 .search-container {
     position: relative;  
-    margin-bottom: 30px;
 } 
 .search {
-    width: 400px;
-    height: 20px;
-    padding: 7px;
+    width: 130px;
+    height: 10px;
+    padding: 5px;
     border: 1px solid var(--secundarioLuces1);
     background-color: var(--secundarioLuces2);
-    border-radius: 10px;
+    border-radius: 5px;
+    margin-top: 6px;
 }  
 .input-with-image {
     width: 100%;
@@ -92,15 +95,14 @@ h1 span{
     cursor: pointer;
 } 
 .input-label img {
-    width: 20px;
+    width: 18px;
     height: auto;
 }
 .login-bolsa {
     display: flex;
     justify-content: space-between;
-    width: 140px;
-    margin-bottom: 24px;
-    
+    margin-top: 11px;
+    margin-right: 10px;
 }
 .usuario{
     display: flex;
@@ -108,58 +110,155 @@ h1 span{
     border-radius: 20px;
     border: 1.5px solid var(--neutroOscuro);
     padding: 3px;
-    width: 70px;  
-    height: 30px;
+    width: 35px;  
+    height: 15px;
     cursor: pointer;
+    margin-right: 5px;
 }
 .bolsa img{
-    height: 36px;
-    cursor: pointer;
+    height: 23px;
+    cursor: pointer;   
 }
 
+@media only screen and (min-width:768px) {
+    header {
+        height: 90px;
+    }
+    .conteiner-header {
+        max-width: 1080px;
+    }
+    .logo img{
+        width: 80px;
+        height: 80px;
+    }
+    .logo h1{
+        font-size: 25px;
+        width: 120px;
+        margin-top: 23.5px;
+        margin-left: 10px;
+    }
+    h1 span{
+        font-size: 20px;
+    }
+    .search-container { 
+        margin-top: 35px;
+    } 
+    .search {
+        width: 400px;
+        height: 20px;
+        padding: 7px;
+    }  
+    .input-with-image {
+        width: 100%;
+        cursor: pointer;
+    } 
+    .input-label {
+        position: absolute;
+        top: 20px;
+        right: 7px;
+        transform: translateY(-50%);
+        cursor: pointer;
+    } 
+    .input-label img {
+        width: 25px;
+        height: auto;
+    }
+    .login-bolsa {
+        display: flex;
+        justify-content: space-between;
+        width: 140px;
+        margin-top: 40px;
+        
+    }
+    .usuario{
+        display: flex;
+        justify-content: space-around;
+        border-radius: 20px;
+        border: 1.5px solid var(--neutroOscuro);
+        padding: 3px;
+        width: 70px;  
+        height: 30px;
+        cursor: pointer;
+    }
+    .bolsa img{
+        height: 36px;
+        cursor: pointer;
+    }
+    
+}
+
+/*main*/
 main {
     background-color: var(--primario);
     grid-area: main;
     min-height: 2026px;
 }
 .conteiner-main{
-    max-width: 1080px;
-    margin: 0 auto;
+    margin: auto 10px;
+}
+@media only screen and (min-width:768px) {
+    .conteiner-main{
+        max-width: 1080px;
+        margin: 0 auto;
+    }
 }
 
 /* Menu categorias*/
-.conteiner-categorias {
+.menu-categorias{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
+    color: var(--neutroOscuro);
+    width: 25px;
 }
 .categoria{
     max-width: 131px;
     color: var(--neutroOscuro);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: baseline;
 }
 .categoria img{
-    max-width: 40px;
+    max-width: 15px;
+    margin-right: 5px;
+    margin-top: 5px;
 }
-
+.categoria h3{
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+@media only screen and (min-width:768px) {
+    .menu-categorias{
+        display: none;
+    }
+    .conteiner-categorias {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .categoria{
+        max-width: 131px;
+        color: var(--neutroOscuro);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .categoria img{
+        max-width: 40px;
+    }
+    
+}
 /*footer*/
 footer {
     background-color: var(--primarioSombra2);
-    height: 220px;
     color:var(--neutroOscuro);
 }
 .conteiner-footer {
-    max-width: 1080px;
-    margin: 30px auto;
-    display: flex;
-    justify-content: space-between;
+    margin: 20px 30px;
 }
 .columnas-footer{
     width: 250px;
+    margin-bottom: 20px;
 }
 footer h3{
     margin-bottom: 10px;
@@ -176,6 +275,42 @@ footer li{
 .mensaje-footer {
     text-align: center;
     font-weight: bold;
+    width: 80%;
+}
+
+
+@media only screen and (min-width:768px) {
+    footer {
+        background-color: var(--primarioSombra2);
+        height: 220px;
+        color:var(--neutroOscuro);
+    }
+    .conteiner-footer {
+        max-width: 1080px;
+        margin: 30px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .columnas-footer{
+        width: 250px;
+    }
+    footer h3{
+        margin-bottom: 10px;
+    }
+    footer li{
+        margin: 4px 0;
+        cursor: pointer;
+    }
+    .redes-sociales img{
+        width: 25px;
+        height: 25px;
+        margin: 0px 10px 8px 0;   
+    }
+    .mensaje-footer {
+        text-align: center;
+        font-weight: bold;
+    }
+    
 }
 
 /*seccion juegos*/
@@ -312,10 +447,9 @@ footer li{
     transform: translateX(-100%);
 }
 .visible{
-    transform: translateX(0%);
+    display: block;
 }
 .oculta{
-    transform: translateX(100%);
     display: none;
 }
 .menu-pasos-juego {
@@ -403,7 +537,7 @@ footer li{
     text-align: right;
     text-decoration: underline;
 }
-.contenedor-videos img{
+.contenedor-videos iframe{
     width: 350PX;
     height: 200px;
     border-radius: 5px;

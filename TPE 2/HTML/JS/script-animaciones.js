@@ -26,6 +26,9 @@ function mostrarImagen(pos) {
   imagenes[pos].classList.add("visible");
 }
 
+document.getElementById('menu-categorias').addEventListener('click', function () {
+   document.querySelector(".conteiner-categorias").classList.toggle("oculta");
+});
 
 document.getElementById('icono-compartir').addEventListener('click', function () {
     document.getElementById('popup-compartir').style.display = 'block';
