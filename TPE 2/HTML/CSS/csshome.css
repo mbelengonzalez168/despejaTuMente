@@ -27,7 +27,6 @@
     /* --letraPrincipal: */
 }
 
-
 .grid {
     display: grid;
     grid-template-areas: "header"
@@ -172,8 +171,7 @@ footer li{
 .redes-sociales img{
     width: 25px;
     height: 25px;
-    margin: 0px 10px 8px 0;
-    
+    margin: 0px 10px 8px 0;   
 }
 .mensaje-footer {
     text-align: center;
@@ -294,7 +292,6 @@ footer li{
 .ayuda h2{
     margin-top: 20px;
 }
-
 .ayuda{
     display: flex;
     justify-content: space-between;
@@ -307,18 +304,20 @@ footer li{
     text-align: justify;
 }
 /*PASOS-JUEGO*/ 
-.carrusel-pasos-juego {
-    overflow: hidden;
-    width: 350px;
-}
 
 .imagen-pasos {
-    display: none;
-    width: 100%;
-    transition: opacity 1s;
-    object-fit: cover;
+    width: 350px;
+    height: 250px;
+    transition: transform 5s ease-in-out; 
+    transform: translateX(-100%);
 }
-
+.visible{
+    transform: translateX(0%);
+}
+.oculta{
+    transform: translateX(100%);
+    display: none;
+}
 .menu-pasos-juego {
   display: flex;
   justify-content:center;
@@ -350,6 +349,7 @@ footer li{
     background-color: var(--secundario);
     width: 650px;
     padding: 25px;
+    border-radius: 5px;
 }
 .comentario-usuario {
     display: flex;
@@ -398,9 +398,15 @@ footer li{
 .comentario{
     width: 90%;
 }
+
+.ver-mas-comentarios {
+    text-align: right;
+    text-decoration: underline;
+}
 .contenedor-videos img{
     width: 350PX;
     height: 200px;
+    border-radius: 5px;
 }
 .videos-youtube{
     margin-bottom: 20px;
@@ -434,7 +440,6 @@ footer li{
     cursor: pointer;
     text-align: right ;
 }
-
 .link-popup {
     background-color: #FBB04C;
 }
@@ -442,7 +447,6 @@ footer li{
     cursor: pointer;
     background-color: #4848B0;
 }
-
 .contenido-popup{
     text-align: center;
 }
@@ -455,11 +459,9 @@ footer li{
     width: 35px;
     height: 35px;
 }
-
 #icono-compartir {
     cursor: pointer;
 }
-
 .overlay {
     display: none;
     position: fixed;
@@ -469,19 +471,16 @@ footer li{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semitransparente */
     z-index: 2; /* Coloca la superposición sobre el popup */
-  }
-
-  .popup-open {
-    background-color: transparent;
-  }
+}
+.popup-open {
+background-color: transparent;
+}
 /*POPUP-LOGIN-USUARIO*/
-.encabezado-popup
-{
+.encabezado-popup{
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 #popup-login{
     display: none;
     background-color: #FFC981;
@@ -502,8 +501,7 @@ footer li{
     cursor: pointer;
     text-align: right 
 }
-/*POPUP-COMPRAS*/
-  
+/*POPUP-COMPRAS*/  
 #popup-compras{
     display: none;
     background-color: #FFC981;
@@ -514,8 +512,8 @@ footer li{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     width: 200px;
     height: 255px;
-  }
-  #btn-cerrar-popup-compras{
+}
+#btn-cerrar-popup-compras{
     background-color: #FFC981;
     margin-top: 10px;
     padding: 5px 10px;
@@ -523,43 +521,27 @@ footer li{
     border: none;
     cursor: pointer;
     text-align: right 
-  }
-  .juego-precio{
+}
+.juego-precio{
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
 .total-compras{
     display: flex;
     justify-content: space-between;
 }
-
-
-  .btn-pagar-compras{
+.btn-pagar-compras{
     background-color: #4848B0;
     cursor: pointer;
     border-radius: 20%;
-    
-
-  }
+}
 
 /*FORMULARIO*/
-.body{
-    font-family: Arial, sans-serif;
-    background-color: #E18407;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-
-}
 
 .form-group {
     margin-bottom: 15px;
 }
-
 label {
     display: block;
     margin-bottom: 5px;
@@ -575,12 +557,10 @@ input[type="password"] {
     border-radius: 3px;
 }
 */
-
 .campos-obligatorios {
     font-size: 8px;
     color: red;
 }
-
 .inicio {
     display: flex;
     justify-content: space-between;
@@ -592,8 +572,6 @@ input[type="password"] {
     padding: 50px;
     background-color: #E18407;
 }
-
-
 .container {
     background-color: #fff;
     border-radius: 5px;
@@ -601,55 +579,16 @@ input[type="password"] {
     padding: 20px;
     width: 300px;
 }
-
 .container h1 {
     text-align: center;
     margin-bottom: 20px;
 }
-
 .texto-inicio{
     text-align: center;
     padding: 25px;
     border: 0px;
     margin: 25px;
 }
-
-
-
-
-
-/*FORMULARIO*/
-.body{
-    font-family: Arial, sans-serif;
-    background-color: #E18407;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-/*
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-*/
 button {
     background-color: var(--terciario);
     color: var(--secundarioLuces2);
@@ -660,10 +599,6 @@ button {
     width: 100%;
     font-size: 20px;
 }
-.campos-obligatorios {
-    font-size: 8px;
-    color: red;
-}
 button:hover {
     background-color: var(--secundarioSombra2);
 }
@@ -671,10 +606,9 @@ button:hover {
 /*SE AGREGA*/
 /*popup-formulario INICIO SESION y REGISTRACION */
   
-  #container-form-inicio-sesion, #container-form-registrarse{
+#container-form-inicio-sesion, #container-form-registrarse{
     display: none;
     background-color: #E18407;
-    
     margin-top: 30%;
     top: 50%;
     left: 20%;
@@ -682,12 +616,10 @@ button:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     width: 350px;
     height: 355px;
-
-  }
-  #img-inicio, #-img-registrarse {
+}
+#img-inicio, #-img-registrarse {
     cursor: pointer;
-  }
-
+}
 #loading-percent {
   position: absolute;
   top: 50%;
@@ -705,12 +637,10 @@ button:hover {
   animation: spin 2s linear infinite;
   margin: 0 auto;
 }
-
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-
 #loading-container {
   display: none;
   margin-top: 50px;
@@ -725,7 +655,6 @@ button:hover {
   margin: auto;
   text-align: center;
 }
-
 #loading {
   width: 60px;
   height: 60px;
@@ -735,19 +664,16 @@ button:hover {
   animation: spin 5s linear infinite;
   margin: 0 auto;
 }
-
 /* Estilo para el contador regresivo */
 #loading-timer {
   font-size: 24px;
   color: #007BFF;
   margin-top: 20px;
 }
-
 /* Clase para ocultar elementos */
 .loading-oculto {
   display: none;
 }
-
 #mensajeExito {
     display: none;
     background-color: #E18407 ;
@@ -756,9 +682,8 @@ button:hover {
     left: 40%;
     transform: translate(-50%, -50%);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  }
-
-  #mensajeExito :first-child{
+}
+#mensajeExito :first-child{
     text-align: right ;
     cursor: pointer;
-  }
+}
