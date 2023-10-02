@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="CSS/csshome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inder&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -19,15 +22,13 @@
                 <div class="search-container">
                         <input class="search" type="text"  placeholder="Buscar...">
                         <label for="input-with-image" class="input-label">
-                        <img src="IMG/iconos/lupa.png" alt="buscador">   
-                        
+                        <img src="IMG/iconos/lupa.png" alt="buscador">          
                 </div>
                 <div class="login-bolsa">
                     <div class="usuario">
                         <img src="IMG/iconos/menu.png" alt="menu usuario">
                         <img src="IMG/iconos/usuario-de-perfil.png" alt="menu usuario">
                     </div>
-
                     <div id="popup-login" class="">
                         <div class="cerrar-popup">
                             <button id="btn-cerrar-popup" class="btn-cerrar-login">X</button>
@@ -44,10 +45,10 @@
                             <p>Cambiar contrasenia</p>
                             <p>Cerrar sesion</p>
                         </div>
-                    </div>
-                    
+                    </div>   
                     <div class="bolsa">
                         <img src="IMG/iconos/bolsa-de-la-compra.png" alt="mis compras">
+                        <p class="comprados">1</p>
                     </div>
                 </div>
             </div>  
@@ -55,9 +56,9 @@
         <main>
             <div class="conteiner-main">
                 <div class="menu-categorias" >
-                    <img id="menu-categorias" src="IMG/iconos/menu.png">
+                    <img id="menu-hamburguesa" src="IMG/iconos/menu.png">
                 </div>
-                <div class="conteiner-categorias oculta">
+                <div id="conteiner-categorias" class="conteiner-categorias">
                     <div class="categoria">
                         <img src="IMG/categorias/crucigramas.png" alt="mis compras">
                         <h3>Crucigramas</h3>
@@ -543,5 +544,6 @@
     
     </div>
     <script src="JS/js.home.js"></script>
+    <script src="JS/script-animaciones.js"></script>
 </body>
 </html>
