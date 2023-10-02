@@ -345,7 +345,27 @@ footer li{
     height: 120px;
     top: -10px;
     right: -10px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Transición para el efecto de escala */
 }
+
+/*se agrega efecto sticker*/
+.stiker-gratis:hover {
+    transform: scale(1.2); /* Agranda el botón en hover */
+  /*  transform: rotate(25deg);  Cambia el ángulo de rotación en hover */
+  transform: rotate(360deg); /* Gira 360 grados en hover */
+  }
+/*se agrega efecto boton comprado*/
+  .boton-cards {
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones para color de fondo y texto */
+  }
+  .boton-cards.clickeado {
+    background-color: #28a745; /* Color de fondo al hacer clic */
+    color: #fff; /* Color del texto al hacer clic */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones al hacer clic */
+  }
+
 .texto-cards{
     margin: 10px;
     height: 65px;
