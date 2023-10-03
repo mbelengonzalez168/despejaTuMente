@@ -5,6 +5,8 @@
     text-decoration: none;
     border: none;
     outline: none;
+    color: var(--neutroOscuro);
+    font-family: var(--letraPrincipal);
 }
 
 :root{
@@ -24,7 +26,7 @@
     --LetraLogo: #734E2D;
     --fondoLogo: #FD8A76;
 
-    /* --letraPrincipal: */
+    --letraPrincipal: 'Inder', sans-serif;
 }
 
 .grid {
@@ -39,27 +41,22 @@
 header {
     background-color: var(--primarioLuces2);
     height: 40px;
-    color: var(--neutroOscuro);
-    max-width: 400px;
-    
-
 }
 .conteiner-header {
-    width: 95%;
-    margin: auto 10px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 10px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 .logo {
     display: flex;
-    color: var(--LetraLogo);
     cursor: pointer;
 }
 .logo img{
     width: 30px;
     height: 30px;
-    margin: 5px;
+    margin: 5px 0;
 }
 .logo h1{
     font-size: 12px;
@@ -67,9 +64,11 @@ header {
     width: 60px;
     margin-top: 17px;
     line-height: 8px;
+    color: var(--LetraLogo);
 }
 h1 span{
     font-size: 8px;
+    color: var(--LetraLogo);
 }
 .search-container {
     position: relative;  
@@ -81,7 +80,7 @@ h1 span{
     border: 1px solid var(--secundarioLuces1);
     background-color: var(--secundarioLuces2);
     border-radius: 5px;
-    margin-top: 6px;
+    margin-top: 11px;
 }  
 .input-with-image {
     width: 100%;
@@ -89,8 +88,8 @@ h1 span{
 } 
 .input-label {
     position: absolute;
-    top: 20px;
-    right: 7px;
+    top: 24px;
+    right: 6px;
     transform: translateY(-50%);
     cursor: pointer;
 } 
@@ -103,6 +102,7 @@ h1 span{
     justify-content: space-between;
     margin-top: 11px;
     margin-right: 10px;
+    position: relative;
 }
 .usuario{
     display: flex;
@@ -119,6 +119,13 @@ h1 span{
     height: 23px;
     cursor: pointer;   
 }
+.comprados{
+    font-weight: bold;
+    font-size: 12px;
+    position: absolute;
+    top: 9px;
+    right: 8px;
+}
 
 @media only screen and (min-width:768px) {
     header {
@@ -126,6 +133,7 @@ h1 span{
     }
     .conteiner-header {
         max-width: 1080px;
+        height: 90px;
     }
     .logo img{
         width: 80px;
@@ -134,14 +142,14 @@ h1 span{
     .logo h1{
         font-size: 25px;
         width: 120px;
-        margin-top: 23.5px;
-        margin-left: 10px;
+        margin-top: 48px;
+        line-height: 15px;
     }
     h1 span{
         font-size: 20px;
     }
     .search-container { 
-        margin-top: 35px;
+        margin-top: 32px;
     } 
     .search {
         width: 400px;
@@ -154,7 +162,7 @@ h1 span{
     } 
     .input-label {
         position: absolute;
-        top: 20px;
+        top: 30px;
         right: 7px;
         transform: translateY(-50%);
         cursor: pointer;
@@ -168,7 +176,6 @@ h1 span{
         justify-content: space-between;
         width: 140px;
         margin-top: 40px;
-        
     }
     .usuario{
         display: flex;
@@ -183,6 +190,12 @@ h1 span{
     .bolsa img{
         height: 36px;
         cursor: pointer;
+        margin-top: 3px;
+    }
+    .comprados{
+        top: 18px;
+        right: 14px;
+        font-size: 14px;
     }
     
 }
@@ -204,14 +217,15 @@ main {
 }
 
 /* Menu categorias*/
-.menu-categorias{
+.menu-hamburguesa{
     display: flex;
-    color: var(--neutroOscuro);
     width: 25px;
+}
+.conteiner-categorias{
+    display: none;
 }
 .categoria{
     max-width: 131px;
-    color: var(--neutroOscuro);
     display: flex;
     justify-content: left;
     align-items: baseline;
@@ -251,7 +265,6 @@ main {
 /*footer*/
 footer {
     background-color: var(--primarioSombra2);
-    color:var(--neutroOscuro);
 }
 .conteiner-footer {
     margin: 20px 30px;
@@ -283,7 +296,6 @@ footer li{
     footer {
         background-color: var(--primarioSombra2);
         height: 220px;
-        color:var(--neutroOscuro);
     }
     .conteiner-footer {
         max-width: 1080px;
@@ -315,7 +327,6 @@ footer li{
 
 /*seccion juegos*/
 .titulo-categorias-cards{
-    color: var(--neutroOscuro);
     margin-top: 40px;
     margin-bottom: 10px;
 }
@@ -374,7 +385,11 @@ footer li{
   }
   
   #play:active {
+<<<<<<< HEAD
     transform: scale(1.3) rotate(360deg); /* Escala el botón al 130% del tamaño original cuando se hace clic */
+=======
+    transform: scale(1.3); /* Escala el botón al "X"% del tamaño original cuando se hace clic */
+>>>>>>> 607d711cbec91b488156992615ca8e009ca6c103
   }
 
 .texto-cards{
@@ -394,11 +409,12 @@ footer li{
 .puntuacion {
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: space-between;
 }
 .puntuacion img {
     width: 15px;
     height: 15px;
+    margin-left: 3px;
 }
 .conteiner-boton-card{
     display: flex;
