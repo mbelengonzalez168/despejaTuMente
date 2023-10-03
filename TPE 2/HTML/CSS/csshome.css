@@ -381,16 +381,15 @@ footer li{
     /* Estilos regulares del botón */
     padding: 10px 20px; /* Ajusta el espaciado según tu diseño */
     font-size: 16px; /* Ajusta el tamaño de fuente según tu diseño */
-    transition: transform 0.2s ease-in-out; /* Agrega una transición suave al cambio de escala */
+    transition: transform 0.3s ease-in-out; /* Agrega una transición suave al cambio de escala */
   }
   
   #play:active {
 
-    transform: scale(1.3) rotate(360deg); /* Escala el botón al 130% del tamaño original cuando se hace clic */
-    transform: scale(1.3); /* Escala el botón al "X"% del tamaño original cuando se hace clic */
+    transform: scale(1.3) rotate(360deg); /* Escala el botón al "x"% del tamaño original cuando se hace clic */
+   }
 
-  }
-
+  
 .texto-cards{
     margin: 10px;
     height: 65px;
