@@ -11,8 +11,12 @@
             <header>
                 <div class="conteiner-header">
                     <div class="logo">
-                        <img src="../HTML/IMG/Logo.png" alt="logo">
+                        <img id="logo"src="../HTML/IMG/Logo.png" alt="logo">
                         <h1>DESPEJA <span>TU MENTE</span> </h1>
+                    </div>
+                    <div id="loading-container" class="loading-oculto">
+                        <div id="loading"></div>
+                        <div id="loading-timer">5</div>
                     </div>
                     <div class="search-container">
                             <input class="search" type="text"  placeholder="Buscar...">
@@ -66,7 +70,7 @@
                                 <img src="IMG/iconos/disgusto.png" alt="">
                                 <img id="icono-compartir" src="IMG/iconos/enviar.png" alt="">
                             </div>
-                            <button type="submit" class="btn-jugar-juego">Jugar</button>
+                            <button id="play" type="submit" class="btn-jugar-juego">Jugar</button>
                         </div>
                         <div id="popup-compartir" class="">
                             <div class="cerrar-popup">
@@ -183,30 +187,36 @@
                         </section>
                         <section class="contenedor-videos">
                             <div class="videos-youtube">
-                                <iframe src="https://www.youtube.com/watch?v=JBSbiilzg9U&ab_channel=NeonPandaTV" frameborder="0" allowfullscreen></iframe>
+                                <video controls width="350" height="200">
+                                    <source src="IMG/Video juego 1.mp4" type="video/mp4">
+                                </video>
                                 <div class="nombre-Video-y-tiempo">
                                     <p class="titulo-video">Compite con tus amigos</p>
-                                    <p>05:46</p>
+                                    <p>07:59</p>
                                 </div>
                                 <div class="descripcion-video">
                                     <p>4 en linea en pareja</p>
                                 </div>   
                             </div>
                             <div class="videos-youtube">
-                                <iframe src="https://www.youtube.com/watch?v=YqqcNjQMX18&ab_channel=KeithGalli" frameborder="0" allowfullscreen></iframe>
+                                <video controls width="350" height="200">
+                                    <source src="IMG/Video Juego 2.mp4" type="video/mp4">
+                                </video>
                                 <div class="nombre-Video-y-tiempo">
                                     <p class="titulo-video">Las monedas</p>
-                                    <p>03:36</p>
+                                    <p>06:00</p>
                                 </div>
                                 <div class="descripcion-video">
                                     <p>4 en linea monetario</p>
                                 </div>   
                             </div>
                             <div class="videos-youtube">
-                                <iframe src="https://www.youtube.com/watch?v=yDWPi1pZ0Po&ab_channel=Numberphile" frameborder="0" allowfullscreen></iframe>
+                                <video controls width="350" height="200">
+                                    <source src="IMG/Video Juego 3.mp4" type="video/mp4">
+                                </video>
                                 <div class="nombre-Video-y-tiempo">
                                     <p class="titulo-video">Tu color favorito</p>
-                                    <p>8:46</p>
+                                    <p>5:01</p>
                                 </div>
                                 <div class="descripcion-video">
                                     <p>4 en linea clasico</p>
@@ -256,5 +266,6 @@
            
         </div>
         <script type="text/javascript" src="JS/script-animaciones.js"></script>
+        <script type="text/javascript" src="JS/juego.js"></script>
     </body>
     </html>

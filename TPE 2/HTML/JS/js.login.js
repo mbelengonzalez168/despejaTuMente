@@ -8,14 +8,14 @@
     const conteinerFormRegistrarse = document.getElementById("container-form-registrarse");
     const FormRegistro= document.getElementById("formulario-registro");
     const btnRegistrarse = document.getElementById('btn-registrarse');
-    const mnjExito= document.getElementById("mensajeExito");
-    const CloseMnjExito= document.getElementById("cerrar-mnj-ext");
-    const loadingContainer = document.getElementById('loading-container');
-    const loadingBar = document.getElementById('loading');
-    const loadingTimer = document.getElementById('loading-timer'); 
-    const btnFace = document.getElementById('btn-face'); 
-    const btnGoogle = document.getElementById('btn-google'); 
-    const captchaCheckbox = document.getElementById('captcha');
+    const mnjExito= document.getElementById("mensajeExito"),
+          CloseMnjExito= document.getElementById("cerrar-mnj-ext"),
+          loadingContainer = document.getElementById('loading-container'),
+          loadingBar = document.getElementById('loading'),
+          loadingTimer = document.getElementById('loading-timer'),
+          btnFace = document.getElementById('btn-face'),
+          btnGoogle = document.getElementById('btn-google'), 
+          captchaCheckbox = document.getElementById('captcha');
 
     
     function showLoading() {

@@ -29,3 +29,23 @@ miBoton.addEventListener('click', function () {
 });
 
 
+//--------------------------CARRUSEL-----------------------------------------------------//
+
+    const contenedorCategoria = document.querySelector('.contenedor-cards');
+
+    const botonAnterior = document.getElementById('anterior');
+    const botonSiguiente = document.getElementById('siguiente');
+    const cardsConteiner = document.querySelector('.cards-container');
+    const cardCompleta = document.querySelectorAll('.card-completa');
+
+    botonAnterior.addEventListener('click', e => moverIzquierda ());
+    botonSiguiente.addEventListener('click', e => moverDerecha ());
+
+    let index = 0;
+    let whithImg= 100 /cardCompleta.length;
+
+    function moverDerecha (){
+
+        index= -index  + whithImg
+        cardsConteiner.style.transform = `translate(${index}%)`;
+    };
