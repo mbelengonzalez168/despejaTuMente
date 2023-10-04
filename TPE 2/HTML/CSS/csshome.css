@@ -850,9 +850,10 @@ button:hover {
     cursor: pointer;
     transition: transform 2s;
 }
+/*
 #img-inicio:hover, #img-registrarse:hover {
    transform: rotate3d(2,2,2,360deg);
-}
+}*/
 
 #formulario-inicio {
     position: absolute; /* Posicionamiento absoluto en relación al contenedor */

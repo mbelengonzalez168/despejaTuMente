@@ -39,10 +39,12 @@
 
 
     ImgInicio.addEventListener('click', function () {
+      conteinerFormRegistrarse.style.display = 'none';
       conteinerFormInicio.style.display = 'block';
     });
 
     ImgRegistrarse.addEventListener('click', function () {
+      conteinerFormInicio.style.display = 'none';
       conteinerFormRegistrarse.style.display = 'block';
     });
 
