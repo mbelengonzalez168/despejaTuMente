@@ -335,6 +335,7 @@ footer li{
 }
 .cards-container{
     display: flex;
+    
 }
 .boton-carrusel {
     width: 48px;
@@ -395,6 +396,8 @@ footer li{
     transform: rotate(360deg); /* Gira 360 grados en hover */
 }
 /*se agrega efecto boton comprado*/
+
+
 .boton-cards {
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones para color de fondo y texto */
