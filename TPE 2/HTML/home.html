@@ -25,13 +25,13 @@
                         <img src="IMG/iconos/lupa.png" alt="buscador">          
                 </div>
                 <div class="login-bolsa">
-                    <div class="usuario">
+                    <div id="usuario" class="usuario">
                         <img src="IMG/iconos/menu.png" alt="menu usuario">
                         <img src="IMG/iconos/usuario-de-perfil.png" alt="menu usuario">
                     </div>
                     <div id="popup-login" class="">
                         <div class="cerrar-popup">
-                            <button id="btn-cerrar-popup" class="btn-cerrar-login">X</button>
+                            <button id="btn-cerrar-popup-login" class="btn-cerrar-login">X</button>
                         </div>
                         <div class="encabezado-popup">
                             <img src="IMG/icono-popup-login.jpg" alt="">
@@ -46,7 +46,7 @@
                             <p>Cerrar sesion</p>
                         </div>
                     </div>   
-                    <div class="bolsa">
+                    <div id="pop-bolsa" class="bolsa">
                         <img src="IMG/iconos/bolsa-de-la-compra.png" alt="mis compras">
                         <p class="comprados">1</p>
                     </div>
@@ -99,8 +99,7 @@
                 <div class="conteiner-seccion-juegos">
                     <div class="titulo-categorias-cards">
                         <h2>Gratis de la Semana</h2>
-                    </div>
-                    
+                    </div>                  
                     <div class="contenedor-cards">
                         <button id="anterior" class="boton-carrusel">&#8249;</button>
                         <div class="cards-container">
@@ -547,5 +546,7 @@
     </div>
     <script src="JS/js.home.js"></script>
     <script src="JS/script-animaciones.js"></script>
+    <script src="JS/menu-hamburguesa.js"></script>
+    <script src="JS/pop-up.js"></script>
 </body>
 </html>

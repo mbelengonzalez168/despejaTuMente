@@ -123,10 +123,9 @@ h1 span{
     font-weight: bold;
     font-size: 12px;
     position: absolute;
-    top: 9px;
-    right: 8px;
+    top: 7px;
+    right: 9px;
 }
-
 @media only screen and (min-width:768px) {
     header {
         height: 90px;
@@ -193,9 +192,9 @@ h1 span{
         margin-top: 3px;
     }
     .comprados{
-        top: 18px;
-        right: 14px;
-        font-size: 14px;
+        top: 17px;
+        right: 14.5px;
+        font-size: 15px;
     }
     
 }
@@ -262,22 +261,27 @@ main {
     }
     
 }
+
 /*footer*/
 footer {
     background-color: var(--primarioSombra2);
 }
 .conteiner-footer {
-    margin: 20px 30px;
+    max-width: 80%;
+    margin: 20px auto;
+    display: block;
+    justify-content: space-around;
+    text-align: center;
 }
 .columnas-footer{
-    width: 250px;
-    margin-bottom: 20px;
+    width: 80%;
+    margin: 20px auto;
 }
 footer h3{
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 footer li{
-    margin: 4px 0;
+    margin: 8px 0;
     cursor: pointer;
 }
 .redes-sociales img{
@@ -289,19 +293,15 @@ footer li{
     text-align: center;
     font-weight: bold;
     width: 80%;
+    margin: 10px auto;
 }
-
-
 @media only screen and (min-width:768px) {
-    footer {
-        background-color: var(--primarioSombra2);
-        height: 220px;
-    }
     .conteiner-footer {
         max-width: 1080px;
-        margin: 30px auto;
+        margin: 15px auto;
         display: flex;
         justify-content: space-between;
+        text-align: left;
     }
     .columnas-footer{
         width: 250px;
@@ -321,17 +321,52 @@ footer li{
     .mensaje-footer {
         text-align: center;
         font-weight: bold;
+        margin-bottom: 25px;
     }
-    
 }
 
 /*seccion juegos*/
+.conteiner-seccion-juegos{
+    margin-bottom: 30px;
+}
 .titulo-categorias-cards{
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 10px;
+}
+.cards-container{
+    display: flex;
+}
+.boton-carrusel {
+    display: flex;
+    background-color: var(--terciario); /* Cambia el color de fondo según tus preferencias */
+    border-radius: 30px;
+    color: var(--secundarioLuces2); /* Cambia el color del texto según tus preferencias */
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    position: absolute;
+    top: 200px;
+    z-index: 4;
+    transform: translate(0 , -50%);
+    transition: .5s ease;
+    user-select: none;
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+    
+}
+#anterior {
+    left: -25px;
+}
+#siguiente {
+    left: 1080px;
+}
+.boton-carrusel:hover {
+    background-color: hsl(357, 100%, 35%); /* Cambia el color de fondo en el hover según tus preferencias */
 }
 .contenedor-cards{
     display: flex;
+    position: relative;
 }
 .card-completa{
     background-color: var(--secundarioLuces2);
@@ -358,38 +393,37 @@ footer li{
     right: -10px;
     transition: transform 0.3s ease; /* Transición para el efecto de escala */
 }
-
 /*se agrega efecto sticker*/
 .stiker-gratis:hover {
     transform: scale(1.2); /* Agranda el botón en hover */
   /*  transform: rotate(25deg);  Cambia el ángulo de rotación en hover */
-  transform: rotate(360deg); /* Gira 360 grados en hover */
-  }
+    transform: rotate(360deg); /* Gira 360 grados en hover */
+}
 /*se agrega efecto boton comprado*/
-  .boton-cards {
+.boton-cards {
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones para color de fondo y texto */
-  }
-  .boton-cards.clickeado {
+}
+.boton-cards.clickeado {
     background-color: #28a745; /* Color de fondo al hacer clic */
     color: #fff; /* Color del texto al hacer clic */
     transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones al hacer clic */
-  }
+}
+@media only screen and (min-width:768px){
+
+}
+
+
 
   /*BOTON PLAY JUEGO*/
-  #play {
-    /* Estilos regulares del botón */
+#play {/* Estilos regulares del botón */
     padding: 10px 20px; /* Ajusta el espaciado según tu diseño */
     font-size: 16px; /* Ajusta el tamaño de fuente según tu diseño */
     transition: transform 0.3s ease-in-out; /* Agrega una transición suave al cambio de escala */
-  }
-  
-  #play:active {
-
+}  
+#play:active {
     transform: scale(1.3) rotate(360deg); /* Escala el botón al "x"% del tamaño original cuando se hace clic */
-   }
-
-  
+} 
 .texto-cards{
     margin: 10px;
     height: 65px;
@@ -483,13 +517,11 @@ footer li{
     width: 630px;
     text-align: justify;
 }
-/*PASOS-JUEGO*/ 
 
+/*PASOS-JUEGO*/ 
 .imagen-pasos {
     width: 350px;
     height: 250px;
-    transition: transform 5s ease-in-out; 
-    transform: translateX(-100%);
 }
 .visible{
     display: block;
@@ -503,17 +535,20 @@ footer li{
   width: 100%;
 }
 .menu-pasos-juego button {
-  text-decoration: none;
-  padding: 5px;
-  margin: 10px;
-  border: var(--terciario) 1px solid;
-  border-radius: 5px;
-  transition: background-color 2s;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 5px;
+    margin: 10px;
+    border: var(--terciario) 1px solid;
+    border-radius: 5px;
+    transition: background-color 2s;
 }
 .menu-pasos-juego a:hover{
   transition: background-color var(--secundarioSombra2) ;
 }
-
+video {
+    border-radius: 5px;
+}
 .nombre-Video-y-tiempo{
     display: flex;
     justify-content: space-between;
@@ -550,7 +585,7 @@ footer li{
 }
 .btn-agregar-comentario button{
    align-items: flex-end;
-   width: 150px;
+   width: 160px;
    margin: 15px 0 15px auto;
    font-size: 12px;
 }
