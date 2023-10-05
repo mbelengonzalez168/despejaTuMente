@@ -11,8 +11,7 @@
     const mnjExito= document.getElementById("mensajeExito"),
           CloseMnjExito= document.getElementById("cerrar-mnj-ext"),
           loadingContainer = document.getElementById('loading-container'),
-          loadingBar = document.getElementById('loading'),
-          loadingTimer = document.getElementById('loading-timer'),
+          loadingProgress= document.getElementById('loading-progress'),
           btnFace = document.getElementById('btn-face'),
           btnGoogle = document.getElementById('btn-google'), 
           captchaCheckbox = document.getElementById('captcha');
@@ -25,16 +24,24 @@
     }
  
     function simulateLoading() {
-      let seconds = 5;
-      const countdownInterval = setInterval(function () {
-                seconds--;
-                if (seconds < 0) {
-                    clearInterval(countdownInterval);
-                    window.location.href = 'home.html';
-                } else {
-                    loadingTimer.textContent = seconds;
-                }
-            }, 1000);
+      let percentage = 0;
+      const updatePercentage = () => {
+            loadingProgress.textContent = percentage + '%';
+  };
+
+    const incrementPercentage = () => {
+        percentage += 1;
+        updatePercentage();
+  };
+
+  const countdownInterval = setInterval(function () {
+    if (percentage >= 100) {
+      clearInterval(countdownInterval);
+      window.location.href = 'home.html'; // Redirige una vez que se llega al 100%
+    } else {
+      incrementPercentage();
+    }
+  }, 50); 
         };
 
 

@@ -238,6 +238,16 @@ main {
     font-size: 12px;
     padding-bottom: 5px;
 }
+/*categorias*/
+
+#categorias {
+    transition: transform 0.3s ease; 
+    
+}
+#categorias:hover {
+    transform: scale(1.2);
+    
+}
 @media only screen and (min-width:768px) {
     .menu-categorias{
         display: none;
@@ -336,6 +346,7 @@ footer li{
 .cards-container{
     display: flex;
     
+    
 }
 .boton-carrusel {
     width: 48px;
@@ -417,11 +428,13 @@ footer li{
 #play {/* Estilos regulares del botón */
     padding: 10px 20px; /* Ajusta el espaciado según tu diseño */
     font-size: 16px; /* Ajusta el tamaño de fuente según tu diseño */
-    transition: transform 0.3s ease-in-out; /* Agrega una transición suave al cambio de escala */
+   transition: transform 0.3s ease-in-out; /* Agrega una transición suave al cambio de escala */
 }  
 #play:active {
     transform: scale(1.3) rotate(360deg); /* Escala el botón al "x"% del tamaño original cuando se hace clic */
 } 
+
+  
 .texto-cards{
     margin: 10px;
     height: 65px;
@@ -850,36 +863,16 @@ button:hover {
     cursor: pointer;
     transition: transform 2s;
 }
-/*
+
 #img-inicio:hover, #img-registrarse:hover {
    transform: rotate3d(2,2,2,360deg);
-}*/
+}
 
 #formulario-inicio {
     position: absolute; /* Posicionamiento absoluto en relación al contenedor */
     bottom: 0; /* Pegado en la parte inferior */
 }
-#loading-percent {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ceef8f; /* Color del texto de porcentaje */
-  font-weight: bold;
-}
-#spinner {
-  border: 4px solid rgba(255, 255, 255, 0.3);
-  border-top: 4px solid hsl(74, 100%, 50%);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  animation: spin 2s linear infinite;
-  margin: 0 auto;
-}
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
+
 #loading-container {
   display: none;
   margin-top: 50px;
@@ -903,12 +896,12 @@ button:hover {
   animation: spin 5s linear infinite;
   margin: 0 auto;
 }
-/* Estilo para el contador regresivo */
-#loading-timer {
-  font-size: 24px;
-  color: #007BFF;
-  margin-top: 20px;
-}
+/* Estilo para el contador AVANCE % */
+#loading-progress {
+    font-size: 24px;
+    color: #007BFF;
+    margin-top: 20px;
+  }
 /* Clase para ocultar elementos */
 .loading-oculto {
   display: none;

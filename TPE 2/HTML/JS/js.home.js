@@ -71,10 +71,10 @@ miBoton.addEventListener('click', function () {
         }, 1000); // 1 segundo en milisegundos
     } 
 }
-});
+});*/
 
+/*
 
-//--------------------------CARRUSEL 1-----------------------------------------------------//
 
     const contenedorCategoria = document.querySelector('.contenedor-cards');
 
@@ -87,7 +87,7 @@ miBoton.addEventListener('click', function () {
     botonSiguiente.addEventListener('click', e => moverDerecha ());
 
     let index = 0;
-    let whithImg= 100 /cardCompleta.length;
+    let whithImg= 100 /5;
 
     function moverDerecha (){
 
@@ -100,9 +100,8 @@ miBoton.addEventListener('click', function () {
         index= -index  - whithImg
         cardsConteiner.style.transform = `translate(${index}%)`;
     };
-
-    //--------------------------CARRUSEL 2-----------------------------------------------------//
-    /* document.addEventListener("DOMContentLoaded", function () {
+*/
+    //--------------------------CARRUSEL 2-----------------------------------------------------//    /* document.addEventListener("DOMContentLoaded", function () {
     const cardsContainer = document.querySelector(".cards-container");
     const cards = document.querySelectorAll(".card-completa");
     let currentIndex = 0;
@@ -121,8 +120,7 @@ miBoton.addEventListener('click', function () {
         currentIndex = (currentIndex + 1) % cards.length;
         showCard(currentIndex);
     });
-});
-*/
+
 
 
 //--------------------------CARRUSEL 3-----------------------------------------------------//
