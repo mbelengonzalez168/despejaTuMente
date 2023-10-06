@@ -81,6 +81,7 @@
         // El CAPTCHA se completó correctamente y el formulario es válido
           conteinerFormRegistrarse.style.display = 'none';
           mnjExito.style.display = 'block';
+          mnjExito.classList.add("show");
           CloseMnjExito.addEventListener('click', function () {
             showLoading();
             simulateLoading();
