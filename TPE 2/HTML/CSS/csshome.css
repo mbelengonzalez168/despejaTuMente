@@ -417,7 +417,6 @@ footer li{
     width: 230px;
     border-radius: 7px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    /*flex: 0 0 calc(20% - 20px); /* Ajusta el ancho de cada tarjeta según tus necesidades */
     margin-right: 20px; /* Espacio entre las tarjetas */
     transform: scale(1); /* Escala inicial de las tarjetas */
     transition: transform 0.5s ease-in-out; /* Transición para la animación de escala */
@@ -461,14 +460,38 @@ footer li{
 
 
   /*BOTON PLAY JUEGO*/
-#play {/* Estilos regulares del botón */
+  #play {
     padding: 10px 20px; /* Ajusta el espaciado según tu diseño */
-    font-size: 16px; /* Ajusta el tamaño de fuente según tu diseño */
-   transition: transform 0.3s ease-in-out; /* Agrega una transición suave al cambio de escala */
-}  
-#play:active {
-    transform: scale(1.3) rotate(360deg); /* Escala el botón al "x"% del tamaño original cuando se hace clic */
-} 
+     /* Ajusta el tamaño de fuente según tu diseño */
+  /*  transition: transform 0.2s ease-in-out; /* Agrega una transición suave al cambio de escala */
+    transition: background-color 0.2s ease;
+  }
+  
+  #play::before {
+    content: "\25B6"; /* Código Unicode del icono de "play" */
+    margin-right: 4px; /* Espaciado entre el icono y el texto */
+    display: none; /* Inicialmente oculta el icono */
+  }
+  
+  #play:hover {
+    background-color: hsl(124, 88%, 36%);
+    transform: scale(1);
+    
+  }
+  
+  #play:hover::before {
+    display: inline-block; /* Muestra el icono en hover */
+  }
+/*boton-comentarios*/
+
+#comentario:hover{
+    color: var(--terciario);
+    border: var(--terciario);
+    background-color: var(--primarioLuces1);
+    transform: scale(1);
+
+  }
+
 
   
 .texto-cards{
@@ -875,9 +898,11 @@ button {
     cursor: pointer;
     width: 100%;
     font-size: 20px;
+    transition: transform 0.2s ease;
 }
 button:hover {
     background-color: var(--secundarioSombra2);
+    transform: scale(1.05);
 }
 
 /*SE AGREGA*/
@@ -898,6 +923,7 @@ button:hover {
 #img-inicio, #img-registrarse {
     cursor: pointer;
     transition: transform 2s;
+
 }
 
 #img-inicio:hover, #img-registrarse:hover {
@@ -909,30 +935,47 @@ button:hover {
     bottom: 0; /* Pegado en la parte inferior */
 }
 
-#loading-container {
-  display: none;
-  margin-top: 50px;
-  width: 100px;
-  height: 100px;
-  background-color: transparent;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  text-align: center;
-}
-#loading {
-  width: 60px;
-  height: 60px;
-  border: 6px solid hsl(77, 100%, 50%);
-  border-top: 6px solid transparent;
-  border-radius: 50%;
-  animation: spin 5s linear infinite;
-  margin: 0 auto;
-}
-/* Estilo para el contador AVANCE % */
+#spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid #007BFF;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  #loading-container {
+    display: none;
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+  }
+  
+  #loading {
+    width: 60px;
+    height: 60px;
+    border: 6px solid #007BFF;
+    border-top: 6px solid transparent;
+    border-radius: 50%;
+    animation: spin 5s linear infinite;
+    margin: 0 auto;
+  }
+  
+  /* Estilo para el contador AVANCE % */
 #loading-progress {
     font-size: 24px;
     color: #007BFF;

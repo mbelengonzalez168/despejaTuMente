@@ -35,26 +35,26 @@ misBotones.forEach(function(miBoton) {
     document.addEventListener("DOMContentLoaded", function () {
     const cardsContainer = document.querySelector(".carrusel");
     const cardWidth = document.querySelector(".card-completa-carrusel").offsetWidth;
-    const prevButton = document.getElementById("anterior");
-    const nextButton = document.getElementById("siguiente");
-    let currentIndex = 0;
+    const btnAnterior = document.getElementById("anterior");
+    const btnSiguiente = document.getElementById("siguiente");
+    let Index = 0;
   
-    prevButton.addEventListener("click", () => {
-      if (currentIndex > 0) {
-        currentIndex--;
+    btnAnterior.addEventListener("click", () => {
+      if (Index > 0) {
+        Index--;
         updateSliderPosition();
       }
     });
   
-    nextButton.addEventListener("click", () => {
-      if (currentIndex < cardsContainer.children.length - 4) {
-        currentIndex++;
+    btnSiguiente.addEventListener("click", () => {
+      if (Index < cardsContainer.children.length - 4) {
+        Index++;
         updateSliderPosition();
       }
     });
   
     function updateSliderPosition() {
-      cardsContainer.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+      cardsContainer.style.transform = `translateX(-${Index * cardWidth}px)`;
     // Elimina la clase "active" de todas las tarjetas
     const cards = document.querySelectorAll(".card-completa-carrusel");
     cards.forEach((card) => {
@@ -62,7 +62,7 @@ misBotones.forEach(function(miBoton) {
     });
     
     // Añade la clase "active" a la tarjeta del medio
-    cards[currentIndex + 1].classList.add("active");
+    cards[Index + 1].classList.add("active");
     
     
     }
