@@ -373,7 +373,7 @@ footer li{
 .stiker-gratis:hover {
     transform: rotate(360deg); /* Gira 360 grados en hover */
 }
-<<<<<<< HEAD
+
 .card-completa-carrusel {
     background-color: var(--secundarioLuces2);
     width: 230px;
@@ -1072,7 +1072,7 @@ button:hover {
 /*SE AGREGA*/
 /*popup-formulario INICIO SESION y REGISTRACION */
   
-<<<<<<< HEAD
+
 #container-form-inicio-sesion, #container-form-registrarse{
     display: none;
     background-color: #E18407;
@@ -1090,8 +1090,6 @@ button:hover {
     transition: transform 2s;
 
 }
-=======
->>>>>>> 63a284760fd2ce90aea66a93fb4565176dce929e
 
 
 #spinner {
