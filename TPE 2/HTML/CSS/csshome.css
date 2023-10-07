@@ -104,18 +104,7 @@ h1 span{
     margin-right: 10px;
     position: relative;
 }
-.usuario{
-    display: flex;
-    justify-content: space-around;
-    border-radius: 20px;
-    border: 1.5px solid var(--neutroOscuro);
-    padding: 3px;
-    width: 35px;  
-    height: 15px;
-    cursor: pointer;
-    margin-right: 5px;
-}
-.bolsa img{
+.login-bolsa img{
     height: 23px;
     cursor: pointer;   
 }
@@ -173,20 +162,10 @@ h1 span{
     .login-bolsa {
         display: flex;
         justify-content: space-between;
-        width: 140px;
+        width: 100px;
         margin-top: 40px;
     }
-    .usuario{
-        display: flex;
-        justify-content: space-around;
-        border-radius: 20px;
-        border: 1.5px solid var(--neutroOscuro);
-        padding: 3px;
-        width: 70px;  
-        height: 30px;
-        cursor: pointer;
-    }
-    .bolsa img{
+    .login-bolsa img{
         height: 36px;
         cursor: pointer;
         margin-top: 3px;
@@ -216,38 +195,41 @@ main {
 }
 
 /* Menu categorias*/
+.conteiner-menu{
+    display: flex;
+}
 .menu-hamburguesa{
     display: flex;
-    width: 25px;
+    width: 15px;
 }
 .conteiner-categorias{
     display: none;
+    background-color: var(--primarioSombra1);
+    width: 60%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 .categoria{
+    margin-left: 20px;
     max-width: 131px;
     display: flex;
     justify-content: left;
-    align-items: baseline;
+    align-items: center;  
 }
 .categoria img{
     max-width: 15px;
     margin-right: 5px;
     margin-top: 5px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+#categorias:hover {
+    transform: scale(1.2);
 }
 .categoria h3{
     font-size: 12px;
     padding-bottom: 5px;
-}
-/*categorias*/
-
-#categorias {
-    cursor: pointer;
-    transition: transform 0.3s ease; 
-    
-}
-#categorias:hover {
-    transform: scale(1.2);
-    
 }
 @media only screen and (min-width:768px) {
     .menu-categorias{
@@ -258,6 +240,8 @@ main {
         justify-content: space-between;
         align-items: center;
         margin-top: 10px;
+        background-color: var(--primario);
+        width: 100%;
     }
     .categoria{
         max-width: 131px;
@@ -269,6 +253,12 @@ main {
     }
     .categoria img{
         max-width: 40px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    #categorias:hover {
+        transform: scale(1.2);
+        
     }
     
 }
@@ -315,7 +305,7 @@ footer li{
         text-align: left;
     }
     .columnas-footer{
-        width: 250px;
+        width: 280px;
     }
     footer h3{
         margin-bottom: 10px;
@@ -337,26 +327,29 @@ footer li{
 }
 
 /*seccion juegos*/
+
 .conteiner-seccion-juegos{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .titulo-categorias-cards{
     margin-top: 30px;
     margin-bottom: 10px;
 }
 .contenedor-cards, .contenedor-carrusel{
-    display: flex;
     position: relative;
+    overflow: hidden;
+    margin: 0 auto;
 }
 .cards-container, .carrusel{
-    display: flex;
-      
+    display: flex;   
+    max-width: 400px ;  
+    margin: 0 auto;
 }
 .card-completa {
     background-color: var(--secundarioLuces2);
     width: 230px;
     border-radius: 7px;
-    margin-right: 25px;
+    margin: 0 20%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .contenedor-img-card{
@@ -369,37 +362,6 @@ footer li{
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
 }
-
-/*---CARRUSEL-----*/
-.contenedor-carrusel{
-    overflow: hidden;
-   }
-
-  .boton-carrusel {
-    width: 48px;
-    height: 48px;
-    cursor: pointer;
-    position: absolute;
-    top: 200px;
-    z-index: 4;
-    user-select: none; 
-}
-#anterior {
-    left: 0px;  
-}
-#siguiente {
-    right: 10px;
-}
-/*    lO DESACTIVE XQ NO SE CLICKEABA BIEN
-#anterior:hover {
-    transform: translate(-50%);
-    transition: transform 0.3s ease; 
-}
-#siguiente:hover {
-    transform: translate(50%);
-    transition: transform 0.3s ease; 
-}   
-*/
 .stiker-gratis{
     position: absolute;
     width: 120px;
@@ -408,10 +370,10 @@ footer li{
     right: -10px;
     transition: transform 0.3s ease; /* Transición para el efecto de escala */
 }
-/*se agrega efecto sticker*/
 .stiker-gratis:hover {
-   transform: rotate(360deg); /* Gira 360 grados en hover */
+    transform: rotate(360deg); /* Gira 360 grados en hover */
 }
+<<<<<<< HEAD
 .card-completa-carrusel {
     background-color: var(--secundarioLuces2);
     width: 230px;
@@ -493,11 +455,9 @@ footer li{
   }
 
 
-  
 .texto-cards{
     margin: 10px;
     height: 65px;
-    color: var(--neutroOscuro);
 }
 .texto-cards h3{
     padding: 5px 0;
@@ -527,14 +487,178 @@ footer li{
     width: 55%;
     align-items: center;
     margin: 5px auto 15px auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones para color de fondo y texto */
+}
+.boton-cards.clickeado {
+    background-color: #28a745; /* Color de fondo al hacer clic */
+    color: #fff; /* Color del texto al hacer clic */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones al hacer clic */
+}
+@media only screen and (min-width:768px){    
+    .conteiner-seccion-juegos{
+        margin-bottom: 30px;
+    }
+    .titulo-categorias-cards{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .contenedor-cards, .contenedor-carrusel{
+        display: flex;
+        position: relative;
+    }
+    .cards-container, .carrusel{
+        display: flex; 
+        margin: 0;    
+    }
+    .card-completa {
+        background-color: var(--secundarioLuces2);
+        width: 230px;
+        border-radius: 7px;
+        margin: 0 25px 0 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    .contenedor-img-card{
+        position: relative;
+    }
+    .img-card{
+        width: 230px;
+        height: 270px;
+        object-fit: cover;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+    }
+    .stiker-gratis{
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        top: -10px;
+        right: -10px;
+        transition: transform 0.3s ease; /* Transición para el efecto de escala */
+    }
+    .stiker-gratis:hover {
+        transform: rotate(360deg); /* Gira 360 grados en hover */
+    }
+    .texto-cards{
+        margin: 10px;
+        height: 65px;
+        color: var(--neutroOscuro);
+    }
+    .texto-cards h3{
+        padding: 5px 0;
+    }
+    .nombre-y-puntuacion-cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        line-height: 17px;
+    }
+    .puntuacion {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .puntuacion img {
+        width: 15px;
+        height: 15px;
+        margin-left: 3px;
+    }
+    .conteiner-boton-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .boton-cards{
+        width: 55%;
+        align-items: center;
+        margin: 5px auto 15px auto;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones para color de fondo y texto */
+    }
+    .boton-cards.clickeado {
+        background-color: #28a745; /* Color de fondo al hacer clic */
+        color: #fff; /* Color del texto al hacer clic */
+        transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones al hacer clic */
+    }
+}
+/*---CARRUSEL-----*/
+.contenedor-carrusel{
+    overflow: hidden;
+}
+.boton-carrusel {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    position: absolute;
+    top: 200px;
+    z-index: 4;
+    user-select: none; 
+}
+#anterior {
+    left: 0px;  
+}
+#siguiente {
+    right: 10px;
+}
+/*    lO DESACTIVE XQ NO SE CLICKEABA BIEN
+#anterior:hover {
+    transform: translate(-50%);
+    transition: transform 0.3s ease; 
+}
+#siguiente:hover {
+    transform: translate(50%);
+    transition: transform 0.3s ease; 
+}   
+*/
+.card-completa-carrusel {
+    background-color: var(--secundarioLuces2);
+    width: 230px;
+    margin: 0 20%;
     border-radius: 7px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /*flex: 0 0 calc(20% - 20px); /* Ajusta el ancho de cada tarjeta según tus necesidades */
+    margin-right: 20px; /* Espacio entre las tarjetas */
+    transform: scale(1); /* Escala inicial de las tarjetas */
+    transition: transform 0.5s ease-in-out; /* Transición para la animación de escala */
 }
+  /* Estilo específico para la tarjeta del medio */
+.card-completa-carrusel:nth-child(3) {
+    transform: scale(1.1) translateY(-20px)s; /* Escala más grande para la tarjeta del medio */
+}
+.card-completa-carrusel:nth-child(3) .stiker-gratis:hover {
+    transform:  rotate(360deg)  ; /* Desplaza el sticker hacia abajo y rota */
+}
+  /* Estilo específico para la tarjeta activa */
+.card-completa-carrusel.active {
+    transform: scale(1.1) translateY(-20px); /* Escala más grande para la tarjeta activa */
+}
+.card-completa-carrusel.active .stiker-gratis {
+    transform: translateY(25px) ; /* Desplaza el sticker hacia abajo */
+}
+.card-completa-carrusel.active .stiker-gratis:hover {
+    transform:  rotate(360deg) ; /* Desplaza el sticker hacia abajo */
+}
+
+
+
+
+  /*BOTON PLAY JUEGO*/
+#play {/* Estilos regulares del botón */
+    padding: 10px 20px; /* Ajusta el espaciado según tu diseño */
+    font-size: 16px; /* Ajusta el tamaño de fuente según tu diseño */
+    transition: transform 0.3s ease-in-out; /* Agrega una transición suave al cambio de escala */
+}  
+#play:active {
+    transform: scale(1.3) rotate(360deg); /* Escala el botón al "x"% del tamaño original cuando se hace clic */
+} 
 
 /*JUEJO*/
 .donde-estoy-juego {
     margin: 20px 0;
-    color: var(--neutroOscuro);
 }
 .nombre-juego{
     margin-bottom: 10px;
@@ -548,13 +672,34 @@ footer li{
    color: var(--neutroOscuro);
    border-radius: 5px;
 }
+.conteiner-foto-juego{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: 0 auto;
+}
+.fichas {
+    position: absolute;
+    width: 65px;
+    border-radius: 50%;
+}
+.leny{
+    top: 10px;
+    left: 145px;
+}
+.karl{
+    top: 10px;
+    left: 300px; 
+}
 .foto-juego{
-    width: 100%;
-    height: 100%;
+    width: 900px;
+    height: 90%;
     object-fit: cover;
 }
 .conteiner-compartir-jugar{
+    width: 900px;
     margin-top: 10px;
+    margin-left: 60px;
     display: flex;
     justify-content: space-between;
 }
@@ -566,6 +711,9 @@ footer li{
 .btn-jugar-juego :hover {
     background-color: var(--terciario); 
 }
+.btn-jugar-juego :hover ~ .fichas {
+    transform: translateX(500px); 
+}
 .como-jugar-juego{
     background-color: var(--secundarioLuces1);
     margin: 20px 0;
@@ -574,7 +722,7 @@ footer li{
     line-height: 25px;
 }
 .ayuda h2{
-    margin-top: 20px;
+    margin-top: 25px;
 }
 .ayuda{
     display: flex;
@@ -592,6 +740,7 @@ footer li{
 .imagen-pasos {
     width: 350px;
     height: 250px;
+    margin-top: 25px;
 }
 .visible{
     display: block;
@@ -682,7 +831,6 @@ video {
 .comentario{
     width: 90%;
 }
-
 .ver-mas-comentarios {
     text-align: right;
     text-decoration: underline;
@@ -700,35 +848,30 @@ video {
     font-weight: bold;
 }
 
-
-
 /*POPUP-COMPARTIR*/
+.contenido-popup img {
+    width: 220px;
+}
 #popup-compartir {
     display: none;
-    background-color: #E18407 ;
+    background-color: var(--primarioSombra2) ;
     position: fixed;
-    top: 51%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 50px;
+    left: 200px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    width: 400px;
-    height: 400px;    
-}
-#btn-cerrar-popup-compartir {
-    background-color: #E18407 ;
-    margin-top: 10px;
-    padding: 5px 10px;
-    color: #575654;
-    border: none;
-    cursor: pointer;
-    text-align: right ;
+    width: 300px;
+    height: 270px;   
+    border-radius: 5px; 
 }
 .link-popup {
-    background-color: #FBB04C;
+    background-color: var(--primario);
+    border-radius: 5px;
+    text-align: left;
+    margin: 15px 0;
+    padding: 5px;
 }
-.btn-copiar-link-popup {
-    cursor: pointer;
-    background-color: #4848B0;
+.btn-copiar-link-popup{
+    width: 200px;
 }
 .contenido-popup{
     text-align: center;
@@ -742,7 +885,6 @@ video {
 #popup-compras p{
     text-align: left;
 }
-
 .contenido-popup p{
     padding-top: 15px;
 }
@@ -784,8 +926,6 @@ video {
     border-radius: 5px;
     width: 230px;
 }
-
-
 .cerrar-popup{
     position: absolute;
     right: -1px;
@@ -837,57 +977,81 @@ video {
     width: 60%;
 }
 
-/*FORMULARIO*/
 
+/*FORMULARIO*/
+.opcion-ingreso{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.inicio-sesion {
+    width: 500px;
+    background-color: var(--primarioSombra2);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.inicio-sesion img {
+    width: 90%;
+    height: 90%;
+}
+#img-inicio, #img-registrarse {
+    cursor: pointer;
+    transition: transform 2s;
+}
+#img-inicio:hover, #img-registrarse:hover {
+   transform: rotate3d(2,2,2,360deg);
+}
+#container-form-inicio-sesion, #container-form-registrarse{
+    display: none;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-color: var(--primarioSombra2);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 450px;
+    padding: 35px;
+}
+#container-form-inicio-sesion{
+    top: 400px;
+    left: 50px;
+}
+#container-form-registrarse{
+    top: 400px;
+    right: 50px; 
+}
+.botones-inicio-sesion {
+    margin: 0 auto; 
+    text-align: center;
+}
+.botones-inicio-sesion button{
+    display: block; 
+    width: 100%; 
+    margin-bottom: 10px;
+}
+#formulario-inicio , #formulario-registro{
+    width: 100%;
+}
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 label {
     display: block;
-    margin-bottom: 5px;
     font-weight: bold;
+    margin-bottom: 2px;
 }
-/*
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
+.form-group input{
+    border: 1px solid var(--secundarioLuces2);
     border-radius: 3px;
+    width: 100%;
+    height: 25px;
 }
-*/
 .campos-obligatorios {
     font-size: 8px;
     color: red;
-}
-.inicio {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-.inicio-sesion {
-    margin: 50px;
-    padding: 50px;
-    background-color: #E18407;
-}
-.container {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    width: 300px;
-}
-.container h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-.texto-inicio{
-    text-align: center;
-    padding: 25px;
-    border: 0px;
-    margin: 25px;
 }
 button {
     background-color: var(--terciario);
@@ -908,6 +1072,7 @@ button:hover {
 /*SE AGREGA*/
 /*popup-formulario INICIO SESION y REGISTRACION */
   
+<<<<<<< HEAD
 #container-form-inicio-sesion, #container-form-registrarse{
     display: none;
     background-color: #E18407;
@@ -925,15 +1090,9 @@ button:hover {
     transition: transform 2s;
 
 }
+=======
+>>>>>>> 63a284760fd2ce90aea66a93fb4565176dce929e
 
-#img-inicio:hover, #img-registrarse:hover {
-   transform: rotate3d(2,2,2,360deg);
-}
-
-#formulario-inicio {
-    position: absolute; /* Posicionamiento absoluto en relación al contenedor */
-    bottom: 0; /* Pegado en la parte inferior */
-}
 
 #spinner {
     border: 4px solid rgba(255, 255, 255, 0.3);
@@ -1012,7 +1171,6 @@ button:hover {
 #mensajeExito :first-child{
     text-align: right ;
     cursor: pointer;
-    
     margin-left: 25px;
 }
  

@@ -42,3 +42,6 @@ document.getElementById('icono-compartir').addEventListener('click', function ()
     document.getElementById('form-registrarse').style.display = 'block';
     document.body.classList.remove("popup-open");
   });
+
+
+

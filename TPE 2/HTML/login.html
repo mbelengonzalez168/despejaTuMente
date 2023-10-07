@@ -11,88 +11,69 @@
         <header>
             <div class="conteiner-header">
                 <div class="logo">
-                  
-                    <h2>DESPEJA TU MENTE</h2>
+                    <img src="../HTML/IMG/Logo.png" alt="logo">
+                    <h1>DESPEJA <span>TU MENTE</span> </h1>
                 </div>
-                <div class="texto-inicio">
-                   
-                        <h3>Únete y desafía tu mente en nuestro mundo de juegos
-                            ¡Regístrate y empieza a jugar ahora!</h3>
-                    
+                <div class="texto-inicio">   
+                    <h3>Únete y desafía tu mente en nuestro mundo de juegos
+                        ¡Regístrate y empieza a jugar ahora!</h3>  
                 </div>
-            </div>
-    
-               
+            </div>           
         </header>
         <main>
-            <div class="inicio">
-                <div class="inicio-sesion">
-                   <img id="img-inicio" src="IMG/iniciar sesion.png" alt="">       
-                </div>
+            <div class="conteiner-main">
+                <div class="opcion-ingreso">
+                    <div class="inicio-sesion">
+                        <img id="img-inicio" src="IMG/iniciar sesion.png" alt="">       
+                     </div>
+                     <div class="inicio-sesion">
+                        <img id="img-registrarse"src="IMG/Registrarse.png" alt="">
+                    </div>
+                </div>  
                 <div id="container-form-inicio-sesion" class="oculto">
-                    
-                        <form id="formulario-inicio"action="" method="">
-                            <div class="form-group">
-                                <label for="email">E-mail</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-            
-                            <div class="form-group">
-                                <label for="password">Contraseña</label>
-                                <input type="password" id="password" name="password" required>
-                            </div>
-                            <p class="">Olvidaste la Contraseña?</p>
-                           
-                            
-                            <div class="form-group">
-                                <button id="btn-iniciar-sesion" type="submit">Iniciar sesion</button>
-                            </div>
-            
-                            <div class="form-group">
-                                <button id="btn-face"type="button">Ingresar con facebook</button>
-                            </div>
-                            <div class="form-group">
-                                <button id="btn-google"type="button">Ingresar con Google</button>
-                            </div>
-                        </form>
-                </div>
-                        
-                        <div id="loading-container" class="loading-oculto">
-                            <div id="loading"></div>
-                            <div id="loading-progress">0%</div>
+                    <form id="formulario-inicio"action="" method="">
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
                         </div>
-    
-                <div class="inicio-sesion">
-                    <img id="img-registrarse"src="IMG/Registrarse.png" alt="">
+                        <div class="form-group">
+                            <label for="password">Contraseña</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <p class="">Olvidaste la Contraseña?</p> 
+                        <div class="botones-inicio-sesion">
+                            <button id="btn-iniciar-sesion" type="submit">Iniciar sesion</button>
+                            <button id="btn-face"type="button">Ingresar con facebook</button>
+                            <button id="btn-google"type="button">Ingresar con Google</button>
+                        </div>
+                    </form>
+                </div>        
+                <div id="loading-container" class="loading-oculto">
+                    <div id="loading"></div>
+                    <div id="loading-progress">0%</div>
                 </div>
                 <div id="container-form-registrarse">
-                
                     <form id="formulario-registro" action="" method="">
                         <div class="form-group">
                             <label for="nombre">Nombre *</label>
                             <input type="text" id="" name="nombre" required>
                         </div>
                         <div class="form-group">
-                            <div class="form-group">
-                                <label for="apellido">Apellido *</label>
-                                <input type="text" id="" name="apellido" required>
-                            </div>
-        
-                            <div class="form-group">
-                                <label for="alias">Alias</label>
-                                <input type="text" id="" name="alias">
-                            </div>
-        
-                            <div class="form-group">
-                                <label for="edad">Edad *</label>
-                                <input type="text" id="" name="edad" required>
-                            </div>
-        
-                            <div class="form-group">
+                            <label for="apellido">Apellido *</label>
+                            <input type="text" id="" name="apellido" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="alias">Alias</label>
+                            <input type="text" id="" name="alias">
+                        </div>
+                        <div class="form-group">
+                            <label for="edad">Edad *</label>
+                            <input type="text" id="" name="edad" required>
+                        </div>
+                        <div class="form-group">
                             <label for="email">E-mail *</label>
                             <input type="email" id="email" name="email" required>
                         </div>
-        
                         <div class="form-group">
                             <label for="password">Contraseña</label>
                             <input type="password" id="password" name="password" required>
@@ -103,9 +84,7 @@
                             <input type="password" id="confirm-password" name="confirm-password" required>
                         </div>
                         <p class="campos-obligatorios">* Campos obligatorios</p>
-                        
                         <div class="form-group">
-                            
                             <input type="checkbox" id="captcha" name="captcha" required>
                             <p>No soy un robot</p>
                             <img src="IMG/img-captcha.png" alt="">
@@ -113,24 +92,23 @@
                         <div class="form-group">
                             <button id="btn-registrarse"type="submit">Registrarse</button>
                         </div>
-                        
-                        
                     </form>
                 </div>
                 <div id="loading-container" class="loading-oculto">
                     <div id="loading"></div>
                     <div id="loading-progress"> 0%</div>
                 </div>
-                </div>
-                    <div id="mensajeExito">
-                        <p id="cerrar-mnj-ext">x</p>                            
-                            <div class="logo">
-                                <p> Bienvenido a       </p>
-                                <img src="../HTML/IMG/Logo.png" alt="logo">
-                                <h1>DESPEJA <span>TU MENTE</span> </h1>
-                            </div>
-                        <p> Usted se ha registrado con éxito!</p>
+            </div>
+            <div id="mensajeExito">
+                <p id="cerrar-mnj-ext">x</p>                            
+                    <div class="logo">
+                        <p> Bienvenido a       </p>
+                        <img src="../HTML/IMG/Logo.png" alt="logo">
+                        <h1>DESPEJA <span>TU MENTE</span> </h1>
                     </div>
+                <p> Usted se ha registrado con éxito!</p>
+            </div>
+            </div>
         </main>
         <footer>
             <div class="conteiner-footer">
@@ -167,8 +145,7 @@
             <div class="mensaje-footer">
                 <p>Si tenes problemas con el juego comunicate con la línea 6969 de ayuda al ludopata</p>
             </div>
-        </footer>
-       
+        </footer>  
     </div>
     <script src="JS/js.login.js"></script>
     </body>
