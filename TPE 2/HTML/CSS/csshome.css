@@ -49,6 +49,46 @@ header {
     display: flex;
     justify-content: space-between;
 }
+.header-login{
+    height: 120px;
+}
+.conteiner-header-login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+.logo-login img{
+    width: 100px;
+    height: 100px;
+    margin: 5px 0;
+}
+.logo-login h1{
+    font-size: 30px;
+    margin-left: 5px ;
+    width: 120px;
+    margin-top: 57px;
+    line-height: 20px;
+    color: var(--LetraLogo);
+}
+.logo-login h1 span{
+    font-size: 20px;
+    color: var(--LetraLogo);
+}
+.texto-inicio h3{
+    width: 500px;
+    text-align: center;
+    color: var(--LetraLogo);
+    margin-top: 20px;
+}
+
+
 .logo {
     display: flex;
     cursor: pointer;
@@ -104,6 +144,9 @@ h1 span{
     margin-right: 10px;
     position: relative;
 }
+.usuario {
+    margin-right: 10px;
+}
 .login-bolsa img{
     height: 23px;
     cursor: pointer;   
@@ -120,7 +163,7 @@ h1 span{
         height: 90px;
     }
     .conteiner-header {
-        max-width: 1080px;
+        max-width: 1180px;
         height: 90px;
     }
     .logo img{
@@ -182,32 +225,31 @@ h1 span{
 main {
     background-color: var(--primario);
     grid-area: main;
-    min-height: 2026px;
 }
 .conteiner-main{
     margin: auto 10px;
 }
 @media only screen and (min-width:768px) {
     .conteiner-main{
-        max-width: 1080px;
+        max-width: 1180px;
         margin: 0 auto;
     }
 }
 
 /* Menu categorias*/
 .conteiner-menu{
+    margin-top: 5px;
     display: flex;
 }
 .menu-hamburguesa{
     display: flex;
     width: 15px;
+
 }
 .conteiner-categorias{
     display: none;
-    background-color: var(--primarioSombra1);
-    width: 60%;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+    width: 40%;
+    border-radius: 5px;
 }
 .categoria{
     margin-left: 20px;
@@ -298,7 +340,7 @@ footer li{
 }
 @media only screen and (min-width:768px) {
     .conteiner-footer {
-        max-width: 1080px;
+        max-width: 1180px;
         margin: 15px auto;
         display: flex;
         justify-content: space-between;
@@ -329,6 +371,7 @@ footer li{
 /*seccion juegos*/
 
 .conteiner-seccion-juegos{
+    margin-top: -25px;
     margin-bottom: 10px;
 }
 .titulo-categorias-cards{
@@ -343,20 +386,20 @@ footer li{
 .cards-container, .carrusel{
     display: flex;   
     max-width: 400px ;  
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
 }
 .card-completa {
     background-color: var(--secundarioLuces2);
-    width: 230px;
+    width: 280px;
     border-radius: 7px;
-    margin: 0 20%;
+    margin: 0 60px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .contenedor-img-card{
     position: relative;
 }
 .img-card{
-    width: 230px;
+    width: 280px;
     height: 270px;
     object-fit: cover;
     border-top-left-radius: 7px;
@@ -374,35 +417,12 @@ footer li{
     transform: rotate(360deg); /* Gira 360 grados en hover */
 }
 
-.card-completa-carrusel {
-    background-color: var(--secundarioLuces2);
-    width: 230px;
-    border-radius: 7px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    margin-right: 20px; /* Espacio entre las tarjetas */
-    transform: scale(1); /* Escala inicial de las tarjetas */
-    transition: transform 0.5s ease-in-out; /* Transición para la animación de escala */
-  }
-  /* Estilo específico para la tarjeta del medio */
-  .card-completa-carrusel:nth-child(3) {
-    transform: scale(1.1) translateY(-20px)s; /* Escala más grande para la tarjeta del medio */
-  }
-  .card-completa-carrusel:nth-child(3) .stiker-gratis:hover {
-    transform:  rotate(360deg)  ; /* Desplaza el sticker hacia abajo y rota */
-
-  }
-  
-  /* Estilo específico para la tarjeta activa */
-  .card-completa-carrusel.active {
-    transform: scale(1.1) translateY(-20px); /* Escala más grande para la tarjeta activa */
-  }
-  .card-completa-carrusel.active .stiker-gratis {
-    transform: translateY(25px) ; /* Desplaza el sticker hacia abajo */
-  }
-  .card-completa-carrusel.active .stiker-gratis:hover {
-    transform:  rotate(360deg) ; /* Desplaza el sticker hacia abajo */
-  }
-
+@media only screen and (min-width:768px){
+    .cards-container, .carrusel{ 
+        margin: 0;
+        width: 230px;
+    }
+}
 
 
 /*se agrega efecto boton comprado*/
@@ -415,9 +435,7 @@ footer li{
     color: #fff; /* Color del texto al hacer clic */
     transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones al hacer clic */
 }
-@media only screen and (min-width:768px){
 
-}
 
 
 
@@ -515,17 +533,17 @@ footer li{
     }
     .card-completa {
         background-color: var(--secundarioLuces2);
-        width: 230px;
+        width: 220px;
         border-radius: 7px;
-        margin: 0 25px 0 0;
+        margin: 0 20px 0 0;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
     .contenedor-img-card{
         position: relative;
     }
     .img-card{
-        width: 230px;
-        height: 270px;
+        width: 220px;
+        height: 250px;
         object-fit: cover;
         border-top-left-radius: 7px;
         border-top-right-radius: 7px;
@@ -585,6 +603,7 @@ footer li{
         transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones al hacer clic */
     }
 }
+
 /*---CARRUSEL-----*/
 .contenedor-carrusel{
     overflow: hidden;
@@ -616,12 +635,11 @@ footer li{
 */
 .card-completa-carrusel {
     background-color: var(--secundarioLuces2);
-    width: 230px;
-    margin: 0 20%;
+    width: 280px;
     border-radius: 7px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     /*flex: 0 0 calc(20% - 20px); /* Ajusta el ancho de cada tarjeta según tus necesidades */
-    margin-right: 20px; /* Espacio entre las tarjetas */
+    margin: 0 60px; /* Espacio entre las tarjetas */
     transform: scale(1); /* Escala inicial de las tarjetas */
     transition: transform 0.5s ease-in-out; /* Transición para la animación de escala */
 }
@@ -643,6 +661,15 @@ footer li{
     transform:  rotate(360deg) ; /* Desplaza el sticker hacia abajo */
 }
 
+
+@media only screen and (min-width:768px){
+    .contenedor-carrusel{
+        width: 100%;
+    }
+    .card-completa-carrusel{
+        margin: 0 20px 0 0;
+    }
+}
 
 
 
@@ -684,8 +711,8 @@ footer li{
     border-radius: 50%;
 }
 .leny{
-    top: 10px;
-    left: 145px;
+    top: 110px;
+    right: 484px;
 }
 .karl{
     top: 10px;
@@ -699,7 +726,7 @@ footer li{
 .conteiner-compartir-jugar{
     width: 900px;
     margin-top: 10px;
-    margin-left: 60px;
+    margin-left: 110px;
     display: flex;
     justify-content: space-between;
 }
@@ -732,13 +759,13 @@ footer li{
     text-align: justify;
 }
 .texto-ayuda{
-    width: 630px;
+    width: 700px;
     text-align: justify;
 }
 
 /*PASOS-JUEGO*/ 
 .imagen-pasos {
-    width: 350px;
+    width: 380px;
     height: 250px;
     margin-top: 25px;
 }
@@ -780,7 +807,7 @@ video {
 /*FORO*/
 .foro{
     background-color: var(--secundario);
-    width: 650px;
+    width: 700px;
     padding: 25px;
     border-radius: 5px;
 }
@@ -835,6 +862,12 @@ video {
     text-align: right;
     text-decoration: underline;
 }
+.contenedor-videos{
+    background-color: var(--secundario);
+    padding: 25px;
+    border-radius: 5px;
+}
+
 .contenedor-videos iframe{
     width: 350PX;
     height: 200px;
@@ -918,51 +951,70 @@ video {
     display: none;
     background-color: var(--primarioLuces1);
     position: absolute;
-    top: 192px;
-    left: -30px;
+    top: 29px;
+    right: 25px;
     z-index: 25;
-    transform: translate(-50%, -50%);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
-    width: 230px;
+    width: 220px;
+}
+#popup-compras{
+    display: none;
+    background-color: var(--primarioLuces1);
+    position: absolute;
+    top: 29px;
+    right: 0px;
+    z-index: 25;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    width: 200px;
+    line-height: 35px;
 }
 .cerrar-popup{
     position: absolute;
-    right: -1px;
+    padding: 0;
+    width: 10px;
+    right: 8px;
     top: 1px;
 }
 .encabezado-popup{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 35px auto 15px auto;
+    margin: 15px auto 15px auto;
+    font-size: 12px;
 }
-.encabezado-popup img{
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
-}
-.btn-cerrar-popup{
-    background-color: var(--primarioLuces1);
-    color: var(--neutroOscuro);
-    border: none;
-    cursor: pointer;
-}
-/*POPUP-COMPRAS*/  
-#popup-compras{
-    display: none;
-    background-color: var(--primarioLuces1);
-    position: absolute;
-    top: 168px;
-    left: 30px;
-    z-index: 25;
-    transform: translate(-50%, -50%);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    width: 230px;
-    line-height: 35px;
+@media only screen and (min-width:768px){
+    .encabezado-popup{
+        font-size: 16px;
+    }
+    #popup-login{
+        top: 50px;
+        right: 60px;
+    }
+    #popup-compras{
+        top: 50px;
+        right: 0px;
+    }
 }
 
+.encabezado-popup img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.btn-cerrar-popup{
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: var(--neutroOscuro);
+}
+#btn-cerrar-popup-login{
+    background-color: var(--primarioLuces1);
+}
+#btn-cerrar-popup-compras{
+    background-color: var(--primarioLuces1);
+}
 .juego-precio{
     align-items: baseline;
 }
@@ -975,6 +1027,7 @@ video {
     border-radius: 5px;
     margin: 15px auto 0 auto;
     width: 60%;
+    font-size: 16px;
 }
 
 
@@ -988,43 +1041,87 @@ video {
 .inicio-sesion {
     width: 500px;
     background-color: var(--primarioSombra2);
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    overflow: hidden; 
+    border-radius: 10px;
+}
+.conteiner-inicio , .conteiner-registro{
+    padding: 40px 0;
+    overflow: hidden; 
     position: relative;
+    border-radius: 10px;
 }
-.inicio-sesion img {
-    width: 90%;
-    height: 90%;
+.letras {
+    width: 2000px;
+    transition: transform 1s ease;
+    cursor: pointer;
 }
+.inicio-sesion:hover .letras {
+    transform: translateX(-300px);
+}
+
+.iniciar{
+    position: absolute;
+    top: 120px;
+    left: 80px;
+    background-color: var(--primarioLuces1);
+    border-radius: 10px;
+    width: 160px;
+    padding: 3px;
+}
+.sesion{
+    position: absolute;
+    top: 172px;
+    left: 220px;
+    background-color: var(--primarioLuces1);
+    border-radius: 10px;
+    width: 160px;
+    padding: 3px;
+}
+.registrarse{
+    position: absolute;
+    top: 145px;
+    left: 95px;
+    background-color: var(--primarioLuces1);
+    border-radius: 10px;
+    width: 300px;
+    padding: 3px;
+}
+
+/*
 #img-inicio, #img-registrarse {
     cursor: pointer;
     transition: transform 2s;
 }
 #img-inicio:hover, #img-registrarse:hover {
    transform: rotate3d(2,2,2,360deg);
+}*/
+.main-login{
+    padding-bottom: 50px;
 }
+
 #container-form-inicio-sesion, #container-form-registrarse{
-    display: none;
     position: absolute;
     display: flex;
     justify-content: center;
     background-color: var(--primarioSombra2);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    width: 450px;
-    padding: 35px;
+    width: 500px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+#formulario-inicio, #formulario-registro{
+    width: 100%;
 }
 #container-form-inicio-sesion{
-    top: 400px;
-    left: 50px;
+    top: 480px;
+    left: 85px;
 }
 #container-form-registrarse{
-    top: 400px;
-    right: 50px; 
+    top: 480px;
+    right: 84px; 
 }
 .botones-inicio-sesion {
-    margin: 0 auto; 
+    width: 60%;
+    margin: 25px auto; 
     text-align: center;
 }
 .botones-inicio-sesion button{
@@ -1032,27 +1129,63 @@ video {
     width: 100%; 
     margin-bottom: 10px;
 }
-#formulario-inicio , #formulario-registro{
-    width: 100%;
+#btn-face, #btn-google{
+    background-color: var(--secundarioLuces1);
+    color: var(--neutroOscuro);
 }
 .form-group {
-    margin-bottom: 20px;
+    margin: 30px;
 }
 label {
     display: block;
     font-weight: bold;
     margin-bottom: 2px;
 }
+.contrenia-link{
+    text-align: right;
+    margin-right: 30px;
+    margin-top: -25px;
+    text-decoration: underline;
+}
 .form-group input{
-    border: 1px solid var(--secundarioLuces2);
+    border: 1px solid var(--secundarioLuces1);
     border-radius: 3px;
     width: 100%;
     height: 25px;
 }
-.campos-obligatorios {
-    font-size: 8px;
+.form-group span {
     color: red;
 }
+.campos-obligatorios {
+    font-size: 12px;
+    color: red;
+    margin-left: 30px;
+    margin-top: -20px;
+}
+.captcha{
+    background-color: var(--secundarioLuces1);
+    border: solid 1px var(--neutroOscuro);
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.captcha img{
+    width: 80px;
+}
+#captcha{
+    width: 25px;
+}
+.checkbox{
+    display: flex;
+    justify-content: space-around;
+}
+.checkbox p{
+    margin-left: 10px;
+}
+
 button {
     background-color: var(--terciario);
     color: var(--secundarioLuces2);
@@ -1072,26 +1205,6 @@ button:hover {
 /*SE AGREGA*/
 /*popup-formulario INICIO SESION y REGISTRACION */
   
-
-#container-form-inicio-sesion, #container-form-registrarse{
-    display: none;
-    background-color: #E18407;
-    margin-top: 30%;
-    top: 50%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    width: 350px;
-    height: 355px;
-    position: relative;
-}
-#img-inicio, #img-registrarse {
-    cursor: pointer;
-    transition: transform 2s;
-
-}
-
-
 #spinner {
     border: 4px solid rgba(255, 255, 255, 0.3);
     border-top: 4px solid #007BFF;

@@ -27,14 +27,13 @@ function mostrarImagen(pos) {
 }
 
 
-// script.js
 const boton = document.getElementById('play');
 const fichas = document.querySelectorAll('.fichas');
 
 boton.addEventListener('mouseenter', () => {
     fichas.forEach((ficha) => {
         // Mueve las imágenes hacia abajo en función de su índice
-        ficha.style.transform = `translateY(480px)`;
+        ficha.style.transform = `translateY(155px)`;
         ficha.style.transition = 'transform 0.3s ease';
     });
 });
