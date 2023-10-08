@@ -1,5 +1,5 @@
 "use strict";
-const logo =document.querySelector(".logo");
+const logo =document.getElementById("logo");
 const loadingContainer = document.getElementById('loading-container');
 const loadingProgress = document.getElementById('loading-progress');
 

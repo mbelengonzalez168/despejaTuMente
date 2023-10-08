@@ -1,7 +1,7 @@
 "use strict";
 const misBotones = document.querySelectorAll('.miBoton');
 
-let comprado= 'Comprado';
+let comprado='Comprado';
 let jugar='Jugar';
 let contenidoOriginal = miBoton.textContent;
 

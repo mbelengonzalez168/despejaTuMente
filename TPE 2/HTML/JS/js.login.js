@@ -1,5 +1,5 @@
 "use strict";
-   
+const logo =document.getElementById("logo");   
 const ImgInicio= document.querySelector('.conteiner-inicio');
 const ImgRegistrarse= document.querySelector('.conteiner-registro');
 const conteinerFormInicio = document.getElementById("container-form-inicio-sesion");
@@ -10,7 +10,7 @@ const btnInicioSesion= document.getElementById("btn-iniciar-sesion");
 const conteinerFormRegistrarse = document.getElementById("container-form-registrarse");
 const btnRegistrarse = document.getElementById('btn-registrarse');
 const mnjExito= document.getElementById("mensajeExito"),
-      CloseMnjExito= document.getElementById("cerrar-mnj-ext"),
+      CloseMnjExito= document.getElementById("cerrar-mnj-exito"),
       loadingContainer = document.getElementById('loading-container'),
       loadingProgress= document.getElementById('loading-progress'),
       btnFace = document.getElementById('btn-face'),
@@ -83,7 +83,7 @@ function ingresarAlHome() {
 
 btnFace.addEventListener("click", ingresarAlHome);
 btnGoogle.addEventListener("click", ingresarAlHome);
-
+logo.addEventListener("click", ingresarAlHome);
 
 FormRegistro.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -102,5 +102,6 @@ FormRegistro.addEventListener("submit", function (event) {
       alert('Por favor, complete el CAPTCHA y verifique los campos obligatorios.');
   }
 });
+
 
 

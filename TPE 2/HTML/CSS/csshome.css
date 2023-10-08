@@ -63,6 +63,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 500px;
+    cursor: pointer;
 }
 .logo-login img{
     width: 100px;
@@ -425,7 +426,7 @@ footer li{
 }
 
 
-/*se agrega efecto boton comprado*/
+/*efecto boton comprado*/
 .boton-cards {
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones para color de fondo y texto */
@@ -433,45 +434,19 @@ footer li{
 .boton-cards.clickeado {
     background-color: #28a745; /* Color de fondo al hacer clic */
     color: #fff; /* Color del texto al hacer clic */
+    text-align: center;
     transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones al hacer clic */
 }
 
-
-
-
-  /*BOTON PLAY JUEGO*/
-  #play {
-    padding: 10px 20px; /* Ajusta el espaciado según tu diseño */
-     /* Ajusta el tamaño de fuente según tu diseño */
-  /*  transition: transform 0.2s ease-in-out; /* Agrega una transición suave al cambio de escala */
-    transition: background-color 0.2s ease;
-  }
   
-  #play::before {
-    content: "\25B6"; /* Código Unicode del icono de "play" */
-    margin-right: 4px; /* Espaciado entre el icono y el texto */
-    display: none; /* Inicialmente oculta el icono */
-  }
-  
-  #play:hover {
-    background-color: hsl(124, 88%, 36%);
-    transform: scale(1);
-    
-  }
-  
-  #play:hover::before {
-    display: inline-block; /* Muestra el icono en hover */
-  }
-/*boton-comentarios*/
-
 #comentario:hover{
     color: var(--terciario);
     border: var(--terciario);
     background-color: var(--primarioLuces1);
     transform: scale(1);
+    cursor: pointer;
 
   }
-
 
 .texto-cards{
     margin: 10px;
@@ -604,7 +579,7 @@ footer li{
     }
 }
 
-/*---CARRUSEL-----*/
+/*CARRUSEL*/
 .contenedor-carrusel{
     overflow: hidden;
 }
@@ -638,12 +613,11 @@ footer li{
     width: 280px;
     border-radius: 7px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    /*flex: 0 0 calc(20% - 20px); /* Ajusta el ancho de cada tarjeta según tus necesidades */
     margin: 0 60px; /* Espacio entre las tarjetas */
     transform: scale(1); /* Escala inicial de las tarjetas */
     transition: transform 0.5s ease-in-out; /* Transición para la animación de escala */
 }
-  /* Estilo específico para la tarjeta del medio */
+  
 .card-completa-carrusel:nth-child(3) {
     transform: scale(1.1) translateY(-20px)s; /* Escala más grande para la tarjeta del medio */
 }
@@ -671,19 +645,38 @@ footer li{
     }
 }
 
+/*JUEJO*/
 
+#play {
+    padding: 10px 20px; 
+    transition: background-color 0.2s ease;
+  }
+  
+  #play::before {
+    content: "\25B6"; /* Código Unicode del icono de "play" */
+    margin-right: 4px; /* Espaciado entre el icono y el texto */
+    display: none; /* Inicialmente oculta el icono */
+  }
+  
+  #play:hover {
+    background-color: hsl(124, 88%, 36%);
+    transform: scale(1);
+    
+  }
+  
+  #play:hover::before {
+    display: inline-block; /* Muestra el icono en hover */
+  }
 
-  /*BOTON PLAY JUEGO*/
-#play {/* Estilos regulares del botón */
-    padding: 10px 20px; /* Ajusta el espaciado según tu diseño */
+#play {
     font-size: 16px; /* Ajusta el tamaño de fuente según tu diseño */
     transition: transform 0.3s ease-in-out; /* Agrega una transición suave al cambio de escala */
 }  
+
 #play:active {
-    transform: scale(1.3) rotate(360deg); /* Escala el botón al "x"% del tamaño original cuando se hace clic */
+    transform: scale(1.3); /* Escala el botón al "x"% del tamaño original cuando se hace clic */
 } 
 
-/*JUEJO*/
 .donde-estoy-juego {
     margin: 20px 0;
 }
@@ -861,9 +854,10 @@ video {
 .ver-mas-comentarios {
     text-align: right;
     text-decoration: underline;
+    cursor: pointer;
 }
 .contenedor-videos{
-    background-color: var(--secundario);
+    background-color: var(--primarioSombra2);
     padding: 25px;
     border-radius: 5px;
 }
@@ -890,7 +884,7 @@ video {
     background-color: var(--primarioSombra2) ;
     position: fixed;
     top: 50px;
-    left: 200px;
+    left: 600px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     width: 300px;
     height: 270px;   
@@ -1009,11 +1003,12 @@ video {
     padding: 0;
     color: var(--neutroOscuro);
 }
-#btn-cerrar-popup-login{
+#btn-cerrar-popup-login, #btn-cerrar-popup-compras{
     background-color: var(--primarioLuces1);
 }
-#btn-cerrar-popup-compras{
-    background-color: var(--primarioLuces1);
+
+#btn-cerrar-popup-compartir{
+    background-color: var(--primarioSombra2);
 }
 .juego-precio{
     align-items: baseline;
@@ -1113,7 +1108,7 @@ video {
 }
 #container-form-inicio-sesion{
     top: 480px;
-    left: 85px;
+    left: 80px;
 }
 #container-form-registrarse{
     top: 480px;
@@ -1146,6 +1141,7 @@ label {
     margin-right: 30px;
     margin-top: -25px;
     text-decoration: underline;
+    cursor: pointer;
 }
 .form-group input{
     border: 1px solid var(--secundarioLuces1);
@@ -1189,6 +1185,7 @@ label {
 button {
     background-color: var(--terciario);
     color: var(--secundarioLuces2);
+    text-align: center;
     border: none;
     border-radius: 3px;
     padding: 5px 20px;
@@ -1202,53 +1199,41 @@ button:hover {
     transform: scale(1.05);
 }
 
-/*SE AGREGA*/
+
 /*popup-formulario INICIO SESION y REGISTRACION */
-  
-#spinner {
-    border: 4px solid rgba(255, 255, 255, 0.3);
-    border-top: 4px solid #007BFF;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    animation: spin 2s linear infinite;
-    margin: 0 auto;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  
-  #loading-container {
+
+#loading-container {
     display: none;
-    margin-top: 50px;
     width: 100px;
     height: 100px;
     background-color: transparent;
     position: fixed;
-    top: 0;
+    top: 30px;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
     text-align: center;
+    z-index: 999;
+}
+
+#loading {
+  width: 60px;
+  height: 60px;
+  border: 10px solid var(--secundarioLuces2);
+  border-top: 6px solid transparent;
+  border-radius: 50%;
+  animation: spin 5s linear infinite;
+  margin: 0 auto;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
   }
-  
-  #loading {
-    width: 60px;
-    height: 60px;
-    border: 6px solid #007BFF;
-    border-top: 6px solid transparent;
-    border-radius: 50%;
-    animation: spin 5s linear infinite;
-    margin: 0 auto;
-  }
-  
-  /* Estilo para el contador AVANCE % */
+
 #loading-progress {
     font-size: 24px;
-    color: #007BFF;
+    color: var(--secundarioLuces2);
     margin-top: 20px;
   }
 /* Clase para ocultar elementos */
@@ -1258,11 +1243,11 @@ button:hover {
 #mensajeExito {
     display: none;
     width: 500px;
-    height: 350px;
+    height: 300px;
     background-color: var(--primarioLuces1);
     position: fixed;
-    top: 50%;
-    left: 50%;
+    top: 300px;
+    left: 750px;
     transform: translate(-50%, -50%);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     border-radius: 7px;
@@ -1270,7 +1255,8 @@ button:hover {
     font-size: 28px;
     text-align: center;
     color: var(--LetraLogo);
-    }
+    
+}
 
 #mensajeExito p{
     margin-top: 20px;
@@ -1279,17 +1265,33 @@ button:hover {
     margin-right: 25px;
     margin-left: 25px;
 }
-#mensajeExito :first-child{
+
+#cerrar-mnj-exito{
     text-align: right ;
     cursor: pointer;
     margin-left: 25px;
 }
+.logo-exito{
+    display: flex;
+}
+.logo-exito img{
+    width: 100px;
+    height: 100px;
+    margin: 5px 0;
+}
+.logo-exito h1{
+    font-size: 24px;
+    margin-left: 0 ;
+    width: 60px;
+    margin-top: 30px;
+    line-height: 16px;
+    color: var(--LetraLogo);
+}
+.logo-exito h1 span{
+    font-size: 16px;
+    color: var(--LetraLogo);
+}
  
-  /* Estilo al pasar el cursor sobre el botón de cierre */
-  #mensajeExito :first-child:hover {
-    color: #f44336; /* Cambia el color del botón al pasar el cursor */
-  }
-  
   .show {
     animation: fadeIn 2s ease-in-out;
   }

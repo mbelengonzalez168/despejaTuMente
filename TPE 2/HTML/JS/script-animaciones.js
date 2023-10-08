@@ -1,4 +1,5 @@
 "use stric"
+//---------------PASOS JUEGO------------------------------------------//
 
 const imagenes = document.querySelectorAll(".imagen-pasos");
 
@@ -26,6 +27,7 @@ function mostrarImagen(pos) {
   imagenes[pos].classList.add("visible");
 }
 
+//------------ANIMACION BOTON PLAY--------------------//
 
 const boton = document.getElementById('play');
 const fichas = document.querySelectorAll('.fichas');
