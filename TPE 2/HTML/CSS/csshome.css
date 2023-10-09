@@ -1032,12 +1032,14 @@ video {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+    position: relative;
 }
 .inicio-sesion {
     width: 500px;
     background-color: var(--primarioSombra2);
     overflow: hidden; 
     border-radius: 10px;
+    position: relative;
 }
 .conteiner-inicio , .conteiner-registro{
     padding: 40px 0;
@@ -1107,12 +1109,12 @@ video {
     width: 100%;
 }
 #container-form-inicio-sesion{
-    top: 480px;
-    left: 85px;
+    top: 300px;
+    left: 0;
 }
 #container-form-registrarse{
-    top: 480px;
-    right: 84px; 
+    top: 300px;
+    right: 0px; 
 }
 .botones-inicio-sesion {
     width: 60%;
