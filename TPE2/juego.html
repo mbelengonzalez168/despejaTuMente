@@ -88,15 +88,7 @@
                             <img class="foto-juego" src="./CSS/IMG/imagen-juego (2).png" alt="">
                             <img class="fichas leny" src="./CSS/IMG/Leny.png" alt="">
                         </div>
-                        <div class="conteiner-compartir-jugar">
-                            <div class="compartir-juego">
-                                <img src="./CSS/IMG/iconos/favorito.png" alt="">
-                                <img src="./CSS/IMG/iconos/me-gusta (1).png" alt="">
-                                <img src="./CSS/IMG/iconos/disgusto.png" alt="">
-                                <img id="icono-compartir" src="./CSS/IMG/iconos/enviar.png" alt="">
-                            </div>
-                            <button id="play" type="submit" class="btn-jugar-juego">Jugar</button>
-                        </div>
+                        
                         <div id="popup-compartir" class="">
                             <div class="cerrar-popup">
                                 <button id="btn-cerrar-popup-compartir" class="btn-cerrar-popup">X</button>
@@ -111,6 +103,95 @@
                             </div>
                         </div>
                     </div>
+                    <div class="conteiner-compartir-jugar">
+                        <div class="compartir-juego">
+                            <img src="./CSS/IMG/iconos/favorito.png" alt="">
+                            <img src="./CSS/IMG/iconos/me-gusta (1).png" alt="">
+                            <img src="./CSS/IMG/iconos/disgusto.png" alt="">
+                            <img id="icono-compartir" src="./CSS/IMG/iconos/enviar.png" alt="">
+                        </div>
+                        <button id="play" type="submit" class="btn-jugar-juego">Jugar</button>
+                    </div>
+                    <div class="section-juego-opciones" id="section-juego-opciones">
+                        <h2 class="titles">Cuatro en Linea</h2>
+                        <div class="opciones-juego">
+                            <div>
+                                <input type="radio" id="tablero-clasico" name="tipoTablero" value="4" checked />
+                                <label for="tablero-clasico">Facil: 4 en Limea</label>
+                                <input type="radio" id="tablero-moderado" name="tipoTablero" value="5"/>
+                                <label for="tablero-moderado">Difícil: 5 en Linea</label>
+                                <input type="radio" id="tablero-dificil" name="tipoTablero" value="6"/>
+                                <label for="tablero-dificil">Experto: 6 en Linea</label>
+                            </div>
+                            <div class="jugador-seleccion">
+                                <p class= "text-jugador" id="text-jugador1">Jugador 1</p>
+                                   
+                                <div class="opciones-fichas">
+                                    <label class="labelexpanded">
+                                        <input type="radio" name="targetgroup1" checked value="ficha1">
+                                        <div class="radio-btns"> <img src="CSS/IMG/ficha1.png" />
+                                        </div>
+                                        </input>
+                                    </label>
+                                    <label class="labelexpanded">
+                                        <input type="radio" name="targetgroup1" value="ficha2">
+                                        <div class="radio-btns"> <img src="CSS/IMG/ficha2.png">
+                                        </div>
+                                        </input>
+                                    </label>
+                                    <label class="labelexpanded">
+                                        <input type="radio" name="targetgroup1" value="ficha3">
+                                        <div class="radio-btns"> <img src="CSS/IMG/ficha3.png">
+                                        </div>
+                                        </input>
+                                    </label>
+                                  
+                                </div>
+                            </div>
+            
+                            <div class="jugador-seleccion">
+                                <p class= "text-jugador" id="text-jugador2">Jugador 2</p>
+                                <div class="opciones-fichas">
+                                    <label class="labelexpanded">
+                                        <input type="radio" name="targetgroup2" checked value="ficha4">
+                                        <div class="radio-btns"> <img src="CSS/IMG/ficha4.png" />
+                                        </div>
+                                        </input>
+                                    </label>
+                                    <label class="labelexpanded">
+                                        <input type="radio" name="targetgroup2" value="ficha5">
+                                        <div class="radio-btns"> <img src="CSS/IMG/ficha5.png">
+                                        </div>
+                                        </input>
+                                    </label>
+                                    <label class="labelexpanded">
+                                        <input type="radio" name="targetgroup2" value="ficha6">
+                                        <div class="radio-btns"> <img src="CSS/IMG/ficha6.png">
+                                        </div>
+                                        </input>
+                                    </label>
+                                  
+                                </div>
+                            </div>
+                            <div>
+                                <button class="item-btn btn-play" id="btn-play-juego">Jugar</button>
+                                <button class="item-btn item-btn-bajando" id="btn-salir">Salir</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-canvas">
+                        <div class="turno-juego"></div>
+                        <div class="timer-juego"></div>
+                        <div class="btn-canvas">
+                            <button class="item-btn btn-play" id="btn-reiniciar"><img src="IMG/reiniciar-juego.png" alt=""></button>
+                            <button class="item-btn item-btn-bajando" id="btn-game-out"><img src="IMG/salir-juego.png" alt=""></button>
+                        </div>
+                        <div class="resultado-canvas"></div>
+                        <div id="output" style="position:absolute; padding:5px;"></div>
+                        <div class="fichas-col"></div>
+                        <div></div>
+                        <canvas id="canvas" class="canvas"></canvas>
+                    </div> 
                     <div class="como-jugar-juego">
                         <div class="objetivo">
                             <h2>Objetivo del juego</h2>
@@ -290,6 +371,10 @@
         </div>
         <script type="text/javascript" src="./JS/script-animaciones.js"></script>
         <script type="text/javascript" src="./JS/juego.js"></script>
+        <script type="text/javascript" src="/TPE2/JS/canvas-juego.js"></script>
+        <script type="text/javascript" src="/TPE2/JS/canvas-ficha.js"></script>
+        <script type="text/javascript" src="/TPE2/JS/canvas-tablero.js"></script>
+        <script type="text/javascript" src="/TPE2/JS/iniciar-juego.js"></script>
         <script type="text/javascript" src="./JS/pop-up.js"></script>
     </body>
     </html>

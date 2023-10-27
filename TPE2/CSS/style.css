@@ -1246,3 +1246,185 @@ button:hover {
       opacity: 1;
     }
   }
+  /*-----------------------------------------------------------------*/
+  /*juego 4 en linea */
+  
+.section-juego-opciones{
+    display: nne;
+  }
+
+.section-juego-opciones {
+    text-align: center;
+    position: absolute;
+    font-size: 15px;
+    font-style: normal;
+    color: #C6C6C6;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--primarioSombra1);
+    height: 950px;
+    width: 600px;
+    border: 1px solid --primarioSombra2;
+    top: 70%
+}
+.content-canvas {
+    display: none;
+}
+.content-canvas {
+    position: relative;
+    width: 950px;
+    height: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.btn-canvas {
+    position: absolute;
+    display: flex;
+    width: 220px;
+    top: 10px;
+    left: 480px;
+    justify-content: space-between;
+}
+
+#btn-reiniciar,
+#btn-game-out {
+    width: 100px;
+    height: 40px;
+}
+
+.timer-juego {
+    position: absolute;
+    background-color: var(--terciario);
+    width: 100px;
+    height: 35px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-style: normal;
+    top: 10px;
+    left: 325px;
+    border-radius: 7px;
+
+}
+
+.resultado-canvas {
+    position: absolute;
+    font-size: 60px;
+    display: none;
+    top: 100px;
+    left: 60px;
+    height: 60px;
+    background: var(--secundario);
+    border-radius: 7px;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+}
+
+.turno-juego {
+    position: absolute;
+    font-size: 30px;
+    font-style: normal;
+    display: flex;
+    top: 10px;
+    left: 15px;
+    height: 35px;
+    background: var(--secundarioLuces1);
+    border-radius: 7px;
+    width:40%;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+    color: var(--secundarioSombra2);
+}
+
+.fichas-col {
+    position: absolute;
+    font-size: 30px;
+    font-style: normal;
+    display: flex;
+    top: 200px;
+    left: 15px;
+    height: 35px;
+    background: var(--secundarioLuces1);
+    border-radius: 7px;
+    width:40%;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+    color: var(--secundarioSombra2);
+}
+
+.jugador-seleccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.labelexpanded input {
+    display: none;
+}
+/*
+.labelexpanded input:checked+.radio-btns {
+    background: linear-gradient(180deg, #FF7600 12.5%, #FAC100 100%);
+}*/
+/*
+.labelexpanded input:hover+.radio-btns {
+    background: linear-gradient(180deg, #FF7600 12.5%, #FAC100 100%);
+}*/
+
+.radio-btns {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 1px  var(--LetraLogo);
+    cursor: pointer;
+    background-color: var(--fondoLogo);
+    float: left;
+    margin-right: 15px;
+    padding-top: 3px;
+    padding-right: 1px;
+}
+
+.radio-btns>img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.text-jugador {
+    font-size: 20px;
+    height: 40px;
+    background:var(--LetraLogo);
+    border-radius: 15px;
+    width: 30%;
+    padding-left: 10px;
+    color:var(--primarioLuces2);
+}
+
+.opciones-juego {
+    display: flex;
+    flex-direction: column;
+}
+
+.opciones-juego div {
+    margin: 20px;
+}
+
+.opciones-juego label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    color: #C6C6C6;
+    margin-top: 10px;
+    color: #FAC100;
+}
+
+.opciones-fichas{
+    display: flex;
+}
