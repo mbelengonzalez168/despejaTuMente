@@ -218,6 +218,7 @@ main {
     grid-area: main;
 }
 .conteiner-main{
+    position: relative;
     margin: auto 10px;
 }
 @media only screen and (min-width:768px) {
@@ -626,10 +627,14 @@ footer li{
 .descripcion-juego{
     margin-bottom: 10px;
 }
+.juego-compartir{
+     background-color: var(--primarioSombra2); 
+     display: flex;
+     flex-direction: column;
+     padding: 30px;
+}
+
 .section-juego{
-   background-color: var(--primarioSombra2); 
-   padding: 30px;
-   color: var(--neutroOscuro);
    border-radius: 5px;
    position: relative;
 }
@@ -1248,24 +1253,83 @@ button:hover {
   }
   /*-----------------------------------------------------------------*/
   /*juego 4 en linea */
-  
-.section-juego-opciones{
-    display: nne;
-  }
 
 .section-juego-opciones {
     text-align: center;
     position: absolute;
-    font-size: 15px;
-    font-style: normal;
-    color: #C6C6C6;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 200px;
+    top: 50px;
     background-color: var(--primarioSombra1);
-    height: 950px;
-    width: 600px;
-    border: 1px solid --primarioSombra2;
-    top: 70%
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 25px 150px;
+    width: 480px;
+}
+.section-juego-opciones h2{
+    font-size: 30px;
+    padding: 25px;
+}
+.nivel-juego {
+    display: flex;  
+    justify-content:space-between;
+}
+.opciones-juego label {
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.opciones-juego span{
+    font-weight: 250;
+    font-size: 15px;
+}
+.radio-btns {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 1px  var(--LetraLogo);
+    cursor: pointer;
+    background-color: var(--primarioSombra2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.radio-btns>img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.labelexpanded input:checked+.radio-btns {
+    background-color: var(--primarioLuces2);
+}
+.text-jugador {
+    font-size: 25px;
+    font-weight: bold;
+}
+.opciones-fichas{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.jugador {
+    margin: 45px 0px;
+}
+.jugador-seleccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+
+}
+.labelexpanded input {
+    display: none;
+}
+.section-juego-opciones button{
+    width: 220px;
+    margin: 10px 50px;
 }
 .content-canvas {
     display: none;
@@ -1276,7 +1340,6 @@ button:hover {
     height: 600px;
     margin: 0 auto 30px auto;
 }
-
 .btn-canvas {
     position: absolute;
     display: flex;
@@ -1285,13 +1348,10 @@ button:hover {
     left: 480px;
     justify-content: space-between;
 }
-
-#btn-reiniciar,
-#btn-game-out {
+#btn-reiniciar, #btn-game-out {
     width: 100px;
     height: 40px;
 }
-
 .timer-juego {
     position: absolute;
     background-color: var(--terciario);
@@ -1308,7 +1368,6 @@ button:hover {
     border-radius: 7px;
 
 }
-
 .resultado-canvas {
     position: absolute;
     font-size: 60px;
@@ -1322,7 +1381,6 @@ button:hover {
     align-items: center;
     justify-content: center;
 }
-
 .turno-juego {
     position: absolute;
     font-size: 30px;
@@ -1339,7 +1397,6 @@ button:hover {
     padding-left: 10px;
     color: var(--secundarioSombra2);
 }
-
 .fichas-col {
     position: absolute;
     font-size: 30px;
@@ -1356,16 +1413,6 @@ button:hover {
     padding-left: 10px;
     color: var(--secundarioSombra2);
 }
-
-.jugador-seleccion {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.labelexpanded input {
-    display: none;
-}
 /*
 .labelexpanded input:checked+.radio-btns {
     background: linear-gradient(180deg, #FF7600 12.5%, #FAC100 100%);
@@ -1374,57 +1421,3 @@ button:hover {
 .labelexpanded input:hover+.radio-btns {
     background: linear-gradient(180deg, #FF7600 12.5%, #FAC100 100%);
 }*/
-
-.radio-btns {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    position: relative;
-    text-align: center;
-    box-shadow: 0 1px  var(--LetraLogo);
-    cursor: pointer;
-    background-color: var(--fondoLogo);
-    float: left;
-    margin-right: 15px;
-    padding-top: 3px;
-    padding-right: 1px;
-}
-
-.radio-btns>img {
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-}
-
-.text-jugador {
-    font-size: 20px;
-    height: 40px;
-    background:var(--LetraLogo);
-    border-radius: 15px;
-    width: 30%;
-    padding-left: 10px;
-    color:var(--primarioLuces2);
-}
-
-.opciones-juego {
-    display: flex;
-    flex-direction: column;
-}
-
-.opciones-juego div {
-    margin: 20px;
-}
-
-.opciones-juego label {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 43px;
-    color: #C6C6C6;
-    margin-top: 10px;
-    color: #FAC100;
-}
-
-.opciones-fichas{
-    display: flex;
-}

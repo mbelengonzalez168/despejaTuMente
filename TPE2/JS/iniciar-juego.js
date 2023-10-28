@@ -9,6 +9,7 @@ function iniciarJuego() {
     const CANVAS_HEIGHT = 600;
     const CANVAS_IMG_BACKGROUND = "./CSS/IMG/fondo-juego-2.jpg";
     const CANVAS_IMG_TABLERO = "./CSS/IMG/ficha-juego.jpg";
+    const main = document.querySelector('.juego-compartir');
     let fondoCanvas = new Image();
     let imagenFicha1 = new Image();
     let imagenFicha2 = new Image();
@@ -72,7 +73,7 @@ function iniciarJuego() {
     let ctx = canvas.getContext('2d');
         canvas.style.display = 'none';
 
-    let sectionJuego= document.querySelector(".section-juego");
+    let sectionJuego= document.querySelector(".juego-compartir");
         sectionJuego.style.display = 'block';
 
     let sectionJuegoOpciones = document.getElementById("section-juego-opciones");
@@ -80,13 +81,15 @@ function iniciarJuego() {
 
         let btnPlay = document.getElementById('play');
             btnPlay.addEventListener("click", function () {
-            sectionJuego.style.display = 'none';
+            sectionJuego.style.visibility = 'hidden';
+            main.style.height =  '600px';
             sectionJuegoOpciones.style.display = 'block';
             });
 
          let btnSalir = document.getElementById('btn-salir');
             btnSalir.addEventListener("click", function () {
-            sectionJuego.style.display = 'block';
+            sectionJuego.style.visibility = 'visible';
+            main.style.height =  '750px';
             sectionJuegoOpciones.style.display = 'none';
             });
 //Inicializa variables al reiniciar o salir del juego.
@@ -168,7 +171,7 @@ function initVariables() {
             }
 
             imagenFicha1.src = "./CSS/IMG/" + ficha1 + ".png";
-
+            
         //Jugador 2
         //Nombre
         jugador2= document.getElementById('text-jugador2').textContent;

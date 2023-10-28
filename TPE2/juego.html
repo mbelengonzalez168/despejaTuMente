@@ -81,98 +81,108 @@
                     <div class="donde-estoy-juego">
                         <h3>Home > Logica > Lenny Vs Carl</h3>
                     </div>
-                    <div class="section-juego">
-                        <h1 class="nombre-juego">Lenny Vs. Carl</h1>
-                        <p class="descripcion-juego"> Consigue conectar 4 fichas de cada personaje (Lenny o Carl)</p>
-                        <div class="conteiner-foto-juego">
-                            <img class="foto-juego" src="./CSS/IMG/imagen-juego (2).png" alt="">
-                            <img class="fichas leny" src="./CSS/IMG/Leny.png" alt="">
-                        </div>
-                        
-                        <div id="popup-compartir" class="">
-                            <div class="cerrar-popup">
-                                <button id="btn-cerrar-popup-compartir" class="btn-cerrar-popup">X</button>
+                    <div class="juego-compartir">
+                        <div class="section-juego">
+                            <h1 class="nombre-juego">Lenny Vs. Carl</h1>
+                            <p class="descripcion-juego"> Consigue conectar 4 fichas de cada personaje (Lenny o Carl)</p>
+                            <div class="conteiner-foto-juego">
+                                <img class="foto-juego" src="./CSS/IMG/imagen-juego (2).png" alt="">
+                                <img class="fichas leny" src="./CSS/IMG/Leny.png" alt="">
                             </div>
-                            <div class="encabezado-popup">
-                                <h2>Compartir</h2>
-                            </div>
-                            <div class="contenido-popup">    
-                                <img src="./CSS/IMG/iconos-popup-compartir.jpg" alt="">
-                                <p class="link-popup">https://despejatumente.com /user5/logica/karlsvslenny</p>
-                                <button class="btn-copiar-link-popup">Copiar Link</button>
+                            
+                            <div id="popup-compartir" class="">
+                                <div class="cerrar-popup">
+                                    <button id="btn-cerrar-popup-compartir" class="btn-cerrar-popup">X</button>
+                                </div>
+                                <div class="encabezado-popup">
+                                    <h2>Compartir</h2>
+                                </div>
+                                <div class="contenido-popup">    
+                                    <img src="./CSS/IMG/iconos-popup-compartir.jpg" alt="">
+                                    <p class="link-popup">https://despejatumente.com /user5/logica/lennyvscarls</p>
+                                    <button class="btn-copiar-link-popup">Copiar Link</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="conteiner-compartir-jugar">
-                        <div class="compartir-juego">
-                            <img src="./CSS/IMG/iconos/favorito.png" alt="">
-                            <img src="./CSS/IMG/iconos/me-gusta (1).png" alt="">
-                            <img src="./CSS/IMG/iconos/disgusto.png" alt="">
-                            <img id="icono-compartir" src="./CSS/IMG/iconos/enviar.png" alt="">
+                        <div class="conteiner-compartir-jugar">
+                            <div class="compartir-juego">
+                                <img src="./CSS/IMG/iconos/favorito.png" alt="">
+                                <img src="./CSS/IMG/iconos/me-gusta (1).png" alt="">
+                                <img src="./CSS/IMG/iconos/disgusto.png" alt="">
+                                <img id="icono-compartir" src="./CSS/IMG/iconos/enviar.png" alt="">
+                            </div>
+                            <button id="play" type="submit" class="btn-jugar-juego">Jugar</button>
                         </div>
-                        <button id="play" type="submit" class="btn-jugar-juego">Jugar</button>
                     </div>
                     <div class="section-juego-opciones" id="section-juego-opciones">
-                        <h2 class="titles">Cuatro en Linea</h2>
+                        <h2>Lenny Vs Carl</h2>
                         <div class="opciones-juego">
-                            <div>
-                                <input type="radio" id="tablero-clasico" name="tipoTablero" value="4" checked />
-                                <label for="tablero-clasico">Facil: 4 en Limea</label>
-                                <input type="radio" id="tablero-moderado" name="tipoTablero" value="5"/>
-                                <label for="tablero-moderado">Difícil: 5 en Linea</label>
-                                <input type="radio" id="tablero-dificil" name="tipoTablero" value="6"/>
-                                <label for="tablero-dificil">Experto: 6 en Linea</label>
-                            </div>
-                            <div class="jugador-seleccion">
-                                <p class= "text-jugador" id="text-jugador1">Jugador 1</p>
-                                   
-                                <div class="opciones-fichas">
-                                    <label class="labelexpanded">
-                                        <input type="radio" name="targetgroup1" checked value="ficha1">
-                                        <div class="radio-btns"> <img src="CSS/IMG/ficha1.png" />
-                                        </div>
-                                        </input>
-                                    </label>
-                                    <label class="labelexpanded">
-                                        <input type="radio" name="targetgroup1" value="ficha2">
-                                        <div class="radio-btns"> <img src="CSS/IMG/ficha2.png">
-                                        </div>
-                                        </input>
-                                    </label>
-                                    <label class="labelexpanded">
-                                        <input type="radio" name="targetgroup1" value="ficha3">
-                                        <div class="radio-btns"> <img src="CSS/IMG/ficha3.png">
-                                        </div>
-                                        </input>
-                                    </label>
-                                  
+                            <div class="nivel-juego">
+                                <div>
+                                    <input type="radio" id="tablero-clasico" name="tipoTablero" value="4" checked />
+                                    <label for="tablero-clasico">Fácil: <span>4 en Línea</span></label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="tablero-moderado" name="tipoTablero" value="5"/>
+                                    <label for="tablero-moderado">Difícil:<span>5 en Línea</span></label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="tablero-dificil" name="tipoTablero" value="6"/>
+                                    <label for="tablero-dificil">Experto: <span>6 en Línea</span></label>
                                 </div>
                             </div>
-            
-                            <div class="jugador-seleccion">
-                                <p class= "text-jugador" id="text-jugador2">Jugador 2</p>
-                                <div class="opciones-fichas">
-                                    <label class="labelexpanded">
-                                        <input type="radio" name="targetgroup2" checked value="ficha4">
-                                        <div class="radio-btns"> <img src="CSS/IMG/ficha4.png" />
-                                        </div>
-                                        </input>
-                                    </label>
-                                    <label class="labelexpanded">
-                                        <input type="radio" name="targetgroup2" value="ficha5">
-                                        <div class="radio-btns"> <img src="CSS/IMG/ficha5.png">
-                                        </div>
-                                        </input>
-                                    </label>
-                                    <label class="labelexpanded">
-                                        <input type="radio" name="targetgroup2" value="ficha6">
-                                        <div class="radio-btns"> <img src="CSS/IMG/ficha6.png">
-                                        </div>
-                                        </input>
-                                    </label>
-                                  
+                            <div class="jugador">
+                                <div class="jugador-seleccion">
+                                    <p class= "text-jugador" id="text-jugador1">Jugador 1</p> 
+                                    <div class="opciones-fichas">
+                                        <label class="labelexpanded">
+                                            <input type="radio" name="targetgroup1" checked value="ficha1">
+                                                <div class="radio-btns">    
+                                                    <img src="CSS/IMG/ficha1.png" />
+                                                </div>
+                                            </input>
+                                        </label>
+                                        <label class="labelexpanded">
+                                            <input type="radio" name="targetgroup1" value="ficha2">
+                                            <div class="radio-btns"> <img src="CSS/IMG/ficha2.png">
+                                            </div>
+                                            </input>
+                                        </label>
+                                        <label class="labelexpanded">
+                                            <input type="radio" name="targetgroup1" value="ficha3">
+                                            <div class="radio-btns"> <img src="CSS/IMG/ficha3.png">
+                                            </div>
+                                            </input>
+                                        </label>
+                                      
+                                    </div>
+                                </div>           
+                                <div class="jugador-seleccion">
+                                    <p class= "text-jugador" id="text-jugador2">Jugador 2</p>
+                                    <div class="opciones-fichas">
+                                        <label class="labelexpanded">
+                                            <input type="radio" name="targetgroup2" checked value="ficha4">
+                                            <div class="radio-btns"> <img src="CSS/IMG/ficha4.png" />
+                                            </div>
+                                            </input>
+                                        </label>
+                                        <label class="labelexpanded">
+                                            <input type="radio" name="targetgroup2" value="ficha5">
+                                            <div class="radio-btns"> <img src="CSS/IMG/ficha5.png">
+                                            </div>
+                                            </input>
+                                        </label>
+                                        <label class="labelexpanded">
+                                            <input type="radio" name="targetgroup2" value="ficha6">
+                                            <div class="radio-btns"> <img src="CSS/IMG/ficha6.png">
+                                            </div>
+                                            </input>
+                                        </label>
+                                      
+                                    </div>
                                 </div>
                             </div>
+
                             <div>
                                 <button class="item-btn btn-play" id="btn-play-juego">Jugar</button>
                                 <button class="item-btn item-btn-bajando" id="btn-salir">Salir</button>
@@ -200,7 +210,7 @@
                         <div class="ayuda"> 
                             <div class="texto-ayuda">
                                 <h2>Instrucciones</h2>
-                                <P>Sigue los siguientes pasos para aprender a jugar a Lenny Vs Karl</P>
+                                <P>Sigue los siguientes pasos para aprender a jugar a Lenny Vs Carl</P>
                                 <p>PASO 1: Elige tu personaje favorito haciendo click sobre una de las fichas. La pc será tu contrincante.</p>
                                 <p>PASO 2: Coloca la ficha de tu personaje en la columna deseada haciendo click sobre una de ellas.</p>
                                 <p>PASO 3: Espera el movimiento de la pc para volver a tu turno y repite el paso dos hasta que haya un ganador.</p>
