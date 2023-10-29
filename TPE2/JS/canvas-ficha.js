@@ -7,6 +7,7 @@ class canvas_ficha extends canvas_juego {
         this.libre = false;
         this.id = id;
         this.color= color;
+        this.clickeada = false;
     }
 
     //Si se encuentra una posicion en el tablero se lleva a esa posicion
@@ -31,8 +32,14 @@ class canvas_ficha extends canvas_juego {
     draw() {
         this.context.save();//guardar el estado actual del contexto
         this.context.beginPath();
+        if (this.clickeada) {
+            this.context.strokeStyle = 'blue';
+            this.context.lineWidth = 5; // Ancho del borde
+            
+        } else {
+            this.context.strokeStyle = this.color; 
+       }
         this.context.arc(this.posCanvasX, this.posCanvasY, this.radio, this.anguloDesde, this.anguloHasta);
-        this.context.strokeStyle= this.color;
         this.context.stroke();
         this.context.closePath();
         this.context.clip();
@@ -56,6 +63,9 @@ class canvas_ficha extends canvas_juego {
 
     getId() {
         return this.id;
+    }
+    setClickeada (valor){
+        this.clickeada = valor;
     }
 
 }

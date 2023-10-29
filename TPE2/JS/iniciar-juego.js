@@ -21,7 +21,7 @@ function iniciarJuego() {
     let columnas;
     let filas;
     let turno_jugador_1;
-    let color= 'red';
+    let color = 'red';
     let jugador1;
     let ficha1;
     let jugador2;
@@ -38,8 +38,8 @@ function iniciarJuego() {
     let matriz_box = [];
     let boxSeleccionado = null;
 
-    let inicioX;
-    let inicioY;
+   // let inicioX;
+  //  let inicioY;
     let inicioTableroX;
     let inicioTableroY;
     
@@ -105,8 +105,9 @@ function initVariables() {
     ficha_j2_seleccionada = null;
     boxSeleccionado = null;
     finJuego = false;
-    inicioX = 0;
-    inicioY = 0;
+   
+//    inicioX = 0;
+  //  inicioY = 0;
     canvasDraw();
     timer = TIEMPO_JUEGO;
     clearTimeout(tiempo);
@@ -277,11 +278,12 @@ function initVariables() {
                     let distancia = Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2));//distancia euclidiana entre dos puntos en un espacio bidimensional.conecta dos puntos en un plano.
                     if (distancia <= arregloFichasJugador1[i].getRadio() && arregloFichasJugador1[i].estaLibre()) {
                         ficha_j1_seleccionada = arregloFichasJugador1[i];
-                        inicioX = arregloFichasJugador1[i].getPosCanvasX();
-                        inicioY = arregloFichasJugador1[i].getPosCanvasY();
+                       // inicioX = arregloFichasJugador1[i].getPosCanvasX();
+                       // inicioY = arregloFichasJugador1[i].getPosCanvasY();
                         break;
                     }
                 }
+                ficha_j1_seleccionada.setClickeada(true);
             } else {//Juega jugador dos.
                 for (let i = 0; i < arregloFichasJugador2.length; i++) {
                     let x = mousePos.x;
@@ -291,11 +293,12 @@ function initVariables() {
                     let distancia = Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2));
                     if (distancia <= arregloFichasJugador2[i].getRadio() && arregloFichasJugador2[i].estaLibre()) {
                         ficha_j2_seleccionada = arregloFichasJugador2[i];
-                        inicioX = arregloFichasJugador2[i].getPosCanvasX();
-                        inicioY = arregloFichasJugador2[i].getPosCanvasY();
+                   //     inicioX = arregloFichasJugador2[i].getPosCanvasX();
+                    //    inicioY = arregloFichasJugador2[i].getPosCanvasY();
                         break;
                     }
                 }
+                ficha_j2_seleccionada.setClickeada(true);
             }
         }
     });
@@ -391,6 +394,7 @@ function initVariables() {
             }
         }
         if (turno_jugador_1 && ficha_j1_seleccionada != null) {
+            ficha_j1_seleccionada.setClickeada(false);
             for (let y = 0; y < arregloFichasJugador1.length; y++) {
                 if (ficha_j1_seleccionada.getId() === arregloFichasJugador1[y].getId()) {
                     if (boxSeleccionado != null) {
@@ -424,6 +428,7 @@ function initVariables() {
             ficha_j1_seleccionada = null;
         } else {
             if (!turno_jugador_1 && ficha_j2_seleccionada != null) {
+                ficha_j2_seleccionada.setClickeada(false);
                 for (let y = 0; y < arregloFichasJugador2.length; y++) {
                     if (ficha_j2_seleccionada.getId() === arregloFichasJugador2[y].getId()) {
                         if (boxSeleccionado != null) {
