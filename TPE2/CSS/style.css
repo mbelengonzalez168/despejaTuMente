@@ -1322,7 +1322,6 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     margin: 10px;
-
 }
 .labelexpanded input {
     display: none;
@@ -1343,76 +1342,63 @@ button:hover {
 .btn-canvas {
     position: absolute;
     display: flex;
-    width: 220px;
-    top: 10px;
-    left: 480px;
     justify-content: space-between;
+    top: 20px;
+    right: 20px;
+    justify-content: space-between;
+    width: 140px;
 }
-#btn-reiniciar, #btn-game-out {
-    width: 100px;
-    height: 40px;
-}
-.timer-juego {
-    position: absolute;
-    background-color: var(--terciario);
-    width: 100px;
-    height: 35px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    font-style: normal;
-    top: 10px;
-    left: 325px;
-    border-radius: 7px;
-
-}
-.resultado-canvas {
-    position: absolute;
-    font-size: 60px;
-    display: none;
-    top: 100px;
-    left: 60px;
+#btn-reiniciar , #btn-game-out  {
+    width: 60px;
     height: 60px;
-    background: var(--secundario);
-    border-radius: 7px;
-    width: 90%;
-    align-items: center;
-    justify-content: center;
 }
 .turno-juego {
     position: absolute;
-    font-size: 30px;
-    font-style: normal;
     display: flex;
-    top: 10px;
-    left: 15px;
-    height: 35px;
+    top: 20px;
+    left: 325px;
+    height: 60px;
     background: var(--secundarioLuces1);
-    border-radius: 7px;
-    width:40%;
+    opacity: 85%;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
     align-items: center;
-    justify-content: flex-start;
-    padding-left: 10px;
+    justify-content: center;
     color: var(--secundarioSombra2);
+    font-size: 30px;
 }
-.fichas-col {
+.timer-juego {
     position: absolute;
-    font-size: 30px;
-    font-style: normal;
+    background-color: var(--secundarioSombra2);
+    color:var(--secundarioLuces1);
+    width: 140px;
+    height: 60px;
     display: flex;
-    top: 200px;
-    left: 15px;
-    height: 35px;
-    background: var(--secundarioLuces1);
-    border-radius: 7px;
-    width:40%;
     align-items: center;
-    justify-content: flex-start;
-    padding-left: 10px;
-    color: var(--secundarioSombra2);
+    justify-content: center;
+    font-size: 30px;
+    top: 20px;
+    left: 20px;
+    border-radius: 5px;
 }
+.resultado-canvas {
+    position: absolute;
+    font-size: 20px;
+    display: none;
+    top: 35px;
+    left: 375px;
+    height: 30px;
+    background: var(--secundarioLuces1);
+    color: var(--secundarioSombra2);
+    border-radius: 2.5px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    transform: scale(2);
+    transition: transform 0.3s ease;
+}
+
 /*
 .labelexpanded input:checked+.radio-btns {
     background: linear-gradient(180deg, #FF7600 12.5%, #FAC100 100%);

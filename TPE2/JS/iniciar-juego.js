@@ -2,12 +2,13 @@
 
 document.addEventListener("DOMContentLoaded", iniciarJuego);
 
+
 function iniciarJuego() {
 
     const TIEMPO_JUEGO = 120;//segundos 300 son 5 minutos
     const CANVAS_WIDTH = 950;
     const CANVAS_HEIGHT = 600;
-    const CANVAS_IMG_BACKGROUND = "./CSS/IMG/fondo-juego-2.jpg";
+    const CANVAS_IMG_BACKGROUND = "./CSS/IMG/FondoCanva30.png";
     const CANVAS_IMG_TABLERO = "./CSS/IMG/ficha-juego.jpg";
     const main = document.querySelector('.juego-compartir');
     let fondoCanvas = new Image();
@@ -190,14 +191,14 @@ function initVariables() {
             initVariables();
         });
 //---------------------------------------------------------------------------------------------------------------//
-    //Funcion llamada para dibujar la pantalla al inicio de juego    BELEN POSICION FICHAS 
+    //Funcion llamada para dibujar la pantalla al inicio de juego    
     function canvasDraw() {
         //Para dibujar el fondo
         ctx.drawImage(fondoCanvas, 0, 0, canvas.width, canvas.height);
 
         let fichas_totales = ((filas * columnas) / 2);//decia + 1
         for (let i = 0; i < fichas_totales; i++) {
-            let f1 = new canvas_ficha(jugador1, 'f1' + i + 1 , ctx , 100 , 350 - (i * 2), imagenFicha1, color);
+            let f1 = new canvas_ficha(jugador1, 'f1' + i + 1 , ctx , 120 , 350 - (i * 2), imagenFicha1, color);
             f1.draw();
             if (i === fichas_totales - 1) {
                 f1.setEstaLibre(true);
@@ -206,7 +207,7 @@ function initVariables() {
         }
 
         for (let i = 0; i < fichas_totales; i++) {
-            let f2 = new canvas_ficha(jugador2, 'f2' + i + 1, ctx, 850, 350 - (i * 2), imagenFicha2, color);
+            let f2 = new canvas_ficha(jugador2, 'f2' + i + 1, ctx, 810, 350 - (i * 2), imagenFicha2, color);
             f2.draw();
             if (i === fichas_totales - 1) {
                 f2.setEstaLibre(true);
@@ -217,16 +218,16 @@ function initVariables() {
        
         switch (tipoTablero) {
             case 4:
-                inicioTableroX = 240;
+                inicioTableroX = 265;
                 inicioTableroY = 170;
                 break;
             case 5:
-                inicioTableroX = 220;
-                inicioTableroY = 170;
+                inicioTableroX = 235;
+                inicioTableroY = 140;
                 break;
             case 6:
-                inicioTableroX = 125;
-                inicioTableroY = 170;
+                inicioTableroX = 205;
+                inicioTableroY = 110;
                 break;
            
         }
@@ -239,16 +240,18 @@ function initVariables() {
                 matriz_box[col][fil] = tablero;
             }
         }
-
     }
 
     //Boton salir del juego
     let btnGameOut = document.querySelector("#btn-game-out");
+
     btnGameOut.addEventListener("click", function (event) {
         contentCanvas.style.display = 'none';
         canvas.style.display = 'none';
+        sectionJuego.style.visibility = 'hidden';
         sectionJuego.style.display = 'block';
-        sectionJuegoOpciones.style.display = 'none';
+        main.style.height =  '650px';
+        sectionJuegoOpciones.style.display = 'block';
         initVariables();
     });
      //Boton reiniciar juego. Reinicia la partida
@@ -496,7 +499,7 @@ function initVariables() {
                 break;
             }
         }
-        for (let fil = fInicial + 60 + 1; fil <= filas && !finJuego; fil++) {
+        for (let fil = fInicial + 1; fil <= filas && !finJuego; fil++) {
             if (matriz_box[cInicial][fil].getJugador() === jugador) {
                 contador++;
                 if (contador == tipoTablero) {

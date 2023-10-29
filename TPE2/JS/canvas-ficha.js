@@ -40,6 +40,8 @@ class canvas_ficha extends canvas_juego {
         this.context.restore();
     }
 
+    
+
     getRadio() {
         return this.radio;
     }
