@@ -33,12 +33,12 @@ class canvas_ficha extends canvas_juego {
         this.context.save();//guardar el estado actual del contexto
         this.context.beginPath();
         if (this.clickeada) {
-           this.context.strokeStyle = 'blue';
+           this.context.strokeStyle = 'yellow';
            this.context.lineWidth = 2; 
-            this.context.shadowColor = 'rgba(0, 0, 0, 0.8)'; // Color de la sombra
-            this.context.shadowBlur = 10; // Intensidad de la sombra (radio de difuminado)
-            this.context.shadowOffsetX = 5; // Desplazamiento horizontal de la sombra
-            this.context.shadowOffsetY = 5; // Desplazamiento vertical de la sombra
+            this.context.shadowColor = 'yellow'; 
+            this.context.shadowBlur = 10; 
+            this.context.shadowOffsetX = 5; 
+            this.context.shadowOffsetY = 5; 
             
         } else {
             this.context.strokeStyle = this.color; 

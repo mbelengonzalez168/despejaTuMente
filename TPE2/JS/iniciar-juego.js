@@ -8,7 +8,7 @@ function iniciarJuego() {
     const TIEMPO_JUEGO = 120;//segundos 300 son 5 minutos
     const CANVAS_WIDTH = 950;
     const CANVAS_HEIGHT = 600;
-    const CANVAS_IMG_BACKGROUND = "./CSS/IMG/FondoCanva30.png";
+    const CANVAS_IMG_BACKGROUND = "./CSS/IMG/FondoCanva20.png";
     const CANVAS_IMG_TABLERO = "./CSS/IMG/ficha-juego.jpg";
     const main = document.querySelector('.juego-compartir');
     let fondoCanvas = new Image();
@@ -21,7 +21,7 @@ function iniciarJuego() {
     let columnas;
     let filas;
     let turno_jugador_1;
-    let color = 'red';
+    let color = 'blue';
     let jugador1;
     let ficha1;
     let jugador2;
@@ -31,6 +31,7 @@ function iniciarJuego() {
     let tiempo;
     let arregloFichasJugador1 = [];
     let ficha_j1_seleccionada = null;
+    
 
     let arregloFichasJugador2 = [];
     let ficha_j2_seleccionada = null;
@@ -197,7 +198,7 @@ function initVariables() {
         //Para dibujar el fondo
         ctx.drawImage(fondoCanvas, 0, 0, canvas.width, canvas.height);
 
-        let fichas_totales = ((filas * columnas) / 2);//decia + 1
+        let fichas_totales = (((filas + 1) * (columnas + 1)) / 2);
         for (let i = 0; i < fichas_totales; i++) {
             let f1 = new canvas_ficha(jugador1, 'f1' + i + 1 , ctx , 120 , 350 - (i * 2), imagenFicha1, color);
             f1.draw();
