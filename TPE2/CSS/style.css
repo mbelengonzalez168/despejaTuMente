@@ -27,6 +27,7 @@
     --fondoLogo: #FD8A76;
 
     --letraPrincipal: 'Inder', sans-serif;
+    --letraGanador: 'Black Ops One';
 }
 
 .grid {
@@ -1343,8 +1344,8 @@ button:hover {
     position: absolute;
     display: flex;
     justify-content: space-between;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
     justify-content: space-between;
     width: 140px;
 }
@@ -1355,7 +1356,7 @@ button:hover {
 .turno-juego {
     position: absolute;
     display: flex;
-    top: 20px;
+    top: 10px;
     left: 325px;
     height: 60px;
     background: var(--secundarioLuces1);
@@ -1378,25 +1379,26 @@ button:hover {
     align-items: center;
     justify-content: center;
     font-size: 30px;
-    top: 20px;
-    left: 20px;
+    top: 10px;
+    left: 10px;
     border-radius: 5px;
 }
 .resultado-canvas {
     position: absolute;
     font-size: 20px;
+    font-family: var(--letraGanador);
     display: none;
-    top: 35px;
-    left: 375px;
-    height: 30px;
+    top: 30px;
+    left: 350px;
+    height: 40px;
     background: var(--secundarioLuces1);
-    color: var(--secundarioSombra2);
+    color: var(--terciario);
     border-radius: 2.5px;
-    width: 200px;
+    width: 230px;
     align-items: center;
     justify-content: center;
     transform: scale(2);
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease;
 }
 
 /*

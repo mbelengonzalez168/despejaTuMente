@@ -4,6 +4,7 @@ class canvas_tablero extends canvas_juego {
         this.longitudX = longitudX;
         this.longitudY = longitudY;
         this.ocupado = false;
+        this.ficha = null;
     }
 
     draw() {
@@ -33,6 +34,12 @@ class canvas_tablero extends canvas_juego {
 
     setJugador(descripcion) {
         this.jugador = descripcion;
+    }
+    getFicha(){
+        return this.ficha;
+    }
+    setFicha (f){
+        this.ficha = f ;
     }
 
 }

@@ -4,10 +4,11 @@ class canvas_ficha extends canvas_juego {
         this.radio = 25//Math.round(Math.random() * 100);
         this.anguloDesde = 0;
         this.anguloHasta = 2 * Math.PI;
-        this.libre = false;
+        this.libre = true;
         this.id = id;
         this.color= color;
         this.clickeada = false;
+        this.ganadora = false;
     }
 
     //Si se encuentra una posicion en el tablero se lleva a esa posicion
@@ -39,7 +40,13 @@ class canvas_ficha extends canvas_juego {
             this.context.shadowBlur = 10; 
             this.context.shadowOffsetX = 5; 
             this.context.shadowOffsetY = 5; 
-            
+        } else if(this.ganadora){
+            this.context.strokeStyle = 'yellow';
+            this.context.lineWidth = 5; 
+             this.context.shadowColor = 'yellow'; 
+             this.context.shadowBlur = 15; 
+             this.context.shadowOffsetX = 5; 
+             this.context.shadowOffsetY = 5;        
         } else {
             this.context.strokeStyle = this.color; 
        }
@@ -50,8 +57,6 @@ class canvas_ficha extends canvas_juego {
         this.context.drawImage(this.imagen, this.posCanvasX-25, this.posCanvasY-25, 50, 50);
         this.context.restore();
     }
-
-    
 
     getRadio() {
         return this.radio;
@@ -70,6 +75,9 @@ class canvas_ficha extends canvas_juego {
     }
     setClickeada (valor){
         this.clickeada = valor;
+    }
+    setGanadora (valor){
+        this.ganadora = valor;
     }
 
 }
