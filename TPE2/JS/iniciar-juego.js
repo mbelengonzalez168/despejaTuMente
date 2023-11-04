@@ -397,6 +397,7 @@ function iniciarJuego() {
 
         //Valido por filas hacia abajo y luego hacia arriba
         contador = 0;
+        fichasGanadoras = [];
         for (let fil = fInicial; fil >= 0 && !finJuego; fil--) {
             if (matriz_box[cInicial][fil].getJugador() === jugador) {
                 fichasGanadoras.push(matriz_box[cInicial][fil].getFicha());
@@ -426,87 +427,89 @@ function iniciarJuego() {
             }
         }
 
-//Valido en diagonal 1
-contador = 0;
-let cDiagonal = cInicial;
-let fDiagonal = fInicial;
-while (cDiagonal <= columnas && fDiagonal >= 0 && !finJuego) {
-    if (matriz_box[cDiagonal][fDiagonal].getJugador() === jugador) {
-        fichasGanadoras.push(matriz_box[cDiagonal][fDiagonal].getFicha());
-        contador++;
-        if (contador == tipoTablero) {
-              for (let i=0; i < fichasGanadoras.length; i++){
-                fichasGanadoras[i].setGanadora(true);
+        //Valido en diagonal 1
+            fichasGanadoras = [];
+            contador = 0;
+            let cDiagonal = cInicial;
+            let fDiagonal = fInicial;
+            while (cDiagonal <= columnas && fDiagonal >= 0 && !finJuego) {
+                if (matriz_box[cDiagonal][fDiagonal].getJugador() === jugador) {
+                    fichasGanadoras.push(matriz_box[cDiagonal][fDiagonal].getFicha());
+                    contador++;
+                    if (contador == tipoTablero) {
+                        for (let i=0; i < fichasGanadoras.length; i++){
+                            fichasGanadoras[i].setGanadora(true);
+                        }
+                        finalizarJuego(jugador);
+                    }
+                    cDiagonal++;
+                    fDiagonal--;
+                } else {
+                    break;
+                }
             }
-            finalizarJuego(jugador);
-        }
-        cDiagonal++;
-        fDiagonal--;
-    } else {
-        break;
-    }
-}
 
-cDiagonal = cInicial - 1;
-fDiagonal = fInicial + 1;
-while (cDiagonal >= 0 && fDiagonal <= filas && !finJuego) {
-    if (matriz_box[cDiagonal][fDiagonal].getJugador() === jugador) {
-        fichasGanadoras.push(matriz_box[cDiagonal][fDiagonal].getFicha());
-        contador++;
-        if (contador == tipoTablero) {
-            for (let i=0; i < fichasGanadoras.length; i++){
-                fichasGanadoras[i].setGanadora(true);
+            cDiagonal = cInicial - 1;
+            fDiagonal = fInicial + 1;
+            while (cDiagonal >= 0 && fDiagonal <= filas && !finJuego) {
+                if (matriz_box[cDiagonal][fDiagonal].getJugador() === jugador) {
+                    fichasGanadoras.push(matriz_box[cDiagonal][fDiagonal].getFicha());
+                    contador++;
+                    if (contador == tipoTablero) {
+                        for (let i=0; i < fichasGanadoras.length; i++){
+                            fichasGanadoras[i].setGanadora(true);
+                        }
+                        finalizarJuego(jugador);
+                    
+                    }
+                    cDiagonal--;
+                    fDiagonal++;
+                } else {
+                    break;
+                }
             }
-            finalizarJuego(jugador);
-          
-        }
-        cDiagonal--;
-        fDiagonal++;
-    } else {
-        break;
-    }
-}
 
-//Valido en diagonal 2
-contador = 0;
-cDiagonal = cInicial;
-fDiagonal = fInicial;
-while (cDiagonal >= 0 && fDiagonal >= 0 && !finJuego) {
-    if (matriz_box[cDiagonal][fDiagonal].getJugador() === jugador) {
-        fichasGanadoras.push(matriz_box[cDiagonal][fDiagonal].getFicha());
-        contador++;
-        if (contador == tipoTablero) {
-            for (let i=0; i < fichasGanadoras.length; i++){
-                fichasGanadoras[i].setGanadora(true);
+            //Valido en diagonal 2
+            contador = 0;
+            fichasGanadoras = [];
+            cDiagonal = cInicial;
+            fDiagonal = fInicial;
+            while (cDiagonal >= 0 && fDiagonal >= 0 && !finJuego) {
+                if (matriz_box[cDiagonal][fDiagonal].getJugador() === jugador) {
+                    fichasGanadoras.push(matriz_box[cDiagonal][fDiagonal].getFicha());
+                    contador++;
+                    if (contador == tipoTablero) {
+                        for (let i=0; i < fichasGanadoras.length; i++){
+                            fichasGanadoras[i].setGanadora(true);
+                        }
+                        finalizarJuego(jugador);
+                    
+                    }
+                    cDiagonal--;
+                    fDiagonal--;
+                } else {
+                    break;
+                }
             }
-            finalizarJuego(jugador);
-           
-        }
-        cDiagonal--;
-        fDiagonal--;
-    } else {
-        break;
-    }
-}
-cDiagonal = cInicial + 1;
-fDiagonal = fInicial + 1;
-while (cDiagonal <= columnas && fDiagonal <= filas && !finJuego) {
-    if (matriz_box[cDiagonal][fDiagonal].getJugador() === jugador) {
-        fichasGanadoras.push(matriz_box[cDiagonal][fDiagonal].getFicha());
-        contador++;
-        if (contador == tipoTablero) {
-            for (let i=0; i < fichasGanadoras.length; i++){
-                fichasGanadoras[i].setGanadora(true);
-            }
-            finalizarJuego(jugador);
-        }
-        cDiagonal++;
-        fDiagonal++;
-    } else {
-        break;
-            }
-        }
-    }
+            cDiagonal = cInicial + 1;
+            fDiagonal = fInicial + 1;
+            while (cDiagonal <= columnas && fDiagonal <= filas && !finJuego) {
+                if (matriz_box[cDiagonal][fDiagonal].getJugador() === jugador) {
+                    fichasGanadoras.push(matriz_box[cDiagonal][fDiagonal].getFicha());
+                    contador++;
+                    if (contador == tipoTablero) {
+                        for (let i=0; i < fichasGanadoras.length; i++){
+                            fichasGanadoras[i].setGanadora(true);
+                        }
+                        finalizarJuego(jugador);
+                    }
+                    cDiagonal++;
+                    fDiagonal++;
+                } else {
+                    break;
+                        }
+                    }
+                }
 
     //Acciones finales del juego.
     function finalizarJuego(jugador) {
