@@ -188,8 +188,8 @@ function iniciarJuego() {
     });
      //Boton reiniciar juego. Reinicia la partida
     let btnReiniciar = document.getElementById('btn-reiniciar');
-    btnReiniciar.addEventListener("click", function (event) {
-        initVariables();
+        btnReiniciar.addEventListener("click", function (event) {
+            initVariables();
     });
     //Eventos del mouse sobre el canvas
     canvas.addEventListener('mousedown', function (event) {
