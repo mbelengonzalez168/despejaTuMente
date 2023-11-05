@@ -123,17 +123,21 @@
                         <div class="opciones-juego">
                             <div class="nivel-juego">
                                 <div>
-                                    <input type="radio" id="tablero-clasico" name="tipoTablero" value="4" checked />
-                                    <label for="tablero-clasico">Fácil: <span>4 en Línea</span></label>
+                                    <input type="radio" name="tipoTablero" value="4" checked />
+                                    <label>Fácil: <span>4 en Línea</span></label>
                                 </div>
                                 <div>
-                                    <input type="radio" id="tablero-moderado" name="tipoTablero" value="5"/>
-                                    <label for="tablero-moderado">Difícil:<span>5 en Línea</span></label>
+                                    <input type="radio" name="tipoTablero" value="5"/>
+                                    <label>Difícil:<span>5 en Línea</span></label>
                                 </div>
                                 <div>
-                                    <input type="radio" id="tablero-dificil" name="tipoTablero" value="6"/>
-                                    <label for="tablero-dificil">Experto: <span>6 en Línea</span></label>
+                                    <input type="radio" name="tipoTablero" value="6"/>
+                                    <label>Avanzado: <span>6 en Línea</span></label>
                                 </div>
+                                <div>
+                                    <input type="radio" name="tipoTablero" value="7"/>
+                                    <label>Experto: <span>7 en Línea</span></label>
+                                </div>                                
                             </div>
                             <div class="jugador">
                                 <div class="jugador-seleccion">
@@ -195,13 +199,14 @@
                     </div>
                     <div class="content-canvas">
                         <div class="turno-juego"></div>
+
                         <div class="timer-juego"></div>
                         <div class="btn-canvas">
                             <img class="btn-play" id="btn-reiniciar" src="./CSS/IMG/recarga.png" alt="">
                             <img class="item-btn-bajando" id="btn-game-out" src="./CSS/IMG/cerrar-sesion.png" alt="">
                         </div>
                         <div class="resultado-canvas"></div>
-                        <div id="output" style="position:absolute; padding:5px;"></div>
+                        
                     
                         <canvas id="canvas" class="canvas"></canvas>
                     </div> 

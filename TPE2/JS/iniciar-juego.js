@@ -3,12 +3,11 @@
 document.addEventListener("DOMContentLoaded", iniciarJuego);
 
 function iniciarJuego() {
-    const TIEMPO_JUEGO = 120;// en segundos 
-    const CANVAS_WIDTH = 950;
+    const TIEMPO_JUEGO = 120;
+    const CANVAS_WIDTH = 1000;
     const CANVAS_HEIGHT = 600;
     const CANVAS_IMG_BACKGROUND = "./CSS/IMG/FondoCanva20.png";
     const CANVAS_IMG_TABLERO = "./CSS/IMG/ficha-juego.jpg";
-    const main = document.querySelector('.juego-compartir');
     let fondoCanvas = new Image();
     let imagenFicha1 = new Image();
     let imagenFicha2 = new Image();
@@ -37,6 +36,9 @@ function iniciarJuego() {
     let inicioTableroX;
     let inicioTableroY;
 
+    let sectionJuego= document.querySelector(".juego-compartir");
+        sectionJuego.style.display = 'block';
+
     let contentCanvas = document.querySelector(".content-canvas");
         contentCanvas.style.display = 'none';
 
@@ -44,27 +46,31 @@ function iniciarJuego() {
     let ctx = canvas.getContext('2d');
         canvas.style.display = 'none';
 
-    let sectionJuego= document.querySelector(".juego-compartir");
-        sectionJuego.style.display = 'block';
-
     let sectionJuegoOpciones = document.getElementById("section-juego-opciones");
         sectionJuegoOpciones.style.display = 'none';
 
+    //Boton jugar de la imagen previa del juego
     let btnPlay = document.getElementById('play');
-    btnPlay.addEventListener("click", function () {
-        sectionJuego.style.visibility = 'hidden';
-        main.style.height =  '600px';
-        sectionJuegoOpciones.style.display = 'block';
+        btnPlay.addEventListener("click", function () {
+            sectionJuego.style.visibility = 'hidden';
+            sectionJuego.style.height =  '600px';
+            sectionJuegoOpciones.style.display = 'block';
     });
 
     let btnSalir = document.getElementById('btn-salir');
-    btnSalir.addEventListener("click", function () {
-        sectionJuego.style.visibility = 'visible';
-        main.style.height =  '750px';
-        sectionJuegoOpciones.style.display = 'none';
+        btnSalir.addEventListener("click", function () {
+            sectionJuego.style.visibility = 'visible';
+            sectionJuego.style.height =  '750px';
+            sectionJuegoOpciones.style.display = 'none';
     });
+     
+     //Muestra a que Jugador le toca jugar. Al inicio jugador 1 por defecto.
+    let turnoCanvas = document.querySelector(".turno-juego");
+     
+     //Resultado final del juego. Ganador o empate.
+    let resultadoCanvas = document.querySelector(".resultado-canvas");
 
-//Inicializa variables al reiniciar o salir del juego.
+     //Inicializa variables al reiniciar o salir del juego.
     function initVariables() {
         resultadoCanvas.style.display = 'none';
         turno_jugador_1 = true;
@@ -83,26 +89,19 @@ function iniciarJuego() {
         decreaseTimer();
     }
 
-    //Resultado final del juego. Ya sea porque haya un ganador o se haya terminado el tiempo de juego.
-    let resultadoCanvas = document.querySelector(".resultado-canvas");
-
-    //Muestro a quien le toca jugar en el turno actual. Al inicio jugador de la izquierda por defecto
-    let turnoCanvas = document.querySelector(".turno-juego");
-   
     //Se inicia el juego. Boton jugar de las opciones disponibles
     let btnPlayJuego = document.querySelector("#btn-play-juego");
-    btnPlayJuego.addEventListener("click", function () {
+        btnPlayJuego.addEventListener("click", function () {
     //Display solo canvas
-        sectionJuego.style.display = 'none';
-        sectionJuegoOpciones.style.display = 'none';
-        contentCanvas.style.display = 'block';
-        canvas.style.display = 'block';
-        canvas.width = CANVAS_WIDTH;
-        canvas.height = CANVAS_HEIGHT;
+            sectionJuego.style.display = 'none';
+            sectionJuegoOpciones.style.display = 'none';
+            contentCanvas.style.display = 'block';
+            canvas.style.display = 'block';
+            canvas.width = CANVAS_WIDTH;
+            canvas.height = CANVAS_HEIGHT;
 
-        //Opciones seleccionadas
-        //tipo de tablero
-        let opcionesTablero = document.getElementsByName('tipoTablero');
+    //Opciones seleccionadas de tipo de tablero
+    let opcionesTablero = document.getElementsByName('tipoTablero');
         for (let d of opcionesTablero) {
             if (d.checked) {
                 tipoTablero = Number(d.value);
@@ -110,7 +109,6 @@ function iniciarJuego() {
                 filas = tipoTablero + 1;
             }
         }
-
         //Jugador 1
         jugador1= document.getElementById('text-jugador1').textContent;
         let fichas1 = document.getElementsByName('targetgroup1');
@@ -120,7 +118,6 @@ function iniciarJuego() {
             }
         }
         imagenFicha1.src = "./CSS/IMG/" + ficha1 + ".png";
-            
         //Jugador 2
         jugador2= document.getElementById('text-jugador2').textContent;
         let fichas2 = document.getElementsByName('targetgroup2');
@@ -134,40 +131,40 @@ function iniciarJuego() {
         initVariables();
     });
 
-    //Funcion llamada para dibujar la pantalla al inicio de juego    
+    //Funcion que dibuja la pantalla de inicio de juego    
     function canvasDraw() {
-        //Para dibujar el fondo
+        //Primero dibujo primero el fondo
         ctx.drawImage(fondoCanvas, 0, 0, canvas.width, canvas.height);
+        //Segundo las fichas
         let fichas_totales = (((filas + 1) * (columnas + 1)) / 2);
         for (let i = 0; i < fichas_totales; i++) {
-            let f1 = new canvas_ficha(jugador1, 'f1' + i + 1 , ctx , 120 , 500 - (i * 10), imagenFicha1, color);
+            let f1 = new canvas_ficha(jugador1, 'f1' + i + 1 , ctx , 110 , 490 - (i * 8), imagenFicha1, color);
             f1.draw();
-            /*if (i === fichas_totales - 1) {
-                f1.setEstaLibre(true);
-            }*/
             arregloFichasJugador1[i] = f1;
         }
         for (let i = 0; i < fichas_totales; i++) {
-            let f2 = new canvas_ficha(jugador2, 'f2' + i + 1, ctx, 810, 500 - (i * 10), imagenFicha2, color);
+            let f2 = new canvas_ficha(jugador2, 'f2' + i + 1, ctx, 890, 490 - (i * 8), imagenFicha2, color);
             f2.draw();
-            /*if (i === fichas_totales - 1) {
-                f2.setEstaLibre(true);
-            }*/
             arregloFichasJugador2[i] = f2;
         }
+        //Tercero el tablero
         switch (tipoTablero) {
             case 4:
-                inicioTableroX = 265;
-                inicioTableroY = 170;
+                inicioTableroX = 290;
+                inicioTableroY = 160;
                 break;
             case 5:
-                inicioTableroX = 235;
-                inicioTableroY = 140;
+                inicioTableroX = 260;
+                inicioTableroY = 130;
                 break;
             case 6:
+                inicioTableroX = 235;
+                inicioTableroY = 100;
+                break;
+            case 7:
                 inicioTableroX = 205;
-                inicioTableroY = 120;
-                break;          
+                inicioTableroY = 70;
+                break;              
         }
         for (let col = columnas; col >= 0; col--) {
             matriz_box[col] = [];
@@ -180,14 +177,14 @@ function iniciarJuego() {
     }
     //Boton salir del juego
     let btnGameOut = document.querySelector("#btn-game-out");
-    btnGameOut.addEventListener("click", function (event) {
-        contentCanvas.style.display = 'none';
-        canvas.style.display = 'none';
-        sectionJuego.style.visibility = 'hidden';
-        sectionJuego.style.display = 'block';
-        main.style.height =  '650px';
-        sectionJuegoOpciones.style.display = 'block';
-        initVariables();
+        btnGameOut.addEventListener("click", function (event) {
+            contentCanvas.style.display = 'none';
+            canvas.style.display = 'none';
+            sectionJuego.style.visibility = 'hidden';
+            sectionJuego.style.display = 'block';
+            sectionJuego.style.height =  '650px';
+            sectionJuegoOpciones.style.display = 'block';
+            initVariables();
     });
      //Boton reiniciar juego. Reinicia la partida
     let btnReiniciar = document.getElementById('btn-reiniciar');
