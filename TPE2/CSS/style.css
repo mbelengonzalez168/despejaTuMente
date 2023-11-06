@@ -1405,7 +1405,7 @@ button:hover {
     font-family: var(--letraGanador);
     display: none;
     top: 30px;
-    left: 350px;
+    left: 385px;
     height: 40px;
     background: var(--secundarioLuces1);
     color: var(--terciario);

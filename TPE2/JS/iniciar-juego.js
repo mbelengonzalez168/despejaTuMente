@@ -158,7 +158,7 @@ function iniciarJuego() {
                 inicioTableroY = 160;
                 break;
             case 5:
-                inicioTableroX = 260;
+                inicioTableroX = 265;
                 inicioTableroY = 130;
                 break;
             case 6:
@@ -308,16 +308,21 @@ function iniciarJuego() {
                         }//Si hay que colocar la ficha
                         //Valida si hya un ganador
                         validarJugada(boxSeleccionado.getJugador(), validarPosX, validarPosY);
+                                 
                         arregloFichasJugador1[y].setEstaLibre(false);
                         arregloFichasJugador1[y].setPosicionFinal(posNueva.x, posNueva.y);
                         //Habilita la siguinte ficha
                         arregloFichasJugador1[y - 1].setEstaLibre(true);
                         //Si coloca la ficha cambia de turno
                         turno_jugador_1 = !turno_jugador_1;
-                        turnoCanvas.innerHTML = 'Turno: ' + jugador2;
-                        turnoCanvas.style.display = 'none';
-                        turnoCanvas1.innerHTML = 'Turno: ' + jugador2;
-                        turnoCanvas1.style.display = 'flex';
+
+                         if (!finJuego){
+                            turnoCanvas.innerHTML = 'Turno: ' + jugador2;
+                            turnoCanvas.style.display = 'none';
+                            turnoCanvas1.innerHTML = 'Turno: ' + jugador2;
+                            turnoCanvas1.style.display = 'flex';
+                        }
+                                       
                     } else {
                         //Vuelve al origen
                         if (boxSeleccionado == null
@@ -346,11 +351,13 @@ function iniciarJuego() {
                             //Habilita la siguinte ficha
                             arregloFichasJugador2[y - 1].setEstaLibre(true);
                             //Si coloca la ficha cambia de turno
-                            turno_jugador_1 = !turno_jugador_1;
-                            turnoCanvas.innerHTML = 'Turno: ' + jugador1;
-                            turnoCanvas.style.display = 'flex';    
-                            turnoCanvas1.innerHTML = 'Turno: ' + jugador1;
-                            turnoCanvas1.style.display = 'none';  
+                            if (!finJuego){
+                                turno_jugador_1 = !turno_jugador_1;
+                                turnoCanvas.innerHTML = 'Turno: ' + jugador1;
+                                turnoCanvas.style.display = 'flex';    
+                                turnoCanvas1.innerHTML = 'Turno: ' + jugador1;
+                                turnoCanvas1.style.display = 'none';  
+                            }        
                         } else {
                             //Vuelve al origen
                             if (boxSeleccionado == null
@@ -381,6 +388,7 @@ function iniciarJuego() {
                     for (let i=0; i < fichasGanadoras.length; i++){
                         fichasGanadoras[i].setGanadora(true);
                     }
+                    
                     finalizarJuego(jugador);
                 }
             } else {
@@ -395,6 +403,7 @@ function iniciarJuego() {
                     for (let i=0; i < fichasGanadoras.length; i++){
                         fichasGanadoras[i].setGanadora(true);
                     }
+                    
                     finalizarJuego(jugador);
                 }
             } else {
@@ -522,9 +531,12 @@ function iniciarJuego() {
     function finalizarJuego(jugador) {
         clearTimeout(tiempo);
         resultadoCanvas.style.display = 'flex';
-        turnoCanvas.style.display = 'none';
+       turnoCanvas.style.display = 'none';
+       turnoCanvas1.style.display = 'none';
+        console.log(turnoCanvas + 'ggg');
         resultadoCanvas.innerHTML = 'Ganador ' + jugador;
         finJuego = true;
+         
     }
 
     //Actualiza el canvas

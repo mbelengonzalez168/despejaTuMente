@@ -1,7 +1,9 @@
 "use strict";
 const logo =document.getElementById("logo");
+const dondeEstoy = document.querySelector('.donde-estoy-juego');
 const loadingContainer = document.getElementById('loading-container');
 const loadingProgress = document.getElementById('loading-progress');
+
 
 
 function showLoading() {
@@ -20,7 +22,7 @@ function simulateLoading() {
     const countdownInterval = setInterval(function () {
         if (percentage >= 100) {
             clearInterval(countdownInterval);
-            window.location.href = 'home.html'; // Redirige una vez que se llega al 100%
+          //  window.location.href = 'home.html'; // Redirige una vez que se llega al 100%
         } else {
             incrementPercentage();
         }
@@ -32,4 +34,8 @@ logo.addEventListener('click', function () {
     simulateLoading();
 });
 
+dondeEstoy.addEventListener('click', function () {
+    showLoading();
+    simulateLoading();
+});
 
