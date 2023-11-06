@@ -1344,51 +1344,59 @@ button:hover {
     position: absolute;
     display: flex;
     justify-content: space-between;
-    top: 10px;
-    right: 10px;
+    top: 5px;
+    right: 5px;
     justify-content: space-between;
-    width: 140px;
+    width: 120px;
 }
 #btn-reiniciar , #btn-game-out  {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 }
 
 .turnos{
     display: flex;
-    position: absolute;
+    position: relative;
 }
 
 
 
 .turno-juego, .turno-juego1 {
-    position: relative;
+    position: absolute;
     display: flex;
-    top: 10px;
-    left: 325px;
-    height: 60px;
+    top: 520px;
+    height: 70px;
     background: var(--secundarioLuces1);
     opacity: 85%;
     border-radius: 5px;
-    width: 300px;
+    width: 170px;
     text-align: center;
     align-items: center;
+    line-height: 27px;
     justify-content: center;
     color: var(--secundarioSombra2);
     font-size: 30px;
 }
+.turno-juego{
+    left: 18px;
+}
+
+.turno-juego1{
+    left: 812px;
+}
+
 .timer-juego {
     position: absolute;
     background-color: var(--secundarioSombra2);
     color:var(--secundarioLuces1);
-    width: 140px;
-    height: 60px;
+    width: 120px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 30px;
-    top: 10px;
-    left: 10px;
+    top: 5px;
+    left: 5px;
     border-radius: 5px;
 }
 .resultado-canvas {

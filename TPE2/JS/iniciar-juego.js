@@ -76,9 +76,9 @@ function iniciarJuego() {
         resultadoCanvas.style.display = 'none';
         turno_jugador_1 = true;
         turnoCanvas.style.display = 'flex';
-        turnoCanvas.innerHTML = 'Turno: ' + jugador1 + 'j1';
+        turnoCanvas.innerHTML = 'Turno: ' + jugador1 ;
         turnoCanvas1.style.display = 'none';
-        turnoCanvas1.innerHTML = 'Turno: ' + jugador1 + 'j2';
+        turnoCanvas1.innerHTML = 'Turno: ' + jugador1;
 
         arregloFichasJugador1 = [];
         arregloFichasJugador2 = [];
@@ -142,12 +142,12 @@ function iniciarJuego() {
         //Segundo las fichas
         let fichas_totales = (((filas + 1) * (columnas + 1)) / 2);
         for (let i = 0; i < fichas_totales; i++) {
-            let f1 = new canvas_ficha(jugador1, 'f1' + i + 1 , ctx , 110 , 490 - (i * 8), imagenFicha1, color);
+            let f1 = new canvas_ficha(jugador1, 'f1' + i + 1 , ctx , 103 , 490 - (i * 8), imagenFicha1, color);
             f1.draw();
             arregloFichasJugador1[i] = f1;
         }
         for (let i = 0; i < fichas_totales; i++) {
-            let f2 = new canvas_ficha(jugador2, 'f2' + i + 1, ctx, 890, 490 - (i * 8), imagenFicha2, color);
+            let f2 = new canvas_ficha(jugador2, 'f2' + i + 1, ctx, 897, 490 - (i * 8), imagenFicha2, color);
             f2.draw();
             arregloFichasJugador2[i] = f2;
         }
@@ -166,7 +166,7 @@ function iniciarJuego() {
                 inicioTableroY = 100;
                 break;
             case 7:
-                inicioTableroX = 205;
+                inicioTableroX = 208;
                 inicioTableroY = 70;
                 break;              
         }
@@ -314,9 +314,9 @@ function iniciarJuego() {
                         arregloFichasJugador1[y - 1].setEstaLibre(true);
                         //Si coloca la ficha cambia de turno
                         turno_jugador_1 = !turno_jugador_1;
-                        turnoCanvas.innerHTML = 'Turno: ' + jugador2+ 'j2';
+                        turnoCanvas.innerHTML = 'Turno: ' + jugador2;
                         turnoCanvas.style.display = 'none';
-                        turnoCanvas1.innerHTML = 'Turno: ' + jugador2 + 'j2';
+                        turnoCanvas1.innerHTML = 'Turno: ' + jugador2;
                         turnoCanvas1.style.display = 'flex';
                     } else {
                         //Vuelve al origen
@@ -347,10 +347,10 @@ function iniciarJuego() {
                             arregloFichasJugador2[y - 1].setEstaLibre(true);
                             //Si coloca la ficha cambia de turno
                             turno_jugador_1 = !turno_jugador_1;
-                            turnoCanvas.innerHTML = 'Turno: ' + jugador1+ 'j1';
-                            turnoCanvas.style.display = 'none';    
-                            turnoCanvas1.innerHTML = 'Turno: ' + jugador1 + 'j1';
-                            turnoCanvas1.style.display = 'flex';  
+                            turnoCanvas.innerHTML = 'Turno: ' + jugador1;
+                            turnoCanvas.style.display = 'flex';    
+                            turnoCanvas1.innerHTML = 'Turno: ' + jugador1;
+                            turnoCanvas1.style.display = 'none';  
                         } else {
                             //Vuelve al origen
                             if (boxSeleccionado == null
