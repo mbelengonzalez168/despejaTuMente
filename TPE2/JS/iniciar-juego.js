@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", iniciarJuego);
 
 function iniciarJuego() {
-    const TIEMPO_JUEGO = 120;
+    const TIEMPO_JUEGO = 300;
     const CANVAS_WIDTH = 1000;
     const CANVAS_HEIGHT = 600;
     const CANVAS_IMG_BACKGROUND = "./CSS/IMG/FondoCanva20.png";
@@ -66,6 +66,7 @@ function iniciarJuego() {
      
      //Muestra a que Jugador le toca jugar. Al inicio jugador 1 por defecto.
     let turnoCanvas = document.querySelector(".turno-juego");
+    let turnoCanvas1 = document.querySelector(".turno-juego1");
      
      //Resultado final del juego. Ganador o empate.
     let resultadoCanvas = document.querySelector(".resultado-canvas");
@@ -75,7 +76,10 @@ function iniciarJuego() {
         resultadoCanvas.style.display = 'none';
         turno_jugador_1 = true;
         turnoCanvas.style.display = 'flex';
-        turnoCanvas.innerHTML = 'Turno: ' + jugador1;
+        turnoCanvas.innerHTML = 'Turno: ' + jugador1 + 'j1';
+        turnoCanvas1.style.display = 'none';
+        turnoCanvas1.innerHTML = 'Turno: ' + jugador1 + 'j2';
+
         arregloFichasJugador1 = [];
         arregloFichasJugador2 = [];
         matriz_box = [];
@@ -310,7 +314,10 @@ function iniciarJuego() {
                         arregloFichasJugador1[y - 1].setEstaLibre(true);
                         //Si coloca la ficha cambia de turno
                         turno_jugador_1 = !turno_jugador_1;
-                        turnoCanvas.innerHTML = 'Turno: ' + jugador2;
+                        turnoCanvas.innerHTML = 'Turno: ' + jugador2+ 'j2';
+                        turnoCanvas.style.display = 'none';
+                        turnoCanvas1.innerHTML = 'Turno: ' + jugador2 + 'j2';
+                        turnoCanvas1.style.display = 'flex';
                     } else {
                         //Vuelve al origen
                         if (boxSeleccionado == null
@@ -340,7 +347,10 @@ function iniciarJuego() {
                             arregloFichasJugador2[y - 1].setEstaLibre(true);
                             //Si coloca la ficha cambia de turno
                             turno_jugador_1 = !turno_jugador_1;
-                            turnoCanvas.innerHTML = 'Turno: ' + jugador1;
+                            turnoCanvas.innerHTML = 'Turno: ' + jugador1+ 'j1';
+                            turnoCanvas.style.display = 'none';    
+                            turnoCanvas1.innerHTML = 'Turno: ' + jugador1 + 'j1';
+                            turnoCanvas1.style.display = 'flex';  
                         } else {
                             //Vuelve al origen
                             if (boxSeleccionado == null

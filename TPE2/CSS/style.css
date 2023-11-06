@@ -1353,8 +1353,16 @@ button:hover {
     width: 60px;
     height: 60px;
 }
-.turno-juego {
+
+.turnos{
+    display: flex;
     position: absolute;
+}
+
+
+
+.turno-juego, .turno-juego1 {
+    position: relative;
     display: flex;
     top: 10px;
     left: 325px;
