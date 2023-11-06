@@ -22,7 +22,7 @@ function simulateLoading() {
     const countdownInterval = setInterval(function () {
         if (percentage >= 100) {
             clearInterval(countdownInterval);
-          //  window.location.href = 'home.html'; // Redirige una vez que se llega al 100%
+           window.location.href = 'home.html'; // Redirige una vez que se llega al 100%
         } else {
             incrementPercentage();
         }

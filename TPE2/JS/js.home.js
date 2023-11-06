@@ -1,12 +1,11 @@
 "use strict";
-const misBotones = document.querySelectorAll('.miBoton');
-
-let comprado='Comprado';
-let jugar='Jugar';
-let contenidoOriginal = miBoton.textContent;
 
 
-misBotones.forEach(function(miBoton) {
+  const misBotones = document.querySelectorAll('.miBoton');
+  let comprado='Comprado';
+  let jugar='Jugar';
+  let contenidoOriginal = miBoton.textContent;
+      misBotones.forEach(function(miBoton) {
     miBoton.addEventListener("click", function() {
         if (miBoton.textContent !== jugar) {
             // Si el contenido es diferente de "Jugar", cambia a "Comprado"
@@ -28,7 +27,7 @@ misBotones.forEach(function(miBoton) {
         } 
      
     });
-  });
+      });
 
 //-------------CARRUSEL------------------------------------------------------------//
 

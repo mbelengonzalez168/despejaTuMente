@@ -621,6 +621,7 @@ footer li{
 
 .donde-estoy-juego {
     margin: 20px 0;
+    cursor: pointer;
 }
 .nombre-juego{
     margin-bottom: 10px;

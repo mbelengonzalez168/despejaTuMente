@@ -28,7 +28,6 @@ function iniciarJuego() {
     let tiempo;
     let arregloFichasJugador1 = [];
     let ficha_j1_seleccionada = null;
-    let ficha;
     let arregloFichasJugador2 = [];
     let ficha_j2_seleccionada = null;
     let matriz_box = [];
@@ -249,7 +248,7 @@ function iniciarJuego() {
         }
         canvasActualizar();
     });
-    //Click del mouse levanta----larga la ficha----primero controlo donde--validi POS
+    //Click del mouse levanta----larga la ficha----primero controlo donde--valido POS
     canvas.addEventListener('mouseup', function (event) {
         let anchoColumnaInvisible = 60; // Ajusta el ancho de la columna invisible según tus necesidades
         let altoColumnaInvisible = 60;
@@ -261,9 +260,8 @@ function iniciarJuego() {
        let validarPosY = -1;
         // Llena el arreglo con las posiciones de las columnas invisibles
         for (let i = 0; i <= numeroColumnas; i++) {
-         // Calcula las coordenadas X e Y de las columnas invisibles según tus necesidades
                 let x = posicionXInvisible + ( i) *anchoColumnaInvisible;
-                let y = posicionYInvisible; // Ajusta la posición Y según tus necesidades
+                let y = posicionYInvisible; 
                 columnasInvisibles.push({ x, y });
         }
         if (ficha_j1_seleccionada != null || ficha_j2_seleccionada != null) {
@@ -306,7 +304,7 @@ function iniciarJuego() {
                             x: boxSeleccionado.getPosCanvasX() + (boxSeleccionado.getLongitudX() / 2),
                             y: boxSeleccionado.getPosCanvasY() - 1 + ((boxSeleccionado.getLongitudY() - arregloFichasJugador1[y].getRadio()))
                         }//Si hay que colocar la ficha
-                        //Valida si hya un ganador
+                        //Valida si haya un ganador
                         validarJugada(boxSeleccionado.getJugador(), validarPosX, validarPosY);
                                  
                         arregloFichasJugador1[y].setEstaLibre(false);
@@ -443,7 +441,7 @@ function iniciarJuego() {
             }
         }
 
-        //Valido en diagonal 1
+        //Valido diagonal 1
             fichasGanadoras = [];
             contador = 0;
             let cDiagonal = cInicial;
@@ -485,7 +483,7 @@ function iniciarJuego() {
                 }
             }
 
-            //Valido en diagonal 2
+            //Valido diagonal 2
             contador = 0;
             fichasGanadoras = [];
             cDiagonal = cInicial;
@@ -531,9 +529,8 @@ function iniciarJuego() {
     function finalizarJuego(jugador) {
         clearTimeout(tiempo);
         resultadoCanvas.style.display = 'flex';
-       turnoCanvas.style.display = 'none';
-       turnoCanvas1.style.display = 'none';
-        console.log(turnoCanvas + 'ggg');
+        turnoCanvas.style.display = 'none';
+        turnoCanvas1.style.display = 'none';
         resultadoCanvas.innerHTML = 'Ganador ' + jugador;
         finJuego = true;
          
