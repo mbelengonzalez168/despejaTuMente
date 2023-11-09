@@ -1,0 +1,897 @@
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+header .btn-comprar{
+    color: #ffe901;
+}
+body {
+  width: 128rem;/*--------------------empieza HEADER--------------------------------*/
+}.macbook-air-1-HuC {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+
+  .auto-group-ec2w-Sfc {
+    display: flex;
+    align-items: flex-start;
+    flex-shrink: 0;
+    margin-bottom: 2.5rem;
+    width: 100%;
+    height: 602.7rem;
+
+    .auto-group-qzew-VGW {
+      position: relative;
+      flex-shrink: 0;
+      margin-right: 199.4525rem;
+      width: 161.7475rem;
+      height: 100%;
+
+      .rectangle-9-jwY {
+        height: 219.45rem;
+        position: absolute;
+        left: 0;
+        top: 383.25rem;
+        object-fit: contain;
+        vertical-align: top;
+        width: 128rem;
+      }
+      .rectangle-7-FQ6 {
+        left: 0;
+        top: 147.2rem;
+        background-color: #ffffff;
+        width: 128rem;
+        height: 108.5rem;
+        position: absolute;
+      }
+      .untitled-1-1-Amx {
+        left: 0;
+        top: 12.6rem;
+        object-fit: cover;
+        vertical-align: top;
+        width: 128rem;
+        height: 72rem;
+        position: absolute;
+      }
+      .rectangle-1-hWz {
+        top: 0;
+        background: linear-gradient(180deg, #5499f8 -0%, #5499f8 87.91%, rgba(84, 153, 248, 0) 100%);
+        width: 128rem;
+        height: 22.7rem;
+        position: absolute;
+        left: 0;
+      }
+
+      .image-5-1-Nt2 {/*esta*/
+        top: 9.1rem;
+        object-fit: cover;
+        vertical-align: top;
+        width: 50px;
+        height: 30px;
+        position: absolute;
+        left: 33rem;
+      }
+      .untitled-1-3-trN {
+        vertical-align: top;
+        width: 45.2rem;
+        height: 72rem;
+        position: absolute;
+        left: 0;
+        top: 14.4rem;
+        object-fit: contain;
+      }
+      .untitled-1-2-2Bt {
+        vertical-align: top;
+        width: 54.35rem;
+        height: 21.35rem;
+        position: absolute;
+        left: 39.2rem;
+        top: 63.4rem;
+        object-fit: contain;
+      }
+      .untitled-1-4-A3C {
+        left: 90.6rem;
+        top: 12.6rem;
+        object-fit: contain;
+        vertical-align: top;
+        width: 37.4rem;
+        height: 72.75rem;
+        position: absolute;
+      }
+      .image-3-Hdc {
+        height: 44.4rem;
+        position: absolute;
+        left: 9rem;
+        top: 38.8rem;
+        object-fit: cover;
+        vertical-align: top;
+        width: 36rem;
+      }
+      .image-1-25Q {
+        object-fit: cover;
+        vertical-align: top;
+        width: 39.3rem;
+        height: 39.3rem;
+        position: absolute;
+        left: 69.5rem;
+        top: 33.5rem;
+      }
+      .untitled-5-1-7sY {
+        position: absolute;
+        left: 0;
+        top: 39.2rem;
+        object-fit: cover;
+        vertical-align: top;
+        width: 75.7999rem;
+        height: 67.1rem;
+      }
+      .rectangle-2-f8N {
+        height: 5rem;
+        position: absolute;
+        border: solid 0.8rem #2982ff;
+        border-radius: 11.1rem;
+        width: 20rem;
+        left: 98rem;
+        top: 2rem;
+        box-sizing: border-box;
+        box-shadow: 0.4rem 0.5rem 0 #02187e;
+        background-color: #ffe901;
+      }
+      .comprar-iMY {/*esta*/
+        left: 102.3rem;
+        font-size: 2rem;
+        line-height: 0.9449999809;
+        letter-spacing: 0.22rem;
+        white-space: nowrap;
+        width: 11.8rem;
+        position: absolute;
+        top: 3.6rem;
+        font-weight: 900;
+        color: #02187e;
+        font-family: Lato, 'Source Sans Pro';
+        height: 1.9rem;
+      }
+      .untitled-5-3-9Sr {
+        height: 38.8391rem;
+        position: absolute;
+        left: 98.1rem;
+        top: 38.8rem;
+        object-fit: cover;
+        vertical-align: top;
+        width: 44.5475rem;
+      }
+      .group-1-cbL {
+        padding: 1.1rem 0;
+        width: 3.4rem;
+        height: 2.6rem;
+        top: 2rem;
+        border-radius: 11.1rem;
+        box-sizing: border-box;
+        left: 10rem;
+        box-shadow: 0.4rem 0.5rem 0 #02187e;
+        position: absolute;
+
+        .rectangle-4-snA {
+          border-radius: 11.1rem;
+          width: 100%;
+          height: 0.4rem;
+          border: solid 0.4rem #2981ff;
+          box-sizing: border-box;
+          background-color: #ffe901;
+        }
+      }
+      .rectangle-6-wX8 {
+        top: 77.6rem;
+        filter: blur(3.1rem);
+        width: 144rem;
+        height: 93.9rem;
+        position: absolute;
+        left: 0;
+      }
+      /*-----------------------------------------------------------------------------*-*/
+      .image-8-UX4 {/*esta*/
+        width: 33.296rem;
+        height: 30.2691rem;
+        position: relative;
+        background-size: 274.909% 196.4%;
+        background-position: -6.5381rem -15.7399rem;
+        background-image: url('REPLACE_IMAGE:295ee7a4359c76ee0b3cc179ee609fdea739faaa');
+        border-radius: 4.1rem;
+        left: 47.352rem;
+        top: 184rem;
+      }
+
+          
+      .image-13-YG2 {/*esta*/
+        position: relative;
+        left: 10rem;
+        width: 330.296rem;
+        height: 30.2691rem;
+        background-position: -7.6278rem -15.7399rem;
+        background-image: url('REPLACE_IMAGE:266a59133e6454ae7a72ddca27f19a81d165b094');
+        border-radius: 4.1rem;
+        top: 184rem;
+        background-size: 274.909% 196.4%;
+      }
+      .image-24-dYN {/*esta*/
+        width: 33.296rem;
+        height: 30.2691rem;
+        top: 184rem;
+        background-size: 274.909% 196.4%;
+        background-image: url('REPLACE_IMAGE:a5fa028cc2170fddec9695f933e202d1fe1c00c3');
+        border-radius: 4.1rem;
+        position: relative;
+        left: 84.704rem;
+        background-position: -5.9327rem -15.7399rem;
+      }
+      .image-223-JuQ {/*esta*/
+        top: 249.7rem;
+        object-fit: contain;
+        vertical-align: top;
+        width: 128rem;
+        height: 56.6rem;
+        position: absolute;
+        left: 0;
+      }
+      .test-3c6 {/*ESTA*/
+        vertical-align: top;
+        width: 60.5825rem;
+        height: 44.1611rem;
+        position: absolute;
+        left: 5.087rem;
+        top: 234rem;
+        object-fit: cover;
+      }
+      .test-yke {/*esta*/
+        object-fit: cover;
+        vertical-align: top;
+        width: 63.1488rem;
+        height: 53.3785rem;
+        position: absolute;
+        left: 3.5rem;
+        top: 247.7402rem;
+      }
+      .test-tMp {/*esta*/
+        left: 6.6176rem;
+        top: 266.603rem;
+        object-fit: cover;
+        vertical-align: top;
+        width: 63.3712rem;
+        height: 58.5214rem;
+        position: absolute;
+      }
+      .image-21-pFU {/*esta*/
+        background-position: 0 -3.3924rem;
+        background-image: url('REPLACE_IMAGE:a5b422cfe8b23ba410483bd000fc7b8ee4119c88');
+        width: 55.2rem;
+        height: 30.2762rem;
+        position: relative;
+        left: 10.4rem;
+        top: 421.3rem;
+        background-size: 100% 118.313%;
+      }
+      .image-9-iLr {/*esta*/
+        background-position: -0.0069rem -3.3rem;
+        background-image: url('REPLACE_IMAGE:eeb0cf2b73313d01260b8ee72b3af0c85b6338fb');
+        width: 54.8rem;
+        height: 30.5rem;
+        position: relative;
+        left: 10.8rem;
+        top: 461.6rem;
+        background-size: 100.025% 116.721%;
+      }
+      .image-10-odC {/*esta*/
+        width: 55.6rem;
+        height: 30.1507rem;
+        position: relative;
+        left: 10rem;
+        top: 504.2rem;
+        background-size: 100% 119.767%;
+        background-position: 0 -3.2865rem;
+        background-image: url('REPLACE_IMAGE:757213478bdb30f0eb510dce9403becfdaecdd0b');
+      }
+      .image-6-K5k {/*esta*/
+        top: 555.5rem;
+        object-fit: cover;
+        vertical-align: top;
+        width: 55.2rem;
+        height: 30.8253rem;
+        position: absolute;
+        left: 10.4rem;
+      }
+      .rectangle-8-eNv {
+        width: 128rem;
+        height: 84.45rem;
+        position: absolute;
+        left: 0;
+        top: 77.45rem;
+        object-fit: contain;
+        vertical-align: top;
+      }
+      .conoce-a-spidey-y-sus-sorprendentes-amigos-b3G {/*esta*/
+        color: #ffffff;
+        width: 60.4rem;
+        height: 11.4rem;
+        position: absolute;
+        top: 99.4rem;
+        font-weight: 600;
+        line-height: 0.9450000127;
+        left: 9.5rem;
+        font-size: 6rem;
+        font-family: Lato, 'Source Sans Pro';
+      }/*esta*/
+      .spidey-nuestro-lanzador-de-telaraas-favorito-se-une-a-ghost-spider-gwen-stacey-y-miles-morales-para-formar-el-equipo-de-spidey-con-la-ayuda-del-cmico-pero-leal-robot-de-spidey-trace-e-si-spidey-se-encuentra-en-una-situacin-difcil-donde-necesita-an-ms-poder-de-superhroe-tengan-la-seguridad-de-que-un-amigo-de-los-vengadores-correr-para-ayudar-G9Q {
+        top: 113.2rem;
+        line-height: 1.2;
+        color: #ffffff;
+        width: 58.6rem;
+        height: 14.4rem;
+        position: absolute;
+        left: 9.5rem;
+        font-size: 2rem;
+        font-weight: 400;
+        font-family: Lato, 'Source Sans Pro';
+      }
+      .image-16-B9t {/*esta*/
+        top: 129.7587rem;
+        background-position: -0rem -4.7048rem;
+        background-image: url('REPLACE_IMAGE:7978998ca5cc95e554af88d9f3c8e47599a2fc0e');
+        border-radius: 2.6rem;
+        width: 76.7098rem;
+        height: 44.1957rem;
+        left: 9.0275rem;
+        position: relative;
+        background-size: 100% 118.165%;
+      }
+      .untitled-3-1-dna {/*esta*/
+        width: 55.3rem;
+        height: 92.1rem;
+        position: absolute;
+        left: 71.2rem;
+        top: 90.7rem;
+        object-fit: cover;
+        vertical-align: top;
+      }
+      .image-2-AnW {
+        width: 46.5rem;
+        height: 46.5rem;
+        position: absolute;
+        left: 39.3rem;
+        top: 42rem;
+        object-fit: cover;
+        vertical-align: top;
+      }
+      .untitled-5-2-hGe {
+        height: 67.1rem;
+        position: absolute;
+        left: 0;
+        top: 39.2rem;
+        object-fit: cover;
+        vertical-align: top;
+        width: 75.7999rem;
+      }/*esta*/
+      .peter-parker-un-joven-hurfano-neoyorquino-que-adquiere-superpoderes-despus-de-ser-mordido-por-una-araa-radiactiva-y-cuya-ideologa-como-hroe-se-ve-reflejada-primordialmente-en-la-expresin-un-gran-poder-conlleva-una-gran-responsabilidad-dg6 {
+        width: 33.1rem;
+        height: 19.2rem;
+        position: absolute;
+        font-size: 2rem;
+        color: #000000;
+        font-family: Lato, 'Source Sans Pro';
+        left: 10rem;
+        top: 216.6rem;
+        font-weight: 400;
+        line-height: 1.2;
+      }/*esta*/
+      .tras-la-muerte-de-peter-parker-es-quien-toma-la-identidad-de-spider-man-la-eleccin-del-presidente-barack-obama-en-enero-de-2009-fue-una-fuente-de-inspiracin-para-el-cambio-de-etnicidad-de-spider-man-nBc {
+        top: 216.6rem;
+        font-weight: 400;
+        color: #000000;
+        width: 31.2rem;
+        height: 16.8rem;
+        position: absolute;
+        left: 47.4rem;
+        font-size: 2rem;
+        line-height: 1.2;
+        font-family: Lato, 'Source Sans Pro';
+      }/*esta*/
+      .el-personaje-es-una-variante-de-el-hombre-araa-una-versin-de-universo-alternativo-de-gwen-stacy-ella-reside-en-la-tierra-65-donde-en-lugar-de-peter-benjamin-parker-gwen-stacy-fue-mordida-por-la-araa-radiactiva-zHg {
+        height: 16.8rem;
+        position: absolute;
+        left: 84.7rem;
+        font-weight: 400;
+        color: #000000;
+        width: 33.4rem;
+        font-size: 2rem;
+        line-height: 1.2;
+        font-family: Lato, 'Source Sans Pro';
+        top: 216.6rem;
+      }/*esta*/
+      .los-vengadores-acompaando-tu-aventura-Bsx {
+        line-height: 0.9450000127;
+        height: 11.4rem;
+        left: 10.4rem;
+        font-size: 6rem;
+        font-weight: 600;
+        font-family: Lato, 'Source Sans Pro';
+        width: 64.6rem;
+        position: absolute;
+        top: 322.6rem;
+        color: #ffffff;
+      }
+      .mas-amigos-mas-diversin-gJv {/*esta*/
+        font-size: 6rem;
+        line-height: 0.9450000127;
+        height: 5.7rem;
+        position: absolute;
+        left: 10.4rem;
+        top: 408.7rem;
+        font-weight: 600;
+        color: #000000;
+        font-family: Lato, 'Source Sans Pro';
+        white-space: nowrap;
+        width: 74.6rem;
+      }
+      .mas-de-100-misiones-para-que-juegues-sin-parar-ZtW {/*esta*/
+        left: 71.3rem;
+        top: 421.3rem;
+        font-size: 4rem;
+        font-weight: 400;
+        color: #000000;
+        font-family: Lato, 'Source Sans Pro';
+        height: 7.6rem;
+        position: absolute;
+        line-height: 0.9449999809;
+        width: 45.8rem;
+      }/*esta*/
+      .tus-padres-contentos-explora-el-emocionante-mundo-de-spider-man-con-ms-de-100-misiones-que-te-mantendrn-en-constante-accin-y-adrenalina-enfrntate-a-desafos-nicos-desentraa-misterios-y-ayuda-a-spider-man-a-mantener-la-paz-en-la-ciudad-mientras-te-sumerges-en-la-piel-del-hroe-arcnido-tienes-lo-que-se-necesita-para-superar-todas-las-misiones-y-convertirte-en-el-autntico-spider-man-Tiz {
+        font-weight: 400;
+        color: #000000;
+        font-family: Lato, 'Source Sans Pro';
+        width: 46.7rem;
+        position: absolute;
+        top: 431.4rem;
+        font-size: 2rem;
+        line-height: 0.9449999809;
+        height: 15.2rem;
+        left: 71.3rem;
+      }/*esta*/
+      .sumrgete-en-un-universo-de-maravillas-visuales-con-spider-man-nombre-del-juego-nuestro-juego-te-llevar-a-travs-de-escenas-deslumbrantes-que-te-dejarn-sin-aliento-desde-los-rascacielos-de-nueva-york-hasta-los-intrincados-detalles-de-la-vida-de-peter-parker-cada-rincn-de-este-mundo-te-sorprender-preprate-para-una-experiencia-nica-que-desafiar-tus-expectativas-y-te-transportar-a-un-asombroso-viaje-con-el-hombre-araa-PFG {
+        height: 17.1rem;
+        left: 71.3rem;
+        font-size: 2rem;
+        font-weight: 400;
+        color: #000000;
+        font-family: Lato, 'Source Sans Pro';
+        width: 46.3rem;
+        position: absolute;
+        top: 471.7rem;
+        line-height: 0.9449999809;
+      }/*esta*/
+      .cada-misin-es-una-oportunidad-para-vivir-la-emocionante-vida-del-hombre-araa-y-aunque-los-puntos-que-ganars-no-tengan-un-propsito-especfico-la-verdadera-recompensa-est-en-la-diversin-y-la-inmersin-que-experimentars-en-cada-desafo-no-necesitas-acumular-puntos-para-sentirte-como-un-autntico-superhroe-ya-que-la-adrenalina-de-salvar-la-ciudad-y-la-emocin-de-las-acrobacias-en-el-aire-son-ms-que-suficientes-as-que-preprate-para-sumergirte-en-la-accin-y-la-aventura-sin-preocuparte-por-los-puntos-y-vive-la-experiencia-definitiva-de-spider-man-UR8 {
+        left: 71.3rem;
+        top: 517.7rem;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 0.9449999809;
+        width: 46.8rem;
+        position: absolute;
+        color: #000000;
+        font-family: Lato, 'Source Sans Pro';
+        height: 20.8rem;
+      }/*esta*/
+      .la-diversin-est-asegurada-mientras-te-enfrentas-a-los-infames-villanos-de-la-ciudad-de-nueva-york-enfrntate-a-desafos-picos-combate-a-tus-enemigos-ms-temibles-y-disfruta-de-una-experiencia-llena-de-accin-y-emocin-cada-encuentro-con-los-villanos-te-sumergir-en-una-batalla-trepidante-y-te-llevar-ms-cerca-de-convertirte-en-el-autntico-hombre-araa-as-que-ests-listo-para-derrotar-a-los-villanos-y-sumergirte-en-la-aventura-definitiva-de-spider-man-6L2 {
+        height: 17.1rem;
+        position: absolute;
+        left: 71.3rem;
+        color: #000000;
+        font-family: Lato, 'Source Sans Pro';
+        width: 46.8rem;
+        top: 565.6rem;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 0.9449999809;
+      }
+      .escenas-deslumbrantes-que-te-sorprendern-Bkn {/*esta*/
+        line-height: 0.9449999809;
+        color: #000000;
+        height: 7.6rem;
+        position: absolute;
+        top: 461.6rem;
+        font-size: 4rem;
+        width: 40.8rem;
+        left: 71.3rem;
+        font-weight: 400;
+        font-family: Lato, 'Source Sans Pro';
+      }
+      .cada-misin-te-dar-puntos-que-no-sirven-para-nada-Uzn {/*esta*/
+        top: 503.8rem;
+        line-height: 0.9449999809;
+        width: 45.5rem;
+        height: 11.4rem;
+        position: absolute;
+        left: 71.3rem;
+        font-size: 4rem;
+        font-weight: 400;
+        color: #000000;
+        font-family: Lato, 'Source Sans Pro';
+      }
+      .derrota-a-los-villanos-y-divirtete-Asc {/*esta*/
+        height: 7.6rem;
+        top: 555.5rem;
+        font-size: 4rem;
+        font-weight: 400;
+        width: 46.7rem;
+        position: absolute;
+        left: 71.3rem;
+        line-height: 0.9449999809;
+        color: #000000;
+        font-family: Lato, 'Source Sans Pro';
+      }
+      .image-222-1-t2v {/*-----imagen los vengadores acompananiandi-------*/
+        width: 107.7059rem;
+        height: 52.7626rem;
+        position: absolute;
+        left: 10.176rem;
+        top: 345.2106rem;
+        object-fit: cover;
+        vertical-align: top;
+      }
+      .image-22-5-yKG {
+        top: 345.2106rem;
+        object-fit: cover;
+        vertical-align: top;
+        width: 107.7059rem;
+        height: 52.7626rem;
+        position: absolute;
+        left: 10.176rem;
+      }
+      .untitled-2-1-JMY {
+        width: 46.3865rem;
+        height: 48.7846rem;
+        position: absolute;
+        left: 77.2rem;
+        top: 355.8rem;
+        object-fit: cover;
+        vertical-align: top;
+      }
+      .image-22-1-dPp {
+        position: absolute;
+        left: 12.8159rem;
+        top: 335.7rem;
+        object-fit: cover;
+        vertical-align: top;
+        width: 56.8431rem;
+        height: 67.5rem;
+      }
+      .image-22-4-Mqc {
+        width: 107.7059rem;
+        height: 52.7626rem;
+        position: absolute;
+        left: 10.176rem;
+        top: 345.2106rem;
+        object-fit: cover;
+        vertical-align: top;
+      }
+      .untitled-4-1-JF4 {
+        position: absolute;
+        left: 55.2rem;
+        top: 319.7rem;
+        object-fit: cover;
+        vertical-align: top;
+        width: 48.8005rem;
+        height: 62.3635rem;
+      }
+    }/*-----------------------------------------------------hasta aca imagenes los vengadores acomppaniando-------*/
+    .image-4-2B4 {
+      flex-shrink: 0;
+      margin-top: 111.7rem;
+      width: 105.4rem;
+      height: 65.4rem;
+      object-fit: cover;
+      vertical-align: top;
+    }
+  }
+  .un-gran-poder-conlleva-una-gran-responsabilidad-A2N {/*esta*/
+    color: #ffffff;
+    font-family: Lato, 'Source Sans Pro';
+    flex-shrink: 0;
+    margin: 0rem 0rem 4.2rem 10.4rem;
+    max-width: 72.3rem;
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  .auto-group-uvbg-F3p {
+    width: 100%;
+    height: 205.2rem;
+    position: relative;
+    flex-shrink: 0;
+
+    .rectangle-10-NeE {
+      left: 0;
+      top: 3.7rem;
+      object-fit: contain;
+      vertical-align: top;
+      width: 128rem;
+      height: 71.9861rem;
+      position: absolute;
+    }
+    .rectangle-11-hwQ {
+      height: 129.6rem;
+      position: absolute;
+      left: 0;
+      top: 75.6rem;
+      object-fit: contain;
+      vertical-align: top;
+      width: 128rem;
+    }
+    .untitled-1-5-3kN {
+      height: 72rem;
+      position: absolute;
+      left: 0;
+      top: 133.2rem;
+      object-fit: cover;
+      vertical-align: top;
+      width: 128rem;
+    }
+    .image-224-nhx {/*esta*/
+      width: 23.1rem;
+      height: 14.5rem;
+      position: absolute;
+      left: 30.2rem;
+      top: 137.6rem;
+      object-fit: cover;
+      vertical-align: top;
+    }
+    .image-229-818 {/*esta*/
+      vertical-align: top;
+      width: 26.8rem;
+      height: 41.65rem;
+      position: absolute;
+      left: 19rem;
+      top: 20.8139rem;
+      object-fit: contain;
+    }
+    .image-230-rxi {/*esta*/
+      vertical-align: top;
+      width: 31.35rem;
+      height: 39.85rem;
+      position: absolute;
+      left: 77.7rem;
+      top: 21.7139rem;
+      object-fit: contain;
+    }
+    .image-231-Pxe {/*esta*/
+      position: absolute;
+      left: 39.4rem;
+      top: 21.7139rem;
+      object-fit: contain;
+      vertical-align: top;
+      width: 41.65rem;
+      height: 45.75rem;
+    }
+    .group-4-Yae {
+      font-family: Lato, 'Source Sans Pro';
+      box-shadow: 0.4rem 0.5rem 0 #02187e;
+      background-color: #ffe901;
+      border-radius: 11.1rem;
+      font-weight: 900;
+      line-height: 0.9449999809;
+      white-space: nowrap;
+      width: 29.2rem;
+      top: 0;
+      font-size: 2rem;
+      color: #02187e;
+      align-items: center;
+      justify-content: center;
+      border: solid 0.8rem #2982ff;
+      height: 5rem;
+      position: absolute;
+      left: 11rem;
+      letter-spacing: 0.22rem;
+      display: flex;
+      box-sizing: border-box;
+    }
+    .al-inscribirse-en-nuestra-lista-de-correo-nos-autoriza-a-ponernos-en-contacto-con-usted-para-enviarle-ofertas-y-actualizaciones-de-marketing-por-correo-electrnico-y-tambin-acepta-nuestra-poltica-de-privacidad-y-las-condiciones-del-servicio-MY6 {
+      font-weight: 400;
+      color: #000000;
+      width: 57.9rem;
+      position: absolute;
+      left: 30.2rem;
+      top: 126.4rem;
+      height: 7.6rem;
+      font-size: 2rem;
+      line-height: 0.9449999809;
+      font-family: Lato, 'Source Sans Pro';
+
+      .al-inscribirse-en-nuestra-lista-de-correo-nos-autoriza-a-ponernos-en-contacto-con-usted-para-enviarle-ofertas-y-actualizaciones-de-marketing-por-correo-electrnico-y-tambin-acepta-nuestra-poltica-de-privacidad-y-las-condiciones-del-servicio-MY6-sub-0 {
+      }
+      .al-inscribirse-en-nuestra-lista-de-correo-nos-autoriza-a-ponernos-en-contacto-con-usted-para-enviarle-ofertas-y-actualizaciones-de-marketing-por-correo-electrnico-y-tambin-acepta-nuestra-poltica-de-privacidad-y-las-condiciones-del-servicio-MY6-sub-1 {
+        text-decoration-line: underline;
+        color: #000000;
+        font-family: Lato, 'Source Sans Pro';
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 0.9449999809;
+      }
+      .al-inscribirse-en-nuestra-lista-de-correo-nos-autoriza-a-ponernos-en-contacto-con-usted-para-enviarle-ofertas-y-actualizaciones-de-marketing-por-correo-electrnico-y-tambin-acepta-nuestra-poltica-de-privacidad-y-las-condiciones-del-servicio-MY6-sub-2 {
+      }
+      .al-inscribirse-en-nuestra-lista-de-correo-nos-autoriza-a-ponernos-en-contacto-con-usted-para-enviarle-ofertas-y-actualizaciones-de-marketing-por-correo-electrnico-y-tambin-acepta-nuestra-poltica-de-privacidad-y-las-condiciones-del-servicio-MY6-sub-3 {
+        color: #000000;
+        font-family: Lato, 'Source Sans Pro';
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 0.9449999809;
+        text-decoration-line: underline;
+      }
+    }
+    .lo-ltimo-de-spidey-y-sus-amigos-en-tu-buzn-de-correo-electrnico-ehY {
+      top: 90.8rem;
+      text-align: center;
+      line-height: 0.9450000127;
+      width: 72.8rem;
+      position: absolute;
+      font-size: 6rem;
+      font-weight: 600;
+      color: #000000;
+      font-family: Lato, 'Source Sans Pro';
+      height: 17.1rem;
+      left: 27.6rem;
+    }
+    .group-3-L4a {
+      position: absolute;
+      left: 25rem;
+      top: 112.5rem;
+      display: flex;
+      align-items: center;
+      width: 78rem;
+      height: 10rem;
+
+      .auto-group-wrue-3za {
+        box-sizing: border-box;
+        letter-spacing: 0.22rem;
+        white-space: nowrap;
+        line-height: 0.9449999809;
+        font-family: Lato, 'Source Sans Pro';
+        box-shadow: 0.4rem 0.5rem 0 #02187e;
+        background-color: #ffffff;
+        border-radius: 5rem 0 0 5rem;
+        font-size: 2rem;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.3899999857);
+        flex-shrink: 0;
+        padding: 4.1rem 5.2rem 4rem 5.2rem;
+        width: 56.2rem;
+        height: 100%;
+        border: solid 0 #2982ff;
+      }
+      .auto-group-cbtq-qvS {
+        white-space: nowrap;
+        background-color: #ffe901;
+        height: 100%;
+        font-size: 2rem;
+        letter-spacing: 0.22rem;
+        border: solid 0.9rem #2982ff;
+        box-sizing: border-box;
+        border-radius: 5rem 0 0 5rem;
+        flex-shrink: 0;
+        width: 21.8rem;
+        align-items: center;
+        justify-content: center;
+        color: #02187e;
+        font-family: Lato, 'Source Sans Pro';
+        box-shadow: 0.4rem 0.5rem 0 #02187e;
+        font-weight: 900;
+        line-height: 0.9449999809;
+        display: flex;
+      }
+    }
+    .image-227-tdp {
+      height: 8.8rem;
+      position: absolute;
+      left: 99.8rem;
+      top: 172.5rem;
+      object-fit: cover;
+      vertical-align: top;
+      width: 9.4rem;
+    }
+    .image-228-YCa {
+      top: 189.2rem;
+      object-fit: cover;
+      vertical-align: top;
+      width: 9.7rem;
+      height: 8.9rem;
+      position: absolute;
+      left: 21.9rem;
+    }
+    .image-239-emQ {
+      width: 5.8rem;
+      height: 6.4rem;
+      position: absolute;
+      left: 53.3rem;
+      top: 182.8rem;
+      object-fit: cover;
+      vertical-align: top;
+    }
+  }
+  .auto-group-r64a-BWS {
+    width: 100%;
+    height: 8rem;
+    background-color: #242424;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 0.1rem 10rem;
+
+    .image-226-iWN {
+      width: 108rem;
+      height: 7.5rem;
+      position: relative;
+      background-size: 106.456% 100%;
+      background-position: -3.3275rem 0;
+      background-image: url('REPLACE_IMAGE:165c8f05a515e3cd316278a313e92c411502921d');
+    }
+  }
+  .auto-group-odqc-Q8J {
+    box-sizing: border-box;
+    padding: 3.8rem 10rem 12rem 10rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #5e5e5d;
+    flex-shrink: 0;
+
+    .sega-all-rights-reserved-sega-is-registered-in-the-us-patent-and-trademark-office-sega-the-sega-logo-and-sonic-superstars-are-either-registered-trademarks-or-trademarks-of-sega-corporation-or-its-affiliates-all-other-trademarks-logos-and-copyrights-are-property-of-their-respective-owners2023-the-lego-group-lego-the-lego-logo-the-minifigure-and-the-brick-and-knob-configurations-are-trademarks-and-or-copyrights-of-the-lego-group-all-other-marks-and-trademarks-are-the-property-of-their-respective-owners-all-rights-reservedps-ps5-and-ps4-are-registered-trademarks-or-trademarks-of-sony-interactive-entertainment-incmicrosoft-the-xbox-sphere-mark-the-series-x-logo-xbox-one-and-xbox-series-x-are-trademarks-of-the-microsoft-group-of-companiesnintendo-switch-is-a-trademark-of-nintendoepic-games-and-the-epic-store-logo-are-trademarks-or-registered-trademarks-of-epic-games-inc2023-valve-corporation-steam-and-the-steam-logo-are-trademarks-and-or-registered-trademarks-of-valve-corporation-in-the-us-and-or-other-countriesthe-esrb-rating-icons-are-registered-trademarks-of-the-entertainment-software-association-cookie-policy-privacy-policy-ien {
+      letter-spacing: 0.22rem;
+      color: #ffffff;
+      max-width: 82.3rem;
+      font-weight: 400;
+      line-height: 0.9449999809;
+      flex-shrink: 0;
+      margin-bottom: 3.9rem;
+      font-size: 2rem;
+      font-family: Lato, 'Source Sans Pro';
+
+      .sega-all-rights-reserved-sega-is-registered-in-the-us-patent-and-trademark-office-sega-the-sega-logo-and-sonic-superstars-are-either-registered-trademarks-or-trademarks-of-sega-corporation-or-its-affiliates-all-other-trademarks-logos-and-copyrights-are-property-of-their-respective-owners2023-the-lego-group-lego-the-lego-logo-the-minifigure-and-the-brick-and-knob-configurations-are-trademarks-and-or-copyrights-of-the-lego-group-all-other-marks-and-trademarks-are-the-property-of-their-respective-owners-all-rights-reservedps-ps5-and-ps4-are-registered-trademarks-or-trademarks-of-sony-interactive-entertainment-incmicrosoft-the-xbox-sphere-mark-the-series-x-logo-xbox-one-and-xbox-series-x-are-trademarks-of-the-microsoft-group-of-companiesnintendo-switch-is-a-trademark-of-nintendoepic-games-and-the-epic-store-logo-are-trademarks-or-registered-trademarks-of-epic-games-inc2023-valve-corporation-steam-and-the-steam-logo-are-trademarks-and-or-registered-trademarks-of-valve-corporation-in-the-us-and-or-other-countriesthe-esrb-rating-icons-are-registered-trademarks-of-the-entertainment-software-association-cookie-policy-privacy-policy-ien-sub-0 {
+      }
+      .sega-all-rights-reserved-sega-is-registered-in-the-us-patent-and-trademark-office-sega-the-sega-logo-and-sonic-superstars-are-either-registered-trademarks-or-trademarks-of-sega-corporation-or-its-affiliates-all-other-trademarks-logos-and-copyrights-are-property-of-their-respective-owners2023-the-lego-group-lego-the-lego-logo-the-minifigure-and-the-brick-and-knob-configurations-are-trademarks-and-or-copyrights-of-the-lego-group-all-other-marks-and-trademarks-are-the-property-of-their-respective-owners-all-rights-reservedps-ps5-and-ps4-are-registered-trademarks-or-trademarks-of-sony-interactive-entertainment-incmicrosoft-the-xbox-sphere-mark-the-series-x-logo-xbox-one-and-xbox-series-x-are-trademarks-of-the-microsoft-group-of-companiesnintendo-switch-is-a-trademark-of-nintendoepic-games-and-the-epic-store-logo-are-trademarks-or-registered-trademarks-of-epic-games-inc2023-valve-corporation-steam-and-the-steam-logo-are-trademarks-and-or-registered-trademarks-of-valve-corporation-in-the-us-and-or-other-countriesthe-esrb-rating-icons-are-registered-trademarks-of-the-entertainment-software-association-cookie-policy-privacy-policy-ien-sub-1 {
+        letter-spacing: 0.22rem;
+        text-decoration-line: underline;
+        color: #ffffff;
+        font-family: Lato, 'Source Sans Pro';
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 0.9449999809;
+      }
+      .sega-all-rights-reserved-sega-is-registered-in-the-us-patent-and-trademark-office-sega-the-sega-logo-and-sonic-superstars-are-either-registered-trademarks-or-trademarks-of-sega-corporation-or-its-affiliates-all-other-trademarks-logos-and-copyrights-are-property-of-their-respective-owners2023-the-lego-group-lego-the-lego-logo-the-minifigure-and-the-brick-and-knob-configurations-are-trademarks-and-or-copyrights-of-the-lego-group-all-other-marks-and-trademarks-are-the-property-of-their-respective-owners-all-rights-reservedps-ps5-and-ps4-are-registered-trademarks-or-trademarks-of-sony-interactive-entertainment-incmicrosoft-the-xbox-sphere-mark-the-series-x-logo-xbox-one-and-xbox-series-x-are-trademarks-of-the-microsoft-group-of-companiesnintendo-switch-is-a-trademark-of-nintendoepic-games-and-the-epic-store-logo-are-trademarks-or-registered-trademarks-of-epic-games-inc2023-valve-corporation-steam-and-the-steam-logo-are-trademarks-and-or-registered-trademarks-of-valve-corporation-in-the-us-and-or-other-countriesthe-esrb-rating-icons-are-registered-trademarks-of-the-entertainment-software-association-cookie-policy-privacy-policy-ien-sub-2 {
+      }
+      .sega-all-rights-reserved-sega-is-registered-in-the-us-patent-and-trademark-office-sega-the-sega-logo-and-sonic-superstars-are-either-registered-trademarks-or-trademarks-of-sega-corporation-or-its-affiliates-all-other-trademarks-logos-and-copyrights-are-property-of-their-respective-owners2023-the-lego-group-lego-the-lego-logo-the-minifigure-and-the-brick-and-knob-configurations-are-trademarks-and-or-copyrights-of-the-lego-group-all-other-marks-and-trademarks-are-the-property-of-their-respective-owners-all-rights-reservedps-ps5-and-ps4-are-registered-trademarks-or-trademarks-of-sony-interactive-entertainment-incmicrosoft-the-xbox-sphere-mark-the-series-x-logo-xbox-one-and-xbox-series-x-are-trademarks-of-the-microsoft-group-of-companiesnintendo-switch-is-a-trademark-of-nintendoepic-games-and-the-epic-store-logo-are-trademarks-or-registered-trademarks-of-epic-games-inc2023-valve-corporation-steam-and-the-steam-logo-are-trademarks-and-or-registered-trademarks-of-valve-corporation-in-the-us-and-or-other-countriesthe-esrb-rating-icons-are-registered-trademarks-of-the-entertainment-software-association-cookie-policy-privacy-policy-ien-sub-3 {
+        color: #ffffff;
+        font-family: Lato, 'Source Sans Pro';
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 0.9449999809;
+        letter-spacing: 0.22rem;
+        text-decoration-line: underline;
+      }
+    }
+    .image-238-Fe2 {
+      height: 4.1rem;
+      object-fit: cover;
+      vertical-align: top;
+      flex-shrink: 0;
+      width: 21.2rem;
+    }
+  }
+}
