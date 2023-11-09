@@ -704,6 +704,7 @@ body {
       display: flex;
       box-sizing: border-box;
     }
+    /*--------------------------todo esto seria del parrafo class =text-11-------------*/
     .al-inscribirse-en-nuestra-lista-de-correo-nos-autoriza-a-ponernos-en-contacto-con-usted-para-enviarle-ofertas-y-actualizaciones-de-marketing-por-correo-electrnico-y-tambin-acepta-nuestra-poltica-de-privacidad-y-las-condiciones-del-servicio-MY6 {
       font-weight: 400;
       color: #000000;
@@ -735,7 +736,7 @@ body {
         font-weight: 400;
         line-height: 0.9449999809;
         text-decoration-line: underline;
-      }
+      }/*---------------------------------------------------------*/
     }
     .lo-ltimo-de-spidey-y-sus-amigos-en-tu-buzn-de-correo-electrnico-ehY {
       top: 90.8rem;
@@ -798,7 +799,7 @@ body {
         display: flex;
       }
     }
-    .image-227-tdp {
+    .image-227-tdp {/*esta*/
       height: 8.8rem;
       position: absolute;
       left: 99.8rem;
@@ -807,7 +808,7 @@ body {
       vertical-align: top;
       width: 9.4rem;
     }
-    .image-228-YCa {
+    .image-228-YCa {/*esta*/
       top: 189.2rem;
       object-fit: cover;
       vertical-align: top;
@@ -816,7 +817,7 @@ body {
       position: absolute;
       left: 21.9rem;
     }
-    .image-239-emQ {
+    .image-239-emQ {/*esta*/
       width: 5.8rem;
       height: 6.4rem;
       position: absolute;
@@ -834,7 +835,7 @@ body {
     box-sizing: border-box;
     padding: 0.1rem 10rem;
 
-    .image-226-iWN {
+    .image-226-iWN {/*esta en footer----*/
       width: 108rem;
       height: 7.5rem;
       position: relative;
@@ -886,7 +887,7 @@ body {
         text-decoration-line: underline;
       }
     }
-    .image-238-Fe2 {
+    .image-238-Fe2 {/*esta*/
       height: 4.1rem;
       object-fit: cover;
       vertical-align: top;
