@@ -34,7 +34,7 @@ function iniciarJuego() {
     let boxSeleccionado = null;
     let inicioTableroX;
     let inicioTableroY;
-    let ficha = null;
+    let ficha;
 
     let sectionJuego= document.querySelector(".juego-compartir");
         sectionJuego.style.display = 'block';
