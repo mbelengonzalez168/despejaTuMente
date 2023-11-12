@@ -9,14 +9,14 @@
 
 <body>
     <div class="parallax1">
-        <header>
+        <header id="main-header">
             <div class = "menu-hamburguesa">
                 <div class="linea-hamburguesa"></div>
                 <div class="linea-hamburguesa"></div>
                 <div class="linea-hamburguesa"></div>
             </div>
             <div>
-                <img src="IMG/image-5-1.png" class= "logo">
+                <img src="IMG/image-5-1.png" class= "logo" id="logo">
             </div>
             <button class = "comprar-iMY"> COMPRAR</button>    
         </header>
@@ -35,7 +35,7 @@
                     <img class= "image-16-B9t" src="IMG/image-16.png">
                 </div>
                 <div class="img-grid-2">
-                    <img class="untitled-3-1-dna" src="IMG/untitled-3-1.png">
+                    <img class="untitled-3-1-dna" src="IMG/untitled-3-1.png" id="duende-verde">
                 </div>
             </div>
         </div>
@@ -133,13 +133,29 @@
             <p>Al inscribirse en nuestra lista de correo, nos autoriza a ponernos en contacto con usted para enviarle ofertas y actualizaciones de marketing por correo electrónico, y también acepta nuestra 
                 <span class="subrallado">Política de privacidad</span> y las <span class="subrallado">Condiciones del servicio.</span></p>
             <img src="IMG/image-224.png">
-            <div>
-                <img src="IMG/image-228.png">
-                <img src="IMG/image-239.png">
-                <img src="IMG/image-227.png">
-            </div>
+            <section class="personajes-section">
+           
+                <div class="personaje" id="pje1">
+                    <img src="IMG/image-228.png" alt="personaje 1" class="image-228-YCa" >
+                </div>
+                <div class="personaje" id="pje2">
+                    <img src="IMG/image-239.png" alt="personaje 2"class="image-239-emQ " >
+                </div>
+                <div class="personaje" id="pje3">
+                    <img src="IMG/image-227.png" alt="personaje 3" class="image-227-tdp " >
+                </div>
+            </section>
         </div>
-    </section>   
+    </section>
+    </div>
+    <div id="loader-container" class="loader-container">
+        <div id="loader" class="loader"></div>
+        <div id="loading-text" class="loading-text"> 
+            <p>Cargando...</p>
+        </div>
+    </div> 
+    <script src="JS/tp4.js"></script>
+    <script src="JS/loader.js"></script>  
 </body>
 <footer>
     <div class="juegos-footer">

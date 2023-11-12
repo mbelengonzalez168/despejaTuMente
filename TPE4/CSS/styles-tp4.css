@@ -409,3 +409,178 @@ footer{
   width: 212px;
   height: 41px;
 }
+
+
+/*------------------OPCIONAl1 pto 1 --loader *-----------------------*/
+#loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000; /* Fondo oscuro */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  
+}
+
+#loader {
+ /* border: 16px solid #f3f3f3; /* Light grey */
+ /* border-top: 16px solid #3498db; /* Blue */
+ /*border-radius: 50%;*/
+  background: url('/TPE4/IMG/loader.jpg') no-repeat center center;
+  background-size: contain;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#loading-text {
+  color: #fff; /* Texto blanco */
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/*-------------------------PTO 9---tres personajes volados-------------*/
+.personajes-section {
+  height: 720px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  position: relative;
+  background-image: url('/TPE4/IMG/untitled-1-5-ByC.png'); /* Reemplaza con la ruta de tu imagen */
+  background-size: cover; /* Cubre todo el contenedor */
+  background-position: center; /* Centra la imagen en el contenedor */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+}
+
+.personaje {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s, transform 1s;
+/* position: absolute;*/
+  
+}
+.personaje.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.image-227-tdp {
+  height: 8.8rem;
+/*   position: absolute;*/
+  left: 99.8rem;
+  top: 172.5rem;
+  object-fit: cover;
+  vertical-align: top;
+  width: 9.4rem;
+  
+}
+.image-228-YCa {
+  
+  object-fit: cover;
+  vertical-align: top;
+  width: 9.7rem;
+  height: 8.9rem;
+/*  position: absolute;*/
+  left: 21.9rem;
+  top: 189.2rem;
+}
+.image-239-emQ {
+  width: 5.8rem;
+  height: 6.4rem;
+/* position: absolute;*/
+  left: 53.3rem;
+  top: 182.8rem;
+  object-fit: cover;
+ vertical-align: top;
+  
+}
+/*-------------------pto 10----BTN-CPMPRAR------*/
+.comprar-iMY {
+    /* Agrega transición para el cambio de color en 0.3 segundos */
+  transition: background-color 0.3s ease;
+}
+
+/* Cambio de color en hover */
+.comprar-iMY:hover {
+  background-color: #e74c3c; /* Nuevo color en hover */
+  color: #ffffff; /* Puedes ajustar el color del texto en hover si es necesario */
+}
+/*-----------------pTO 5------mini-header-----------------------*/
+#main-header {
+  position: fixed;
+  width: 100%;
+/*  transition: all 0.3s;*/
+  z-index: 1000;
+  
+}
+
+#main-header.mini {
+  top: 0;
+  padding: 5px;
+  background-color:beige;
+}
+.logo-mini {
+  width: 200px;
+  height: 80px;
+}
+/*----------------------Pto6 duende verde--------------*/
+
+/*--------------------------pto 4--------------------------*/
+.mas-amigos-mas-diversion {
+  display: flex;
+}
+
+.imagenes-mas-amigos {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.imagen {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.imagen.active {
+  opacity: 1;
+}
+/*---------------------------------------*/
+#container {
+  display: flex;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.image.active {
+  opacity: 1;
+}
+
+/* Ajusta estos estilos según tus necesidades 
+#image-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;s
+}\/*-----------------------------------*/
