@@ -20,10 +20,44 @@ window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
 
     // Ajusta la velocidad de movimiento del duende verde
-    const velocidadDuende = 0.1;
+    const velocidadDuende = 0.2;
     const transformValue = `translateY(${scrollY * velocidadDuende}px)`;
     duendeVerde.style.transform = transformValue;
 });
+
+
+/*----------------------pto 9--------------------------*/
+    const seccion = document.querySelector(".personajes-section");
+    const personajes = document.querySelectorAll(".personaje");
+
+    window.addEventListener("scroll", function () {
+        const scrollPosition = window.scrollY;
+        const seccionTop = seccion.offsetTop;
+        const seccionBottom = seccionTop + seccion.offsetHeight;
+
+        // Verificar si la sección está en la vista
+        if (scrollPosition > seccionTop && scrollPosition < seccionBottom) {
+            personajes.forEach((personaje, index) => {
+                const positionFromBottom = (index + 1) * 100; // Ajusta según sea necesario-  Distancia entre cada personaje
+                const height = window.innerHeight - positionFromBottom;
+                const altura = positionFromBottom + 60;
+                console.log('win' +window.innerHeight);
+                console.log('pos' + positionFromBottom);
+                console.log('altura' + altura);
+                personaje.style.transitionDelay = `${index * 0.3}s`; // retraso entre un personaje y otro
+                personaje.style.bottom = `-${positionFromBottom}px`;
+             personaje.style.height = `${altura + 70}px`; // ////ESTO hay q mejorar----la altura segun edificios
+            //  console.log(height);
+                personaje.classList.add("visible");  
+            });
+        } else {
+            personajes.forEach((personaje) => {
+                personaje.classList.remove("visible");
+            });
+        }
+    });
+
+
 /*----------------------------------------------------------------*/
 /*const imagenes = document.querySelectorAll('.image');
 
@@ -349,34 +383,3 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });*/
-document.addEventListener("DOMContentLoaded", function () {
-    const seccion = document.querySelector(".personajes-section");
-    const personajes = document.querySelectorAll(".personaje");
-
-    window.addEventListener("scroll", function () {
-        const scrollPosition = window.scrollY;
-        const seccionTop = seccion.offsetTop;
-        const seccionBottom = seccionTop + seccion.offsetHeight;
-
-        // Verificar si la sección está en la vista
-        if (scrollPosition > seccionTop && scrollPosition < seccionBottom) {
-            personajes.forEach((personaje, index) => {
-                const positionFromBottom = (index + 1) *100; // Ajusta según sea necesario
-                const height = window.innerHeight - positionFromBottom;
-                const altura = positionFromBottom + 60;
-                console.log('win' +window.innerHeight);
-                console.log('pos' + positionFromBottom);
-                console.log('altura' + altura);
-                personaje.style.transitionDelay = `${index * 0.3}s`; // Ajusta el retraso según sea necesario
-                personaje.style.bottom = `-${positionFromBottom}px`;
-             personaje.style.height = `${altura}px`; // Ajusta la altura según sea necesario
-            //  console.log(height);
-                personaje.classList.add("visible");  
-            });
-        } else {
-            personajes.forEach((personaje) => {
-                personaje.classList.remove("visible");
-            });
-        }
-    });
-});
