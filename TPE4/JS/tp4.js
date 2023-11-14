@@ -3,14 +3,18 @@
 /*---------------------------MINI-HEADER--------------------*/
 const header = document.getElementById('main-header');
 const logo = document.getElementById('logo');
+const fijo  = document.getElementById('container-mini-header');
+
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
         header.classList.add('mini');
         logo.classList.add('logo-mini');
+        fijo.classList.add('header-mini');
     } else {
         header.classList.remove('mini');
         logo.classList.remove('logo-mini');
+        fijo.classList.remove('header-mini');
     }
 });
 /*--------------------DUENDE-VERDE--------------------*/

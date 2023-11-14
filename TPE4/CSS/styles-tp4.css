@@ -1,5 +1,4 @@
 html {
-	font-size:20px;
   font-weight: 400;
   background-color: #000000;
 }
@@ -13,11 +12,39 @@ ul, li {
 input {
 	border: none;
 }
-header{
+.header-mini{
+  position: fixed;
+  z-index: 13;
+  height: 115px;
+  width: 100%;
+  background: linear-gradient(180deg, #5499F8 0%, #5499F8 87.91%, rgba(84, 153, 248, 0) 100%);
+}
+.container-header{
   width: 1080px;
   margin: 0 auto;
+}
+header{
   display: flex;
   justify-content: space-between;
+  transition: transform 3s ease;
+}
+#main-header.mini {
+  position: fixed;
+  width: 1080px;
+  margin: 0 auto;
+  z-index: 15;
+}
+
+.logo{
+  width: 590px;
+  height: 301px;
+  object-fit: cover;
+  margin-top: 91px;
+}
+.logo-mini {
+  margin-top: 20px;
+  width: 133px;
+  height: 68px;
 }
 .menu-hamburguesa{
   display: flex;
@@ -48,12 +75,6 @@ header{
   white-space: nowrap;
   color: #02187e;
 }  
-.logo{
-  width: 590px;
-  height: 301px;
-  object-fit: cover;
-  margin-top: 91px;
-}
 .parallax1{
   height: 700px;
 }
@@ -113,6 +134,7 @@ header{
   height: 921px;
   transform: scaleX(-1);
   margin-right: 0px;
+  margin-top: -100px;
 }
 .poligono-trio-imagenes{
   position: relative;
@@ -423,8 +445,7 @@ footer{
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 9999;
-  
+  z-index: 10;
 }
 
 #loader {
@@ -436,17 +457,16 @@ footer{
   width: 80px;
   height: 80px;
   animation: spin 2s linear infinite;
+  border-radius: 50%;
 }
-
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-
 #loading-text {
   color: #fff; /* Texto blanco */
   font-size: 18px;
-  margin-top: 20px;
+  margin-left: 10px;
 }
 
 /*-------------------------PTO 9---tres personajes volados-------------*/
@@ -518,23 +538,7 @@ footer{
   color: #ffffff; /* Puedes ajustar el color del texto en hover si es necesario */
 }
 /*-----------------pTO 5------mini-header-----------------------*/
-#main-header {
-  position: fixed;
-  width: 100%;
-/*  transition: all 0.3s;*/
-  z-index: 1000;
-  
-}
 
-#main-header.mini {
-  top: 0;
-  padding: 5px;
-  background-color:beige;
-}
-.logo-mini {
-  width: 200px;
-  height: 80px;
-}
 /*----------------------Pto6 duende verde--------------*/
 /*------------------Pto 11---------------------------*/
 @keyframes rotateAndPerspective {
