@@ -536,6 +536,47 @@ footer{
   height: 80px;
 }
 /*----------------------Pto6 duende verde--------------*/
+/*------------------Pto 11---------------------------*/
+@keyframes rotateAndPerspective {
+  0% {
+      transform: skew(0deg) rotate(0deg);
+  }
+  50% {
+      transform: skew(5deg) rotate(-5deg);
+  }
+  100% {
+      transform:skew(10deg) rotate(0deg);
+  }
+}
+/* @keyframes rotateAndPerspective {
+  0% {
+      transform: rotateX(0deg) skew(10deg);
+  }
+  50% {
+      transform: rotateX(10deg) skew(15deg);
+  }
+  100% {
+      transform: rotateX(0deg) skew(20deg);
+  }
+}*/
+/*
+.conteiner-ghost:hover .test-1 {
+  animation: rotateAndPerspective 1s ease; /* Aplicar la animación al hacer hover 
+}
+
+.conteiner-ghost:hover .test-2 {
+  animation: rotateAndPerspective 1s ease 0.1s; /* Aplicar la animación con un pequeño retraso 
+}
+
+.conteiner-ghost:hover .test-3 {
+  animation: rotateAndPerspective 1s ease 0.2s; /* Aplicar la animación con un pequeño retraso 
+}
+/*
+.test img{
+  transition: transform 0.5s ease-out;
+}*/
+
+/*---------------------------------------------------------------------------*/
 
 /*--------------------------pto 4--------------------------*/
 .mas-amigos-mas-diversion {
