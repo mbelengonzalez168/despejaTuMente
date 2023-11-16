@@ -1,4 +1,10 @@
-"use strict"
+"use strict";
+window.onscroll = function () {
+    scrollFunction();
+  }
+  
+  function scrollFunction() {
+    let scrollY = window.scrollY;
 
 /*---------------------------MINI-HEADER--------------------*/
 const header = document.getElementById('main-header');
@@ -6,8 +12,8 @@ const logo = document.getElementById('logo');
 const fijo  = document.getElementById('container-mini-header');
 
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
+//window.addEventListener('scroll', () => {
+    if (scrollY > 50) {
         header.classList.add('mini');
         logo.classList.add('logo-mini');
         fijo.classList.add('header-mini');
@@ -16,18 +22,18 @@ window.addEventListener('scroll', () => {
         logo.classList.remove('logo-mini');
         fijo.classList.remove('header-mini');
     }
-});
+//});
 /*--------------------DUENDE-VERDE--------------------*/
 const duendeVerde = document.getElementById('duende-verde');
 
-window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY;
+//window.addEventListener('scroll', () => {
+   // const scrollY = window.scrollY;
 
     // Ajusta la velocidad de movimiento del duende verde
     const velocidadDuende = 0.175;
     const transformValue = `translateY(${scrollY * velocidadDuende}px)`;
     duendeVerde.style.transform = transformValue;
-});
+//});
 
 
 /*----------------------pto 9--------------------------*/
@@ -37,13 +43,13 @@ window.addEventListener('scroll', () => {
     const personaje2 = document.getElementById('pje2');
     const personaje3 = document.getElementById('pje3');
 
-    window.addEventListener("scroll", function () {
-        const scrollPosition = window.scrollY;
+   // window.addEventListener("scroll", function () {
+       // const scrollPosition = window.scrollY;
         const seccionTop = seccion.offsetTop;
         const seccionBottom = seccionTop + seccion.offsetHeight;
 
         // Verificar si la sección está en la vista
-        if (scrollPosition > seccionTop && scrollPosition < seccionBottom) {     
+        if (scrollY > seccionTop && scrollY < seccionBottom) {     
             personaje1.classList.add("visible");  
             personaje2.classList.add("visible");  
             personaje3.classList.add("visible");  
@@ -63,23 +69,23 @@ window.addEventListener('scroll', () => {
             personaje2.style.transform = `translateY(155px)`;
             personaje3.style.transform = `translateY(230px)`;
         }
-    });
+   // });
 
     /*--------------------Pto 11----------------*/
 
     const ghost = document.querySelector(".ghost");
     const testImages = document.querySelectorAll(".test img");
     
-    window.addEventListener("scroll", function () {
-        const scroll = window.scrollY;
+   // window.addEventListener("scroll", function () {
+    //    const scroll = window.scrollY;
         const ghostTop = ghost.offsetTop;
         const ghostHeigth = ghost.offsetHeight;
                         
-        if (scroll > ghostTop && scroll < ghostTop +  ghostHeigth) {
+        if (scrollY > ghostTop && scrollY < ghostTop +  ghostHeigth) {
             testImages.forEach((image, index) => {
                 const delay = index * 150; // Ajusta según sea necesario
                 const speed = 0.2 * (index + 1)
-                const translateY = Math.min(ghostHeigth, scroll - ghostTop) * speed;
+                const translateY = Math.min(ghostHeigth, scrollY - ghostTop) * speed;
                 image.style.transitionDelay = `${delay}ms`;
                 image.style.transform = `translateY(${translateY}px)`;
                 
@@ -95,8 +101,50 @@ window.addEventListener('scroll', () => {
                 
             });
         } 
-    });
+   // });
+/*----------------pto 4-------------------------------*/
+const textos = document.querySelectorAll(".text");
+const imgs = document.querySelectorAll(".img");
+const masAmigos =document.querySelector(".mas-amigos");
+const amigosTop = masAmigos.offsetTop;
+const amigosHeigth = masAmigos.offsetHeight;
+                    
+    console.log('toppppp  ' + amigosTop);
+    console.log("but"+ amigosHeigth);
 
+
+        textos.forEach(function (t) {
+            t.classList.add("text-oculto")
+        })
+        
+        imgs.forEach(function (t) {
+            t.classList.add("img-oculta")
+        })
+        
+        if (scrollY < amigosTop) {
+            textos[0].classList.remove("text-oculto");
+            imgs[0].classList.remove("img-oculta");
+        }
+        else if (scrollY >= amigosTop && scrollY < 4024) {
+            textos[1].classList.remove("text-oculto");
+            imgs[1].classList.remove("img-oculta");
+
+        } else if (scrollY >= 4024 && scrollY < 4176) {
+            textos[2].classList.remove("text-oculto")
+            imgs[2].classList.remove("img-oculta");
+        } else if (scrollY >= 4176 && scrollY < 4298) {
+            textos[3].classList.remove("text-oculto");
+            imgs[3].classList.remove("img-oculta");
+        } else {
+            if (scrollY >= 4298 && scrollY < amigosTop + amigosHeigth) {
+            textos[4].classList.remove("text-oculto");
+            imgs[4].classList.remove("img-oculta");
+            }
+        }
+
+    
+    }
+/*----------------------------------------------------------------*/
 
 /*----------------------------------------------------------------*/
 /*const imagenes = document.querySelectorAll('.image');

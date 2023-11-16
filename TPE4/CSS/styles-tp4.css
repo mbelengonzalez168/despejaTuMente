@@ -265,6 +265,18 @@ header{
   width: 548px;
   height: 305px;
 }
+.imagenes-blog {
+  position: sticky;
+   /* width: 50%;*/
+  /*  height: 100%;*/
+   /* top: 15%;*/
+ /*   min-width: 500px; */
+
+}
+
+.img-oculta {
+  display: none;
+}
 .blog-img1{
   background-image: url(../IMG/image-21.png);
   background-size:  100% 118.313%;
@@ -298,6 +310,9 @@ header{
   font-size: 20px;
   margin-left: 73px;
   margin-bottom: 40px;
+}
+.text-oculto {
+  opacity: 0;
 }
 .conteiner-comprar{
   width: 1080px;
