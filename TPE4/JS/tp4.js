@@ -24,7 +24,7 @@ window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
 
     // Ajusta la velocidad de movimiento del duende verde
-    const velocidadDuende = 0.2;
+    const velocidadDuende = 0.175;
     const transformValue = `translateY(${scrollY * velocidadDuende}px)`;
     duendeVerde.style.transform = transformValue;
 });
@@ -33,6 +33,9 @@ window.addEventListener('scroll', () => {
 /*----------------------pto 9--------------------------*/
     const seccion = document.querySelector(".personajes-section");
     const personajes = document.querySelectorAll(".personaje");
+    const personaje1 = document.getElementById('pje1');
+    const personaje2 = document.getElementById('pje2');
+    const personaje3 = document.getElementById('pje3');
 
     window.addEventListener("scroll", function () {
         const scrollPosition = window.scrollY;
@@ -40,24 +43,25 @@ window.addEventListener('scroll', () => {
         const seccionBottom = seccionTop + seccion.offsetHeight;
 
         // Verificar si la sección está en la vista
-        if (scrollPosition > seccionTop && scrollPosition < seccionBottom) {
-            personajes.forEach((personaje, index) => {
-                const positionFromBottom = (index + 1) * 100; // Ajusta según sea necesario-  Distancia entre cada personaje
-                const height = window.innerHeight - positionFromBottom;
-                const altura = positionFromBottom + 60;
-                console.log('win' +window.innerHeight);
-                console.log('pos' + positionFromBottom);
-                console.log('altura' + altura);
-                personaje.style.transitionDelay = `${index * 0.3}s`; // retraso entre un personaje y otro
-                personaje.style.bottom = `-${positionFromBottom}px`;
-             personaje.style.height = `${altura + 70}px`; // ////ESTO hay q mejorar----la altura segun edificios
-            //  console.log(height);
-                personaje.classList.add("visible");  
-            });
+        if (scrollPosition > seccionTop && scrollPosition < seccionBottom) {     
+            personaje1.classList.add("visible");  
+            personaje2.classList.add("visible");  
+            personaje3.classList.add("visible");  
+
+            personaje1.style.transition = `transform 2s`;
+            personaje2.style.transition = `transform 3s`;
+            personaje3.style.transition = `transform 4s`;
+
+            personaje1.style.transform = `translateY(-63px)`;
+            personaje2.style.transform = `translateY(-155px)`;
+            personaje3.style.transform = `translateY(-230px)`;
         } else {
             personajes.forEach((personaje) => {
                 personaje.classList.remove("visible");
             });
+            personaje1.style.transform = `translateY(63px)`;
+            personaje2.style.transform = `translateY(155px)`;
+            personaje3.style.transform = `translateY(230px)`;
         }
     });
 

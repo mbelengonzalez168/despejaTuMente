@@ -134,7 +134,7 @@ header{
   height: 921px;
   transform: scaleX(-1);
   margin-right: 0px;
-  margin-top: -100px;
+  margin-top: -300px;  /*belen*/
 }
 .poligono-trio-imagenes{
   position: relative;
@@ -261,7 +261,7 @@ header{
   display: flex;
   justify-content: space-between;
 }
-.blog div{
+.imagenes-blog div{
   width: 548px;
   height: 305px;
 }
@@ -297,6 +297,7 @@ header{
   line-height: 18.9px;
   font-size: 20px;
   margin-left: 73px;
+  margin-bottom: 40px;
 }
 .conteiner-comprar{
   width: 1080px;
@@ -347,6 +348,7 @@ header{
 .container-suscripcion{
   width: 816px;
   margin: 0 auto;
+  margin-top: -1296px;
 }
 .container-suscripcion h2{
   margin-top: 60px;
@@ -359,12 +361,12 @@ header{
   box-shadow: 0.4rem 0.5rem 0 #02187e;
   border-radius: 11.1rem;
   align-items: center;
-  border: solid 0.8rem #2982ff;
   display: flex;
   box-sizing: border-box;
   margin: 30px auto;
   width: 780px;
   height: 100px;
+  border: solid 8px #2982ff ;
 }
 .suscribirse input{
   background-color: #ffffff;
@@ -386,17 +388,22 @@ header{
   border: none;
   border-left: solid 0.8rem #2982ff ;
 }
+
 .suscripcion p{
   width: 578px;
   font-size: 20px;
   line-height: 18.9px;
   margin-left: 65px;
 }
-.suscripcion img{
+.teen{
   margin-top: 20px;
   width: 231px;
   height: 145px;
   margin-left: 55px;
+}
+.poligono-suscripcion{
+  width: 100%;
+  height: 1296px;
 }
 .juegos-footer{
   display: flex;
@@ -472,11 +479,7 @@ footer{
 /*-------------------------PTO 9---tres personajes volados-------------*/
 .personajes-section {
   height: 720px;
-  width: 1280px;
-  display: flex;
-  
-  justify-content: space-around;
-  align-items: flex-end;
+  width: 1280;
   position: relative;
   background-image: url('/TPE4/IMG/untitled-1-5-ByC.png'); /* Reemplaza con la ruta de tu imagen */
   background-size: cover; /* Cubre todo el contenedor */
@@ -486,45 +489,46 @@ footer{
 
 .personaje {
   opacity: 0;
-  transform: translateY(100px);
-  transition: opacity 1s, transform 1s;
-/* position: absolute;*/
+  /*transform: translateY(100px);*/
+  transition: opacity 1s, transform 2s;
   
+}
+
+.conteiner-personajes-section{
+  width: 1080px;
+  margin: 0 auto;
 }
 .personaje.visible {
   opacity: 1;
-  transform: translateY(0);
+  
+}
+#pje1{
+  position: absolute;
+  left: 235px;
+  bottom: 0px;
+}
+#pje2{
+  position: absolute;
+  left: 553px;
+  bottom: 0px;
+}
+#pje3{
+  position: absolute;
+  left: 1048px;
+  bottom: 0;
 }
 
 .image-227-tdp {
-  height: 8.8rem;
-/*   position: absolute;*/
-  left: 99.8rem;
-  top: 172.5rem;
-  object-fit: cover;
-  vertical-align: top;
-  width: 9.4rem;
-  
+  width: 94px; 
+  height: 88px; 
 }
 .image-228-YCa {
-  
-  object-fit: cover;
-  vertical-align: top;
-  width: 9.7rem;
-  height: 8.9rem;
-/*  position: absolute;*/
-  left: 21.9rem;
-  top: 189.2rem;
+  width: 97px;
+  height: 89px;
 }
 .image-239-emQ {
-  width: 5.8rem;
-  height: 6.4rem;
-/* position: absolute;*/
-  left: 53.3rem;
-  top: 182.8rem;
-  object-fit: cover;
- vertical-align: top;
-  
+  width: 58px;
+  height: 64px;
 }
 /*-------------------pto 10----BTN-CPMPRAR------*/
 .comprar-iMY {
