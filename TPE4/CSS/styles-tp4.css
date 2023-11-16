@@ -606,6 +606,30 @@ footer{
 .imagen.active {
   opacity: 1;
 }
+
+/*--------------------pto 13-------------------------*/
+
+#sprit-shee{
+  width: 130px;
+  height: 160px;
+  margin: auto;
+  transition: all .1s ease-out;
+  position: relative;
+  right: -80px;
+  z-index: 0;
+}
+.character {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  background-image: url('/TPE4/IMG/spidex6.png'); /* Reemplaza 'spritesheet.png' con tu ruta real */
+  animation: playAnimation 1.5s steps(6) infinite; /* Ajusta según sea necesario */
+}
+
+@keyframes playAnimation {
+  from { background-position: 0; }
+  to { background-position: -350px; } /* Ajusta según sea necesario */
+}
 /*---------------------------------------*/
 #container {
   display: flex;
