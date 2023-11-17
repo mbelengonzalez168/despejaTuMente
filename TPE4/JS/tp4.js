@@ -80,10 +80,12 @@ const duendeVerde = document.getElementById('duende-verde');
     //    const scroll = window.scrollY;
         const ghostTop = ghost.offsetTop;
         const ghostHeigth = ghost.offsetHeight;
+
+        console.log('nn' + ghostHeigth);
                         
-        if (scrollY > ghostTop && scrollY < ghostTop +  ghostHeigth) {
+        if (scrollY > ghostTop - 150 && scrollY < ghostTop + 150) {
             testImages.forEach((image, index) => {
-                const delay = index * 150; // Ajusta según sea necesario
+                const delay = index * 100; // Ajusta según sea necesario
                 const speed = 0.2 * (index + 1)
                 const translateY = Math.min(ghostHeigth, scrollY - ghostTop) * speed;
                 image.style.transitionDelay = `${delay}ms`;
@@ -109,9 +111,7 @@ const masAmigos =document.querySelector(".blog");
 const amigosTop = masAmigos.offsetTop;
 const amigosHeigth = masAmigos.offsetHeight;
                     
-    console.log('toppppp  ' + amigosTop);
-    console.log("but"+ amigosHeigth);
-
+    
 
         textos.forEach(function (t) {
             t.classList.add("text-oculto")
@@ -121,11 +121,11 @@ const amigosHeigth = masAmigos.offsetHeight;
             t.classList.add("img-oculta")
         })
         
-        if (scrollY < amigosTop) {
+        if (scrollY < 3800) {
             textos[0].classList.remove("text-oculto");
             imgs[0].classList.remove("img-oculta");
         }
-        else if (scrollY >= amigosTop && scrollY < 4300) {
+        else if (scrollY >= 3800 && scrollY < 4200) {
             textos[1].classList.remove("text-oculto");
             imgs[1].classList.remove("img-oculta");
 

@@ -202,7 +202,7 @@ header{
 }
 .ghost img{
   position: relative;
-  z-index: 2;
+  z-index: 1;
   width: 100%;
   height: 566px;
 }
@@ -562,16 +562,16 @@ footer{
 /*------------------Pto 11---------------------------*/
 @keyframes rotateAndPerspective {
   0% {
-      transform: skew(0deg) rotate(0deg);
+      transform: skew(0deg);
   }
   50% {
-      transform: skew(5deg) rotate(-5deg);
+      transform: skew(5deg);
   }
   100% {
-      transform:skew(10deg) rotate(0deg);
+      transform:skew(10deg);
   }
 }
-/* @keyframes rotateAndPerspective {
+/* @keyframes rotateAndPerspective {s
   0% {
       transform: rotateX(0deg) skew(10deg);
   }
