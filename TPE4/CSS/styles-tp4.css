@@ -634,16 +634,16 @@ footer{
   z-index: 0;
 }
 .character {
-  width: 50px;
-  height: 50px;
+  width: 500px;
+  height: 500px;
   margin: auto;
-  background-image: url('/TPE4/IMG/spidex6.png'); /* Reemplaza 'spritesheet.png' con tu ruta real */
-  animation: playAnimation 1.5s steps(6) infinite; /* Ajusta según sea necesario */
+  background-image: url('../IMG/sprit.png'); /* Reemplaza 'spritesheet.png' con tu ruta real */
+  animation: playAnimation 1s steps(10) infinite; /* Ajusta según sea necesario */
 }
 
 @keyframes playAnimation {
   from { background-position: 0; }
-  to { background-position: -350px; } /* Ajusta según sea necesario */
+  to { background-position: -5000px; } /* Ajusta según sea necesario */
 }
 /*---------------------------------------*/
 #container {
