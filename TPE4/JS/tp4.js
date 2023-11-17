@@ -105,7 +105,7 @@ const duendeVerde = document.getElementById('duende-verde');
 /*----------------pto 4-------------------------------*/
 const textos = document.querySelectorAll(".text");
 const imgs = document.querySelectorAll(".img");
-const masAmigos =document.querySelector(".mas-amigos");
+const masAmigos =document.querySelector(".blog");
 const amigosTop = masAmigos.offsetTop;
 const amigosHeigth = masAmigos.offsetHeight;
                     
@@ -125,22 +125,22 @@ const amigosHeigth = masAmigos.offsetHeight;
             textos[0].classList.remove("text-oculto");
             imgs[0].classList.remove("img-oculta");
         }
-        else if (scrollY >= amigosTop && scrollY < 4024) {
+        else if (scrollY >= amigosTop && scrollY < 4300) {
             textos[1].classList.remove("text-oculto");
             imgs[1].classList.remove("img-oculta");
 
-        } else if (scrollY >= 4024 && scrollY < 4176) {
+        } else if (scrollY >= 4300 && scrollY < 4500) {
             textos[2].classList.remove("text-oculto")
             imgs[2].classList.remove("img-oculta");
-        } else if (scrollY >= 4176 && scrollY < 4298) {
+        } else if (scrollY >= 4500 && scrollY < 4800) {
             textos[3].classList.remove("text-oculto");
             imgs[3].classList.remove("img-oculta");
-        } else {
-            if (scrollY >= 4298 && scrollY < amigosTop + amigosHeigth) {
+        } /*else {
+            if (scrollY >= 4500 && scrollY < amigosTop + amigosHeigth) {
             textos[4].classList.remove("text-oculto");
             imgs[4].classList.remove("img-oculta");
             }
-        }
+        }*/
 
     
     }
