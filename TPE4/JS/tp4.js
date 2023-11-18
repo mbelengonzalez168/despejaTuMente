@@ -30,8 +30,8 @@ const duendeVerde = document.getElementById('duende-verde');
    // const scrollY = window.scrollY;
 
     // Ajusta la velocidad de movimiento del duende verde
-    const velocidadDuende = 0.175;
-    const transformValue = `translateY(${scrollY * velocidadDuende}px)`;
+    const velocidadDuende = 0.12;
+    const transformValue = `translateY(${scrollY * velocidadDuende}px) scaleX(-1)`;
     duendeVerde.style.transform = transformValue;
 //});
 
@@ -58,16 +58,16 @@ const duendeVerde = document.getElementById('duende-verde');
             personaje2.style.transition = `transform 3s`;
             personaje3.style.transition = `transform 4s`;
 
-            personaje1.style.transform = `translateY(-63px)`;
-            personaje2.style.transform = `translateY(-155px)`;
-            personaje3.style.transform = `translateY(-230px)`;
+            personaje1.style.transform = `translateY(-70px)`;
+            personaje2.style.transform = `translateY(-160px)`;
+            personaje3.style.transform = `translateY(-240px)`;
         } else {
             personajes.forEach((personaje) => {
                 personaje.classList.remove("visible");
             });
-            personaje1.style.transform = `translateY(63px)`;
-            personaje2.style.transform = `translateY(155px)`;
-            personaje3.style.transform = `translateY(230px)`;
+            personaje1.style.transform = `translateY(70px)`;
+            personaje2.style.transform = `translateY(160px)`;
+            personaje3.style.transform = `translateY(240px)`;
         }
    // });
 
@@ -111,39 +111,54 @@ const masAmigos =document.querySelector(".blog");
 const amigosTop = masAmigos.offsetTop;
 const amigosHeigth = masAmigos.offsetHeight;
                     
-    
-
-        textos.forEach(function (t) {
-            t.classList.add("text-oculto")
-        })
-        
-        imgs.forEach(function (t) {
-            t.classList.add("img-oculta")
-        })
-        
-        if (scrollY < 3800) {
-            textos[0].classList.remove("text-oculto");
-            imgs[0].classList.remove("img-oculta");
-        }
-        else if (scrollY >= 3800 && scrollY < 4200) {
-            textos[1].classList.remove("text-oculto");
-            imgs[1].classList.remove("img-oculta");
-
-        } else if (scrollY >= 4300 && scrollY < 4500) {
-            textos[2].classList.remove("text-oculto")
-            imgs[2].classList.remove("img-oculta");
-        } else if (scrollY >= 4500 && scrollY < 4800) {
-            textos[3].classList.remove("text-oculto");
-            imgs[3].classList.remove("img-oculta");
-        } /*else {
-            if (scrollY >= 4500 && scrollY < amigosTop + amigosHeigth) {
-            textos[4].classList.remove("text-oculto");
-            imgs[4].classList.remove("img-oculta");
-            }
-        }*/
-
-    
+    textos.forEach(function (t) {
+        t.classList.add("text-oculto")
+    })
+    imgs.forEach(function (t) {
+        t.classList.add("img-oculta")
+    })  
+    if (scrollY < 3900){
+        textos[0].classList.remove("text-oculto");
+        imgs[0].classList.remove("img-oculta");
+        imgs[0].classList.remove("imagenes-blog-fija");
     }
+    else if (scrollY >= 3900 && scrollY < 4000) {
+        textos[0].classList.remove("text-oculto");
+        imgs[0].classList.remove("img-oculta");
+        imgs[0].classList.add("imagenes-blog-fija");
+
+    } else if (scrollY >= 4000 && scrollY < 4100) {
+        textos[0].classList.add("text-oculto");
+        textos[1].classList.remove("text-oculto");
+        imgs[1].classList.remove("img-oculta");
+        imgs[0].classList.remove("imagenes-blog-fija");
+        imgs[1].classList.add("imagenes-blog-fija");
+
+    } else if (scrollY >= 4100 && scrollY < 4200) {
+        textos[1].classList.add("text-oculto");
+        textos[2].classList.remove("text-oculto")
+        imgs[2].classList.remove("img-oculta");
+        imgs[1].classList.remove("imagenes-blog-fija");
+        imgs[2].classList.add("imagenes-blog-fija");
+  
+    } else if (scrollY >= 4200 && scrollY < 4300) {
+        textos[2].classList.add("text-oculto");
+        textos[3].classList.remove("text-oculto");
+        imgs[3].classList.remove("img-oculta");
+        imgs[2].classList.remove("imagenes-blog-fija");
+        imgs[3].classList.add("imagenes-blog-fija");
+    } else if (scrollY > 4500) {
+        imgs[3].classList.remove("imagenes-blog-fija");
+    }
+    /*else {
+        if (scrollY >= 4500 && scrollY < amigosTop + amigosHeigth) {
+        textos[4].classList.remove("text-oculto");
+        imgs[4].classList.remove("img-oculta");
+        }
+    }*/
+
+
+}
 /*----------------------------------------------------------------*/
 
 /*----------------------------------------------------------------*/

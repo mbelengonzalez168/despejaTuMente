@@ -1,9 +1,10 @@
 html {
   font-weight: 400;
   background-color: #000000;
+
 }
 * {
-	margin: 0;
+	margin: 0 ;
 	padding: 0;
 }
 ul, li {
@@ -12,11 +13,15 @@ ul, li {
 input {
 	border: none;
 }
+body{
+  width: 1280px;
+  margin: 0 auto;
+}
 .header-mini{
   position: fixed;
   z-index: 13;
   height: 115px;
-  width: 100%;
+  width: 1280px;
   background: linear-gradient(180deg, #5499F8 0%, #5499F8 87.91%, rgba(84, 153, 248, 0) 100%);
 }
 .container-header{
@@ -80,7 +85,7 @@ header{
 }
 .poligono-spidey{
   height: 844.5px;
-  width: 100%;
+  width: 1280px;
   position: relative;
   z-index: 2;
 }
@@ -99,7 +104,7 @@ header{
 .texto-spidey{
   grid-column: 1;
   color: #FFFFFF;
-  margin-top: 130px;
+  margin-top: 80px;
 }
 .img-grid-1{
   grid-column: 1;
@@ -127,19 +132,22 @@ header{
   object-fit: cover;
   margin-top: -30px;
   box-shadow: 4px 5px 0 #5E5E5D;
+  background-image: url(../IMG/image-16.png);
+  background-size:  100% 118.165%;
+  background-position: -0px -50px;
 
 }
 .untitled-3-1-dna{
   width: 553px;
   height: 921px;
-  transform: scaleX(-1);
   margin-right: 0px;
-  margin-top: -300px;  /*belen*/
+  transform: scaleX(-1);
+  margin-top: -220px;  
 }
 .poligono-trio-imagenes{
   position: relative;
   z-index: 1;
-  width: 100%;
+  width: 1280px;
   margin-top: -400px;
   height: 1085px;
 }
@@ -203,7 +211,7 @@ header{
 .ghost img{
   position: relative;
   z-index: 1;
-  width: 100%;
+  width: 1280px;
   height: 566px;
 }
 .test img{
@@ -243,7 +251,7 @@ header{
   height: 527.63px;
 }
 .poligono-mas-amigos{
-  width: 100%;
+  width: 1280px;
   height: 2194.5px;
 }
 .conteiner-mas-amigos{
@@ -265,15 +273,18 @@ header{
   width: 548px;
   height: 305px;
 }
-.imagenes-blog {
-  position: sticky;
-   /* width: 50%;*/
-  /*  height: 100%;*/
-   /* top: 15%;*/
- /*   min-width: 500px; */
-
+.imagenes-blog{
+  position: relative;
+  margin-top: -30px;
 }
-
+.imagenes-blog-fija {
+  position: fixed;
+  top: 180px;
+  left: 125px;
+  right: 0;
+  bottom: 0;
+  z-index: 10;   /* width: 50%;*/  /*  height: 100%;*/   /* top: 15%;*//*   min-width: 500px; */
+}
 .img-oculta {
   display: none;
 }
@@ -312,7 +323,13 @@ header{
   margin-bottom: 40px;
 }
 .text-oculto {
-  opacity: 0;
+  display: none;
+}
+.text{
+  margin-top: 200px;
+}
+.texto-primero{
+  margin-top: -20px;
 }
 .conteiner-comprar{
   width: 1080px;
@@ -329,7 +346,7 @@ header{
   width: 292px;
 }
 .poligono-trio-spidey{
-  width: 100%;
+  width: 1280px;
   height: 719.86px;
 }
 .container-trio-spidey{
@@ -417,8 +434,7 @@ header{
   margin-left: 55px;
 }
 .poligono-suscripcion{
-  width: 100%;
-  height: 1296px;
+  width: 1280px;
 }
 .juegos-footer{
   display: flex;
@@ -434,10 +450,13 @@ header{
 footer{
     background-color: #5E5E5D;
 }
-.contenido-footer{
+.footer{
+  display: flex;
   width: 1080px;
   margin: 30px auto;
-  height: 598px;
+}
+.contenido-footer{
+  margin: 30px 0;
   color: #ffffff;
 }
 .contenido-footer p{
@@ -469,21 +488,18 @@ footer{
   bottom: 0;
   z-index: 10;
 }
-
 #loader {
- /* border: 16px solid #f3f3f3; /* Light grey */
- /* border-top: 16px solid #3498db; /* Blue */
- /*border-radius: 50%;*/
-  background: url('/TPE4/IMG/loader.jpg') no-repeat center center;
-  background-size: contain;
-  width: 80px;
-  height: 80px;
-  animation: spin 2s linear infinite;
+  background: url('../IMG/Telarania.png') no-repeat 0 0; /* Utiliza la ruta correcta de tu spritesheet */
+  background-size: auto 100%;
+  width: 100px;
+  height: 100px;
+  animation: playSpritesheetTelarania 3s steps(11) infinite; /* 11 frames en tu spritesheet */
   border-radius: 50%;
 }
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+
+@keyframes playSpritesheetTelarania {
+  from { background-position: 0; }
+  to { background-position: -1100px; } /* Ajusta según sea necesario */
 }
 #loading-text {
   color: #fff; /* Texto blanco */
@@ -519,17 +535,17 @@ footer{
 }
 #pje1{
   position: absolute;
-  left: 235px;
+  left: 219px;
   bottom: 0px;
 }
 #pje2{
   position: absolute;
-  left: 553px;
+  left: 533px;
   bottom: 0px;
 }
 #pje3{
   position: absolute;
-  left: 1048px;
+  left: 998px;
   bottom: 0;
 }
 
@@ -602,17 +618,6 @@ footer{
 /*---------------------------------------------------------------------------*/
 
 /*--------------------------pto 4--------------------------*/
-.mas-amigos-mas-diversion {
-  display: flex;
-}
-
-.imagenes-mas-amigos {
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  overflow: hidden;
-}
-
 .imagen {
   opacity: 0;
   transition: opacity 0.5s;
@@ -624,26 +629,22 @@ footer{
 
 /*--------------------pto 13-------------------------*/
 
-#sprit-shee{
-  width: 130px;
-  height: 160px;
-  margin: auto;
+#sprit-sheet{
+  margin:  80px  0 auto auto;
   transition: all .1s ease-out;
-  position: relative;
-  right: -80px;
   z-index: 0;
 }
 .character {
-  width: 500px;
-  height: 500px;
-  margin: auto;
+  width: 180px;
+  height: 180px;
   background-image: url('../IMG/sprit.png'); /* Reemplaza 'spritesheet.png' con tu ruta real */
-  animation: playAnimation 1s steps(10) infinite; /* Ajusta según sea necesario */
+  background-size: auto 100%;
+  animation: playAnimation 1s steps(11) infinite; /* Ajusta según sea necesario */
 }
 
 @keyframes playAnimation {
   from { background-position: 0; }
-  to { background-position: -5000px; } /* Ajusta según sea necesario */
+  to { background-position: -1980px; } /* Ajusta según sea necesario */
 }
 /*---------------------------------------*/
 #container {
