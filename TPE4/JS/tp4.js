@@ -1,4 +1,18 @@
 "use strict";
+
+const menuBurger = document.querySelector('.menu-hamburguesa');
+const itemsMenu = document.querySelector('#main-header .items-menu');
+
+
+/*Accion del menu hamburguesa*/
+    menuBurger.addEventListener('click', e => {
+        
+        menuBurger.classList.toggle('active');
+        itemsMenu.classList.toggle('open');
+        
+    });
+
+    
 window.onscroll = function () {
     scrollFunction();
   }

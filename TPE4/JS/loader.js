@@ -1,8 +1,28 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Oculta el loader después de que la página se ha cargado
-    setTimeout(function () {
-        document.getElementById("loader-container").style.display = "none";
-    }, 2600); // Ajusta el tiempo según sea necesario
+    const loaderContainer = document.getElementById("loader-container");
+    const loadingProgress = document.getElementById("loading-progress");
 
-    console.log("loader");
+    let percentage = 50;
+
+    const updatePercentage = () => {
+        loadingProgress.textContent = percentage + "%";
+        
+    };
+
+    const incrementPercentage = () => {
+        if (percentage < 100) {
+            percentage += 1;
+            updatePercentage();
+            setTimeout(incrementPercentage, 50); 
+            
+        } else {
+            // Oculta el loader después de que el porcentaje llega al 100%
+            setTimeout(function () {
+                loaderContainer.style.display = "none";
+            }, 60); // Ajusta el tiempo según sea necesario
+        }
+    };
+
+    // Inicia la simulación
+    incrementPercentage();
 });
