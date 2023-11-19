@@ -5,11 +5,9 @@ const itemsMenu = document.querySelector('#main-header .items-menu');
 
 
 /*Accion del menu hamburguesa*/
-    menuBurger.addEventListener('click', e => {
-        
+    menuBurger.addEventListener('click', e => {       
         menuBurger.classList.toggle('active');
-        itemsMenu.classList.toggle('open');
-        
+        itemsMenu.classList.toggle('open');       
     });
 
     
@@ -24,17 +22,21 @@ window.onscroll = function () {
 const header = document.getElementById('main-header');
 const logo = document.getElementById('logo');
 const fijo  = document.getElementById('container-mini-header');
-
+const  altura = document.querySelector('.altura');
 
 //window.addEventListener('scroll', () => {
     if (scrollY > 50) {
         header.classList.add('mini');
+        altura.style.height=  '115px';
         logo.classList.add('logo-mini');
         fijo.classList.add('header-mini');
+
     } else {
         header.classList.remove('mini');
         logo.classList.remove('logo-mini');
         fijo.classList.remove('header-mini');
+        altura.style.height=  '0px';
+        
     }
 //});
 /*--------------------DUENDE-VERDE--------------------*/
