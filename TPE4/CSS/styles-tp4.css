@@ -22,16 +22,20 @@ body{
   z-index: 13;
   height: 115px;
   width: 1280px;
+  margin-top: -700px;
   background: linear-gradient(180deg, #5499F8 0%, #5499F8 87.91%, rgba(84, 153, 248, 0) 100%);
 }
 .container-header{
   width: 1080px;
   margin: 0 auto;
+  top: -700px;
 }
 header{
   display: flex;
   justify-content: space-between;
   transition: transform 3s ease;
+  margin-top: -700px;
+  z-index: 4;
 }
 #main-header.mini {
   position: fixed;
@@ -45,6 +49,7 @@ header{
   height: 301px;
   object-fit: cover;
   margin-top: 91px;
+  z-index: 10;
 }
 .logo-mini {
   margin-top: 20px;
@@ -82,12 +87,104 @@ header{
 }  
 .parallax1{
   height: 700px;
+  position: relative;
+}
+.parallax1 div {
+  position: absolute;
+  object-fit: contain;
+}
+.parallax1-1{
+  width: 1280px;
+  height: 227px;
+  background-image: url(../IMG/rectangle-1.png);
+  top: 0px;
+  z-index: -1;
+}
+.parallax1-2{
+  width: 1280px;
+  height: 720px;
+  background-image: url(../IMG/untitled-1-1.png);
+  top: 126px;
+  z-index: -1;
+}
+.parallax1-3{
+  width: 452px;
+  height: 720px;
+  background-image: url(../IMG/untitled-1-3.png);
+  top: 144px;
+  left: -47px;
+  z-index: 2;
+}
+.parallax1-4{
+  width: 543.5px;
+  height: 213.5px;
+  background-image: url(../IMG/untitled-1-5.png);
+  top: 634px;
+  left: 392px;
+  z-index: 2;
+}
+.parallax1-5{
+  width: 374px;
+  height: 727.5px;
+  background-image: url(../IMG/untitled-1-4.png);
+  top: 126px;
+  left: 906px;
+  z-index: 2;
+}
+.parallax1-6{
+  width: 360px;
+  height: 444px;
+  background-image: url(../IMG/image-3.png);
+  background-size: 100% 100%;
+  top: 388px;
+  left: 90px;
+  z-index: 2;
+}
+.parallax1-7{
+  width: 465px;
+  height: 465px;
+  background-image: url(../IMG/image-2.png);
+  background-size: 100% 100%;
+  top: 403px;
+  left: 404px;
+  z-index: 20;
+}
+.parallax1-8{
+  width: 393px;
+  height: 393px;
+  background-image: url(../IMG/image-1.png);
+  background-size: 100% 100%;
+  top: 335px;
+  left: 695px;
+  z-index: 2;
+}
+.parallax1-9{
+  width: 450.82px;
+  height: 627.27px;
+  background-image: url(../IMG/untitled-5-2.png);
+  background-size: 100% 100%;
+  top: 390.35px;
+  left: -65.4px;
+  object-fit: cover;
+  transform: rotate(65.4deg);
+  z-index: 3;
+}
+.parallax1-10{
+  width: 256.66px;
+  height: 372.44px;
+  background-image: url(../IMG/untitled-5-3.png);
+  background-size: 100% 100%;
+  top: 388px;
+  left: 1087.83px;
+  transform: rotate(-114.6deg);
+  z-index: 3;
 }
 .poligono-spidey{
   height: 844.5px;
   width: 1280px;
   position: relative;
   z-index: 2;
+  margin-top: 360px;
 }
 .contenedor-spidey{
   display: flex;
