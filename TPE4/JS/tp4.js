@@ -24,7 +24,6 @@ const logo = document.getElementById('logo');
 const fijo  = document.getElementById('container-mini-header');
 const  altura = document.querySelector('.altura');
 
-//window.addEventListener('scroll', () => {
     if (scrollY > 50) {
         header.classList.add('mini');
         altura.style.height=  '115px';
@@ -38,19 +37,53 @@ const  altura = document.querySelector('.altura');
         altura.style.height=  '0px';
         
     }
-//});
+
+    /*------------------parallax--------------------*/
+
+    const Edif1 = document.querySelector(".edifIzquierda");
+    const Edif2 = document.querySelector(".edifMedio");
+    const Edif3 = document.querySelector(".edifDerecha");
+    const Pje1 = document.querySelector(".spider1");
+    const Pje2 = document.querySelector(".spider2");
+    const Pje3 = document.querySelector(".spider3");
+    const telaD = document.querySelector(".telaDer");
+    const telaI = document.querySelector(".telaIzq");
+    const elementos = [Edif1, Edif2, Edif3, Pje1, Pje2, Pje3, telaD, telaI];
+
+    elementos.forEach((e) => {
+        e.classList.remove("oculto");
+    });
+
+    if (scrollY) {
+        elementos.forEach((e) => {
+            e.style.transition = "none";
+            });
+        Edif1.style.transform = `translateX(${-window.scrollY * 0.2}px)`;
+        Edif2.style.transform = `scale(${1 + window.scrollY * 0.0005})`;
+        Edif3.style.transform = `translateX(${window.scrollY * 0.2}px)`;
+
+        Pje1.style.transform = `translateY(${-window.scrollY * 0.5}px) translateX(${
+            -window.scrollY * 0.5
+        }px)`;
+
+        Pje3.style.transform = `translateY(${-window.scrollY * 0.5}px) translateX(${
+            window.scrollY * 0.5
+        }px)`;
+        telaD.style.transform = `translateY(${-window.scrollY * 0.5}px) translateX(${
+            window.scrollY * 0.5
+        }px) rotate(-114.597deg)`;
+
+        Pje2.style.transform = `translateY(${-window.scrollY * 0.8}px)`;
+        telaI.style.transform = `translateY(${
+            -window.scrollY * 0.8
+        }px) rotate(65.403deg)`;
+    };
+
 /*--------------------DUENDE-VERDE--------------------*/
-const duendeVerde = document.getElementById('duende-verde');
-
-//window.addEventListener('scroll', () => {
-   // const scrollY = window.scrollY;
-
-    // Ajusta la velocidad de movimiento del duende verde
+    const duendeVerde = document.getElementById('duende-verde');
     const velocidadDuende = 0.12;
     const transformValue = `translateY(${scrollY * velocidadDuende}px) scaleX(-1)`;
     duendeVerde.style.transform = transformValue;
-//});
-
 
 /*----------------------pto 9--------------------------*/
     const seccion = document.querySelector(".personajes-section");
