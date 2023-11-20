@@ -49,18 +49,19 @@ const  altura = document.querySelector('.altura');
     const telaD = document.querySelector(".telaDer");
     const telaI = document.querySelector(".telaIzq");
     const elementos = [Edif1, Edif2, Edif3, Pje1, Pje2, Pje3, telaD, telaI];
-
+    
     elementos.forEach((e) => {
         e.classList.remove("oculto");
+        
     });
 
     if (scrollY) {
         elementos.forEach((e) => {
-            e.style.transition = "none";
-            });
-        Edif1.style.transform = `translateX(${-window.scrollY * 0.2}px)`;
-        Edif2.style.transform = `scale(${1 + window.scrollY * 0.0005})`;
-        Edif3.style.transform = `translateX(${window.scrollY * 0.2}px)`;
+        e.style.transition = "none";
+        });
+        Edif1.style.transform = `translateX(${-window.scrollY * 0.002}px)`;
+        Edif2.style.transform = `scale(${1 + window.scrollY * 0.0008})`;
+        Edif3.style.transform = `translateX(${window.scrollY * 0.002}px)`;
 
         Pje1.style.transform = `translateY(${-window.scrollY * 0.5}px) translateX(${
             -window.scrollY * 0.5
@@ -85,7 +86,7 @@ const  altura = document.querySelector('.altura');
     const transformValue = `translateY(${scrollY * velocidadDuende}px) scaleX(-1)`;
     duendeVerde.style.transform = transformValue;
 
-/*----------------------pto 9--------------------------*/
+/*----------------------pto 9-tres pjes sobre edificio-------------------------*/
     const seccion = document.querySelector(".personajes-section");
     const personajes = document.querySelectorAll(".personaje");
     const personaje1 = document.getElementById('pje1');

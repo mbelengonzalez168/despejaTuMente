@@ -178,6 +178,8 @@ animation: toCross 1s ease forwards;
 }  
 .parallax{
   position: relative;
+ /* opacity: 0; /* Inicia con opacidad 0 para el efecto fade-in */
+    transition: opacity 1s ease;
 }
 .parallax div {
   position: absolute;
