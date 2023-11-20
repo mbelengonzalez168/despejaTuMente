@@ -80,6 +80,7 @@ header{
   &.active {
       #linea1 {
           transform: translate(0px, -2px) rotate(45deg);
+          transition: transform 1s ease;
       }
       #linea2 {
           opacity: 0;
@@ -87,22 +88,9 @@ header{
       }
       #linea3 {
           transform: translate(-3px, 5px) rotate(-45deg);
-      }   
-      @keyframes toCross {
-          0% {
-              transform:  rotate(0deg);
-          }
-          50% {
-            transform:  rotate(-25deg);
-          }
-          100% {
-              transform: rotate(-45deg);
-          }
-      }
+          transition: transform 1s ease;
+      } 
   }
-}
-.menu-hamburguesa.active {
-animation: toCross 1s ease forwards;
 }
 /*-----------------OPCIONAL 3------------------------------------*/
 .items-menu{
@@ -160,7 +148,7 @@ animation: toCross 1s ease forwards;
   background-clip: text;
   cursor: pointer;
 }
-/*-----------------------------------------------------------------------------------*/
+
 .comprar-iMY{
   margin-top: 20px;
   background-color: #ffe901;
@@ -176,10 +164,10 @@ animation: toCross 1s ease forwards;
   white-space: nowrap;
   color: #02187e;
 }  
+/*------------prallax---------------------------*/
 .parallax{
   position: relative;
- /* opacity: 0; /* Inicia con opacidad 0 para el efecto fade-in */
-    transition: opacity 1s ease;
+ 
 }
 .parallax div {
   position: absolute;
@@ -211,12 +199,10 @@ animation: toCross 1s ease forwards;
   transition: all 0.3s ease-in;
   transition-delay: 0.2s;
 }
-/*---------edif izq-----------------*/
 .edifIzquierda.oculto {
   left: -100px;
   opacity: 0;
 }
-/*----------------------------------------*/
 .edifMedio{
   width: 543.5px;
   height: 213.5px;
@@ -229,12 +215,10 @@ animation: toCross 1s ease forwards;
   transition: all 0.3s ease-in;
   
 }
-/*-----------------edif centro---------------------------*/
 .edifMedio.oculto {
   bottom: -40px;
   opacity: 0;
 }
-/*--------------------------------------------*/
 .edifDerecha{
   width: 374px;
   height: 727.5px;
@@ -247,12 +231,11 @@ animation: toCross 1s ease forwards;
   transition: all 0.3s ease-in;
   transition-delay: 0.2s;
 }
-/*------------edif der---------*/
+
 .edifDerecha.oculto {
   right: -100px;
   opacity: 0;
 }
-/*----------------------------------------------*/
 .spider1{
   width: 360px;
   height: 444px;
@@ -265,13 +248,12 @@ animation: toCross 1s ease forwards;
   transition: all 0.3s ease-in;
   transition-delay: 0.4s;
 }
-/****------------spide white----------*/
 .spider1.oculto {
   top: -100px;
   left: -100px;
   opacity: 0;
 }
-/*-----------------------********----------*/
+
 .spider2{
   width: 465px;
   height: 465px;
@@ -284,12 +266,12 @@ animation: toCross 1s ease forwards;
   transition: all 0.3s ease-in;
   transition-delay: 0.7s;
 }
-/*-------spide del medio-------------------*/
+
 .spider2.oculto {
   top: 200px;
   opacity: 0;
 }
-/*---------------------------------------------------*/
+
 .spider3{
   width: 393px;
   height: 393px;
@@ -302,13 +284,13 @@ animation: toCross 1s ease forwards;
   transition: all 0.3s ease-in;
   transition-delay: 0.5s;
 }
-/*-------------------spide derecha******-------------*/
+
 .spider3.oculto {
   top: -100px;
   left: 700px;
   opacity: 0;
 }
-/*------------------------------------------------------------*/
+
 .telaIzq{
   width: 450.82px;
   height: 627.27px;
@@ -322,12 +304,12 @@ animation: toCross 1s ease forwards;
   transition: all 0.3s ease-in;
   transition-delay: 0.7s;
 }
-/*-----------------tela ezq------------------------*/
+
 .telaIzq.oculto {
   top: 200px;
   opacity: 0;
 }
-/*---------------------------------------------------------------*/
+
 .telaDer{
   width: 256.66px;
   height: 372.44px;
@@ -336,18 +318,18 @@ animation: toCross 1s ease forwards;
   top: 388px;
   left: 1087.83px;
   transform: rotate(-114.6deg);
-
   z-index: 3;
   opacity: 1;
   transition: all 0.4s ease-in;
   transition-delay: 0.6s;
 }
-/*-------tela der----------------------------*/
+
 .telaDer.oculto{
   left: 1345px;
   top: -400;
   opacity: 0;
 }
+/*-----------------------------------------------------------------------*/
 .poligono-spidey{
   height: 844.5px;
   width: 1280px;
@@ -520,6 +502,7 @@ animation: toCross 1s ease forwards;
   width: 1280px;
   height: 2194.5px;
 }
+/*-------------------------------------------------------------------------*/
 .conteiner-mas-amigos{
   width: 1080px;
   margin: 0 auto;
@@ -529,74 +512,98 @@ animation: toCross 1s ease forwards;
   font-weight: 600px;
   font-size: 60px;
 }
-.blog {
-  margin: 100px 0;
+.conteiner {
   width: 100%;
+  height: 1650px;
   display: flex;
   justify-content: space-between;
 }
-.imagenes-blog div{
-  width: 548px;
-  height: 305px;
+.blog {
+  width: 552px;
+  height: 1650px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
 }
-.imagenes-blog{
+.textos-blog {
   position: relative;
-  margin-top: -30px;
+  left: 601px;
+  width: 467px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  box-sizing: border-box;
+  
 }
-.imagenes-blog-fija {
-  position: fixed;
-  top: 180px;
-  left: 125px;
-  right: 0;
-  bottom: 0;
-  z-index: 10;   /* width: 50%;*/  /*  height: 100%;*/   /* top: 15%;*//*   min-width: 500px; */
+.text {
+  width: 100%;
+  height: 305px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  opacity: 0;
+  transition: all 0.2s ease-in;
 }
-.img-oculta {
-  display: none;
+.text-visible {
+  opacity: 1;
 }
-.blog-img1{
+
+.imagenes-blog{
+  width: 100%;
+  height: 305px;
+  position: sticky;
+  top: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+.img-visible {
+  z-index: 1;
+  opacity: 1;
+}
+#blog-img1{
   background-image: url(../IMG/image-21.png);
   background-size:  100% 118.313%;
   background-position: -0px -31px;
 }
-.blog-img2{
+#blog-img2{
   background-image: url(../IMG/image-9.png);
   background-size:  100% 118.313%;
   background-position: -0px -31px;
 }
-.blog-img3{
+#blog-img3{
   background-image: url(../IMG/image-10.png);
   background-size:  100% 118.313%;
   background-position: -0px -31px;
 }
-.blog-img4{
+#blog-img4{
   background-image: url(../IMG/image-6.png);
   background-size:  100% 118.313%;
   background-position: -0px -31px;
 }
-.blog h3{
+.conteniner h3{
   font-size: 40px;
   line-height: 37.8px;
   width: 467px;
   margin-left: 73px;
   margin-bottom: 20px;
 }
-.blog p{
+.conteniner p{
   width: 467px;
   line-height: 18.9px;
   font-size: 20px;
   margin-left: 73px;
   margin-bottom: 40px;
 }
-.text-oculto {
-  display: none;
-}
-.text{
-  margin-top: 200px;
-}
-.texto-primero{
-  margin-top: -20px;
-}
+/*-------------------------------------------------------------*/
 .conteiner-comprar{
   width: 1080px;
   margin: 0 auto;
@@ -900,14 +907,14 @@ footer{
   transition: all .1s ease-out;
   z-index: 0;
 }
-.character {
+.img-sprit {
   width: 180px;
   height: 180px;
   background-image: url('../IMG/sprit.png'); /* Reemplaza 'spritesheet.png' con tu ruta real */
   background-size: auto 100%;
   transition: background-position 1s steps(11);
 }
-.character:hover {
+.img-sprit:hover {
   animation: playAnimation 1s steps(11) infinite;
 }
 
