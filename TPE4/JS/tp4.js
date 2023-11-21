@@ -106,12 +106,12 @@ const  altura = document.querySelector('.altura');
             document.querySelector("#blog-img2").classList.add("img-visible");
             document.querySelector("#text-2").classList.add("text-visible");
             }
-        if (scrollY > 4450 && window.screenY < 4950) {
+        if (scrollY > 4450 && window.screenY < 4850) {
             clean();
             document.querySelector("#blog-img3").classList.add("img-visible");
             document.querySelector("#text-3").classList.add("text-visible");
             }
-        if (scrollY > 4950) {
+        if (scrollY > 4850) {
             clean();
             document.querySelector("#blog-img4").classList.add("img-visible");
             document.querySelector("#text-4").classList.add("text-visible");

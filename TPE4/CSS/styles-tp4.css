@@ -1,6 +1,7 @@
 html {
   font-weight: 400;
   background-color: #000000; 
+  font-family: Lato;
 }
 * {
 	margin: 0 ;
@@ -103,14 +104,15 @@ header{
   z-index: 4;
 }
 #main-header .items-menu.open {
-  height: 500px;
-  width: 250px;
+  height: 440px;
+  width: 225px;
   position: fixed;
   background-color: #5499F8 ;
-  border-color: #ffe901;
-  border-style: solid;
-  padding: 5px;
+  border: #2981ff 1px solid;
+  border-radius: 7px;
+  padding: 20px 10px;
   opacity: 1;
+  margin-left: -100px;
 }
 #main-header .items-menu.open h3 {
   font-size: 30px;
@@ -119,17 +121,19 @@ header{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  transform: translateX(50px);
+  transform: translateX(100px);
   transition: transform 1s ease-out;
+  text-align: right;
+  margin-right: 110px;
+  margin-top: 10px;
 }
 #main-header .items-menu.open ul {
-  padding-bottom: 5px;
   border-bottom: 3px solid #921ae8;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  transform: translateX(50px);
+  transform: translateX(70px);
   transition: transform 2s ease-out;
   opacity: 1;
+  text-align: right;
+  margin-right: 70px;
 }
 #main-header .items-menu ul {
  opacity: 0;
@@ -142,7 +146,7 @@ header{
 }
 #main-header .items-menu.open li:hover {
   color: #e8961a;
-  background: linear-gradient(180deg, #0a9c31 12.5%, #e5dfcc 100%);
+  background: linear-gradient(180deg, #ffe901 12.5%, #e5dfcc 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -448,7 +452,7 @@ header{
 }
 .ghost{
   position: relative;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 .conteiner-ghost{
   width: 1080px;
@@ -557,13 +561,13 @@ header{
 .poligono-mas-amigos{
   margin-top: -130px;
   width: 1280px;
-  height: 2194.5px;
+  height: 1900px;
 }
 /*-------------------------------------------------------------------------*/
 .conteiner-mas-amigos{
   width: 1080px;
   margin: 0 auto;
-  margin-top: -2000px;
+  margin-top: -1700px;
 }
 .mas-amigos h2{
   font-weight: 600px;
@@ -572,13 +576,13 @@ header{
 }
 .conteiner {
   width: 1080px;
-  height: 1650px;
+  height: 1050px;
   display: flex;
   justify-content: space-between;
 }
 .blog {
   width: 552px;
-  height: 1650px;
+  height: 1400px;
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -665,7 +669,7 @@ header{
 .conteiner-comprar{
   width: 1080px;
   margin: 0 auto;
-  margin-top: 520px;
+  margin-top: 220px;
 }
 .comprar h2{
   width: 816px;
@@ -705,9 +709,6 @@ header{
   left: 600px;
   top: -550px;
 }
-.suscripcion{
-  background-color: #666666;
-}
 .container-suscripcion{
   width: 816px;
   margin: 0 auto;
@@ -724,20 +725,22 @@ header{
   box-shadow: 0.4rem 0.5rem 0 #02187e;
   border-radius: 11.1rem;
   align-items: center;
+  border: solid 80px #2982ff;
   display: flex;
   box-sizing: border-box;
   margin: 30px auto;
   width: 780px;
-  height: 100px;
-  border: solid 8px #2982ff ;
 }
 .suscribirse input{
   background-color: #ffffff;
   text-align: left;
   padding-left: 25px;
   width: 562px;
-  height: 80px;
+  height: 84px;
   border-radius: 11.1rem 0 0 11.1rem;
+  border: solid 8px #2982ff;
+  box-shadow: 0.4rem 0.5rem 0 #02187e;
+  border-right: none;
 }
 .suscribirse button{
   font-family: Lato, 'Source Sans Pro';
@@ -746,10 +749,11 @@ header{
   background-color: #ffe901;
   color: #02187e;
   width: 218px;
-  height: 80px;
+  height: 100px;
   border-radius: 0 11.1rem 11.1rem 0;
   border: none;
-  border-left: solid 0.8rem #2982ff ;
+  border: solid 8px #2982ff ;
+  box-shadow: 0.4rem 0.5rem 0 #02187e;
 }
 
 .suscripcion p{
@@ -844,7 +848,7 @@ footer{
   height: 720px;
   width: 1280;
   position: relative;
-  background-image: url('/TPE4/IMG/untitled-1-5-ByC.png'); /* Reemplaza con la ruta de tu imagen */
+  background-image: url('../IMG/untitled-1-5-ByC.png'); /* Reemplaza con la ruta de tu imagen */
   background-size: cover; /* Cubre todo el contenedor */
   background-position: center; /* Centra la imagen en el contenedor */
   background-repeat: no-repeat; /* Evita la repetición de la imagen */
@@ -860,6 +864,7 @@ footer{
 .conteiner-personajes-section{
   width: 1080px;
   margin: 0 auto;
+  margin-top: -300px;
 }
 .personaje.visible {
   opacity: 1;
