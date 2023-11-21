@@ -111,7 +111,7 @@ const  altura = document.querySelector('.altura');
             document.querySelector("#blog-img3").classList.add("img-visible");
             document.querySelector("#text-3").classList.add("text-visible");
             }
-        if (scrollY > 4850) {
+        if (scrollY > 450) {
             clean();
             document.querySelector("#blog-img4").classList.add("img-visible");
             document.querySelector("#text-4").classList.add("text-visible");
