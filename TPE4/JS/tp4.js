@@ -10,7 +10,38 @@ const itemsMenu = document.querySelector('#main-header .items-menu');
         itemsMenu.classList.toggle('open');       
     });
 
-    
+/*---------------------opcional 4 parallax 2-----------*/   
+const personaje = document.getElementById('personaje');
+const mujer = document.getElementById('mujer');
+const hulk = document.getElementById('hulk');
+        
+    personaje.addEventListener('mouseenter', function() {
+            this.style.transform = 'scale(0.8)';
+            this.style.transition= `transform 0.5s ease-in-out`;
+            console.log("laaa");
+          });
+    personaje.addEventListener('mouseleave', function() {
+            this.style.transform = 'scale(1)';
+          });
+    mujer.addEventListener('mouseenter', function() {
+            this.style.transform = 'scale(1.1) translateY(-10px) translateX(-10px)';
+            this.style.transition= `transform 0.5s ease-in-out`;
+            console.log("laaa");
+          });
+    mujer.addEventListener('mouseleave', function() {
+            this.style.transform = 'scale(1)';
+          });
+          hulk.addEventListener('mouseenter', function() {
+            this.style.transform = 'scale(0.2)';
+            this.style.transition= `transform 0.5s ease-in-out`;
+            console.log("laaa");
+          });
+          hulk.addEventListener('mouseleave', function() {
+            this.style.transform = 'scale(1) translateX(10px)';
+          });
+                
+          
+           
 window.onscroll = function () {
     scrollFunction();
   }

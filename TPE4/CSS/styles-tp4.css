@@ -1013,9 +1013,17 @@ footer{
   opacity: 1;
 }
 
-/* Ajusta estos estilos según tus necesidades 
-#image-container {
-  width: 100%;
-  height: auto;
-  overflow: hidden;s
-}\/*-----------------------------------*/
+/*------------------------------------------------*/
+@keyframes move {
+  0%{
+      background-position: -2080px;
+  }
+  100%{
+      background-position: 0px;
+  }
+}
+
+.parallax2-cielo {
+  animation: move 10s infinite linear;
+  filter: blur(10px);
+}
