@@ -147,7 +147,15 @@ const  altura = document.querySelector('.altura');
     const img3 = document.getElementById('card3');
 
         // Verificar si la sección está en la vista
-        if (scrollY > 1200 && scrollY  < 2000) {     
+        if (scrollY < 1200){
+            cards.forEach((card) => {
+                card.classList.remove("visible");     
+            });
+            cards.forEach((card) => {
+                card.style.transform = `translateY(600px)`;
+            });
+        }
+        else if (scrollY >= 1200) {     
             cards.forEach((card) => {
                 card.classList.add("visible");
             });
@@ -157,11 +165,6 @@ const  altura = document.querySelector('.altura');
             img2.style.transition = `transform 3s`;
             img3.style.transform = `translateY(-600px)`;
             img3.style.transition = `transform 4s`;
-        } else {
-            cards.forEach((card) => {
-                card.classList.remove("visible");
-                card.style.transform = `translateY(600px)`;
-            });
         }
    
     /*--------------------Pto 11 GHOST SPIDER- 3 cards ----------------*/

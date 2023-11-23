@@ -788,6 +788,7 @@ header{
 }
 .poligono-suscripcion{
   width: 1280px;
+  margin-top: -605px;
 }
 .juegos-footer{
   display: flex;
