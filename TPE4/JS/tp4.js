@@ -1,4 +1,32 @@
 "use strict";
+/*---------------------------MINI-HEADER--------------------*/
+
+const header = document.getElementById('main-header');
+const logo = document.querySelector("#conteiner-logo");
+const fijo  = document.getElementById('container-mini-header');
+const  altura = document.querySelector('.altura');
+const miniLogo = document.querySelector(".logo-mini");
+    
+
+document.addEventListener("scroll", () => {
+    if (window.scrollY < 50) {
+        miniLogo.style.opacity = 0;
+    }
+    if (window.scrollY > 50) {
+        header.classList.add('mini');
+        fijo.classList.add('header-mini');
+        altura.style.height=  '115px';
+        miniLogo.style.opacity = window.scrollY / 400;
+        
+    } else {
+         header.classList.remove('mini');
+         fijo.classList.remove('header-mini');
+         altura.style.height=  '0px';
+    }
+    logo.style.opacity = 1 - window.scrollY / 200;
+    logo.style.scale = 1 - window.scrollY / 200;
+    });
+
 
 /*---------------------opcional 4 parallax 2-----------*/   
 const personaje = document.getElementById('personaje');
@@ -40,24 +68,24 @@ window.onscroll = function () {
     let scrollY = window.scrollY;
 
 /*---------------------------MINI-HEADER--------------------*/
-const header = document.getElementById('main-header');
-const logo = document.getElementById('logo');
-const fijo  = document.getElementById('container-mini-header');
-const  altura = document.querySelector('.altura');
+     /*  const header = document.getElementById('main-header');
+        const logo = document.getElementById('logo');
+        const fijo  = document.getElementById('container-mini-header');
+        const  altura = document.querySelector('.altura');
 
-    if (scrollY > 50) {
-        header.classList.add('mini');
-        altura.style.height=  '115px';
-        logo.classList.add('logo-mini');
-        fijo.classList.add('header-mini');
+            if (scrollY > 50) {
+                header.classList.add('mini');
+                altura.style.height=  '115px';
+                logo.classList.add('logo-mini');
+                fijo.classList.add('header-mini');
 
-    } else {
-        header.classList.remove('mini');
-        logo.classList.remove('logo-mini');
-        fijo.classList.remove('header-mini');
-        altura.style.height=  '0px';
-        
-    }
+            } else {
+                header.classList.remove('mini');
+                logo.classList.remove('logo-mini');
+                fijo.classList.remove('header-mini');
+                altura.style.height=  '0px';
+                
+            }
 
     /*------------------PARALLAX--------------------*/
 
