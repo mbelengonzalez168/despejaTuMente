@@ -1,4 +1,5 @@
 "use strict";
+
 /*---------------------------MINI-HEADER--------------------*/
 
 const header = document.getElementById('main-header');

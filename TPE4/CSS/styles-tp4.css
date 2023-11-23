@@ -61,7 +61,7 @@ header{
   width: 133px;
   height: 68px;
 }
-/***************mni logo*****************************/
+/*-------------------mni logo-------------------*/
 .conteiner-logo-mini {
   height: 100%;
   display: flex;
@@ -72,6 +72,8 @@ header{
   width: 133px;
   height: 68px;
 }
+/*--------------------------------------------------*/
+
 .menu-hamburguesa{
   display: flex;
   flex-direction: column;
