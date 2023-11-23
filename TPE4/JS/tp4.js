@@ -1,7 +1,7 @@
 "use strict";
 
 /*---------------------------MINI-HEADER--------------------*/
-
+/*
 const header = document.getElementById('main-header');
 const logo = document.querySelector("#conteiner-logo");
 const fijo  = document.getElementById('container-mini-header');
@@ -27,7 +27,7 @@ document.addEventListener("scroll", () => {
     logo.style.opacity = 1 - window.scrollY / 200;
     logo.style.scale = 1 - window.scrollY / 200;
     });
-
+*/
 
 /*---------------------opcional 4 parallax 2-----------*/   
 const personaje = document.getElementById('personaje');
@@ -86,7 +86,7 @@ window.onscroll = function () {
                 fijo.classList.remove('header-mini');
                 altura.style.height=  '0px';
                 
-            }
+            }*/
 
     /*------------------PARALLAX--------------------*/
 
