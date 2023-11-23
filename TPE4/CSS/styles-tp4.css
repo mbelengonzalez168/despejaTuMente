@@ -27,13 +27,14 @@ header{
   transition: transform 3s ease;
   z-index: 4;
   height: 115px;
+  background-color: rgba(255, 0, 0, 0);
 }
 .header-mini{
   position: fixed;
   z-index: 6;
   height: 115px;
   width: 1280px;
-  background: linear-gradient(180deg, #5499F8 0%, #5499F8 87.91%, rgba(84, 153, 248, 0) 100%);
+  background-color: #5499F8;
 }
 #main-header.mini {
   position: fixed;
@@ -100,11 +101,10 @@ header{
   width: 0;
   opacity: 0;
   margin-top: 20px;
-  margin-left: 0;
   z-index: 4;
 }
 #main-header .items-menu.open {
-  height: 440px;
+  height: 475px;
   width: 225px;
   position: fixed;
   background-color: #5499F8 ;
@@ -112,7 +112,7 @@ header{
   border-radius: 7px;
   padding: 20px 10px;
   opacity: 1;
-  margin-left: -100px;
+  margin-left: -200px;
 }
 #main-header .items-menu.open h3 {
   font-size: 30px;
@@ -407,13 +407,32 @@ header{
   margin-top: -650px;
   position: relative;
   z-index: 2;
+
 }
 .trio-imagenes{
   display: flex;
   width: 1080px;
   margin: 0 auto;
   justify-content: space-between;
+  
 }
+.imagen-texto {
+  position: relative;
+  width: 314.96px;
+  top: 600px;
+}
+.contenedor-imagen-texto{
+  position: absolute;
+}
+.imagen-texto {
+  opacity: 0;
+  /*transform: translateY(100px);*/
+  transition: opacity 1s, transform 2s; 
+}
+.imagen-texto.visible {
+  opacity: 1;
+}
+
 .trio-imagen1{
   width: 314.96px;
   height: 284.96px;
@@ -452,7 +471,7 @@ header{
 }
 .ghost{
   position: relative;
-  margin-top: 80px;
+  margin-top: 590px;
 }
 .conteiner-ghost{
   width: 1080px;
@@ -687,7 +706,6 @@ header{
 .container-trio-spidey{
   width: 900px;
   margin: 0 auto;
-  margin-top: -600px;
   position: relative;
 }
 .trio-spidey{

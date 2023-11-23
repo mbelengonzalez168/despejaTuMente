@@ -1,15 +1,5 @@
 "use strict";
 
-const menuBurger = document.querySelector('.menu-hamburguesa');
-const itemsMenu = document.querySelector('#main-header .items-menu');
-
-
-/*Accion del menu hamburguesa*/
-    menuBurger.addEventListener('click', e => {       
-        menuBurger.classList.toggle('active');
-        itemsMenu.classList.toggle('open');       
-    });
-
 /*---------------------opcional 4 parallax 2-----------*/   
 const personaje = document.getElementById('personaje');
 const mujer = document.getElementById('mujer');
@@ -150,34 +140,28 @@ const  altura = document.querySelector('.altura');
         }
 
 /*----------------------Pto 9-TRES PERSONAJES EN EDIFICIO-------------------------*/
-    const seccion = document.querySelector(".personajes-section");
-    const personajes = document.querySelectorAll(".personaje");
-    const personaje1 = document.getElementById('pje1');
-    const personaje2 = document.getElementById('pje2');
-    const personaje3 = document.getElementById('pje3');
-    const seccionTop = seccion.offsetTop;
-    const seccionBottom = seccionTop + seccion.offsetHeight;
+    const seccion = document.querySelector(".poligono-trio-imagenes");
+    const cards = document.querySelectorAll(".imagen-texto");
+    const img1 = document.getElementById('card1');
+    const img2 = document.getElementById('card2');
+    const img3 = document.getElementById('card3');
 
         // Verificar si la sección está en la vista
-        if (scrollY > seccionTop && scrollY < seccionBottom) {     
-            personaje1.classList.add("visible");  
-            personaje2.classList.add("visible");  
-            personaje3.classList.add("visible");  
-
-            personaje1.style.transition = `transform 2s`;
-            personaje2.style.transition = `transform 3s`;
-            personaje3.style.transition = `transform 4s`;
-
-            personaje1.style.transform = `translateY(-70px)`;
-            personaje2.style.transform = `translateY(-160px)`;
-            personaje3.style.transform = `translateY(-240px)`;
-        } else {
-            personajes.forEach((personaje) => {
-                personaje.classList.remove("visible");
+        if (scrollY > 1200 && scrollY  < 2000) {     
+            cards.forEach((card) => {
+                card.classList.add("visible");
             });
-            personaje1.style.transform = `translateY(70px)`;
-            personaje2.style.transform = `translateY(160px)`;
-            personaje3.style.transform = `translateY(240px)`;
+            img1.style.transform = `translateY(-600px)`;
+            img1.style.transition = `transform 2s`;
+            img2.style.transform = `translateY(-600px)`;
+            img2.style.transition = `transform 3s`;
+            img3.style.transform = `translateY(-600px)`;
+            img3.style.transition = `transform 4s`;
+        } else {
+            cards.forEach((card) => {
+                card.classList.remove("visible");
+                card.style.transform = `translateY(600px)`;
+            });
         }
    
     /*--------------------Pto 11 GHOST SPIDER- 3 cards ----------------*/

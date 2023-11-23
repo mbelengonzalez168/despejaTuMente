@@ -67,7 +67,6 @@
     <div class="altura"></div>     
     <div class="spidey">
         <img class="poligono-spidey" src="./IMG/rectangle-8.png">
-        </div>
         <div class="contenedor-spidey">
             <div class="grid-spidey">
                 <div class="texto-spidey">
@@ -84,19 +83,25 @@
     <img class="poligono-trio-imagenes" src="./IMG/rectangle-7.png">
     <div class="contenedor-trio-imagenes">
         <div class="trio-imagenes">
-            <div class = "imagen-texto">
-                <div class="trio-imagen1"></div>
-                <p>Peter Parker, un joven huérfano neoyorquino que adquiere superpoderes después de ser mordido por una araña radiactiva,​ y cuya ideología como héroe se ve reflejada primordialmente en la expresión ”un gran poder conlleva una gran responsabilidad”.</p>
-            </div>  
-            <div class = "imagen-texto">
-                <div class="trio-imagen2"></div>
-                <p>Tras la muerte de Peter Parker, es quien toma la identidad de
+            <div class = "imagen-texto" id="card1">
+                <div class="contenedor-imagen-texto">
+                    <div class="trio-imagen1"></div>
+                    <p>Peter Parker, un joven huérfano neoyorquino que adquiere superpoderes después de ser mordido por una araña radiactiva,​ y cuya ideología como héroe se ve reflejada primordialmente en la expresión ”un gran poder conlleva una gran responsabilidad”.</p>
+                </div> 
+            </div> 
+            <div class = "imagen-texto" id="card2">
+                <div class="contenedor-imagen-texto">
+                    <div class="trio-imagen2"></div>
+                    <p>Tras la muerte de Peter Parker, es quien toma la identidad de
                     Spider-Man.
                     La elección del presidente Barack Obama en enero de 2009, fue una fuente de inspiración para el cambio de etnicidad de Spider-Man.</p>
+                </div>
             </div>
-            <div class = "imagen-texto">   
-                <div class="trio-imagen3"></div> 
-                <p>El personaje es una variante de El Hombre Araña, una versión de universo alternativo de Gwen Stacy. Ella reside en la "Tierra-65", donde, en lugar de Peter Benjamin Parker, Gwen Stacy fue mordida por la Araña Radiactiva</p>
+            <div class = "imagen-texto" id="card3">  
+                <div class="contenedor-imagen-texto">
+                    <div class="trio-imagen3"></div> 
+                    <p>El personaje es una variante de El Hombre Araña, una versión de universo alternativo de Gwen Stacy. Ella reside en la "Tierra-65", donde, en lugar de Peter Benjamin Parker, Gwen Stacy fue mordida por la Araña Radiactiva</p>
+                </div>
             </div>
         </div>
     </div> 
@@ -155,7 +160,8 @@
                     <p>La diversión está asegurada mientras te enfrentas a los infames villanos de la ciudad de Nueva York. Enfréntate a desafíos épicos, combate a tus enemigos más temibles y disfruta de una experiencia llena de acción y emoción. Cada encuentro con los villanos te sumergirá en una batalla trepidante y te llevará más cerca de convertirte en el auténtico Hombre Araña. Así que, ¿estás listo para derrotar a los villanos y sumergirte en la aventura definitiva de Spider-Man?"</p>
                   </div>
                 </div>
-              </div>
+            </div>
+        </div>
     </section>
     <section class = "comprar">
         <div class="conteiner-comprar">
@@ -164,7 +170,7 @@
         </div>
     </section>
     <img class="poligono-trio-spidey" src="IMG/rectangle-10.png">
-    <div class="trio-spidey"></div>
+    <div class="trio-spidey">
         <div class="container-trio-spidey">
             <img class="trio-spidey1" src="IMG/image-229.png" >
             <img class="trio-spidey2" src="IMG/image-231.png" >
@@ -197,8 +203,6 @@
             </div>
         </div>
     </div>
-
-    </div>
     <div id="loader-container" class="loader-container">
         <div id="loader" class="loader"></div>
         <div id="loading-text" class="loading-text"> 
@@ -223,5 +227,6 @@
 </footer>
 <script src="JS/tp4.js"></script>
 <script src="JS/loader.js"></script>  
+<script src="JS/menuBurguer.js"></script>  
 </body>
 </html>
