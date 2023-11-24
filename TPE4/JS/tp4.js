@@ -26,7 +26,8 @@ document.addEventListener("scroll", () => {
     }
     logo.style.opacity = 1 - window.scrollY / 200;
    // logo.style.scale = 1 - window.scrollY / 200;
-   logo.style.transform = `translateY(-${window.scrollY / 2}px)`;
+   //logo.style.transform = `translateY(-${window.scrollY / 2}px)`;
+  logo.style.transform = `translateY(${-window.scrollY * 0.6}px)`;
     });
 
 
