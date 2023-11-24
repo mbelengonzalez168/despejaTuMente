@@ -1,7 +1,7 @@
 "use strict";
 
 /*---------------------------MINI-HEADER--------------------*/
-/*
+
 const header = document.getElementById('main-header');
 const logo = document.querySelector("#conteiner-logo");
 const fijo  = document.getElementById('container-mini-header');
@@ -25,9 +25,10 @@ document.addEventListener("scroll", () => {
          altura.style.height=  '0px';
     }
     logo.style.opacity = 1 - window.scrollY / 200;
-    logo.style.scale = 1 - window.scrollY / 200;
+   // logo.style.scale = 1 - window.scrollY / 200;
+   logo.style.transform = `translateY(-${window.scrollY / 2}px)`;
     });
-*/
+
 
 /*---------------------opcional 4 parallax 2-----------*/   
 const personaje = document.getElementById('personaje');
@@ -214,7 +215,7 @@ window.onscroll = function () {
                 
                 image.addEventListener("mouseenter", function () {
                     // Agrega la animación y otras reglas de estilo al hacer hover
-                    image.style.animation = "rotateAndPerspective 1s infinite ";
+                    image.style.animation = "rotateAndPerspective 1s ease ";
                 });
         
                 image.addEventListener("mouseleave", function () {
