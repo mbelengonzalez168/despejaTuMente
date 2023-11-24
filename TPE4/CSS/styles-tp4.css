@@ -956,15 +956,26 @@ footer{
 
 /*----------------------Pto6 duende verde--------------*/
 /*------------------Pto 11---------------------------*/
+ /* @keyframes rotateAndPerspective {
+    0% {
+        transform: skew(0deg);
+    }
+    50% {
+        transform: skew(5deg);
+    }
+    100% {
+        transform:skew(10deg);
+    }
+  }*/
 @keyframes rotateAndPerspective {
   0% {
-      transform: skew(0deg);
+      transform: rotate(0deg);
   }
   50% {
-      transform: skew(5deg);
+      transform: rotate(-5deg);
   }
   100% {
-      transform:skew(10deg);
+      transform:rotate(0deg);
   }
 }
 /* @keyframes rotateAndPerspective {s

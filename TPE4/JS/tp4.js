@@ -8,8 +8,9 @@ const fijo  = document.getElementById('container-mini-header');
 const  altura = document.querySelector('.altura');
 const miniLogo = document.querySelector(".logo-mini");
     
-
 document.addEventListener("scroll", () => {
+    const scaleValue = 1 - window.scrollY / 200;
+    const clampedScaleValue = Math.min(Math.max(scaleValue, 0), 1);
     if (window.scrollY < 50) {
         miniLogo.style.opacity = 0;
     }
@@ -27,7 +28,10 @@ document.addEventListener("scroll", () => {
     logo.style.opacity = 1 - window.scrollY / 200;
    // logo.style.scale = 1 - window.scrollY / 200;
    //logo.style.transform = `translateY(-${window.scrollY / 2}px)`;
-  logo.style.transform = `translateY(${-window.scrollY * 0.6}px)`;
+       // logo.style.transform = `translateY(${-window.scrollY * 0.6}px)`;
+       logo.style.transition = `transform 0.5s ease-out`;
+       logo.style.transform = `scale(${clampedScaleValue})`;
+
     });
 
 
