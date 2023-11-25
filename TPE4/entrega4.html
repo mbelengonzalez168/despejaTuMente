@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="CSS/styles-tp4.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link href='./CSS/lato/Lato-Regular.ttf' rel='stylesheet'>
+    <link href='./CSS/lato/Lato-Bold.ttf' rel='stylesheet'>
 </head>
 
 <body>
@@ -20,6 +21,9 @@
         <div class="spider3 oculto"></div>
         <div class="telaIzq oculto"></div>
         <div class="telaDer oculto"></div>
+        <div id="conteiner-logo" class="conteiner-logo">
+            <img src="IMG/image-5-1.png" alt="logo spidey and his amazing friends" class="logo">
+        </div>
     </section>
     <div id="container-mini-header">
         <div class="container-header">
@@ -55,18 +59,14 @@
                                 </ul>
                             </div>
                         </div>  
-                </div>
+                </div>    
                 <div class="conteiner-logo-mini">
                     <img class="logo-mini" src="IMG/logo-mini.png" alt="" />
-                </div>  
-                <div id="conteiner-logo">
-                    <img src="IMG/image-5-1.png" alt="logo spidey and his amazing friends" class="logo">
-                </div>
-                             
+                </div>         
                 <button class = "comprar-iMY"> COMPRAR</button>    
             </header>
         </div> 
-    </div>   
+    </div>        
     <div class="altura"></div>     
     <div class="spidey">
         <img class="poligono-spidey" src="./IMG/rectangle-8.png">
@@ -194,7 +194,12 @@
         </div>    
     </section>
     <div class="personajes-section">
+        
         <div class="conteiner-personajes-section">
+            <div id="sprit-sheet">
+                <div class="img-sprit"></div>
+            </div>  
+            <!--
             <div class="personaje personaje1" id="pje1">
                 <img src="IMG/image-228.png" alt="personaje 1" class="image-228-YCa" >
             </div>
@@ -204,6 +209,7 @@
             <div class="personaje personaje3" id="pje3">
                 <img src="IMG/image-227.png" alt="personaje 3" class="image-227-tdp " >
             </div>
+            -->
         </div>
     </div>
     <div id="loader-container" class="loader-container">
@@ -223,9 +229,6 @@
             <p class="subrallado">COOKIE POLICY PRIVACY POLICY</p>
             <img src="IMG/image-238.png">
         </div>
-        <div id="sprit-sheet">
-            <div class="img-sprit"></div>
-        </div>  
     </div>
 </footer>
 <script src="JS/loader.js"></script> 

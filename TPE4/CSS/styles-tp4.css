@@ -1,7 +1,7 @@
 html {
   font-weight: 400;
   background-color: #000000; 
-  font-family: Lato;
+  font-family: 'lato-regular';
 }
 * {
 	margin: 0 ;
@@ -13,10 +13,21 @@ ul, li {
 input {
 	border: none;
 }
+@font-face {
+  font-family: 'lato-regular';
+  src: url(./lato/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: 'lato-bold';
+  src: url(./lato/Lato-Regular.ttf);
+}
+
 body{
   width: 1280px;
   margin: 0 auto;
 }
+
+
 .container-header{
   width: 1080px;
   margin: 0 auto;
@@ -27,7 +38,14 @@ header{
   transition: transform 3s ease;
   z-index: 4;
   height: 115px;
-  background-color: rgba(255, 0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    #5499f8 100%,
+    #5499f8 100%,
+    #5499f8 0%,
+    rgba(84, 153, 248, 0.91) 87.92%,
+    rgba(84, 153, 248, 0) 100%
+  );
 }
 .header-mini{
   position: fixed;
@@ -36,9 +54,9 @@ header{
   width: 1280px;
   background: linear-gradient(
     180deg,
-    #5499f8 0%,
-    #5499f8 87.9%,
-    #5499f8 87.91%,
+    #5499f8 100%,
+    #5499f8 100%,
+    #5499f8 100%,
     rgba(84, 153, 248, 0.91) 87.92%,
     rgba(84, 153, 248, 0) 100%
   );
@@ -49,10 +67,16 @@ header{
   margin: 0 auto;
   z-index: 15;
 }
+.conteiner-logo{
+  display: flex;
+  width: 1280px;
+  margin: 0 auto;
+}
 .logo{
   width: 590px;
   height: 301px;
   object-fit: cover;
+  margin: 0 auto;
   margin-top: 91px;
   z-index: 10;
 }
@@ -61,11 +85,14 @@ header{
   width: 133px;
   height: 68px;
 }
-/*-------------------mni logo-------------------*/
+/*-------------------mini logo-------------------*/
 .conteiner-logo-mini {
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
 }
 .conteiner-logo-mini img {
   opacity: 0;
@@ -179,12 +206,13 @@ header{
   width: 216px;
   height: 66px;
   border-radius: 111px;
-  font-size: 19px;
-  font-weight: 900;
+  font-size: 20px;
   border: #2981ff 8px solid;
   box-shadow: 4px 5px 0 #02187e;
-  font-family: Lato, 'Source Sans Pro';
-  letter-spacing: 0.22rem;
+  font-family: 'lato-bold', 'Source Sans Pro';
+  font-weight: 900;
+  letter-spacing: 2.3px;
+  -webkit-text-stroke: 2px #02187e;
   white-space: nowrap;
   color: #02187e;
 }  
@@ -402,7 +430,7 @@ header{
   transform: rotate(-2.22deg);
   border: #ffffff solid 9px;
   object-fit: cover;
-  margin-top: -30px;
+  margin-top: -10px;
   box-shadow: 4px 5px 0 #5E5E5D;
   background-image: url(../IMG/image-16.png);
   background-size:  100% 118.165%;
@@ -513,7 +541,7 @@ header{
 .test-1{
   left: -12px;
   top: 0px;
-  transform: rotate(-10deg);
+  transform: rotate(-13deg);
 }
 .test-2{
   left: -12px;
@@ -528,7 +556,7 @@ header{
 .conteiner-vengadores {
   width: 1080px;
   margin: 0 auto;
-  margin-top: 900px;
+  margin-top: 800px;
 }
 .conteiner-vengadores p{
   width: 667px;
@@ -572,9 +600,10 @@ header{
   height: 437.97px;
   background-image: url(../IMG/untitled-2-2.png);
   background-size: 100% 100%;
+  padding: 5px;
   z-index: 3;
   left: 680px;
-  top: 140px;
+  top: 87px;
   transform: rotate(10.48deg);
 }
 .parallax2-mujer{
@@ -758,15 +787,16 @@ header{
   font-weight: 600;
   font-size: 60px;
   line-height: 56.7px;
+  margin-bottom: 40px;
 }
 .suscribirse {
   box-shadow: 0.4rem 0.5rem 0 #02187e;
   border-radius: 11.1rem;
+  display: flex;
   align-items: center;
-  border: solid 80px #2982ff;
   display: flex;
   box-sizing: border-box;
-  margin: 30px auto;
+  margin: 0 auto;
   width: 780px;
 }
 .suscribirse input{
@@ -779,11 +809,13 @@ header{
   border: solid 8px #2982ff;
   box-shadow: 0.4rem 0.5rem 0 #02187e;
   border-right: none;
+  letter-spacing: 2.3px;
 }
 .suscribirse button{
-  font-family: Lato, 'Source Sans Pro';
+  font-family: 'lato-bold', 'Source Sans Pro';
   letter-spacing: 0.22rem;
   font-weight: 900;
+  font-size: 20px;
   background-color: #ffe901;
   color: #02187e;
   width: 218px;
@@ -792,6 +824,8 @@ header{
   border: none;
   border: solid 8px #2982ff ;
   box-shadow: 0.4rem 0.5rem 0 #02187e;
+  letter-spacing: 2.3px;
+  -webkit-text-stroke: 2px #02187e;
 }
 
 .suscripcion p{
@@ -799,9 +833,10 @@ header{
   font-size: 20px;
   line-height: 18.9px;
   margin-left: 65px;
+  margin-top: 40px;
 }
 .teen{
-  margin-top: 20px;
+  margin-top: 30px;
   width: 231px;
   height: 145px;
   margin-left: 55px;
@@ -811,10 +846,11 @@ header{
   margin-top: -605px;
 }
 .juegos-footer{
+  position: relative;
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 120px;
   background-color: #242424;
   width: 1280px;
   height: 75px;
@@ -890,7 +926,7 @@ footer{
   height: 740px;
   width: 1280;
   position: relative;
-  top: 60px;
+  top: 120px;
   background-image: url('../IMG/untitled-1-5-ByC.png'); /* Reemplaza con la ruta de tu imagen */
   background-size: cover; /* Cubre todo el contenedor */
   background-position: center; /* Centra la imagen en el contenedor */
@@ -1000,13 +1036,16 @@ footer{
 /*--------------------pto 13-------------------------*/
 
 #sprit-sheet{
-  margin:  80px  0 auto auto;
   transition: all .1s ease-out;
   z-index: 0;
 }
 .img-sprit {
-  width: 180px;
-  height: 180px;
+  position: absolute;
+  top: 395px;
+  left: 890px;
+  width: 130px;
+  height: 130px;
+  transform: rotate(-20deg);
   background-image: url('../IMG/sprit.png'); /* Reemplaza 'spritesheet.png' con tu ruta real */
   background-size: auto 100%;
   transition: background-position 1s steps(11);
@@ -1017,7 +1056,7 @@ footer{
 
 @keyframes playAnimation {
   from { background-position: 0; }
-  to { background-position: -1980px; } /* Ajusta según sea necesario */
+  to { background-position: -1430px; } /* Ajusta según sea necesario */
 }
 /*---------------------------------------*/
 #container {
@@ -1053,6 +1092,6 @@ footer{
 }
 
 .parallax2-cielo {
-  animation: move 10s infinite linear;
+  animation: move 50s infinite linear;
   filter: blur(10px);
 }

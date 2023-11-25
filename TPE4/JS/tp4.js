@@ -57,12 +57,12 @@ const hulk = document.getElementById('hulk');
             this.style.transform = 'scale(1)';
           });
           hulk.addEventListener('mouseenter', function() {
-            this.style.transform = 'scale(0.2)';
+            this.style.transform = 'scale(1.3) translateY(-10px)';
             this.style.transition= `transform 0.5s ease-in-out`;
             console.log("laaa");
           });
           hulk.addEventListener('mouseleave', function() {
-            this.style.transform = 'scale(1) translateX(10px)';
+            this.style.transform = 'scale(1) translateY(10px)';
           });
                 
           
@@ -182,7 +182,7 @@ window.onscroll = function () {
     const img3 = document.getElementById('card3');
 
         // Verificar si la sección está en la vista
-        if (scrollY < 1200){
+        if (scrollY < 850){
             cards.forEach((card) => {
                 card.classList.remove("visible");     
             });
@@ -195,11 +195,11 @@ window.onscroll = function () {
                 card.classList.add("visible");
             });
             img1.style.transform = `translateY(-600px)`;
-            img1.style.transition = `transform 2s`;
+            img1.style.transition = `transform 1s`;
             img2.style.transform = `translateY(-600px)`;
-            img2.style.transition = `transform 3s`;
+            img2.style.transition = `transform 2s`;
             img3.style.transform = `translateY(-600px)`;
-            img3.style.transition = `transform 4s`;
+            img3.style.transition = `transform 3s`;
         }
    
     /*--------------------Pto 11 GHOST SPIDER- 3 cards ----------------*/
