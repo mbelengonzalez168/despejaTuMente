@@ -967,46 +967,25 @@ footer{
         transform:skew(10deg);
     }
   }*/
-@keyframes rotateAndPerspective {
-  0% {
-      transform: rotate(0deg);
+  
+  @keyframes rotateAndPerspective {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform:rotate(-5deg);
+    }
   }
-  50% {
-      transform: rotate(-5deg);
-  }
-  100% {
-      transform:rotate(0deg);
-  }
-}
-/* @keyframes rotateAndPerspective {s
-  0% {
-      transform: rotateX(0deg) skew(10deg);
-  }
-  50% {
-      transform: rotateX(10deg) skew(15deg);
-  }
-  100% {
-      transform: rotateX(0deg) skew(20deg);
-  }
-}*/
-/*
-.conteiner-ghost:hover .test-1 {
-  animation: rotateAndPerspective 1s ease; /* Aplicar la animación al hacer hover 
-}
-
-.conteiner-ghost:hover .test-2 {
-  animation: rotateAndPerspective 1s ease 0.1s; /* Aplicar la animación con un pequeño retraso 
-}
-
-.conteiner-ghost:hover .test-3 {
-  animation: rotateAndPerspective 1s ease 0.2s; /* Aplicar la animación con un pequeño retraso 
-}
-/*
-.test img{
-  transition: transform 0.5s ease-out;
-}*/
-
-/*---------------------------------------------------------------------------*/
+    .test-1:hover,.test-3:hover{
+      animation: rotateAndPerspective 1s ease-out forwards;
+    }
+    
+    .test-2 {
+      transition: transform 0.5s ease; /* Ajusta la duración y la función de temporización según sea necesario */
+    }
+    .test-2:hover {
+      transform: scale(1.1); /* Ajusta el valor de escala según sea necesario */
+    }
 
 /*--------------------------pto 4--------------------------*/
 .imagen {

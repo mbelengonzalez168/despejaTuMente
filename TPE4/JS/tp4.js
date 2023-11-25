@@ -206,11 +206,10 @@ window.onscroll = function () {
 
     const ghost = document.querySelector(".ghost");
     const testImages = document.querySelectorAll(".test img");
-    const ghostTop = ghost.offsetTop;
-    const ghostHeigth = ghost.offsetHeight;
+    const pos = ghost.getBoundingClientRect(); //devuelve la posicion
 
-                             
-        if (scrollY > ghostTop - 150 && scrollY < ghostTop + 150) {
+    window.addEventListener("scroll", function () {                        
+       if (pos.top < window.innerHeight && pos.bottom > 0) {
             testImages.forEach((image, index) => {
                 const delay = index * 100; // Ajusta según sea necesario
                 const speed = 0.2 * (index + 1)
@@ -218,19 +217,9 @@ window.onscroll = function () {
                 image.style.transitionDelay = `${delay}ms`;
                 image.style.transform = `translateY(${translateY}px)`;
                 
-                image.addEventListener("mouseenter", function () {
-                    // Agrega la animación y otras reglas de estilo al hacer hover
-                    image.style.animation = "rotateAndPerspective 1s ease ";
-                });
-        
-                image.addEventListener("mouseleave", function () {
-                    // Elimina la animación al quitar el cursor
-                    image.style.animation = "none";
-                });
-                
+                             
             });
         } 
-  
-
+    });    
 
 }
