@@ -62,28 +62,31 @@ header{
   );
 }
 #main-header.mini {
-  position: fixed;
+  position: sticky;
   width: 1080px;
   margin: 0 auto;
-  z-index: 15;
+  z-index: 8;
 }
-.conteiner-logo{
+/*#conteiner-logo{
   display: flex;
-  width: 1280px;
+  width: 1080px;
   margin: 0 auto;
-}
+}*/
 .logo{
+  position: absolute;
+  top: -24px;
+  left: 245px;
   width: 590px;
   height: 301px;
   object-fit: cover;
-  margin: 0 auto;
-  margin-top: 91px;
-  z-index: 10;
+  /*margin: 0 auto;
+  margin-top: -24px;*/
 }
 .logo-mini {
   margin-top: 20px;
   width: 133px;
   height: 68px;
+  padding-left: 190px;
 }
 /*-------------------mini logo-------------------*/
 .conteiner-logo-mini {
@@ -442,20 +445,19 @@ header{
   height: 921px;
   margin-right: 0px;
   transform: scaleX(-1);
-  margin-top: -220px;  
+  margin-top: -250px;  
 }
 .poligono-trio-imagenes{
   position: relative;
   z-index: 1;
   width: 1280px;
   margin-top: -400px;
-  height: 1085px;
+  height: 1135px;
 }
 .contenedor-trio-imagenes{      
-  margin-top: -650px;
+  margin-top: -700px;
   position: relative;
   z-index: 2;
-
 }
 .trio-imagenes{
   display: flex;
@@ -467,7 +469,7 @@ header{
 .imagen-texto {
   position: relative;
   width: 314.96px;
-  top: 600px;
+  top: 650px;
 }
 .contenedor-imagen-texto{
   position: absolute;
@@ -519,7 +521,7 @@ header{
 }
 .ghost{
   position: relative;
-  margin-top: 590px;
+  margin-top: 640px;
 }
 .conteiner-ghost{
   width: 1080px;
@@ -635,7 +637,7 @@ header{
 .conteiner-mas-amigos{
   width: 1080px;
   margin: 0 auto;
-  margin-top: -1700px;
+  margin-top: -1650px;
 }
 .mas-amigos h2{
   font-weight: 600px;
@@ -870,7 +872,9 @@ footer{
 }
 .contenido-footer{
   margin-top: 30px;
+  margin-bottom: 70px;
   color: #ffffff;
+  
 }
 .contenido-footer p{
   width: 820px;
@@ -899,7 +903,7 @@ footer{
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 10;
+  z-index: 50;
 }
 #loader {
   background: url('../IMG/Telarania.png') no-repeat 0 0; /* Utiliza la ruta correcta de tu spritesheet */

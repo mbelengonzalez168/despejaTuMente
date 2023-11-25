@@ -18,19 +18,21 @@ document.addEventListener("scroll", () => {
         header.classList.add('mini');
         fijo.classList.add('header-mini');
         altura.style.height=  '115px';
-        miniLogo.style.opacity = window.scrollY / 400;
-        
     } else {
          header.classList.remove('mini');
          fijo.classList.remove('header-mini');
          altura.style.height=  '0px';
     }
-    logo.style.opacity = 1 - window.scrollY / 200;
-   // logo.style.scale = 1 - window.scrollY / 200;
-   //logo.style.transform = `translateY(-${window.scrollY / 2}px)`;
-       // logo.style.transform = `translateY(${-window.scrollY * 0.6}px)`;
-       logo.style.transition = `transform 0.5s ease-out`;
-       logo.style.transform = `scale(${clampedScaleValue})`;
+    if (window.scrollY > 200) {
+        miniLogo.style.opacity = window.scrollY / 200;
+    }
+    logo.style.opacity = 1 - window.scrollY / 400;
+    // logo.style.scale = 1 - window.scrollY / 200;
+    //logo.style.transform = `translateY(-${window.scrollY / 2}px)`;
+    // logo.style.transform = `translateY(${-window.scrollY * 0.6}px)`;
+    logo.style.transition = `transform 0.5s ease-out`;
+    logo.style.transform = `scale(${clampedScaleValue})`;
+    
 
     });
 
@@ -57,7 +59,7 @@ const hulk = document.getElementById('hulk');
             this.style.transform = 'scale(1)';
           });
           hulk.addEventListener('mouseenter', function() {
-            this.style.transform = 'scale(1.3) translateY(-10px)';
+            this.style.transform = 'scale(1.) translateY(-10px)';
             this.style.transition= `transform 0.5s ease-in-out`;
             console.log("laaa");
           });
@@ -108,7 +110,6 @@ window.onscroll = function () {
     
     elementos.forEach((e) => {
         e.classList.remove("oculto");
-        
     });
 
     if (scrollY) {
@@ -138,7 +139,7 @@ window.onscroll = function () {
 
 /*--------------------DUENDE-VERDE--------------------*/
     const duendeVerde = document.getElementById('duende-verde');
-    const velocidadDuende = 0.12;
+    const velocidadDuende = 0.175;
     const transformValue = `translateY(${scrollY * velocidadDuende}px) scaleX(-1)`;
     duendeVerde.style.transform = transformValue;
 
