@@ -970,15 +970,16 @@ footer{
   height: 64px;
 }
 /*-------------------pto 10----BTN-CPMPRAR------*/
+
 .comprar-iMY {
-    /* Agrega transición para el cambio de color en 0.3 segundos */
-  transition: background-color 0.3s ease;
+  /* Agrega transición para el cambio de color en 0.3 segundos */
+transition: background-color box-shadow 0.5s linear;
 }
 
-/* Cambio de color en hover */
 .comprar-iMY:hover {
-  background-color: #e74c3c; /* Nuevo color en hover */
-  color: #ffffff; /* Puedes ajustar el color del texto en hover si es necesario */
+background-color: #e74c3c; /* Nuevo color en hover */
+color: #ffffff; /* Puedes ajustar el color del texto en hover si es necesario */
+box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.7);
 }
 /*-----------------pTO 5------mini-header-----------------------*/
 
@@ -1084,6 +1085,6 @@ footer{
 }
 
 .parallax2-cielo {
-  animation: move 50s infinite linear;
+  animation: move 40s infinite linear;
   filter: blur(10px);
 }
