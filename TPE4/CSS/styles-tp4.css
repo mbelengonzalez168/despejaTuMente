@@ -38,49 +38,38 @@ header{
   transition: transform 3s ease;
   z-index: 4;
   height: 115px;
-  background: linear-gradient(
-    180deg,
-    #5499f8 100%,
-    #5499f8 100%,
-    #5499f8 0%,
-    rgba(84, 153, 248, 0.91) 87.92%,
-    rgba(84, 153, 248, 0) 100%
-  );
+  /*background: linear-gradient(180deg, #5499f8 -0%, #5499f8 87.91%, rgba(84, 153, 248, 0) 100%);*/
 }
 .header-mini{
   position: fixed;
   z-index: 6;
   height: 115px;
   width: 1280px;
-  background: linear-gradient(
-    180deg,
-    #5499f8 100%,
-    #5499f8 100%,
-    #5499f8 100%,
-    rgba(84, 153, 248, 0.91) 87.92%,
-    rgba(84, 153, 248, 0) 100%
-  );
+  background: linear-gradient(180deg, #5499f8 -0%, #5499f8 87.91%, rgba(84, 153, 248, 0) 100%);
 }
-#main-header.mini {
+  #main-header.mini {
   position: sticky;
   width: 1080px;
   margin: 0 auto;
   z-index: 8;
 }
-/*#conteiner-logo{
+#container-mini-header{
+  background-color: rgba(0, 0, 0, 0);
+}
+
+
+#conteiner-logo{
   display: flex;
   width: 1080px;
   margin: 0 auto;
-}*/
+}
 .logo{
-  position: absolute;
-  top: -24px;
-  left: 245px;
+  left: 345px;
   width: 590px;
   height: 301px;
   object-fit: cover;
-  /*margin: 0 auto;
-  margin-top: -24px;*/
+  margin: 0 auto;
+  z-index: 9;
 }
 .logo-mini {
   margin-top: 20px;
@@ -97,8 +86,7 @@ header{
   margin: 0 auto;
 
 }
-.conteiner-logo-mini img {
-  opacity: 0;
+/*.conteiner-logo-mini img {
   width: 133px;
   height: 68px;
 }
@@ -232,7 +220,7 @@ header{
   width: 1280px;
   height: 227px;
   background-image: url(../IMG/rectangle-1.png);
-  top: 0px;
+  top: -60px;
   z-index: -1;
 }
 .layer-2{

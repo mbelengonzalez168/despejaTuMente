@@ -6,33 +6,33 @@ const header = document.getElementById('main-header');
 const logo = document.querySelector("#conteiner-logo");
 const fijo  = document.getElementById('container-mini-header');
 const  altura = document.querySelector('.altura');
-const miniLogo = document.querySelector(".logo-mini");
+//const miniLogo = document.querySelector(".logo-mini");
+
+logo.style.transform = 'translateY(91px)';
     
+
 document.addEventListener("scroll", () => {
     const scaleValue = 1 - window.scrollY / 200;
-    const clampedScaleValue = Math.min(Math.max(scaleValue, 0), 1);
+    const clampedScaleValue = Math.min(Math.max(scaleValue, .23), 1);
+    const maxTranslation = 80;
+    const translateY = Math.min((window.scrollY / 200) * maxTranslation, maxTranslation);
+    const translateX = Math.min((window.scrollY / 200) * maxTranslation, maxTranslation);
+    
     if (window.scrollY < 50) {
-        miniLogo.style.opacity = 0;
+        logo.style.transform = 'translateY(91px)';
     }
     if (window.scrollY > 50) {
         header.classList.add('mini');
         fijo.classList.add('header-mini');
         altura.style.height=  '115px';
+        logo.style.transition = `transform 0.5s ease-out`;
+        logo.style.transform = `scale(${clampedScaleValue}) translateY(-${translateY}px) translateX(${translateX*4}px)`;
+
     } else {
          header.classList.remove('mini');
          fijo.classList.remove('header-mini');
          altura.style.height=  '0px';
     }
-    if (window.scrollY > 200) {
-        miniLogo.style.opacity = window.scrollY / 200;
-    }
-    logo.style.opacity = 1 - window.scrollY / 400;
-    // logo.style.scale = 1 - window.scrollY / 200;
-    //logo.style.transform = `translateY(-${window.scrollY / 2}px)`;
-    // logo.style.transform = `translateY(${-window.scrollY * 0.6}px)`;
-    logo.style.transition = `transform 0.5s ease-out`;
-    logo.style.transform = `scale(${clampedScaleValue})`;
-    
 
     });
 
