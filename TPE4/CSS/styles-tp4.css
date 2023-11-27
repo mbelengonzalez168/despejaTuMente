@@ -22,9 +22,11 @@ input {
   src: url(./lato/Lato-Regular.ttf);
 }
 
-body{
+.contenedor-1280{
   width: 1280px;
   margin: 0 auto;
+  overflow: hidden;
+
 }
 
 
@@ -339,7 +341,7 @@ header{
   height: 627.27px;
   background-image: url(../IMG/untitled-5-2.png);
   background-size: 100% 100%;
-  top: 390.35px;
+  top: 398.65px;
   left: -65.4px;
   object-fit: cover;
   transform: rotate(65.4deg);
@@ -360,6 +362,7 @@ header{
   background-size: 100% 100%;
   top: 388px;
   left: 1087.83px;
+  transform: scaleX(-1);
   transform: rotate(-114.6deg);
   z-index: 3;
   opacity: 1;
@@ -440,10 +443,10 @@ header{
   z-index: 1;
   width: 1280px;
   margin-top: -400px;
-  height: 1135px;
+  height: 1235px;
 }
 .contenedor-trio-imagenes{      
-  margin-top: -700px;
+  margin-top: -800px;
   position: relative;
   z-index: 2;
 }
@@ -509,7 +512,7 @@ header{
 }
 .ghost{
   position: relative;
-  margin-top: 640px;
+  margin-top: 680px;
 }
 .conteiner-ghost{
   width: 1080px;

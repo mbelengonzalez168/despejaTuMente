@@ -11,11 +11,10 @@ const  altura = document.querySelector('.altura');
     logo.style.transform = 'translateY(91px)';
      
     document.addEventListener("scroll", () => {
-        const scaleValue = 1 - window.scrollY / 200;
+        const scaleValue = 1 - window.scrollY / 400;
         const clampedScaleValue = Math.min(Math.max(scaleValue, .23), 1);
-        const maxTranslation = 80;
-        const translateY = Math.min((window.scrollY / 200) * maxTranslation, maxTranslation);
-        const translateX = Math.min((window.scrollY / 200) * maxTranslation, maxTranslation);
+        const maxTranslation = 82;
+        const translateY = Math.min((window.scrollY / 400) * maxTranslation, maxTranslation);
         
         if (window.scrollY < 50) {
             logo.style.transform = 'translateY(91px)';
@@ -24,8 +23,8 @@ const  altura = document.querySelector('.altura');
             header.classList.add('mini');
             fijo.classList.add('header-mini');
             altura.style.height=  '115px';
-            logo.style.transition = `transform 0.5s ease-out`;
-            logo.style.transform = `scale(${clampedScaleValue}) translateY(-${translateY}px) translateX(${translateX*4}px)`;
+            logo.style.transition = `transform .5s ease-out`;
+            logo.style.transform = `scale(${clampedScaleValue}) translateY(-${translateY}px)`;
 
         } else {
             header.classList.remove('mini');
