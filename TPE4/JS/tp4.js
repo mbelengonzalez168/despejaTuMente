@@ -60,7 +60,7 @@ const elementos = [Edif1, Edif2, Edif3, Pje1, Pje2, Pje3, telaD, telaI, logo];
         Edif2.style.transform = `scale(${1 + window.scrollY * 0.0008})`;
         Edif3.style.transform = `translateX(${window.scrollY * 0.002}px)`;
 
-        Pje1.style.transform = `translateY(${-window.scrollY * 0.5}px) translateX(${-window.scrollY * 0.5}px)`;
+        Pje1.style.transform = `translateY(${-window.scrollY * 0.5}px) translateX(${-window.scrollY * 0.3}px)`;
         Pje3.style.transform = `translateY(${-window.scrollY * 0.5}px) translateX(${window.scrollY * 0.5}px)`; 
         telaD.style.transform = `translateY(${-window.scrollY * 0.5}px) translateX(${window.scrollY * 0.5}px) rotate(-114.597deg)`;
         Pje2.style.transform = `translateY(${-window.scrollY * 0.8}px)`;
