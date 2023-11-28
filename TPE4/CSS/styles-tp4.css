@@ -222,7 +222,7 @@ box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.7);
 .layer-1{
   width: 1280px;
   height: 227px;
-  background-image: url(../IMG/rectangle-1.png);
+  background-image: url(../IMG/Rectangle-1.png);
   top: -60px;
   z-index: -1;
 }
@@ -964,7 +964,7 @@ footer{
   z-index: 50;
 }
 #loader {
-  background: url(../IMG/Telarania.png) no-repeat 0 0; 
+  background: url(../IMG/telarania.png) no-repeat 0 0; 
   background-size: auto 100%;
   width: 100px;
   height: 100px;
