@@ -560,18 +560,11 @@ box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.7);
       transform:rotate(-20deg);
   }
 }
-  .test-1:hover,.test-3:hover{
-    animation: rotateAndPerspective 1s ease-out forwards;
-  }
+  
   .test-1:hover,.test-2:hover,.test-3:hover{
     animation: rotateAndPerspective 1s ease-out forwards;
   }
-  /*.test-2 {
-    transition: transform 0.5s ease; 
-  }
-  .test-2:hover {
-    transform: scale(1.1); 
-  }*/
+  
 /*------------------------------------------------------------------------*/
 
 .conteiner-vengadores {
