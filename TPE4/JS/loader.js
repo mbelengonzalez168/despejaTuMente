@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (!simulationDone) {
         // Si la simulación aún no se ha completado, iniciarla
-            let percentage = 20;
+            let percentage = 0;
             const updatePercentage = () => {
                    loadingProgress.textContent = percentage + "%";
                     };
