@@ -12,13 +12,12 @@ const  altura = document.querySelector('.altura');
     document.addEventListener("scroll", () => {
         const scaleValue = 1 - window.scrollY / 400;
         const clampedScaleValue = Math.min(Math.max(scaleValue, .23), 1);
-        const maxTranslation = 82;
-        const translateY = Math.min((window.scrollY / 400) * maxTranslation, maxTranslation);
+        const translateY = Math.min((window.scrollY / 400) * 82);
         
         if (window.scrollY < 50) {
             logo.style.transform = 'translateY(91px)';//mantengo posicion en scroll menor a 50
         }
-        if (window.scrollY > 50) {//si scroll mayor a 50 escalo a mini logo
+        if (window.scrollY > 50) {//si scroll mayor a 50 escalo a mini logo 
             header.classList.add('mini');
             fijo.classList.add('header-mini');
             altura.style.height=  '115px';
@@ -142,20 +141,23 @@ const transformValue = `translateY(${scrollY * velocidadDuende}px) scaleX(-1)`;
 /*--------------------Pto 11 GHOST SPIDER- 3 cards ----------------*/
 
 const ghost = document.querySelector(".ghost");
-const testImages = document.querySelectorAll(".test img");
-const pos = ghost.getBoundingClientRect(); //devuelve la posicion
-
-    window.addEventListener("scroll", function () {                        
-    if (pos.top < window.innerHeight && pos.bottom > 0) {
+const Img1 = document.querySelector(".test-1");
+const Img2 = document.querySelector(".test-2"); 
+const Img3 = document.querySelector(".test-3");     
+const testImages = [Img1, Img2, Img3];
+const ghostTop = ghost.offsetTop;
+const ghostHeigth = ghost.offsetHeight;
+   
+     if (scrollY > ghostTop  && scrollY < ghostTop + 150) {
             testImages.forEach((image, index) => {
-                const delay = index * 100; 
+                const delay = index * 100; // Ajusta según sea necesario
                 const speed = 0.2 * (index + 1)
                 const translateY = Math.min(ghostHeigth, scrollY - ghostTop) * speed;
                 image.style.transitionDelay = `${delay}ms`;
-                image.style.transform = `translateY(${translateY}px)`;                        
+                image.style.transform = `translateY(${translateY}px)`;
+                          
             });
-        } 
-    });    
+        }
 
 /*----------------------Pto 9-TRES CARDS-------------------------*/
 const seccion = document.querySelector(".poligono-trio-imagenes");
