@@ -1,15 +1,14 @@
 "use strict";
-
-/*---------------------------MINI-HEADER--------------------*/
+/*-------------------------Pto 5--HEADER-MINI-LOGO------------------*/
 
 const header = document.getElementById('main-header');
 const logo = document.querySelector("#conteiner-logo");
 const fijo  = document.getElementById('container-mini-header');
 const  altura = document.querySelector('.altura');
-//const miniLogo = document.querySelector(".logo-mini");
-
+    //posiciono el logo
     logo.style.transform = 'translateY(91px)';
-     
+    
+    //escala basado en el desplazamiento vertical  
     document.addEventListener("scroll", () => {
         const scaleValue = 1 - window.scrollY / 400;
         const clampedScaleValue = Math.min(Math.max(scaleValue, .23), 1);
@@ -17,9 +16,9 @@ const  altura = document.querySelector('.altura');
         const translateY = Math.min((window.scrollY / 400) * maxTranslation, maxTranslation);
         
         if (window.scrollY < 50) {
-            logo.style.transform = 'translateY(91px)';
+            logo.style.transform = 'translateY(91px)';//mantengo posicion en scroll menor a 50
         }
-        if (window.scrollY > 50) {
+        if (window.scrollY > 50) {//si scroll mayor a 50 escalo a mini logo
             header.classList.add('mini');
             fijo.classList.add('header-mini');
             altura.style.height=  '115px';
@@ -27,15 +26,14 @@ const  altura = document.querySelector('.altura');
             logo.style.transform = `scale(${clampedScaleValue}) translateY(-${translateY}px)`;
 
         } else {
-            header.classList.remove('mini');
+            header.classList.remove('mini');// si no hay scroll solo se ve logo grande
             fijo.classList.remove('header-mini');
             altura.style.height=  '0px';
         }
 
-        });
+    });
 
-
-/*---------------------------PARALLAX- INICIO--------------------*/
+/*---------------------Pto 7---PARALLAX- INICIO--------------------*/
 
 const Edif1 = document.querySelector(".edifIzquierda");
 const Edif2 = document.querySelector(".edifMedio");
@@ -47,6 +45,7 @@ const telaD = document.querySelector(".telaDer");
 const telaI = document.querySelector(".telaIzq");
 const elementos = [Edif1, Edif2, Edif3, Pje1, Pje2, Pje3, telaD, telaI, logo];
     
+//termina el loader y se hacen visibles los elementos 
     elementos.forEach((e) => {
         e.classList.remove("oculto");
     });
@@ -55,9 +54,9 @@ const elementos = [Edif1, Edif2, Edif3, Pje1, Pje2, Pje3, telaD, telaI, logo];
         elementos.forEach((e) => {
         e.style.transition = "none";
         });
-        Edif1.style.transform = `translateX(${-window.scrollY * 0.002}px)`;
+        Edif1.style.transform = `translateX(${-window.scrollY * 0.3}px)`;
         Edif2.style.transform = `scale(${1 + window.scrollY * 0.0008})`;
-        Edif3.style.transform = `translateX(${window.scrollY * 0.002}px)`;
+        Edif3.style.transform = `translateX(${window.scrollY * 0.3}px)`;
 
         Pje1.style.transform = `translateY(${-window.scrollY * 0.5}px) translateX(${-window.scrollY * 0.3}px)`;
         Pje3.style.transform = `translateY(${-window.scrollY * 0.5}px) translateX(${window.scrollY * 0.5}px)`; 
@@ -66,9 +65,8 @@ const elementos = [Edif1, Edif2, Edif3, Pje1, Pje2, Pje3, telaD, telaI, logo];
         telaI.style.transform = `translateY(${-window.scrollY * 0.8}px) rotate(65.403deg)`;
     });
 
+/*------------------------Pto 8- Opcional 4---PARALLAX-2 --------------------*/
 
-
-/*---------------------------PARALLAX-2 --------------------*/
 const personaje = document.getElementById('personaje');
 const mujer = document.getElementById('mujer');
 const hulk = document.getElementById('hulk');
@@ -94,8 +92,7 @@ const hulk = document.getElementById('hulk');
             this.style.transform = 'scale(1) translateY(10px)';
      });
                 
-          
-           
+               
     window.onscroll = function () {
         scrollFunction();
     }
@@ -103,13 +100,14 @@ const hulk = document.getElementById('hulk');
     function scrollFunction() {
         let scrollY = window.scrollY;
 
-/*--------------------DUENDE-VERDE--------------------*/
+/*------------------Pto 6--DUENDE-VERDE---------------------*/
+
 const duendeVerde = document.getElementById('duende-verde');
 const velocidadDuende = 0.175;
 const transformValue = `translateY(${scrollY * velocidadDuende}px) scaleX(-1)`;
     duendeVerde.style.transform = transformValue;
 
-/*----------------Pto 7  MAS AMIGOS----------------------------*/
+/*----------------Pto 4  MAS AMIGOS--------------------------*/
     if (scrollY){
         function remuve() {
         document.querySelectorAll(".img").forEach((s) => {
@@ -150,18 +148,16 @@ const pos = ghost.getBoundingClientRect(); //devuelve la posicion
     window.addEventListener("scroll", function () {                        
     if (pos.top < window.innerHeight && pos.bottom > 0) {
             testImages.forEach((image, index) => {
-                const delay = index * 100; // Ajusta según sea necesario
+                const delay = index * 100; 
                 const speed = 0.2 * (index + 1)
                 const translateY = Math.min(ghostHeigth, scrollY - ghostTop) * speed;
                 image.style.transitionDelay = `${delay}ms`;
-                image.style.transform = `translateY(${translateY}px)`;
-        
-                            
+                image.style.transform = `translateY(${translateY}px)`;                        
             });
         } 
     });    
 
-/*----------------------Pto 9-TRES PERSONAJES EN EDIFICIO-------------------------*/
+/*----------------------Pto 9-TRES CARDS-------------------------*/
 const seccion = document.querySelector(".poligono-trio-imagenes");
 const cards = document.querySelectorAll(".imagen-texto");
 const img1 = document.getElementById('card1');

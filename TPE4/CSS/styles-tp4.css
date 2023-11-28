@@ -26,9 +26,7 @@ input {
   width: 1280px;
   margin: 0 auto;
   overflow: hidden;
-
 }
-
 
 .container-header{
   width: 1080px;
@@ -40,7 +38,6 @@ header{
   transition: transform 3s ease;
   z-index: 4;
   height: 115px;
-  /*background: linear-gradient(180deg, #5499f8 -0%, #5499f8 87.91%, rgba(84, 153, 248, 0) 100%);*/
 }
 .header-mini{
   position: fixed;
@@ -58,7 +55,6 @@ header{
 #container-mini-header{
   background-color: rgba(0, 0, 0, 0);
 }
-
 
 #conteiner-logo{
   display: flex;
@@ -86,14 +82,8 @@ header{
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-
-}
-/*.conteiner-logo-mini img {
-  width: 133px;
-  height: 68px;
 }
 /*--------------------------------------------------*/
-
 .menu-hamburguesa{
   display: flex;
   flex-direction: column;
@@ -108,7 +98,7 @@ header{
   box-shadow: 4px 5px 0 #02187e;
   margin-top: -1px;
 }
-/*-----------OPCIONAL 2 menu en cruz---------*/
+/*-------------Pto 2--OPCIONAL 2-  menu en cruz-------------*/
 .menu-hamburguesa {
   #linea1 {
       transform-origin: top left;
@@ -134,7 +124,7 @@ header{
       } 
   }
 }
-/*-----------------OPCIONAL 3------------------------------------*/
+/*----------------Pto 3-OPCIONAL 3------------------------------------*/
 .items-menu{
   overflow: hidden;
   height: 0;
@@ -192,7 +182,7 @@ header{
   background-clip: text;
   cursor: pointer;
 }
-
+/*-------------------------------------------------------------*/
 .comprar-iMY{
   margin-top: 20px;
   background-color: #ffe901;
@@ -209,7 +199,18 @@ header{
   white-space: nowrap;
   color: #02187e;
 }  
-/*------------prallax---------------------------*/
+/*-------------------Pto 10----BTN-CPMPRAR------*/
+.comprar-iMY {
+  transition: background-color box-shadow 0.5s linear;
+}
+
+.comprar-iMY:hover {
+background-color: #e74c3c; /* Nuevo color en hover */
+color: #ffffff; 
+box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.7);
+}
+
+/*-----------------Pto 7--prallax-inicio--------------------------*/
 .parallax{
   position: relative;
  
@@ -241,7 +242,7 @@ header{
   z-index: 2;
   bottom: 0;
   opacity: 1;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in;
   transition-delay: 0.2s;
 }
 .edifIzquierda.oculto {
@@ -257,7 +258,7 @@ header{
   z-index: 2;
   bottom: 15px;
   opacity: 1;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in;
   
 }
 .edifMedio.oculto {
@@ -271,9 +272,8 @@ header{
   top: 126px;
   left: 906px;
   z-index: 2;
-  
   opacity: 1;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in;
   transition-delay: 0.2s;
 }
 
@@ -290,7 +290,7 @@ header{
   left: 90px;
   z-index: 2;
   opacity: 1;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in;
   transition-delay: 0.4s;
 }
 .spider1.oculto {
@@ -308,7 +308,7 @@ header{
   left: 404px;
   z-index: 3;
   opacity: 1;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in;
   transition-delay: 0.7s;
 }
 
@@ -326,7 +326,7 @@ header{
   left: 695px;
   z-index: 2;
   opacity: 1;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in;
   transition-delay: 0.5s;
 }
 
@@ -346,7 +346,7 @@ header{
   object-fit: cover;
   transform: rotate(65.4deg);
   z-index: 3;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in;
   transition-delay: 0.7s;
 }
 
@@ -366,7 +366,7 @@ header{
   transform: rotate(-114.6deg);
   z-index: 3;
   opacity: 1;
-  transition: all 0.4s ease-in;
+  transition: all 0.3s ease-in;
   transition-delay: 0.6s;
 }
 
@@ -467,7 +467,6 @@ header{
 }
 .imagen-texto {
   opacity: 0;
-  /*transform: translateY(100px);*/
   transition: opacity 1s, transform 2s; 
 }
 .imagen-texto.visible {
@@ -510,6 +509,7 @@ header{
   font-size: 20px;
   line-height: 24px;
 }
+/*---------------------------------------------------------------------------*/
 .ghost{
   position: relative;
   margin-top: 680px;
@@ -546,6 +546,29 @@ header{
   top: 370px;
   transform: rotate(-30deg);
 }
+
+/*-----------------Pto 11 GHOST SPIDER- 3 cards-----------------------*/
+ 
+@keyframes rotateAndPerspective {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform:rotate(-5deg);
+  }
+}
+  .test-1:hover,.test-3:hover{
+    animation: rotateAndPerspective 1s ease-out forwards;
+  }
+  
+  .test-2 {
+    transition: transform 0.5s ease; 
+  }
+  .test-2:hover {
+    transform: scale(1.1); 
+  }
+/*------------------------------------------------------------------------*/
+
 .conteiner-vengadores {
   width: 1080px;
   margin: 0 auto;
@@ -619,12 +642,27 @@ header{
   transform: rotate(13.61deg);
 }
 
+/*--------------------Pto 8- Opcional 4---PARALLAX-2----------------------------*/
+@keyframes move {
+  0%{
+      background-position: -2080px;
+  }
+  100%{
+      background-position: 0px;
+  }
+}
+
+.parallax2-cielo {
+  animation: move 40s infinite linear;
+  filter: blur(10px);
+}
+
 .poligono-mas-amigos{
   margin-top: -130px;
   width: 1280px;
   height: 1900px;
 }
-/*-------------------------------------------------------------------------*/
+/*----------------------Pto 4 mas amigos---------------------------------------------------*/
 .conteiner-mas-amigos{
   width: 1080px;
   margin: 0 auto;
@@ -881,14 +919,38 @@ footer{
   height: 41px;
 }
 
+/*--------------------pto 13-spritesheet------------------------*/
+#sprit-sheet{
+  transition: all .1s ease-out;
+  z-index: 0;
+}
+.img-sprit {
+  position: absolute;
+  top: 395px;
+  left: 890px;
+  width: 130px;
+  height: 130px;
+  transform: rotate(-20deg);
+  background-image: url('../IMG/sprit.png'); 
+  background-size: auto 100%;
+  transition: background-position 1s steps(11);
+}
+.img-sprit:hover {
+  animation: playAnimation 1s steps(11) infinite;
+}
 
-/*------------------OPCIONAl1 pto 1 --loader *-----------------------*/
+@keyframes playAnimation {
+  from { background-position: 0; }
+  to { background-position: -1430px; } 
+}
+
+/*------------------OPCIONAl 1 pto 1 --loader -----------------------*/
 #loader-container {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #000; /* Fondo oscuro */
+  background-color: #000; 
   position: fixed;
   top: 0;
   left: 0;
@@ -897,69 +959,39 @@ footer{
   z-index: 50;
 }
 #loader {
-  background: url('../IMG/Telarania.png') no-repeat 0 0; /* Utiliza la ruta correcta de tu spritesheet */
+  background: url('../IMG/Telarania.png') no-repeat 0 0; 
   background-size: auto 100%;
   width: 100px;
   height: 100px;
-  animation: playSpritesheetTelarania 3s steps(11) infinite; /* 11 frames en tu spritesheet */
+  animation: playSpritesheetTelarania 3s steps(11) infinite; /* 11 frames */
   border-radius: 50%;
 }
 
 @keyframes playSpritesheetTelarania {
   from { background-position: 0; }
-  to { background-position: -1100px; } /* Ajusta según sea necesario */
+  to { background-position: -1100px; } 
 }
 #loading-text {
-  color: #fff; /* Texto blanco */
+  color: #fff; 
   font-size: 18px;
   margin-left: 10px;
   text-align: center;
 }
-
-/*-------------------------PTO 9---tres personajes volados-------------*/
 .personajes-section {
   height: 740px;
   width: 1280;
   position: relative;
   top: 120px;
-  background-image: url('../IMG/untitled-1-5-ByC.png'); /* Reemplaza con la ruta de tu imagen */
-  background-size: cover; /* Cubre todo el contenedor */
-  background-position: center; /* Centra la imagen en el contenedor */
-  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  background-image: url('../IMG/untitled-1-5-ByC.png'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
 }
-
-.personaje {
-  opacity: 0;
-  /*transform: translateY(100px);*/
-  transition: opacity 1s, transform 2s;
-  
-}
-
 .conteiner-personajes-section{
   width: 1080px;
   margin: 0 auto;
   margin-top: -300px;
 }
-.personaje.visible {
-  opacity: 1;
-  
-}
-#pje1{
-  position: absolute;
-  left: 219px;
-  bottom: 0px;
-}
-#pje2{
-  position: absolute;
-  left: 533px;
-  bottom: 0px;
-}
-#pje3{
-  position: absolute;
-  left: 998px;
-  bottom: 0;
-}
-
 .image-227-tdp {
   width: 94px; 
   height: 88px; 
@@ -972,122 +1004,5 @@ footer{
   width: 58px;
   height: 64px;
 }
-/*-------------------pto 10----BTN-CPMPRAR------*/
 
-.comprar-iMY {
-  /* Agrega transición para el cambio de color en 0.3 segundos */
-transition: background-color box-shadow 0.5s linear;
-}
 
-.comprar-iMY:hover {
-background-color: #e74c3c; /* Nuevo color en hover */
-color: #ffffff; /* Puedes ajustar el color del texto en hover si es necesario */
-box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.7);
-}
-/*-----------------pTO 5------mini-header-----------------------*/
-
-/*----------------------Pto6 duende verde--------------*/
-/*------------------Pto 11---------------------------*/
- /* @keyframes rotateAndPerspective {
-    0% {
-        transform: skew(0deg);
-    }
-    50% {
-        transform: skew(5deg);
-    }
-    100% {
-        transform:skew(10deg);
-    }
-  }*/
-  
-  @keyframes rotateAndPerspective {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform:rotate(-5deg);
-    }
-  }
-    .test-1:hover,.test-3:hover{
-      animation: rotateAndPerspective 1s ease-out forwards;
-    }
-    
-    .test-2 {
-      transition: transform 0.5s ease; /* Ajusta la duración y la función de temporización según sea necesario */
-    }
-    .test-2:hover {
-      transform: scale(1.1); /* Ajusta el valor de escala según sea necesario */
-    }
-
-/*--------------------------pto 4--------------------------*/
-.imagen {
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-
-.imagen.active {
-  opacity: 1;
-}
-
-/*--------------------pto 13-------------------------*/
-
-#sprit-sheet{
-  transition: all .1s ease-out;
-  z-index: 0;
-}
-.img-sprit {
-  position: absolute;
-  top: 395px;
-  left: 890px;
-  width: 130px;
-  height: 130px;
-  transform: rotate(-20deg);
-  background-image: url('../IMG/sprit.png'); /* Reemplaza 'spritesheet.png' con tu ruta real */
-  background-size: auto 100%;
-  transition: background-position 1s steps(11);
-}
-.img-sprit:hover {
-  animation: playAnimation 1s steps(11) infinite;
-}
-
-@keyframes playAnimation {
-  from { background-position: 0; }
-  to { background-position: -1430px; } /* Ajusta según sea necesario */
-}
-/*---------------------------------------*/
-#container {
-  display: flex;
-  overflow: hidden;
-}
-
-.image {
-  width: 100%;
-  position: sticky;
-  top: 0;
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-
-.image img {
-  width: 100%;
-  height: auto;
-}
-
-.image.active {
-  opacity: 1;
-}
-
-/*------------------------------------------------*/
-@keyframes move {
-  0%{
-      background-position: -2080px;
-  }
-  100%{
-      background-position: 0px;
-  }
-}
-
-.parallax2-cielo {
-  animation: move 40s infinite linear;
-  filter: blur(10px);
-}
